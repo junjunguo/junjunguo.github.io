@@ -31,6 +31,7 @@ ul li.linkedin a { width: 64px; height: 64px; display: block; background: transp
 ul li.panoramio a { width: 64px; height: 64px;display: block; background: transparent url(../junjunguofiles/Path-icon.png) top center no-repeat; text-indent: -9999px; }
 ul li.photo a { width: 64px; height: 64px; display: block; background: transparent url(../junjunguofiles/Instagram-icon-2.png) top center no-repeat; text-indent: -9999px; }
 ul li.email a { width: 64px; height: 64px; display: block; background: transparent url(../junjunguofiles/Email-icon-1.png) top center no-repeat; text-indent: -9999px; }
+ul li.home a { width: 64px; height: 64px; display: block; background: transparent url(../junjunguofiles/red-home-icon.png) top center no-repeat; text-indent: -9999px; }
 
 /*logo */
 .fourohfour h1 a { width: 480px; height: 188px; display: block; background: url(../junjunguofiles/404.png) top center no-repeat; text-indent: -9999px; padding: 0; margin: 0 auto; border: none; text-align: center; }
