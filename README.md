@@ -19,6 +19,10 @@ Using Github to host my Personal Website:
 ####**Git:** use [Relative links in READMEs][6] : 
 ```
 [Read more words!](docs/more_words.md)
+```
+
+```
+![Image](img/img.png "Image")
 ``` 
 
 
@@ -29,26 +33,7 @@ Using Github to host my Personal Website:
 
 
 
-About Markdown
---
-Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site] [5]:
 
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
-
-Markdown *links*:
-
-* [Wikipedia] - read markdown on wikipedia
-* [John Gruber] - John Gruber on wikipedia
-
-
-[Wikipedia]:https://en.wikipedia.org/wiki/Markdown
-[John Gruber]:https://en.wikipedia.org/wiki/John_Gruber
 [TDT4100]:http://junjunguo.com/TDT4100
 [TDT4120]:http://junjunguo.com/TDT4120
 [1]: http://junjunguo.com/
