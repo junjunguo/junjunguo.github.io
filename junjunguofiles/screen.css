@@ -40,6 +40,7 @@ ul li.home a { width: 64px; height: 64px; display: block; background: transparen
 .logo h1 a:hover { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -o-transform:rotate(360deg); }
 
 .content {position:absolute; max-width: 480px; top:50%; margin-top: -150px;text-align: center; left:50%; margin-left:-200px;}
+.content p{text-shadow: 0.6px 0.6px 1px #000000;}
 .background-overlay-notfound { background: transparent url(../junjunguofiles/overlay3.png); opacity: 0.5; z-index: -1; }
 .background-overlay { background: transparent url(../junjunguofiles/overlay.png); opacity: 0.5; z-index: -1; }
 		ul.actions {
