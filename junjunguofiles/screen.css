@@ -1,156 +1,330 @@
 /* 
 	CSS Reset 
 */
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td 
-{
-	margin:0;
-	padding:0;
-	border:0;
-	font-weight:inherit;
-	font-style:inherit;
-	font-size:100%;
-	font-family:inherit;
-	vertical-align:baseline;
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
 }
-body 
-{
-	line-height:1.5;
+
+body {
+    line-height: 1.5;
 }
-.fourohfourp strong {color:#900; background-color:#FF0; font-size:1.3em;}
-p { font-size: 1.2em; line-height: 1.35em; color: #fff; padding: 0; margin: 60px 0 40px; font-family: 'helvetica neue', helvetica, arial, sans-serif; font-weight: 200; }
-p strong { font-weight: 500; }
 
-a { color: #ffcc00; text-decoration: none; }
-a:hover { color: #fff; -webkit-transition:all 0.2s ease-in-out; }
+.fourohfourp strong {
+    color: #900;
+    background-color: #FF0;
+    font-size: 1.3em;
+}
 
-ul { display: block; }
-ul li { display: inline-block; margin: 0 10px; }
-ul li a { opacity: 0.5; }
-ul li a:hover { opacity: 1; -webkit-transition:all 0.1s ease-in-out; }
-ul li.github a { width: 64px; height: 64px; display: block; background: transparent url(../junjunguofiles/Github-icon-2.png) top center no-repeat; text-indent: -9999px; }
-ul li.linkedin a { width: 64px; height: 64px; display: block; background: transparent url(../junjunguofiles/Linkedin-icon-2.png) top center no-repeat; text-indent: -9999px; }
-ul li.panoramio a { width: 64px; height: 64px;display: block; background: transparent url(../junjunguofiles/Path-icon.png) top center no-repeat; text-indent: -9999px; }
-ul li.photo a { width: 64px; height: 64px; display: block; background: transparent url(../junjunguofiles/Instagram-icon-2.png) top center no-repeat; text-indent: -9999px; }
-ul li.email a { width: 64px; height: 64px; display: block; background: transparent url(../junjunguofiles/Email-icon-1.png) top center no-repeat; text-indent: -9999px; }
-ul li.home a { width: 64px; height: 64px; display: block; background: transparent url(../junjunguofiles/red-home-icon.png) top center no-repeat; text-indent: -9999px; }
+p {
+    font-size: 1.2em;
+    line-height: 1.35em;
+    color: #fff;
+    padding: 0;
+    margin: 60px 0 40px;
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    font-weight: 200;
+}
+
+p strong {
+    font-weight: 500;
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+ul {
+    display: block;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+ul li a {
+    opacity: 0.5;
+}
+
+ul li a:hover {
+    opacity: 1;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+
+ul li.github a {
+    width: 64px;
+    height: 64px;
+    display: block;
+    background: transparent url(../junjunguofiles/Github-icon-2.png) top center no-repeat;
+    text-indent: -9999px;
+}
+
+ul li.linkedin a {
+    width: 64px;
+    height: 64px;
+    display: block;
+    background: transparent url(../junjunguofiles/Linkedin-icon-2.png) top center no-repeat;
+    text-indent: -9999px;
+}
+
+ul li.panoramio a {
+    width: 64px;
+    height: 64px;
+    display: block;
+    background: transparent url(../junjunguofiles/Path-icon.png) top center no-repeat;
+    text-indent: -9999px;
+}
+
+ul li.photo a {
+    width: 64px;
+    height: 64px;
+    display: block;
+    background: transparent url(../junjunguofiles/Instagram-icon-2.png) top center no-repeat;
+    text-indent: -9999px;
+}
+
+ul li.email a {
+    width: 64px;
+    height: 64px;
+    display: block;
+    background: transparent url(../junjunguofiles/Email-icon-1.png) top center no-repeat;
+    text-indent: -9999px;
+}
+
+ul li.home a {
+    width: 64px;
+    height: 64px;
+    display: block;
+    background: transparent url(../junjunguofiles/red-home-icon.png) top center no-repeat;
+    text-indent: -9999px;
+}
 
 /*logo */
-.fourohfour h1 a { width: 480px; height: 188px; display: block; background: url(../junjunguofiles/404.png) top center no-repeat; text-indent: -9999px; padding: 0; margin: 0 auto; border: none; text-align: center; }
-.logo h1 a { width: auto; height: 64px; display: block; background: url(../junjunguofiles/GuoJunJun.png) top center no-repeat; text-indent: -9999px; padding: 0; margin: 0 auto; border: none; text-align: center; }
-.logo h1 a:hover { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -o-transform:rotate(360deg); }
+.fourohfour h1 a {
+    width: 480px;
+    height: 188px;
+    display: block;
+    background: url(../junjunguofiles/404.png) top center no-repeat;
+    text-indent: -9999px;
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+}
 
-.content {position:absolute; max-width: 480px; top:50%; margin-top: -150px;text-align: center; left:50%; margin-left:-200px;}
-.content p{text-shadow: 0.6px 0.6px 1px #000000;}
-.background-overlay-notfound { background: transparent url(../junjunguofiles/overlay3.png); opacity: 0.5; z-index: -1; }
-.background-overlay { background: transparent url(../junjunguofiles/overlay.png); opacity: 0.5; z-index: -1; }
-		ul.actions {
-			cursor: default;
-		}
-		
-			ul.actions li {
-				display: inline-block;
-				margin: 0 0 0 0.5em;
-			}
-			
-			ul.actions li:first-child {
-				margin-left: 0;
-			}
+.logo h1 a {
+    width: auto;
+    height: 64px;
+    display: block;
+    background: url(../junjunguofiles/GuoJunJun.png) top center no-repeat;
+    text-indent: -9999px;
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+}
+
+.logo h1 a:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.content {
+    position: absolute;
+    max-width: 480px;
+    top: 50%;
+    margin-top: -150px;
+    text-align: center;
+    left: 50%;
+    margin-left: -200px;
+}
+
+.content p {
+    text-shadow: 0.6px 0.6px 1px #000000;
+}
+
+.background-overlay-notfound {
+    background: transparent url(../junjunguofiles/overlay3.png);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.background-overlay {
+    background: transparent url(../junjunguofiles/overlay.png);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+ul.actions {
+    cursor: default;
+}
+
+ul.actions li {
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+}
+
+ul.actions li:first-child {
+    margin-left: 0;
+}
 
 /*
 	Supersized - Fullscreen Slideshow jQuery Plugin
 	Version : 3.2.7
 */
 * {
-	margin: 0;
-	padding: 0;
-}
-body {
-	background: #111;
-	height: 100%;
-}
-img {
-	border: none;
-}
-#supersized-loader {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	z-index: 0;
-	width: 60px;
-	height: 60px;
-	margin: -30px 0 0 -30px;
-	text-indent: -999em;
-	/*background: url(../junjunguofiles/progress.gif) no-repeat center center;*/
-}
-#supersized {
-	display: block;
-	position: fixed;
-	left: 0;
-	top: 0;
-	overflow: hidden;
-	z-index: -999;
-	height: 100%;
-	width: 100%;
-}
-#supersized img {
-	width: auto;
-	height: auto;
-	position: relative;
-	display: none;
-	outline: none;
-	border: none;
-}
-#supersized.speed img {
-	-ms-interpolation-mode: nearest-neighbor;
-	image-rendering: -moz-crisp-edges;
-}	/*Speed*/
-#supersized.quality img {
-	-ms-interpolation-mode: bicubic;
-	image-rendering: optimizeQuality;
-}			/*Quality*/
-#supersized li {
-	display: block;
-	list-style: none;
-	z-index: -30;
-	position: fixed;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #111;
-}
-#supersized a {
-	width: 100%;
-	height: 100%;
-	display: block;
-}
-#supersized li.prevslide {
-	z-index: -20;
-}
-#supersized li.activeslide {
-	z-index: -10;
-}
-#supersized li.image-loading {
-	background: #111 url(../junjunguofiles/progress.gif) no-repeat center center;
-	width: 100%;
-	height: 100%;
-}
-#supersized li.image-loading img {
-	visibility: hidden;
-}
-#supersized li.prevslide img, #supersized li.activeslide img {
-	display: inline;
+    margin: 0;
+    padding: 0;
 }
 
-	/* Controls Bar
-	----------------------------*/
-				#prevslide, #nextslide{ position:absolute; height:43px; width:43px; top:50%; margin-top:-21px; opacity:0.6; }
-					#prevslide{ left:10px; background:url('../junjunguofiles/back.png'); }
-					#nextslide{ right:10px; background:url('../junjunguofiles/forward.png'); }
-						#prevslide:active, #nextslide:active{ margin-top:-19px; }
-						#prevslide:hover, #nextslide:hover{ cursor:pointer; }
+body {
+    background: #111;
+    height: 100%;
+}
+
+img {
+    border: none;
+}
+
+#supersized-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    width: 60px;
+    height: 60px;
+    margin: -30px 0 0 -30px;
+    text-indent: -999em;
+    /*background: url(../junjunguofiles/progress.gif) no-repeat center center;*/
+}
+
+#supersized {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: -999;
+    height: 100%;
+    width: 100%;
+}
+
+#supersized img {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: none;
+    outline: none;
+    border: none;
+}
+
+#supersized.speed img {
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -moz-crisp-edges;
+}
+
+/*Speed*/
+#supersized.quality img {
+    -ms-interpolation-mode: bicubic;
+    image-rendering: optimizeQuality;
+}
+
+/*Quality*/
+#supersized li {
+    display: block;
+    list-style: none;
+    z-index: -30;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111;
+}
+
+#supersized a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#supersized li.prevslide {
+    z-index: -20;
+}
+
+#supersized li.activeslide {
+    z-index: -10;
+}
+
+#supersized li.image-loading {
+    background: #111 url(../junjunguofiles/progress.gif) no-repeat center center;
+    width: 100%;
+    height: 100%;
+}
+
+#supersized li.image-loading img {
+    visibility: hidden;
+}
+
+#supersized li.prevslide img, #supersized li.activeslide img {
+    display: inline;
+}
+
+/* Controls Bar
+----------------------------*/
+#prevslide, #nextslide {
+    position: absolute;
+    height: 43px;
+    width: 43px;
+    top: 50%;
+    margin-top: -21px;
+    opacity: 0.6;
+}
+
+#prevslide {
+    left: 10px;
+    background: url('../junjunguofiles/back.png');
+}
+
+#nextslide {
+    right: 10px;
+    background: url('../junjunguofiles/forward.png');
+}
+
+#prevslide:active, #nextslide:active {
+    margin-top: -19px;
+}
+
+#prevslide:hover, #nextslide:hover {
+    cursor: pointer;
+}
 
 /* Supersized finish line*/
 
-
+/* footer */
+#footer {
+    width:100%;
+    position: absolute;
+    bottom: 0;
+}
+#footer p {
+    font-family: 'Droid Sans', Helvetica, Arial, Sans-Serif;
+    font-size: 0.8em;
+    float: right;
+    margin: 0 20px 8px 20px;
+}
