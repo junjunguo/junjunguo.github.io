@@ -54,3 +54,8 @@ var changeImageN = document.getElementById("nextslide");
 changeImageN.onclick = function () {
     generateQuotes();
 }
+
+var changeQuotes = document.getElementById("myquotes");
+changeQuotes.onclick = function () {
+    generateQuotes();
+}
