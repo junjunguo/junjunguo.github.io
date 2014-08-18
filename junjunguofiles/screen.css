@@ -318,10 +318,11 @@ img {
 
 /* footer */
 #footer {
-    width:100%;
+    width: 100%;
     position: absolute;
     bottom: 0;
 }
+
 #footer p {
     font-family: 'Droid Sans', Helvetica, Arial, Sans-Serif;
     font-size: 0.8em;
