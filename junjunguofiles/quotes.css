@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/*
+quotes
+GuoJunjun
+        19.08.2014
+*/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    /*overflow-y: scroll;Clip the top/bottom edges of the content inside the <div> element - if it overflows the element's content area*/
+    background-color: #e2e2d6;
+    background-image: url(../image/bg_image/bg-read.jpg);
+}
+
+body {
+    text-shadow: #fff 0 1px 0;
+    color: #2c2c2c;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: normal;
+    width: 100%;
+    margin: 0px auto 0px auto;
+}
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+#header {
+    background-color: rgba(255, 120, 62, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+#content {
+    height: auto;
+    width: 1000px;
+    margin: 0px auto 0px auto;
+    padding: 10px 10px 10px 10px;
+    background:;
+    padding-bottom: 200px; /* Height of the footer element */
+}
+
+#quotes {
+    list-style-type: none;
+}
+
+#quotes li {
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#quotes p {
+    line-height: 25px;
+}
+
+#quotes h5 {
+    line-height: 1px;
+    text-align: right;
+}
+
+#footer {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background-color: rgba(255, 120, 62, 0.1);
+}
+
+#container {
+    width: 1000px;
+    margin: 0 auto 0 auto;
+}
+
+#sideLeft {
+    float: left;
+    width: 350px;
+    height: 200px;
+    background: #;
+    margin: 0px;
+    padding: 0;
+    text-align: center;
+}
+
+#sideLeft p{
+    margin: 80px 0 0 0;
+}
+#sideRight {
+    float: right;
+    width: 650px;
+    height: 200px;
+    background: #;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+#sideRight table {
+    margin: 80px 0 0 0;
+    cellpadding : 0;
+    cellspacing : 0;
+    border : 10px;
+    color:red;
+    width : 100%;
+}
+
+#sideRight table a {
+    text-decoration: none;
+}
+
+
+a:link, a:visited {
+    color: #2c2c2c;
+}
+a:hover {
+    color: #ffab62;
+}
