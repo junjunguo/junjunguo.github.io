@@ -2,9 +2,9 @@
  * Created by junjun on 17.08.14.
  */
 
-var textFile = 'junjunguofiles/myQuotes.txt';
+var textFile = 'junjunguofiles/quotations.txt';
 
-console.log(textFile);
+//console.log(textFile);
 
 var quotesArray = [];
 var totalQuotes = 0;
@@ -22,14 +22,14 @@ function displayContents() {
         quotesArray = reader.responseText.split("\n");
         totalQuotes = quotesArray.length;
         //console.log(reader.responseText);
-        console.log("quotes array length: " + quotesArray.length);
-        console.log("if generate quotes....");
+        //console.log("quotes array length: " + quotesArray.length);
+        //console.log("if generate quotes....");
         generateQuotes();
     } else {
         quotesArray = "Wonder is the beginning of wisdom.    <br>Socrates";
         totalQuotes = quotesArray.length;
-        console.log("else: generate quotes....");
-        generateQuotes();
+        //console.log("else: generate quotes....");
+        //generateQuotes();
     }
 }
 
@@ -39,9 +39,11 @@ loadFile();
 function generateQuotes() {
     var randomQuotes = Math.floor(Math.random() * totalQuotes);
     //console.log("................"+quotesArray[0]);
-    console.log("total Quotes: " + totalQuotes + " random quotes: " + randomQuotes);
+    //console.log("total Quotes: " + totalQuotes + " random quotes: " + randomQuotes);
+    console.log("quotation: " + randomQuotes + " of " + totalQuotes);
     var el = document.getElementById('myquotes');
-    el.innerHTML = quotesArray[randomQuotes];
+    var formatQuotation = quotesArray[randomQuotes].split("#");
+    el.innerHTML = formatQuotation[1] + "<br>" + " -- " + formatQuotation[0];
 }
 
 

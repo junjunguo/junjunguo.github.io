@@ -84,7 +84,7 @@ body {
 
 #sideLeft {
     float: left;
-    width: 350px;
+    width: 300px;
     height: 200px;
     background: #;
     margin: 0px;
@@ -92,12 +92,13 @@ body {
     text-align: center;
 }
 
-#sideLeft p{
+#sideLeft p {
     margin: 80px 0 0 0;
 }
-#sideRight {
-    float: right;
-    width: 650px;
+
+#middle {
+    float: left;
+    width: 400px;
     height: 200px;
     background: #;
     margin: 0px;
@@ -105,23 +106,37 @@ body {
     text-align: center;
 }
 
-#sideRight table {
+#middle table {
     margin: 80px 0 0 0;
-    cellpadding : 0;
-    cellspacing : 0;
-    border : 10px;
-    color:red;
-    width : 100%;
+    cellpadding: 0;
+    cellspacing: 0;
+    border: 10px;
+    color: red;
+    width: 100%;
 }
 
-#sideRight table a {
+#middle table a {
     text-decoration: none;
 }
 
+#sideRight {
+    float: right;
+    width: 300px;
+    height: 200px;
+    background: #;
+    margin: 0px;
+    padding: 0;
+    text-align: center;
+}
+
+#sideRight p {
+    margin: 80px 0 0 0;
+}
 
 a:link, a:visited {
     color: #2c2c2c;
 }
+
 a:hover {
     color: #ffab62;
 }
