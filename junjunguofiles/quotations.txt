@@ -12,7 +12,7 @@ Socrates	#	Be slow to fall into friendship, but when you are in, continue firm a
 Plato	#	Be kind, for everyone you meet is fighting a harder battle.
 Plato	#	Every heart sings a song, incomplete, until another heart whispers back. Those who wish to sing always find a song. At the touch of a lover, everyone becomes a poet.
 Plato	#	Wise men speak because they have something to say;fools because they have to say something.
-Plato	#	Music gives a soul to the universe, wings to the mind, flight to the imagination<br/>and life to everything.
+Plato	#	Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything.
 Plato	#	We can easily forgive a child who is afraid of the dark	;the real tragedy of life is when men are afraid of the light.
 Plato	#	Only the dead have seen the end of war.
 Plato	#	The price good men pay for indifference to public affairs is to be ruled by evil men.
