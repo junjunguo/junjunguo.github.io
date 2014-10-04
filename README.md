@@ -26,7 +26,7 @@ Using Github to host my Personal Website:
 ``` 
 
 
-###Courses from  Norwegian University of Science and Technology:
+###Links:
 
   - [TDT4100] object oriented programming
   - [TDT4120] algorithm and data structure
