@@ -25,7 +25,7 @@
         var nrlist = [			//  Images id numbers
             77233663, 105836333, 109199045, 109172199, 92464442, 92464435, 55717739, 77835786, 107909681, 51569735, 108930464, 109049207, 109100961, 106397977, 92401424
         ]
-        function shuffleList(list) {
+        function shuffleList(list) { // shuffle nrlist and return a list with objects ready for slides
             var copy = [], n = list.length, index;
             while (n) {
                 index = Math.floor(Math.random() * (n--));
@@ -33,14 +33,6 @@
                 list.splice(index, 1);
             }
             return copy;
-        }
-        function getRandomNr(nrlist) {
-            index = Math.floor(Math.random() * (nrlist.length));
-            var randomNr = nrlist[index];
-            var obj = {'image': 'http://static.panoramio.com/photos/large/' + nrlist[index] + '.jpg', 'title': 'Image Credit: GuoJunjun', 'thumb': '', 'url': ''};
-            console.log(obj);
-            nrlist.splice(index,1);
-            return obj;
         }
 
         jQuery(function ($) {
@@ -54,7 +46,7 @@
 
                 // Components
                 slide_links: 'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
-                slides: shuffleList(nrlist)
+                slides: shuffleList(nrlist) //slide images
             });
         });
 
