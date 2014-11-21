@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US" class="cufon-active cufon-ready">
-<head>
+<html>
+<head lang="en">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="description" content="GuoJunjun's Personal Web"/>
     <meta name="keywords"
@@ -22,19 +22,6 @@
     <script type="text/javascript" src="junjunguofiles/supersized.shutter.min.js"></script>
 
     <script type="text/javascript">
-        var nrlist = [			//  Images id numbers
-            77233663,105836333,109199045,109172199,92464442,92464435,55717739,77835786,107909681,51569735,108930464,109049207,109100961,106397977,92401424
-        ]
-        function shuffleList(list) {
-            var copy = [], n = list.length, index;
-            while (n) {
-                index = Math.floor(Math.random() *(n--));
-                copy.push( {'image': 'http://static.panoramio.com/photos/large/'+list[index]+'.jpg', 'title': 'Image Credit: GuoJunjun', 'thumb': '', 'url': ''});
-                list.splice(index,1);
-            }
-            return copy;
-        }
-        console.log(shuffleList(nrlist));
 
         jQuery(function ($) {
 
@@ -47,9 +34,7 @@
 
                 // Components
                 slide_links: 'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
-                slides :
-//                        shuffleList(nrlist)
-                        [			// Slideshow Ima    ges
+                slides: [			// Slideshow Images
                     {image: 'image/bg_image/77233663.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
                     {image: 'image/bg_image/105836333.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
                     {image: 'http://static.panoramio.com/photos/large/109199045.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
@@ -70,7 +55,7 @@
                     {image: 'http://static.panoramio.com/photos/large/106397977.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
                     {image: 'http://static.panoramio.com/photos/large/92401424.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''}
                 ]
-//                console.log(slides)
+
             });
         });
 
@@ -181,33 +166,69 @@
 
     </style>
 
+
+    <script>
+        // show the given page, hide the rest
+        function show(elementID) {
+            // try to find the requested page and alert if it's not found
+            var ele = document.getElementById(elementID);
+            if (!ele) {
+                alert("no such element");
+                return;
+            }
+
+            // get all pages, loop through them and hide them
+            var pages = document.getElementsByClassName('page');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].style.display = 'none';
+            }
+
+            // then show the requested page
+            ele.style.display = 'block';
+        }
+    </script>
 </head>
-
 <body>
-<div id="supersized" class="quality" style="display: block;"></div>
-<div id="supersized-loader" style="display: none;"></div>
-<div class="background-overlay"
-     style="margin: 0px; padding: 0px; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%;"></div>
-<div class="content">
-    <div class="logo"><h1><a href="index.html" title="Guo Junjun">Junjun Guo</a></h1></div>
-    <p><strong>I'm Junjun Guo</strong>, Computer Science Student at <br> Norwegian University of Science and Technology
+<div id="navigation">
+    <p>
+        Show page
+        <span onclick="show('Page1');">1</span>,
+        <span onclick="show('Page2');">2</span>,
+        <span onclick="show('Page3');">3</span>.
     </p>
-    <ul class="actions">
-        <li class="github"><a href="http://github.com/junjunguo" title="Github" target="_blank"></a></li>
-        <li class="linkedin"><a href="http://www.linkedin.com/in/guojunjun" title="LinkedIn" target="_blank"></a></li>
-        <li class="panoramio"><a href="http://www.panoramio.com/user/guojunjun" title="Panoramio" target="_blank"></a>
-        </li>
-        <li class="photo"><a href="photo.html" title="Photos"></a></li>
-        <li class="email"><a href="mailto:guojunjun@gmail.com" title="Email"></a></li>
-    </ul>
 </div>
-<!--Arrow Navigation-->
-<a id="prevslide"></a>
-<a id="nextslide"></a>
+<div id="Page1" class="page" style="">
+    <div id="supersized" class="quality" style="display: block;"></div>
+    <div id="supersized-loader" style="display: none;"></div>
+    <div class="background-overlay"
+         style="margin: 0px; padding: 0px; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%;"></div>
+    <div class="content">
+        <div class="logo"><h1><a href="index.html" title="Guo Junjun">Junjun Guo</a></h1></div>
+        <p><strong>I'm Junjun Guo</strong>, Computer Science Student at <br> Norwegian University of Science and Technology
+        </p>
+        <ul class="actions">
+            <li class="github"><a href="http://github.com/junjunguo" title="Github" target="_blank"></a></li>
+            <li class="linkedin"><a href="http://www.linkedin.com/in/guojunjun" title="LinkedIn" target="_blank"></a></li>
+            <li class="panoramio"><a href="http://www.panoramio.com/user/guojunjun" title="Panoramio" target="_blank"></a>
+            </li>
+            <li class="photo"><a href="photo.html" title="Photos"></a></li>
+            <li class="email"><a href="mailto:guojunjun@gmail.com" title="Email"></a></li>
+        </ul>
+    </div>
+    <!--Arrow Navigation-->
+    <a id="prevslide"></a>
+    <a id="nextslide"></a>
 
-<div id="footer">
-    <p id="myquotes"></p>
-    <script src="junjunguofiles/randomQuotes.js"></script>
+    <div id="footer">
+        <p id="myquotes"></p>
+        <script src="junjunguofiles/randomQuotes.js"></script>
+    </div>
 </div>
+
+<div id="Page2" class="page" style="display:none">
+</div>
+<div id="Page3" class="page" style="display:none">
+</div>
+
 </body>
 </html>
