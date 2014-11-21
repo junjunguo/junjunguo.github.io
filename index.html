@@ -22,18 +22,6 @@
     <script type="text/javascript" src="junjunguofiles/supersized.shutter.min.js"></script>
 
     <script type="text/javascript">
-        var nrlist = [			//  Images id numbers
-            77233663, 105836333, 109199045, 109172199, 92464442, 92464435, 55717739, 77835786, 107909681, 51569735, 108930464, 109049207, 109100961, 106397977, 92401424
-        ]
-        function shuffleList(list) { // shuffle nrlist and return a list with objects ready for slides
-            var copy = [], n = list.length, index;
-            while (n) {
-                index = Math.floor(Math.random() * (n--));
-                copy.push({'image': 'http://static.panoramio.com/photos/large/' + list[index] + '.jpg', 'title': 'Image Credit: GuoJunjun', 'thumb': '', 'url': ''});
-                list.splice(index, 1);
-            }
-            return copy;
-        }
 
         jQuery(function ($) {
 
@@ -46,7 +34,28 @@
 
                 // Components
                 slide_links: 'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
-                slides: shuffleList(nrlist) //slide images
+                slides: [			// Slideshow Images
+                    {image: 'image/bg_image/77233663.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'image/bg_image/105836333.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'http://static.panoramio.com/photos/large/109199045.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'http://static.panoramio.com/photos/large/109172199.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'image/bg_image/92464442.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'http://static.panoramio.com/photos/large/92464435.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'http://static.panoramio.com/photos/large/55717739.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'http://static.panoramio.com/photos/large/77835786.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'http://static.panoramio.com/photos/large/107909681.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'http://static.panoramio.com/photos/large/51569735.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'http://static.panoramio.com/photos/large/108930464.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'http://static.panoramio.com/photos/large/78491832.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'image/bg_image/100026342.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'http://static.panoramio.com/photos/large/106419102.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'http://static.panoramio.com/photos/large/108930497.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'http://static.panoramio.com/photos/large/109049207.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'http://static.panoramio.com/photos/large/109100961.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'http://static.panoramio.com/photos/large/106397977.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''},
+                    {image: 'http://static.panoramio.com/photos/large/92401424.jpg', title: 'Image Credit: GuoJunjun', thumb: '', url: ''}
+                ]
+
             });
         });
 
