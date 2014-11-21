@@ -12,7 +12,7 @@ var reader = new XMLHttpRequest() || new ActiveXObject('MSXML2.XMLHTTP');
 
 function loadFile() {
     reader.open('get', textFile, true);
-    reader.onreadystatechange = displayContents();
+    reader.onreadystatechange = displayContents;
     reader.send(null);
 }
 
