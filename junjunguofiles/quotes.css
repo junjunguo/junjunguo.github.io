@@ -12,8 +12,8 @@ html, body {
 
 html {
     /*overflow-y: scroll;Clip the top/bottom edges of the content inside the <div> element - if it overflows the element's content area*/
-    background-color: #e2e2d6;
-    background-image: url(../image/bg_image/bg-read.jpg);
+    background-color: #EEF3F5; /*#e2e2d6;*/
+    /*background-image: url(../image/bg_image/bg-read.jpg);*/
 }
 
 body {
@@ -23,7 +23,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-variant: normal;
-    line-height: normal;
+    line-height: 125%;
     width: 100%;
     margin: 0px auto 0px auto;
 }
@@ -34,7 +34,9 @@ body {
 }
 
 #header {
-    background-color: rgba(255, 120, 62, 0.1);
+    color: #739E30;
+    font-family: "Arial Black", Gadget, sans-serif;
+    background-color: rgba(161, 175, 49, 0.1);
     padding: 10px;
     text-align: center;
 }
@@ -74,7 +76,12 @@ body {
     position: absolute;
     bottom: 0px;
     left: 0;
-    background-color: rgba(255, 120, 62, 0.1);
+    background-color: rgba(161, 175, 49, 0.2)  /*rgba(255, 120, 62, 0.1);*/
+}
+
+#footer p, a {
+    color: #739E30;
+    font-family: "Arial Black", Gadget, sans-serif;
 }
 
 #container {
@@ -134,9 +141,9 @@ body {
 }
 
 a:link, a:visited {
-    color: #2c2c2c;
+    color: #739E30;
 }
 
 a:hover {
-    color: #ffab62;
+    color: #BFFF00;
 }

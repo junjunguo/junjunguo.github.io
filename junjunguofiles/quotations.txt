@@ -28,7 +28,7 @@ Plato	#	I'm trying to think, don't confuse me with facts.
 Plato	#	If women are expected to do the same work as men, we must teach them the same things.
 Plato	#	I am the wisest man alive, for I know one thing, and that is that I know nothing.
 Plato	#	The measure of a man is what he does with power.
-Plato	#	There are three classes of men	; lovers of wisdom, lovers of honor, and lovers of gain.
+Plato	#	There are three classes of men; lovers of wisdom, lovers of honor, and lovers of gain.
 Plato	#	Education is teaching our children to desire the right things.
 Aristotle	#	Knowing yourself is the beginning of all wisdom.
 Aristotle	#	What is a friend? A single soul dwelling in two bodies.
