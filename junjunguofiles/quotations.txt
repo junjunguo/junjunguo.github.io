@@ -4,10 +4,9 @@ Socrates	#	The unexamined life is not worth living.
 Socrates	#	There is only one good, knowledge, and one evil, ignorance.
 Socrates	#	I cannot teach anybody anything. I can only make them think.
 Socrates	#	Wonder is the beginning of wisdom.
-Socrates	#	Be kind, for everyone you meet is fighting a hard battle.
 Socrates	#	To find yourself, think for yourself.
 Socrates	#	Strong minds discuss ideas, average minds discuss events, weak minds discuss people.
-Socrates	#	By all means marry;if you get a good wife, you’ll become happy; if you get a bad one, you’ll become a philosopher.
+Socrates	#	By all means marry; if you get a good wife, you’ll become happy; if you get a bad one, you’ll become a philosopher.
 Socrates	#	Be slow to fall into friendship, but when you are in, continue firm and constant.
 Plato	#	Be kind, for everyone you meet is fighting a harder battle.
 Plato	#	Every heart sings a song, incomplete, until another heart whispers back. Those who wish to sing always find a song. At the touch of a lover, everyone becomes a poet.
@@ -70,28 +69,28 @@ Karl Popper	#	Our knowledge can only be finite, while our ignorance must necessa
 Karl Popper	#	No rational argument will have a rational effect on a man who does not want to adopt a rational attitude.
 Immanuel Kant	#	But, though all our knowledge begins with experience, it by no means follows that all arises out of experience.
 Immanuel Kant	#	Jeg skal alltid handle slik at den regelen jeg handler etter kunne gjelde som allmenn lov.
-Marilyn Monroe	#	I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.
 Dr. Seuss	#	You know you're in love when you can't fall asleep because reality is finally better than your dreams.
+Dr. Seuss 	#	Don't cry because it's over, smile because it happened.
+Dr. Seuss	#	The more that you read, the more things you will know. The more that you learn, the more places you'll go.
 Elbert Hubbard	#	A friend is someone who knows all about you and still loves you.
 Marilyn Monroe	#	If you can make a woman laugh, you can make her do anything.
-Dr. Seuss	#	The more that you read, the more things you will know. The more that you learn, the more places you'll go.
+Marilyn Monroe	#	I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.
 Mahatma Gandhi	#	Live as if you were to die tomorrow. Learn as if you were to live forever.
 Albert Einstein	#	Any fool can know. The point is to understand.
 Albert Einstein	#	It is not that I'm so smart. But I stay with the questions much longer.
 Benjamin Franklin	#	Tell me and I forget, teach me and I may remember, involve me and I learn.
 Bram Stoker	#	We learn from failure, not from success!
-Confucius	#	Study the past if you would define the future.
-Confucius	#	You cannot open a book without learning something.
 Herbert Simon	#	It is not my aim to surprise or shock you — but the simplest way I can summarize is to say that there are now in the world machines that can think, that can learn and that can create. Moreover, their ability to do these things is going to increase rapidly until — in a visible future - the range of problems they can handle will be coextensive with the range to which the human mind has been applied.
-Dr. Seuss 	#	Don't cry because it's over, smile because it happened.
 Bernard M. Baruch	#	Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.
 Oscar Wilde	#	Be yourself; everyone else is already taken.
 Frank Zappa	#	So many books, so little time.
 Mae West	#	You only live once, but if you do it right, once is enough.
 Mahatma Gandhi	#	Be the change that you wish to see in the world.
 Carl Sagan  #   Biology is more like history than it is like physics: <b>you have to know the past to understand the present.</b> There’s no predictive theory of biology just as there’s no predictive theory of history. The reason is the same: both subjects are still too complicated for us. But we can understand ourselves much better by understanding other cases.
+Beverly Sills	#	There are no shortcuts to any place worth going. <br> 任何值得去的地方，都没有捷径。
+Confucius	#	Study the past if you would define the future.
+Confucius	#	You cannot open a book without learning something.
 王小波	#	人的一切痛苦，本质上都是对自己无能的愤怒。
 村上春树	#	活着就意味着必须要做点什么 请好好努力。
-Beverly Sills	#	There are no shortcuts to any place worth going. <br> 任何值得去的地方，都没有捷径。
-张德芬	#	<b>你处理情绪的速度，就是你迈向成功的速度</b><br>真正的问题是在于你的“情绪”。一件事情发生了，你不喜欢的事情发生了，而真正为你带来的困难，真正阻碍你的能量流动，真正让你不能够每天开怀自在有那种解脱自在的感受是什么？是你的“情绪”。所以有位大师曾经说过：“你处理情绪的速度，就是你迈向成功的速度。” 
+张德芬	#	<b>你处理情绪的速度，就是你迈向成功的速度</b><br>真正的问题是在于你的“情绪”。一件事情发生了，你不喜欢的事情发生了，而真正为你带来的困难，真正阻碍你的能量流动，真正让你不能够每天开怀自在有那种解脱自在的感受是什么？是你的“情绪”。所以有位大师曾经说过：“你处理情绪的速度，就是你迈向成功的速度。”
 网络	#	真正能让你倒下的，不是对手，而是你绝望的内心。

@@ -28,6 +28,20 @@ body {
     margin: 0px auto 0px auto;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #739E30;
+}
+
+a:hover {
+    color: #BFFF00;
+    background-color: #739E30;
+    padding: 0px 4px 0px 4px;
+}
+
 #wrapper {
     min-height: 100%;
     position: relative;
@@ -76,7 +90,7 @@ body {
     position: absolute;
     bottom: 0px;
     left: 0;
-    background-color: rgba(161, 175, 49, 0.2)  /*rgba(255, 120, 62, 0.1);*/
+    background-color: rgba(161, 175, 49, 0.2) /*rgba(255, 120, 62, 0.1);*/
 }
 
 #footer p, a {
@@ -138,12 +152,4 @@ body {
 
 #sideRight p {
     margin: 80px 0 0 0;
-}
-
-a:link, a:visited {
-    color: #739E30;
-}
-
-a:hover {
-    color: #BFFF00;
 }
