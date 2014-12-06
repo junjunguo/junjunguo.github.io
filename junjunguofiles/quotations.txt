@@ -12,7 +12,7 @@ Plato	#	Be kind, for everyone you meet is fighting a harder battle.
 Plato	#	Every heart sings a song, incomplete, until another heart whispers back. Those who wish to sing always find a song. At the touch of a lover, everyone becomes a poet.
 Plato	#	Wise men speak because they have something to say;fools because they have to say something.
 Plato	#	Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything.
-Plato	#	We can easily forgive a child who is afraid of the dark	;the real tragedy of life is when men are afraid of the light.
+Plato	#	We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light.
 Plato	#	Only the dead have seen the end of war.
 Plato	#	The price good men pay for indifference to public affairs is to be ruled by evil men.
 Plato	#	Do not train a child to learn by force or harshness;but direct them to it by what amuses their minds, so that you may be better able to discover with accuracy the peculiar bent of the genius of each.
@@ -51,6 +51,7 @@ Aristotle	#	Pleasure in the job puts perfection in the work.
 Aristotle	#	It is not enough to win a war; it is more important to organize the peace.
 Aristotle	#	Learning is not child's play; we cannot learn without pain.
 Aristotle	#	We are what we repeatedly do. Excellence, therefore, is not an act, but a habit.
+Aristotle   #   It is during our darkest moments that we must focus to see the light. <br> 越是在黑暗的时候，我们越要集中精神去寻找光明.
 Thomas Hobbes	#	Curiosity is the lust of the mind.
 Immanuel Kant	#	We are not rich by what we possess but by what we can do without.
 Immanuel Kant	#	Science is organized knowledge. Wisdom is organized life.
@@ -69,27 +70,33 @@ Karl Popper	#	Our knowledge can only be finite, while our ignorance must necessa
 Karl Popper	#	No rational argument will have a rational effect on a man who does not want to adopt a rational attitude.
 Immanuel Kant	#	But, though all our knowledge begins with experience, it by no means follows that all arises out of experience.
 Immanuel Kant	#	Jeg skal alltid handle slik at den regelen jeg handler etter kunne gjelde som allmenn lov.
+Albert Einstein	#	Any fool can know. The point is to understand.
+Albert Einstein	#	It is not that I'm so smart. But I stay with the questions much longer.
+Audrey Hepburn  #   Nothing is impossible, the word itself says 'I'm possible'!
+Benjamin Franklin	#	Tell me and I forget, teach me and I may remember, involve me and I learn.
+Bram Stoker	#	We learn from failure, not from success!
+Bil Keane   #   Yesterday is history, tomorrow is a mystery, today is a gift of God, which is why we call it the present.
+Bernard M. Baruch	#	Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.
+Beverly Sills	#	There are no shortcuts to any place worth going. <br> 任何值得去的地方，都没有捷径。
+Confucius	#	Study the past if you would define the future.
+Confucius	#	You cannot open a book without learning something.
+Carl Sagan  #   Biology is more like history than it is like physics: <b>you have to know the past to understand the present.</b> There’s no predictive theory of biology just as there’s no predictive theory of history. The reason is the same: both subjects are still too complicated for us. But we can understand ourselves much better by understanding other cases.
 Dr. Seuss	#	You know you're in love when you can't fall asleep because reality is finally better than your dreams.
 Dr. Seuss 	#	Don't cry because it's over, smile because it happened.
 Dr. Seuss	#	The more that you read, the more things you will know. The more that you learn, the more places you'll go.
 Elbert Hubbard	#	A friend is someone who knows all about you and still loves you.
+Frank Zappa	#	So many books, so little time.
+Herbert Simon	#	It is not my aim to surprise or shock you — but the simplest way I can summarize is to say that there are now in the world machines that can think, that can learn and that can create. Moreover, their ability to do these things is going to increase rapidly until — in a visible future - the range of problems they can handle will be coextensive with the range to which the human mind has been applied.
 Marilyn Monroe	#	If you can make a woman laugh, you can make her do anything.
 Marilyn Monroe	#	I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.
 Mahatma Gandhi	#	Live as if you were to die tomorrow. Learn as if you were to live forever.
-Albert Einstein	#	Any fool can know. The point is to understand.
-Albert Einstein	#	It is not that I'm so smart. But I stay with the questions much longer.
-Benjamin Franklin	#	Tell me and I forget, teach me and I may remember, involve me and I learn.
-Bram Stoker	#	We learn from failure, not from success!
-Herbert Simon	#	It is not my aim to surprise or shock you — but the simplest way I can summarize is to say that there are now in the world machines that can think, that can learn and that can create. Moreover, their ability to do these things is going to increase rapidly until — in a visible future - the range of problems they can handle will be coextensive with the range to which the human mind has been applied.
-Bernard M. Baruch	#	Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.
-Oscar Wilde	#	Be yourself; everyone else is already taken.
-Frank Zappa	#	So many books, so little time.
 Mae West	#	You only live once, but if you do it right, once is enough.
 Mahatma Gandhi	#	Be the change that you wish to see in the world.
-Carl Sagan  #   Biology is more like history than it is like physics: <b>you have to know the past to understand the present.</b> There’s no predictive theory of biology just as there’s no predictive theory of history. The reason is the same: both subjects are still too complicated for us. But we can understand ourselves much better by understanding other cases.
-Beverly Sills	#	There are no shortcuts to any place worth going. <br> 任何值得去的地方，都没有捷径。
-Confucius	#	Study the past if you would define the future.
-Confucius	#	You cannot open a book without learning something.
+Mark Twain  #   The man who does not read has no advantage over the man who cannot read.
+Oscar Wilde	#	Be yourself; everyone else is already taken.
+Robert Frost    #   The best way out is always through. <br> 找到出口的最好方式就是一路走到底.
+Sivananda Saraswati    #   Put your heart, mind, intellect, and soul even to your smallest acts. This is the secret of success.
+William Shakespeare #   The fool doth think he is wise, but the wise man knows himself to be a fool.
 王小波	#	人的一切痛苦，本质上都是对自己无能的愤怒。
 村上春树	#	活着就意味着必须要做点什么 请好好努力。
 张德芬	#	<b>你处理情绪的速度，就是你迈向成功的速度</b><br>真正的问题是在于你的“情绪”。一件事情发生了，你不喜欢的事情发生了，而真正为你带来的困难，真正阻碍你的能量流动，真正让你不能够每天开怀自在有那种解脱自在的感受是什么？是你的“情绪”。所以有位大师曾经说过：“你处理情绪的速度，就是你迈向成功的速度。”
