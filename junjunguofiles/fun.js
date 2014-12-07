@@ -2,7 +2,7 @@
  * Created by GuoJunjun on 07.12.14.
  */
 
-var namelist = [
+var imglist = [
     '2b就2b呗，还结巴.jpg',
     '万恶的备胎.jpg',
     '为了这个男人.jpg',
@@ -81,38 +81,46 @@ function displayContents() {
         generateImages();
         restJokes();
     } else {
-        jokes = '"Wife: "How would you describe me?"<br>Husband: "ABCDEFGHIJK."<br>Wife: "What does that mean?"<br>Husband: "Adorable, beautiful, cute, delightful, elegant, fashionable, gorgeous, and hot."<br>Wife: "Aw, thank you, but what about IJK?"<br>Husband: "I m just kidding!";'
+        jokes = '"Wife: "How would you describe me?"<br>Husband: "ABCDEFGHIJK."<br>Wife: "What does that mean?"<br>Husband: "Adorable, beautiful, cute, delightful, elegant, fashionable, gorgeous, and hot."<br>Wife: "Aw, thank you, but what about IJK?"<br>Husband: "I m just kidding!"';
     }
 }
 
 function generateImages() {
-    for (var i = 0; i < namelist.length; i++) {
-        var name = namelist[i];
-        var str = name.split(".");
-        var title = str[0];
-        var fileType = str[1];
-        var liTag = document.createElement("li");
-        var imgTag = document.createElement("img");
-        var h4Tag = document.createElement("h4");
-        var imageTitle = document.createTextNode(title);
-        imgTag.src = "image/fun/" + name;
-        h4Tag.appendChild(imageTitle);
-        liTag.appendChild(imgTag);
-        liTag.appendChild(h4Tag);
-        document.getElementById("quotes").appendChild(liTag);
+    while (imglist.length != 0) {
+        var index = Math.floor((Math.random() * (imglist.length)));
+        var theImg = imglist.splice(index, 1);
+        console.log(theImg);
+        addImage(theImg[0]);
         generateaJoke();
     }
 }
+
+function addImage(theImg) {
+    console.log(theImg);
+    var str = theImg.split(".");
+    var title = str[0];
+    var fileType = str[1];
+    var liTag = document.createElement("li");
+    var imgTag = document.createElement("img");
+    var h4Tag = document.createElement("h4");
+    var imageTitle = document.createTextNode(title);
+    imgTag.src = "image/fun/" + theImg;
+    h4Tag.appendChild(imageTitle);
+    liTag.appendChild(imgTag);
+    liTag.appendChild(h4Tag);
+    document.getElementById("quotes").appendChild(liTag);
+}
+
 function generateaJoke() {
     if (Math.floor((Math.random() * 10) % 2) == 0) { // 50% generate possibility
-        var index = Math.floor((Math.random() * (jokes.length)))
+        var index = Math.floor((Math.random() * (jokes.length)));
         var ajoke = jokes.splice(index, 1);
         addJoke(ajoke);
     }
 }
-function restJokes(){
-    var i = 0 ;
-    while (i<jokes.length){
+function restJokes() {
+    var i = 0;
+    while (i < jokes.length) {
         addJoke(jokes[i]);
         i++;
     }
@@ -124,8 +132,8 @@ function addJoke(joke) {
     litag.appendChild(htag);
     document.getElementById("quotes").appendChild(litag);
 }
-function text2html(str){
-    str = str.substr(1,str.length);
+function text2html(str) {
+    str = str.substr(1, str.length);
     var find = '\n';
     var re = new RegExp(find, 'g');
     str = str.replace(re, '<br>');
