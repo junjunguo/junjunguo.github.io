@@ -3,7 +3,7 @@
  * Created by GuoJunjun on 06.12.14.
  */
 
-
+// this is a server side function
 function getFileNames(dir,files_){
     var fs = require('fs');
     files_ = files_ || [];

@@ -6,6 +6,7 @@ var imglist = [
     '2b就2b呗，还结巴.jpg',
     '万恶的备胎.jpg',
     '为了这个男人.jpg',
+    '主人，你过来，我保证不咬你.jpg',
     '主人，我美么.jpg',
     '乐呵乐呵哈.jpg',
     '人生是什么，恩？让我想想.jpg',
@@ -15,6 +16,7 @@ var imglist = [
     '健身后的效果.jpg',
     '凌云飞渡笑傲江湖.gif',
     '勤劳的小松鼠.jpg',
+    '卖柚子的你别跑啊....jpg',
     '南昌专列上车走了.jpg',
     '卧槽，不带这么玩的！.jpg',
     '原来”高攀不起“是这么来的!.gif',
@@ -61,7 +63,8 @@ var imglist = [
     '逗比女王，就是69.jpg',
     '都把山药功效吹得神乎其神.jpg',
     '防盗新技能.jpg',
-    '马拉个币的，只能走路回家了.gif' ];
+    '难怪我那么喜欢蹭别人家的.jpg',
+    '马拉个币的，只能走路回家了.gif' ]
 
 var textFile = 'image/fun/joke.txt';
 
@@ -89,14 +92,12 @@ function generateImages() {
     while (imglist.length != 0) {
         var index = Math.floor((Math.random() * (imglist.length)));
         var theImg = imglist.splice(index, 1);
-        console.log(theImg);
         addImage(theImg[0]);
         generateaJoke();
     }
 }
 
 function addImage(theImg) {
-    console.log(theImg);
     var str = theImg.split(".");
     var title = str[0];
     var fileType = str[1];
@@ -126,14 +127,18 @@ function restJokes() {
     }
 }
 function addJoke(joke) {
-    var litag = document.createElement("li");
-    var htag = document.createElement("h6");
-    htag.innerHTML = text2html(joke[0]);
-    litag.appendChild(htag);
-    document.getElementById("quotes").appendChild(litag);
+    if (joke[0]) {
+        var litag = document.createElement("li");
+        var htag = document.createElement("h6");
+        htag.innerHTML = text2html(joke[0]);
+        litag.appendChild(htag);
+        document.getElementById("quotes").appendChild(litag);
+    }
 }
 function text2html(str) {
-    str = str.substr(1, str.length);
+    if (str.charAt(0) == "\n") {
+        str = str.substr(1, str.length);
+    }
     var find = '\n';
     var re = new RegExp(find, 'g');
     str = str.replace(re, '<br>');
