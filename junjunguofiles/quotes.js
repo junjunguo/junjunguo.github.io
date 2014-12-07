@@ -30,9 +30,9 @@ function displayContents() {
 
 
 function generateQuotes() {
-    //console.log("activ generate quotes: quotes array length: " + quotesArray.length);
+    //console.log("activ generate quotes: quotes array length: " + jokes.length);
     for (var i = 0; i < quotesArray.length; i++) {
-        //console.log(quotesArray[i]);
+        //console.log(jokes[i]);
         var theQuotation = quotesArray[i].split("#");
         //console.log(theQuotation.length);
         var newElementL = document.createElement("li");
@@ -46,7 +46,6 @@ function generateQuotes() {
         newElementH.appendChild(quotationAuthor);
         newElementL.appendChild(newElementP);
         newElementL.appendChild(newElementH);
-
         document.getElementById("quotes").appendChild(newElementL);
     }
 }

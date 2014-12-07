@@ -65,7 +65,7 @@ var namelist = [
 
 var textFile = 'image/fun/joke.txt';
 
-var quotesArray = [];
+var jokes = [];
 var reader = new XMLHttpRequest() || new ActiveXObject('MSXML2.XMLHTTP');
 
 function loadFile() {
@@ -77,13 +77,11 @@ function loadFile() {
 
 function displayContents() {
     if (reader.readyState == 4) {
-        quotesArray = reader.responseText.split("\n");
+        jokes = reader.responseText.split("#");
         generateImages();
+        restJokes();
     } else {
-        quotesArray = "Wonder is the beginning of wisdom.    <br>Socrates";
-        totalQuotes = quotesArray.length;
-        //console.log("else: generate quotes....");
-        //generateQuotes();
+        jokes = '"Wife: "How would you describe me?"<br>Husband: "ABCDEFGHIJK."<br>Wife: "What does that mean?"<br>Husband: "Adorable, beautiful, cute, delightful, elegant, fashionable, gorgeous, and hot."<br>Wife: "Aw, thank you, but what about IJK?"<br>Husband: "I m just kidding!";'
     }
 }
 
@@ -93,8 +91,6 @@ function generateImages() {
         var str = name.split(".");
         var title = str[0];
         var fileType = str[1];
-        console.log(title);
-
         var liTag = document.createElement("li");
         var imgTag = document.createElement("img");
         var h4Tag = document.createElement("h4");
@@ -103,11 +99,37 @@ function generateImages() {
         h4Tag.appendChild(imageTitle);
         liTag.appendChild(imgTag);
         liTag.appendChild(h4Tag);
-
         document.getElementById("quotes").appendChild(liTag);
+        generateaJoke();
     }
 }
+function generateaJoke() {
+    if (Math.floor((Math.random() * 10) % 2) == 0) { // 50% generate possibility
+        var index = Math.floor((Math.random() * (jokes.length)))
+        var ajoke = jokes.splice(index, 1);
+        addJoke(ajoke);
+    }
+}
+function restJokes(){
+    var i = 0 ;
+    while (i<jokes.length){
+        addJoke(jokes[i]);
+        i++;
+    }
+}
+function addJoke(joke) {
+    var litag = document.createElement("li");
+    var htag = document.createElement("h6");
+    htag.innerHTML = text2html(joke[0]);
+    litag.appendChild(htag);
+    document.getElementById("quotes").appendChild(litag);
+}
+function text2html(str){
+    str = str.substr(1,str.length);
+    var find = '\n';
+    var re = new RegExp(find, 'g');
+    str = str.replace(re, '<br>');
+    return str;
+}
 
-//console.log(namelist)
-//generateImages();
 loadFile();

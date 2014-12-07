@@ -22,7 +22,7 @@ function displayContents() {
         quotesArray = reader.responseText.split("\n");
         totalQuotes = quotesArray.length;
         //console.log(reader.responseText);
-        //console.log("quotes array length: " + quotesArray.length);
+        //console.log("quotes array length: " + jokes.length);
         //console.log("if generate quotes....");
         generateQuotes();
     } else {
@@ -38,7 +38,7 @@ loadFile();
 
 function generateQuotes() {
     var randomQuotes = Math.floor(Math.random() * totalQuotes);
-    //console.log("................"+quotesArray[0]);
+    //console.log("................"+jokes[0]);
     //console.log("total Quotes: " + totalQuotes + " random quotes: " + randomQuotes);
     console.log("quotation: " + randomQuotes + " of " + totalQuotes);
     var el = document.getElementById('myquotes');
