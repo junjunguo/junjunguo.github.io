@@ -1,3 +1,4 @@
+
 有爷俩进了监狱，牢头问爹：判几年呀？
 答：5年。
 问：因为啥呀？
@@ -118,3 +119,110 @@ Three guys go to a ski lodge, and there aren't enough rooms, so they have to sha
 In the middle of the night, the guy on the right wakes up and says, "I had this wild, vivid dream of getting a hand job!"
 The guy on the left wakes up, and unbelievably, he's had the same dream, too.
 Then the guy in the middle wakes up and says, "That's funny, I dreamed I was skiing!"
+#
+女友打电话说超市买东西给100找95丢了，我说没事晚上回去我给你100算你没丢，还捡5块。
+女友说“别人都捡95为啥我只捡5块”
+我了个擦～还能愉快玩耍不
+#
+Ask a programmer to review 10 lines of code, he'll find 10 issues.
+Ask him to do 500 lines and he'll say it looks good.
+#
+Hamlet: "To be - or not to be..."
+
+Programmer: "True !"
+#
+"Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday's code."
+#
+"Beware of bugs in the above code; I have only proved it correct, not tried it."
+#
+Q. How did the programmer die in the shower?
+A. He read the shampoo bottle instructions: Lather. Rinse. Repeat.
+#
+Once upon a time there was a shepherd looking after his sheep on the side of a deserted road. Suddenly a brand new Porsche screeches to a halt. The driver, a man dressed in an Armani suit, Cerutti shoes, Ray-Ban sunglasses, TAG-Heuer wrist-watch, and a Versace tie, gets out and asks the Shepherd:
+Man: “If I can tell you how many sheep you have, will you give me one of them?”
+The shepherd looks at the young man, and then looks at the large flock of grazing sheep and replies:
+Shepherd: “Okay.”
+The young man parks the car, connects his laptop to the mobile-fax, enters a NASA Webster, scans the ground using his GPS, opens a database and 60 Excel tables filled with logarithms and pivot tables, then prints out a 150 page report on his high-tech mini-printer. He turns to the shepherd and says,
+Man: “You have exactly 1,586 sheep here.”
+The shepherd cheers,
+Shepherd: “That’s correct, you can have your sheep.”
+The young man makes his pick and puts it in the back of his Porsche. The shepherd looks at him and asks,
+Shepherd: “If I guess your profession, will you return my animal to me?”
+The young man answers;
+Man: “Yes, why not?”
+Shepherd: "You are an IT consultant."
+Man: “How did you know?”
+Shepherd: “Very simple. First, you came here without being called. Second, you charged me a fee to tell me something I already knew, and third, you don’t understand anything about my business…Now can I have my DOG back?"
+#
+Unix is user friendly. It's just very particular about who its friends are.
+#
+A man flying in a hot air balloon suddenly realizes he’s lost. He reduces height and spots a man down below. He lowers the balloon further and shouts to get directions, "Excuse me, can you tell me where I am?"
+
+The man below says: "Yes. You're in a hot air balloon, hovering 30 feet above this field."
+
+"You must work in Information Technology," says the balloonist.
+
+"I do" replies the man. "How did you know?"
+
+"Well," says the balloonist, "everything you have told me is technically correct, but It's of no use to anyone."
+
+The man below replies, "You must work in management."
+
+"I do," replies the balloonist, "But how'd you know?"*
+
+"Well", says the man, "you don’t know where you are or where you’re going, but you expect me to be able to help. You’re in the same position you were before we met, but now it’s my fault."
+#
+Q: "Whats the object-oriented way to become wealthy?"
+
+A: Inheritance
+#
+A:
+Programming is like sex:
+One mistake and you have to support it for the rest of your life.
+
+B:
+Software is like sex:
+It's better when it's free.
+
+C:
+Software is like sex:
+It's never REALLY free.
+#
+Have you heard about the new Cray super computer?  It’s so fast, it executes an infinite loop in 6 seconds.
+#
+A computer science student is studying under a tree and another pulls up on a flashy new bike.  The first student asks, “Where’d you get that?”
+
+The student on the bike replies, “While I was studying outside, a beautiful girl pulled up on her bike.  She took off all her clothes and said, ‘You can have anything you want’.”
+
+The first student responds, “Good choice!  Her clothes probably wouldn’t have fit you.”
+#
+带女友去鬼屋，她被一个女鬼吓得尖叫着扑到我怀里，我说别哭啊，这是门口的镜子，咱们还没进去呢……
+#
+“你相信人能死后重生吗？”老板问他的一个员工。 “我相信，先生”。这位刚上班不久的员工回答。 “哦，那还好”。老板接着说。 “你昨天提早下班去参加你祖母的葬礼后，她老人家到这儿看你来了。”
+#
+学校治安不好，经常有社会闲杂人员出入，一天晚自习下课后，一对情侣在学校的小湖边幽会时被被抢，男生受伤学生家长到学校理论，指责校方没有装路灯什么的。 校方回复到：有路灯的地方他们也不去啊！
+#
+今天跟老公一块去逛街，发现商业街很多足疗店牌子的LED灯“足”字不亮，问老公是不是坏了，老公说：那是妓院的标志，足字不亮说明有失足少女！好吧，老公懂得真多！不对，你怎么知道？你给老娘回来，我不会打死你！！！
+#
+“知道螃蟹为什么横着走吗？” “为什么？” “因为有钳，所以任性！！”
+#
+数学课上，老师以4G的速度讲课，学神以wifi的速度听着，学霸以3G速度记着，学婊以2G速度干瞅着，学屌经常掉线，学渣是搜不到也连不上，最后自动关机了！
+#
+屌丝：“今天跟女神表白了，她很高兴，说要请我吃东西，可我权衡了一下，还是婉言拒绝了！”
+朋友：“你这是表白成功了，为什么还拒绝她？”
+屌丝：“她说，吃屎去吧！”
+#
+今天早上出去吃早点，一美女不小心把我的米线打翻了，我说“没事呀，美女”
+结果她非说要陪我一晚。
+我当时就惊呆了，打翻一碗米线就陪睡？！现在的女人也随便了吧。。。那当然再好不过啦！！！
+#
+高考前，老爸给我打电话，儿子，放轻松别紧张好好考，我已经给你找好关系了，虽然后台很硬但是也得走一遍高考程序。
+我：恩，我会调整自己心态发挥好的，对了找的谁?
+老爸：观音菩萨!
+老爸你怎么能这么坑，我是那么信任你，我读的书少你就骗我。
+#
+刚才看一个对意大利帅比的采访，他说道：“东方女孩化妆太厉害了！卸完妆完全是另一个人！……” 还以为他要开始吐槽女孩子坑人，结果帅比继续兴奋地说：“有一种一次交往两个人的感觉！真的很赚！！” 顿时觉得这才是正确答案嘛~
+#
+“大师！我看破红尘了，想剃度出家。”
+
+“滚，你每个月都来这一招，就为了几块钱的理发费？”
