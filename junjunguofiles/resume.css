@@ -1,0 +1,204 @@
+/*BASIC STYLES
+------------------------------------------------*/
+#resume {
+    overflow-y       : scroll;
+    overflow-x       : hidden;
+    font-family      : 'Open Sans', sans-serif, Arial;
+    font-size        : 16px;
+    color            : #6D6D6D;
+    background-color : #F5F5F5;
+    font-weight      : 300;
+    }
+
+#resume a {
+    text-decoration : none;
+    outline         : none;
+    }
+
+#resume a:hover {
+    text-decoration : none;
+    }
+
+
+#resume h1, h2, h3, h4, h5, h6 {
+    font-family    : 'Montserrat', sans-serif, Arial;
+    padding-bottom : 5px;
+    color          : #373432;
+    line-height    : 1em;
+    font-weight    : normal;
+    }
+
+#resume h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color : #111;
+    }
+
+/*
+h1 { font-size: 30px; }
+h2 { font-size: 24px; }
+h3 { font-size: 22px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+*/
+#resume p {
+    padding-bottom : 10px;
+    line-height    : 25px;
+    }
+
+
+#resume cite, em, i {
+    font-style : italic;
+    }
+
+#resume .small {
+    font-size   : 12px;
+    line-height : 14px;
+    padding     : 5px 9px 7px 9px;
+    line-height : 12px;
+    }
+
+
+#resume .row [class^="col-"]:last-child .work_process:before {
+    display : none;
+    }
+
+/*Section Title
+----------------------------------------*/
+
+#resume .section-title {
+    margin-top    : 20px;
+    text-align    : left;
+    margin-bottom : 50px;
+    }
+
+#resume .section-title h1 {
+    text-transform : uppercase;
+    font-weight    : 700;
+    font-size      : 60px;
+    letter-spacing : -5px;
+    line-height    : 50px;
+    }
+
+#resume .border {
+    display       : block;
+    height        : 10px;
+    margin-top    : 30px;
+    margin-bottom : 30px;
+    width         : 100px;
+    }
+
+#resume .section-title p {
+    font-size   : 20px;
+    line-height : 30px;
+    }
+
+/* Timeline
+-------------------------------------------------- */
+#resume .timeline {
+    background  : url("./2015/css/images/line.gif") repeat-y scroll 109px 0 transparent;
+    margin-left : 50px;
+    }
+
+#resume .timeline-item {
+    margin-bottom : 30px;
+    overflow      : hidden;
+    position      : relative;
+    }
+
+#resume .timeline-head {
+    background    : none repeat scroll 0 0 #FBA24E;
+    border-radius : 136px 136px 136px 136px;
+    color         : #FFFFFF;
+    cursor        : pointer;
+    float         : left;
+    font-size     : 28px;
+    height        : 46px;
+    line-height   : 46px;
+    margin-top    : 20px;
+    text-align    : center;
+    width         : 46px;
+    margin-left   : 85px;
+    }
+
+#resume .timeline-head-content {
+    background-color : #F5F5F5;
+    border           : 1px solid #CCCCCC;
+    border-radius    : 5px 5px 5px 5px;
+    float            : left;
+    margin-left      : 15px;
+    padding          : 10px 30px;
+    position         : relative;
+    width            : 70%;
+    }
+
+#resume .timeline-head-content h3 {
+    color          : #363636;
+    font-weight    : normal;
+    text-transform : uppercase;
+    }
+
+#resume .timeline-item-date {
+    float      : left;
+    margin-top : 31px;
+    width      : 85px;
+    font-size  : 14px;
+    }
+
+#resume .timeline-item-trigger {
+    background    : none repeat scroll 0 0 #3BC2C8;
+    border-radius : 136px 136px 136px 136px;
+    color         : #FFFFFF;
+    cursor        : pointer;
+    float         : left;
+    font-size     : 28px;
+    height        : 46px;
+    line-height   : 46px;
+    margin-top    : 20px;
+    text-align    : center;
+    width         : 46px;
+    }
+
+#resume .timeline-item-content {
+    background-color : #F5F5F5;
+    border           : 1px solid #CCCCCC;
+    border-radius    : 5px 5px 5px 5px;
+    float            : left;
+    margin-left      : 15px;
+    padding          : 10px 30px;
+    position         : relative;
+    width            : 70%;
+    }
+
+#resume .timeline-item-content h3 {
+    cursor      : pointer;
+    font-weight : normal;
+    line-height : 30px;
+    color       : #363636;
+    }
+
+#resume .timeline-arrow {
+    display  : block;
+    position : relative;
+    }
+
+#resume .timeline-arrow i {
+    background        : none repeat scroll 0 0 #F5F5F5;
+    border-left       : 1px solid #CCCCCC;
+    border-top        : 1px solid #CCCCCC;
+    display           : block;
+    height            : 10px;
+    left              : 141px;
+    position          : absolute;
+    top               : 37px;
+    transform         : rotate(-45deg);
+    -webkit-transform : rotate(-45deg);
+    -moz-transform    : rotate(-45deg);
+    -ms-transform     : rotate(-45deg);
+    -o-transform      : rotate(-45deg);
+    width             : 10px;
+    z-index           : 10;
+    }
+
+#resume .timeline-item h4 {
+    margin-bottom : 10px;
+    }
