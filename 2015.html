@@ -23,22 +23,23 @@
 </head>
 <body>
 
-<!-- section 1 ------------------------------------------------------>
+<!-- section 1 ------------------------------------------------------------->
 <section id="header">
     <header>
-        <h1>Guo Junjun</h1>
+        <p><strong>Guo Junjun</strong></p>
 
         <p>Computer Science Student at<br>
-
             Norwegian University of Science and Technology</p>
     </header>
     <!--Arrow Navigation-->
     <a class="prevslide"></a>
     <a class="nextslide"></a>
     <footer>
-        <a href="#banner" class="button style2 scrolly scrolly-centered"></a>
+        <a href="#banner" class="button down style2 scrolly scrolly-centered"></a>
     </footer>
 </section>
+<script src="2015/js/slideshow.js"></script>
+
 
 <!-- section 2 ------------------------------------------------------------>
 <section id="banner">
@@ -49,7 +50,8 @@
         He who has overcome his fears will truly be free.<br/>
         Patience is bitter, but its fruit is sweet.</p>
     <footer>
-        <a href="#first" class="button style2 scrolly">Action</a>
+        <a href="#first" class="button down style2 scrolly"></a>
+        <a href="#header" class="button up style2 scrolly"></a>
     </footer>
 </section>
 
@@ -66,10 +68,14 @@
             song. At the touch of a lover, everyone becomes a poet.
         </p>
     </div>
+    <footer>
+        <a href="#second" class="button down style2 scrolly"></a>
+        <a href="#banner" class="button up style2 scrolly"></a>
+    </footer>
 </article>
 
 <!-- section 4  ------------------------------------------------------------>
-<article class="container box style1 left">
+<article id="second" class="container box style1 left">
     <a href="#" class="image fit"><img src="2015/images/pic02.jpg" alt=""/></a>
 
     <div class="inner">
@@ -81,10 +87,14 @@
             execution; it represents the wise choice of many alternatives - choice, not chance, determines your
             destiny.</p>
     </div>
+    <footer>
+        <a href="#third" class="button down style2 scrolly"></a>
+        <a href="#first" class="button up style2 scrolly"></a>
+    </footer>
 </article>
 
 <!-- section 5  ------------------------------------------------------------>
-<article class="container box style2">
+<article id= "third" class="container box style2">
     <header>
         <h2>Aristotle</h2>
 
@@ -124,10 +134,14 @@
             </div>
         </div>
     </div>
+    <footer>
+        <a href="#footer" class="button down style2 scrolly"></a>
+        <a href="#second" class="button up style2 scrolly"></a>
+    </footer>
 </article>
 
 
-<!-- Footer ------------------------------------------------------------>
+<!-- Footer ------------------------------------------------------------------------------>
 <section id="footer">
     <ul class="icons">
         <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
@@ -139,8 +153,9 @@
     </ul>
     <div class="copyright">
         <ul class="menu">
-            <li></li>
-            <li><a href=""></a></li>
+            <li><a href="#header" class=" scrolly">Top</a></li>
+            <li><a href="#banner" class="button scrolly">Banner</a></li>
+            <li><a href="#first" class="style2 scrolly">First</a></li>
         </ul>
     </div>
 </section>

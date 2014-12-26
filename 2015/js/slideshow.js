@@ -17,7 +17,6 @@ function shuffleList() { // shuffle nrlist and return a list with objects ready 
         copy.push('http://static.panoramio.com/photos/large/' + list[index] + '.jpg');
         list.splice(index, 1);
     }
-    console.log(copy);
     return copy;
 }
 
@@ -45,6 +44,7 @@ function slideShow() {
         counter--;
         showImage();
     });
+
     showImage();
 }
 
