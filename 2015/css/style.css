@@ -121,11 +121,11 @@ header {
     margin-bottom : 1em;
     }
 
-header p {
-    display : block;
-    margin  : 0.5em 0 0 0;
-    padding : 0 0 1.5em 0;
-    }
+/*header p {*/
+/*display : block;*/
+/*margin  : 0.5em 0 0 0;*/
+/*padding : 0 0 1.5em 0;*/
+/*}*/
 
 footer {
     margin-top : 1em;
@@ -166,8 +166,9 @@ br.clear {
     }
 
 #header header {
-    display : inline-block;
-    padding : 0 0 4.5em 0;
+    display     : inline-block;
+    padding     : 0 0 4.5em 0;
+    font-family : "Open Sans", sans-serif;
     }
 
 /*********************************************************************************/
@@ -224,11 +225,14 @@ br.clear {
     }
 
 #header header p {
-    font-family : 'helvetica neue', helvetica, arial, sans-serif;
-    font-size   : 0.9em;
-    font-weight : 200;
-    line-height : 1.35em;
-    color       : #fff;
+    /*font-family : 'helvetica neue', helvetica, arial, sans-serif;*/
+
+    color       : rgba(255, 255, 255, 0.8);
+    font-size   : 18px;
+    /*font-size   : 0.9em;*/
+    font-weight : 100;
+    line-height : 36px;
+    /*color       : #fff;*/
     padding     : 0;
     /*text-shadow : 0 0 0.5px rgba(255, 255, 255, 0.1875);*/
     text-shadow : 0.6px 0.6px 1px #000000;
@@ -236,9 +240,16 @@ br.clear {
     padding     : 0;
     }
 
-#header header p strong {
-    font-weight : 500;
+#header header h1 {
+    font-size: 36px;
+    font-weight    : 600;
+    letter-spacing : -0.05em;
+    line-height: 1.1;
     }
+
+/*#header header p strong {*/
+/*font-weight : 500;*/
+/*}*/
 
 #header header p:before {
     content : '';
