@@ -64,8 +64,12 @@ h6 { font-size: 14px; }
 ----------------------------------------*/
 
 #resume .resumeTitle {
-    margin     : 20px auto 50px 50px;
+    margin     : 50px auto 0px 50px;
     text-align : center;
+    }
+
+#resume .profile {
+    margin : 50px 0 50px 0;
     }
 
 #resume .profile img {
@@ -78,22 +82,27 @@ h6 { font-size: 14px; }
     }
 
 #resume .profileRighttd {
-    width: 70%;
-    /*text-align: center;*/
+    width      : 70%;
+    text-align : center;
     }
+
 #resume .profileTable {
-    /*width: 70%;*/
-    margin: 0 auto 0 auto;
-    text-align: center;
+    margin      : 0 auto 0 auto;
+    line-height : 30px;
     }
 
 #resume .tdvariable {
-    text-align : right;
-    font-weight: 500;
+    text-align     : right;
+    /*font-family    : "Oswald", sans-serif;*/
+    font-weight    : 700;
+    color          : #999999;
+    text-transform : uppercase;
     }
 
 #resume .tdvalue {
-    text-align : left;
+    text-align  : left;
+    font-weight : 300;
+    color       : #565656;
     }
 
 /* Chapter
@@ -271,4 +280,23 @@ h6 { font-size: 14px; }
 
 #resume table td {
     padding-right : 25px;
+    }
+
+/* Skills
+------------------------------------------------ */
+#resuem .skills {
+    /*margin :80px auto 80px auto;*/
+    }
+
+#resume .skillTitle {
+    text-align : center;
+    /*margin            : 80px 0 80px 50px;*/
+    /*margin     : 80px auto 20px 50px;*/
+    }
+
+#resume .languagesTable {
+    /*margin-left: 80px;*/
+    /*text-align: center  ;*/
+    margin : 50px auto 50px auto;
+    line-height: 30px;
     }
