@@ -1,5 +1,3 @@
-/*BASIC STYLES
-------------------------------------------------*/
 #resume {
     overflow-y       : scroll;
     overflow-x       : hidden;
@@ -65,49 +63,55 @@ h6 { font-size: 14px; }
 /*Section Title
 ----------------------------------------*/
 
-#resume .section-title {
-    margin-top    : 20px;
-    text-align    : left;
-    margin-bottom : 50px;
+#resume .resumeTitle {
+    margin     : 20px auto 50px 50px;
+    text-align : center;
     }
 
-#resume .section-title h1 {
-    text-transform : uppercase;
-    font-weight    : 700;
-    font-size      : 60px;
-    letter-spacing : -5px;
-    line-height    : 50px;
+#resume .profile img {
+    height : 220px;
+    width  : 220px;
     }
 
-#resume .border {
-    display       : block;
-    height        : 10px;
-    margin-top    : 30px;
-    margin-bottom : 30px;
-    width         : 100px;
+#resume .profile th, td {
+    /*border : 1px solid black;*/
     }
 
-#resume .section-title p {
-    font-size   : 20px;
-    line-height : 30px;
+#resume .profileRighttd {
+    width: 70%;
+    /*text-align: center;*/
+    }
+#resume .profileTable {
+    /*width: 70%;*/
+    margin: 0 auto 0 auto;
+    text-align: center;
     }
 
-/* Timeline
+#resume .tdvariable {
+    text-align : right;
+    font-weight: 500;
+    }
+
+#resume .tdvalue {
+    text-align : left;
+    }
+
+/* Chapter
 -------------------------------------------------- */
-#resume .timeline {
-    background : url('images/line.svg') repeat-y scroll 109px 0 transparent;
-    background-repeat: repeat-y;
-    margin-left      : 50px;
+#resume .chapter {
+    background        : url('images/line.svg') repeat-y scroll 109px 0 transparent;
+    background-repeat : repeat-y;
+    margin            : 80px 0 80px 50px;
     }
 
-#resume .timeline-item {
-    margin-bottom : 30px;
+#resume .item {
+    margin-bottom : 10px;
     overflow      : hidden;
     position      : relative;
     }
 
-#resume .timeline-head {
-    background     : none repeat scroll 0 0 #2f3238;
+#resume .chapterHead {
+    background    : none repeat scroll 0 0 #2f3238;
     /*-khtml-opacity : .80;*/
     /*-moz-opacity   : .80;*/
     /*-ms-filter     : "alpha(opacity=80)";*/
@@ -115,20 +119,20 @@ h6 { font-size: 14px; }
     /*filter         : progid:DXImageTransform.Microsoft.Alpha(opacity=0.8);*/
     /*opacity        : .80;*/
 
-    border-radius  : 136px 136px 136px 136px;
-    color          : #FFFFFF;
-    cursor         : pointer;
-    float          : left;
-    font-size      : 28px;
-    height         : 46px;
-    line-height    : 46px;
-    margin-top     : 20px;
-    text-align     : center;
-    width          : 46px;
-    margin-left    : 85px;
+    border-radius : 136px 136px 136px 136px;
+    color         : #FFFFFF;
+    cursor        : pointer;
+    float         : left;
+    font-size     : 28px;
+    height        : 46px;
+    line-height   : 46px;
+    margin-top    : 20px;
+    text-align    : center;
+    width         : 46px;
+    margin-left   : 85px;
     }
 
-#resume .timeline-head-content {
+#resume .headContent {
     background-color : #F5F5F5;
     /*border           : 1px solid #CCCCCC;*/
     border-radius    : 5px 5px 5px 5px;
@@ -139,21 +143,15 @@ h6 { font-size: 14px; }
     width            : 70%;
     }
 
-/*#resume .timeline-head-content h3 {*/
-/*color          : #363636;*/
-/*font-weight    : normal;*/
-/*text-transform : uppercase;*/
-/*}*/
-
-#resume .timeline-item-date {
+#resume .itemDate {
     float      : left;
     margin-top : 31px;
     width      : 85px;
     font-size  : 14px;
     }
 
-#resume .timeline-item-trigger {
-    background     : none repeat scroll 0 0 #999999;
+#resume .itemTrigger {
+    background    : none repeat scroll 0 0 #999999;
     /*-khtml-opacity : .80;*/
     /*-moz-opacity   : .80;*/
     /*-ms-filter     : "alpha(opacity=80)";*/
@@ -161,19 +159,19 @@ h6 { font-size: 14px; }
     /*filter         : progid:DXImageTransform.Microsoft.Alpha(opacity=0.8);*/
     /*opacity        : .80;*/
 
-    border-radius  : 136px 136px 136px 136px;
-    color          : #FFFFFF;
-    cursor         : pointer;
-    float          : left;
-    font-size      : 28px;
-    height         : 46px;
-    line-height    : 46px;
-    margin-top     : 20px;
-    text-align     : center;
-    width          : 46px;
+    border-radius : 136px 136px 136px 136px;
+    color         : #FFFFFF;
+    cursor        : pointer;
+    float         : left;
+    font-size     : 28px;
+    height        : 46px;
+    line-height   : 46px;
+    margin-top    : 20px;
+    text-align    : center;
+    width         : 46px;
     }
 
-#resume .timeline-item-content {
+#resume .itemContent {
     background-color : #F5F5F5;
     border           : 1px solid #CCCCCC;
     border-radius    : 5px 5px 5px 5px;
@@ -184,19 +182,19 @@ h6 { font-size: 14px; }
     width            : 70%;
     }
 
-#resume .timeline-item-content h3 {
+#resume .itemContent h3 {
     cursor      : pointer;
     font-weight : normal;
     line-height : 30px;
     color       : #363636;
     }
 
-#resume .timeline-arrow {
+#resume .itemArrow {
     display  : block;
     position : relative;
     }
 
-#resume .timeline-arrow i {
+#resume .itemArrow i {
     background        : none repeat scroll 0 0 #F5F5F5;
     border-left       : 1px solid #CCCCCC;
     border-top        : 1px solid #CCCCCC;
@@ -214,7 +212,7 @@ h6 { font-size: 14px; }
     z-index           : 10;
     }
 
-#resume .timeline-item h4 {
+#resume .item h4 {
     margin-bottom : 10px;
     }
 
@@ -222,30 +220,39 @@ h6 { font-size: 14px; }
 -------------------------------------------------- */
 
 #resume .sectionheadline {
-    position    : relative;
-    display     : inline-block;
-    border      : 1px solid #252525;
-    margin      : 15px auto 15px auto;
-    color       : #252525;
-    font        : 12px 'PT Sans', sans-serif;
-    line-height : 20px;
-    text-align  : center;
+    padding        : 0;
+    vertical-align : baseline;
+    position       : relative;
+    display        : inline-block;
+    border         : 1px solid #252525;
+    margin         : 0 auto 15px auto;
+    color          : #252525;
+    font           : 12px 'PT Sans', sans-serif;
+    /*line-height    : 20px;*/
+    text-align     : center;
     }
 
 #resume .sectionheadline h1 {
-    padding        : 10px 15px;
-    margin-bottom  : 0;
-    text-transform : uppercase;
     line-height    : 53px;
+    font-weight    : normal;
+    font-family    : "Oswald", sans-serif;
+    font-size      : 36px;
+    padding        : 0 20px 10px 20px;
+    text-transform : uppercase;
+    margin-bottom  : 0;
+    border         : 0 none;
+
     }
 
 #resume .sectionheadline p {
+    padding        : 0 10px;
     position       : absolute;
     top            : -10px;
     right          : 0;
     left           : 0;
-    letter-spacing : 0.8px;
+    letter-spacing : 1px;
     text-transform : uppercase;
+    border         : 0 none;
     }
 
 #resume .sectionheadline p span {
