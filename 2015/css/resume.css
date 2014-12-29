@@ -1,3 +1,6 @@
+/**
+ * Created by GuoJunjun on 27.12.14. JunjunGuo.com
+ */
 #resume {
     overflow-y       : scroll;
     overflow-x       : hidden;
@@ -20,7 +23,7 @@
     color           : #606060;
     }
 
-#resume h1, h2, h3, h4, h5, h6 {
+#resume h1, h2, h3, {
     font-family    : 'Montserrat', sans-serif, Arial;
     padding-bottom : 5px;
     color          : #373432;
@@ -28,25 +31,13 @@
     font-weight    : normal;
     }
 
-#resume h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+#resume h1 a, h2 a, h3 a {
     color : #111;
     }
 
-/*
-h1 { font-size: 30px; }
-h2 { font-size: 24px; }
-h3 { font-size: 22px; }
-h4 { font-size: 18px; }
-h5 { font-size: 16px; }
-h6 { font-size: 14px; }
-*/
 #resume p {
     padding-bottom : 10px;
     line-height    : 25px;
-    }
-
-#resume cite, em, i {
-    font-style : italic;
     }
 
 #resume .small {
@@ -56,9 +47,9 @@ h6 { font-size: 14px; }
     line-height : 12px;
     }
 
-#resume .row [class^="col-"]:last-child .work_process:before {
-    display : none;
-    }
+/*#resume .row [class^="col-"]:last-child .work_process:before {*/
+/*display : none;*/
+/*}*/
 
 /*Section Title
 ----------------------------------------*/
@@ -77,23 +68,18 @@ h6 { font-size: 14px; }
     width  : 220px;
     }
 
-#resume .profile th, td {
-    /*border : 1px solid black;*/
-    }
-
 #resume .profileRighttd {
     width      : 70%;
     text-align : center;
     }
 
 #resume .profileTable {
-    margin      : 0 auto 0 auto;
+    float       : right;
     line-height : 30px;
     }
 
 #resume .tdvariable {
     text-align     : right;
-    /*font-family    : "Oswald", sans-serif;*/
     font-weight    : 700;
     color          : #999999;
     text-transform : uppercase;
@@ -121,13 +107,6 @@ h6 { font-size: 14px; }
 
 #resume .chapterHead {
     background    : none repeat scroll 0 0 #2f3238;
-    /*-khtml-opacity : .80;*/
-    /*-moz-opacity   : .80;*/
-    /*-ms-filter     : "alpha(opacity=80)";*/
-    /*filter         : alpha(opacity=80);*/
-    /*filter         : progid:DXImageTransform.Microsoft.Alpha(opacity=0.8);*/
-    /*opacity        : .80;*/
-
     border-radius : 136px 136px 136px 136px;
     color         : #FFFFFF;
     cursor        : pointer;
@@ -143,7 +122,6 @@ h6 { font-size: 14px; }
 
 #resume .headContent {
     background-color : #F5F5F5;
-    /*border           : 1px solid #CCCCCC;*/
     border-radius    : 5px 5px 5px 5px;
     float            : left;
     margin-left      : 15px;
@@ -161,13 +139,6 @@ h6 { font-size: 14px; }
 
 #resume .itemTrigger {
     background    : none repeat scroll 0 0 #999999;
-    /*-khtml-opacity : .80;*/
-    /*-moz-opacity   : .80;*/
-    /*-ms-filter     : "alpha(opacity=80)";*/
-    /*filter         : alpha(opacity=80);*/
-    /*filter         : progid:DXImageTransform.Microsoft.Alpha(opacity=0.8);*/
-    /*opacity        : .80;*/
-
     border-radius : 136px 136px 136px 136px;
     color         : #FFFFFF;
     cursor        : pointer;
@@ -237,7 +208,6 @@ h6 { font-size: 14px; }
     margin         : 0 auto 15px auto;
     color          : #252525;
     font           : 12px 'PT Sans', sans-serif;
-    /*line-height    : 20px;*/
     text-align     : center;
     }
 
@@ -284,19 +254,83 @@ h6 { font-size: 14px; }
 
 /* Skills
 ------------------------------------------------ */
-#resuem .skills {
-    /*margin :80px auto 80px auto;*/
+#resume .skills {
+    margin : 80px auto 200px auto;
+    /*background-color: #000;*/
     }
 
 #resume .skillTitle {
     text-align : center;
-    /*margin            : 80px 0 80px 50px;*/
-    /*margin     : 80px auto 20px 50px;*/
     }
 
 #resume .languagesTable {
-    /*margin-left: 80px;*/
-    /*text-align: center  ;*/
-    margin : 50px auto 50px auto;
-    line-height: 30px;
+    margin      : 50px auto 50px auto;
+    line-height : 30px;
+    }
+
+/* footer
+-------------------------------------------- */
+#footer {
+    margin   : 20px auto 80px 10%;
+    overflow : hidden;
+    position : relative;
+    }
+
+#footer p {
+    font-family : PT Sans Narrow, sans-serif;
+    font-size   : 18px;
+    font-weight : 600;
+    }
+
+#footer .social-media {
+    margin-left : 85px;
+    float       : left;
+    }
+
+#footer .ison {
+    background    : none repeat scroll 0 0 #909090;
+    border-radius : 136px 136px 136px 136px;
+    color         : #fff;
+    cursor        : pointer;
+    font-size     : 38px;
+    height        : 55px;
+    line-height   : 55px;
+    text-align    : center;
+    width         : 55px;
+    }
+
+#footer .isoff {
+    background    : none repeat scroll 0 0 #dedede;
+    border-radius : 136px 136px 136px 136px;
+    color         : #909090;
+    cursor        : pointer;
+    font-size     : 38px;
+    height        : 55px;
+    line-height   : 55px;
+    text-align    : center;
+    width         : 55px;
+    }
+
+#footer .social-media a {
+    text-decoration : none;
+    margin          : 0 20px 0 20px;
+    }
+
+#footer .footerContent {
+    width : 75%;
+    }
+
+#footer .copyright {
+    float      : right;
+    margin-top : 20px;
+    position   : relative;
+    }
+
+#footer .copyright a {
+    text-decoration : none;
+    color           : #909090;
+    }
+
+#footer .copyright a:hover {
+    color : #505050;
     }
