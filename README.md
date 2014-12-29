@@ -28,8 +28,6 @@ Using Github to host my Personal Website:
 
 ###Links:
 
-  - [TDT4100] object oriented programming
-  - [TDT4120] algorithm and data structure
 
 
 

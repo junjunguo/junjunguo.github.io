@@ -24,7 +24,6 @@ Plato	#	good people do not need laws to tell them to act responsibly, while bad 
 Plato	#	There is truth in wine and children.
 Plato	#	Ignorance, the root and stem of every evil.
 Plato	#	I'm trying to think, don't confuse me with facts.
-Plato	#	If women are expected to do the same work as men, we must teach them the same things.
 Plato	#	I am the wisest man alive, for I know one thing, and that is that I know nothing.
 Plato	#	The measure of a man is what he does with power.
 Plato	#	There are three classes of men; lovers of wisdom, lovers of honor, and lovers of gain.
@@ -60,7 +59,7 @@ Immanuel Kant	#	Dare to think!
 Immanuel Kant	#	I had to deny knowledge in order to make room for faith.
 Immanuel Kant	#	Two things fill my mind with ever-increasing wonder and awe, the more often and the more intensely the reflection dwells on them: the starry heavens above me and the moral law within me.
 Immanuel Kant	#	Experience without theory is blind, but theory without experience is mere intellectual play.
-David Hume	#	Beauty is no quality in things themselves: It exists merely in the mind which contemplates them	; and each mind perceives a different beauty.
+David Hume	#	Beauty is no quality in things themselves: It exists merely in the mind which contemplates them; and each mind perceives a different beauty.
 David Hume	#	Beauty in things exists in the mind which contemplates them.
 Karl Raimund Popper	#	The so-called 'paradox of freedom' is the argument that freedom in the sense of absence of any constraining control must lead to very great restraint, since it makes the bully free to enslave the meek. The idea is, in a slightly different form, and with very different tendency, clearly expressed in [author:Plato|879].<br/><br/>Less well known is the 'paradox of tolerance': <b>Unlimited tolerance must lead to the disappearance of tolerance. If we extend unlimited tolerance even to those who are intolerant, if we are not prepared to defend a tolerant society against the onslaught of the intolerant, then the tolerant will be destroyed, and tolerance with them</b>. -- In this formulation, I do not imply, for instance, that we should always suppress the utterance of intolerant philosophies; as long as we can counter them by rational argument and keep them in check by public opinion, suppression would certainly be unwise. But we should claim the 'right' to suppress them if necessary even by force	 for it may easily turn out that they are not prepared to meet us on the level of rational argument, but begin by denouncing all argument	 they may forbid their followers to listen to rational argument, because it is deceptive, and teach them to answer arguments by the use of their fists or pistols. <b>We should therefore claim, in the name of tolerance, the right not to tolerate the intolerant. We should claim that any movement preaching intolerance places itself outside the law, and we should consider incitement to intolerance and persecution as criminal, in the same way as we should consider incitement to murder, or to kidnapping, or to the revival of the slave trade, as criminal</b>.
 Karl Popper	#	Science may be described as the art of systematic oversimplification.
