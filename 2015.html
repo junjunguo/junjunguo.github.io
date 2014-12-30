@@ -12,7 +12,6 @@
     <script src="2015/css/ie/html5shiv.js"></script><![endif]-->
     <script src="2015/js/jquery.min.js"></script>
     <script src="2015/js/jquery.scrolly.min.js"></script>
-    <script src="2015/js/jquery.poptrox.min.js"></script>
     <script src="2015/js/skel.min.js"></script>
     <script src="2015/js/init.js"></script>
     <link rel="stylesheet" href="2015/css/skel.css"/>
@@ -27,144 +26,123 @@
 
 <!-- section 1 ------------------------------------------------------------->
 <section id="header">
-    <header>
-        <h1>Hi, I'm Junjun Guo</h1>
+    <div class="bcg">
+        <header>
+            <h1>Hi, I'm Junjun Guo</h1>
 
-        <p>Computer Science Student at<br>
-            Norwegian University of Science and Technology</p>
-    </header>
-    <!--Arrow Navigation-->
-    <a class="prevslide"></a>
-    <a class="nextslide"></a>
-    <footer>
-        <a href="#banner" class="button down style2 scrolly scrolly-centered"></a>
-    </footer>
+            <p>Computer Science Student at<br>
+                Norwegian University of Science and Technology</p>
+        </header>
+        <!--Arrow Navigation-->
+        <a class="prevslide"></a>
+        <a class="nextslide"></a>
+        <footer>
+            <a href="#myQuotes" class="button down style2 scrolly scrolly-centered"></a>
+        </footer>
+    </div>
 </section>
-<script src="2015/js/slideshow.js"></script>
 
 
 <!-- section 2 ------------------------------------------------------------>
-<section id="banner">
-    <header>
-        <div id="anewquote"></div>
-        <script src="2015/js/randomquotation.js"></script>
-    </header>
+<section id="myQuotes">
+    <div class="bcg">
+        <header>
+            <div id="anewquote"></div>
+        </header>
 
-    <footer>
-        <div class="sectiontopic">
-            <h4>My favourite quotes</h4>
-            <p>words of wisdom about love, life, happiness, truth, friendship, achieving goals, overcoming fears, everything that inspires me!</p>
-        </div>
-        <a href="#first" class="button down style2 scrolly"></a>
-        <a class="anewquote down style2 scrolly"></a>
-        <a href="#header" class="button up style2 scrolly"></a>
-    </footer>
+        <footer>
+            <div id="sectiontopic">
+                <h4>My favourite quotes</h4>
+
+                <p>words of wisdom about love, life, happiness, truth, friendship, achieving goals, overcoming fears,
+                    everything
+                    that inspires me!</p>
+            </div>
+            <a href="#header" class="button up style2 scrolly scrolly-centered"></a>
+            <a href="#myHumor" class="button down style2 scrolly scrolly-centered"></a>
+        </footer>
+    </div>
 </section>
 
 <!-- section 3 ------------------------------------------------------------>
-<article id="first" class="container box style1 right">
-    <a href="#" class="image fit"><img src="2015/images/pic01.jpg" alt=""/></a>
-
-    <div class="inner">
+<section id="myHumor">
+    <div class="bcg">
         <header>
-            <h2>Plato<br/>
-            </h2>
+            <div id="funny">
+                <img src="image/fun/很想知道人为什么不能从水里跳这么高.gif" alt="junjunguo.com">
+
+                <h1>Everything is funny, as long as it's happening to somebody else</h1>
+            </div>
         </header>
-        <p>Every heart sings a song, incomplete, until another heart whispers back. Those who wish to sing always find a
-            song. At the touch of a lover, everyone becomes a poet.
-        </p>
+        <footer>
+            <div id="topichumor">
+                <h4>My humor collection</h4>
+
+                <p>From there to here, and here to there, funny things are everywhere !</p>
+            </div>
+            <a href="#myQuotes" class="button up style2 scrolly scrolly-centered"></a>
+            <a href="#photography" class="button down style2 scrolly scrolly-centered"></a>
+        </footer>
     </div>
-    <footer>
-        <a href="#second" class="button down style2 scrolly"></a>
-        <a href="#banner" class="button up style2 scrolly"></a>
-    </footer>
-</article>
+</section>
 
 <!-- section 4  ------------------------------------------------------------>
-<article id="second" class="container box style1 left">
-    <a href="#" class="image fit"><img src="2015/images/pic02.jpg" alt=""/></a>
-
-    <div class="inner">
+<section id="photography">
+    <div class="bcg">
         <header>
-            <h2>Aristotle<br/>
-            </h2>
+            <div id="funny">
+                <img src="image/fun/很想知道人为什么不能从水里跳这么高.gif" alt="junjunguo.com">
+
+                <h1>Everything is funny, as long as it's happening to somebody else</h1>
+            </div>
         </header>
-        <p>Excellence is never an accident. It is always the result of high intention, sincere effort, and intelligent
-            execution; it represents the wise choice of many alternatives - choice, not chance, determines your
-            destiny.</p>
+        <footer>
+            <div id="topichumor">
+                <h4>My humor collection</h4>
+
+                <p>From there to here, and here to there, funny things are everywhere !</p>
+            </div>
+            <a href="#myHumor" class="button up style2 scrolly scrolly-centered"></a>
+            <a href="#footer" class="button down style2 scrolly scrolly-centered"></a>
+        </footer>
     </div>
-    <footer>
-        <a href="#third" class="button down style2 scrolly"></a>
-        <a href="#first" class="button up style2 scrolly"></a>
-    </footer>
-</article>
-
-<!-- section 5  ------------------------------------------------------------>
-<article id="third" class="container box style2">
-    <header>
-        <h2>Aristotle</h2>
-
-        <p>We are what we repeatedly do. Excellence, therefore, is not an act, but a habit.</p>
-    </header>
-    <div class="inner gallery">
-        <div class="row 0%">
-            <div class="3u"><a href="2015/images/fulls/01.jpg" class="image fit"><img src="2015/images/thumbs/01.jpg"
-                                                                                      alt=""
-                                                                                      title="Ad infinitum"/></a></div>
-            <div class="3u"><a href="2015/images/fulls/02.jpg" class="image fit"><img src="2015/images/thumbs/02.jpg"
-                                                                                      alt=""
-                                                                                      title="Dressed in Clarity"/></a>
-            </div>
-            <div class="3u"><a href="2015/images/fulls/03.jpg" class="image fit"><img src="2015/images/thumbs/03.jpg"
-                                                                                      alt=""
-                                                                                      title="Raven"/></a></div>
-            <div class="3u"><a href="2015/images/fulls/04.jpg" class="image fit"><img src="2015/images/thumbs/04.jpg"
-                                                                                      alt=""
-                                                                                      title="I'll have a cup of Disneyland, please"/></a>
-            </div>
-        </div>
-        <div class="row 0%">
-            <div class="3u"><a href="2015/images/fulls/05.jpg" class="image fit"><img src="2015/images/thumbs/05.jpg"
-                                                                                      alt=""
-                                                                                      title="Cherish"/></a></div>
-            <div class="3u"><a href="2015/images/fulls/06.jpg" class="image fit"><img src="2015/images/thumbs/06.jpg"
-                                                                                      alt=""
-                                                                                      title="Different."/></a></div>
-            <div class="3u"><a href="2015/images/fulls/07.jpg" class="image fit"><img src="2015/images/thumbs/07.jpg"
-                                                                                      alt=""
-                                                                                      title="History was made here"/></a>
-            </div>
-            <div class="3u"><a href="2015/images/fulls/08.jpg" class="image fit"><img src="2015/images/thumbs/08.jpg"
-                                                                                      alt=""
-                                                                                      title="People come and go and walk away"/></a>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <a href="#footer" class="button down style2 scrolly"></a>
-        <a href="#second" class="button up style2 scrolly"></a>
-    </footer>
-</article>
-
+</section>
 
 <!-- Footer ------------------------------------------------------------------------------>
 <section id="footer">
-    <ul class="icons">
-        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-        <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-        <li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-        <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-        <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-    </ul>
-    <div class="copyright">
-        <ul class="menu">
-            <li><a href="#header" class=" scrolly">Top</a></li>
-            <li><a href="#banner" class="button scrolly">Banner</a></li>
-            <li><a href="#first" class="style2 scrolly">First</a></li>
+    <div class="bcg">
+        <div id="sitemap">
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <ul class="icons">
+            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+            <li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+            <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+            <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
         </ul>
+        <div class="copyright">
+            <ul class="menu">
+                <li><a href="#header" class="style2 scrolly scrolly-centered">Top</a></li>
+                <li><a href="#myQuotes" class="style2 scrolly scrolly-centered">Quotation</a></li>
+                <li><a href="#myHumor" class="style2 scrolly scrolly-centered">Humor</a></li>
+                <li><a href="#photography" class="style2 scrolly scrolly-centered">Photography</a></li>
+            </ul>
+        </div>
     </div>
 </section>
+<script src="2015/js/slideshow.js"></script>
+<script src="2015/js/randomquotation.js"></script>
 
 </body>
 </html>

@@ -19,7 +19,6 @@ function displayContents() {
     if (reader.readyState == 4) {
         quotesArray = reader.responseText.split("\n");
         totalQuotes = quotesArray.length;
-        console.log("total quotes : " + quotesArray.length);
         generateQuotes();
     } else {
         quotesArray = "Wonder is the beginning of wisdom.    <br>Socrates";
@@ -34,7 +33,6 @@ function generateQuotes() {
         loadFile();
     }
     index = Math.floor(Math.random() * (n));
-    console.log("n: " + n + " index " + index);
     var theQuotation = quotesArray[index].split("#");
     quotesArray.splice(index, 1);
     var thequote = document.getElementById("anewquote");
@@ -45,6 +43,11 @@ loadFile();
 var changeQuotes = document.getElementById("anewquote");
 changeQuotes.onclick = function () {
     window.open("#banner","_self");
+    generateQuotes();
+}
 
+var changeQuoteC = document.getElementById("sectiontopic");
+changeQuoteC.onclick = function () {
+    window.open("#banner","_self");
     generateQuotes();
 }
