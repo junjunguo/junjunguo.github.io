@@ -2,9 +2,6 @@
 
     var settings = {
 
-        // Full screen header?
-        fullScreenHeader: true,
-
         // Parallax background effect?
         parallax: true,
 
@@ -14,15 +11,15 @@
     };
 
     skel.init({
-        reset: 'full',
-        breakpoints: {
-            'global': { range: '*', href: '2015/css/style.css', containers: 1140, grid: { gutters: 40 } },
-            'wide': { range: '-1680', href: '2015/css/style-wide.css', containers: 960 },
-            'normal': { range: '-1080', href: '2015/css/style-normal.css', containers: '95%', viewport: { scalable: false } },
-            'narrow': { range: '-840', href: '2015/css/style-narrow.css', grid: { gutters: 30 } },
-            'mobile': { range: '-736', href: '2015/css/style-mobile.css', containers: '95%!', grid: { collapse: true, gutters: 20 } }
-        }
-    });
+                  reset: 'full',
+                  breakpoints: {
+                      'global': { range: '*', href: '2015/css/style.css', containers: 1140, grid: { gutters: 40 } },
+                      'wide': { range: '-1680', href: '2015/css/style-wide.css', containers: 960 },
+                      'normal': { range: '-1080', href: '2015/css/style-normal.css', containers: '95%', viewport: { scalable: false } },
+                      'narrow': { range: '-840', href: '2015/css/style-narrow.css', grid: { gutters: 30 } },
+                      'mobile': { range: '-736', href: '2015/css/style-mobile.css', containers: '95%!', grid: { collapse: true, gutters: 20 } }
+                  }
+              });
 
     $(function () {
 
@@ -53,9 +50,9 @@
 
             $form.find('.form-button-submit')
                 .on('click', function () {
-                    $(this).parents('form').submit();
-                    return false;
-                });
+                        $(this).parents('form').submit();
+                        return false;
+                    });
 
             if (skel.vars.IEVersion < 10) {
                 $.fn.n33_formerize = function () {
@@ -84,7 +81,8 @@
                     _form.find('input[type=password]').each(function () {
                         var e = $(this);
                         var x = $($('<div>').append(e.clone()).remove().html().replace(/type="password"/i,
-                            'type="text"').replace(/type=password/i, 'type=text'));
+                                                                                       'type="text"').replace(/type=password/i,
+                                                                                                              'type=text'));
                         if (e.attr('id') != '') x.attr('id', e.attr('id') + '_fakeformerizefield');
                         if (e.attr('name') != '') x.attr('name', e.attr('name') + '_fakeformerizefield');
                         x.addClass('formerize-placeholder').val(x.attr('placeholder')).insertAfter(e);
@@ -102,7 +100,7 @@
                             event.preventDefault();
                             var x = $(this);
                             var e = x.parent().find('input[name=' + x.attr('name').replace('_fakeformerizefield', '') +
-                                ']');
+                                                        ']');
                             x.hide();
                             e.show().focus();
                         });
@@ -175,28 +173,39 @@
             return (skel.isActive('mobile') ? 70 : 190);
         });
 
-        // Full screen header.
-        if (settings.fullScreenHeader) {
+        // Full screen #fullscreen.
+            var idtags = ['#header','#myQuotes','#myHumor','#photography','#footer'];
 
-            var $header = $('#header');
+            for(i = 0; i<idtags.length; i++ ){
+                FullScreen($(idtags[i]));
+            }
 
-            if ($header.length > 0) {
+        function FullScreen(idTag){
+            if (idTag.length > 0) {
 
-                var $header_header = $header.find('header');
+                var $header_header = idTag.find('header');
 
                 $window
                     .on('resize.overflow_fsh', function () {
 
-                        if (skel.isActive('mobile'))
-                            $header.css('padding', '');
-                        else {
+                            if (skel.isActive('mobile'))
+                                idTag.css('padding', '');
+                            else {
 
-                            var p = Math.max(192, ($window.height() - $header_header.outerHeight()) / 2);
-                            $header.css('padding', p + 'px 0 ' + p + 'px 0');
+//                            var p = Math.max(192, ($window.height() - $header_header.outerHeight(true)) / 2);
 
-                        }
+                                var p = Math.max(0, ($window.height() - $header_header.outerHeight()) / 2);
+                                console.log("$window.height() " + $window.height());
+                                console.log("$header_header.outerHeight(true)) " + $header_header.outerHeight());
+                                console.log(" - : =" + ($window.height() - $header_header.outerHeight()));
+                                console.log(p);
 
-                    })
+
+                                idTag.css('padding', p + 'px 0 ' + p + 'px 0');
+
+                            }
+
+                        })
                     .trigger('resize.overflow_fsh');
 
                 $window.load(function () {
@@ -221,46 +230,33 @@
             $window
                 .on('scroll.overflow_parallax', function () {
 
-                    // Adjust background position.
-                    $bg.css('background-position',
-                            'center ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
+                        // Adjust background position.
+                        $bg.css('background-position',
+                                'center ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
 
-                })
+                    })
                 .on('resize.overflow_parallax', function () {
 
-                    // If we're in a situation where we need to temporarily disable parallax, do so.
-                    if (!skel.isActive('wide')
-                        || skel.isActive('narrow')) {
+                        // If we're in a situation where we need to temporarily disable parallax, do so.
+                        if (!skel.isActive('wide')
+                            || skel.isActive('narrow')) {
 
-                        $body.css('background-position', '');
-                        $bg = $dummy;
+                            $body.css('background-position', '');
+                            $bg = $dummy;
 
-                    }
+                        }
 
-                    // Otherwise, continue as normal.
-                    else
-                        $bg = $body;
+                        // Otherwise, continue as normal.
+                        else
+                            $bg = $body;
 
-                    // Trigger scroll handler.
-                    $window.triggerHandler('scroll.overflow_parallax');
+                        // Trigger scroll handler.
+                        $window.triggerHandler('scroll.overflow_parallax');
 
-                })
+                    })
                 .trigger('resize.overflow_parallax');
 
         }
-
-        // Poptrox.
-        $('.gallery').poptrox({
-            useBodyOverflow: false,
-            usePopupEasyClose: false,
-            overlayColor: '#0a1919',
-            overlayOpacity: (skel.vars.IEVersion < 9 ? 0 : 0.75),
-            usePopupDefaultStyling: false,
-            usePopupCaption: true,
-            popupLoaderText: '',
-            windowMargin: 10,
-            usePopupNav: true
-        });
 
     });
 

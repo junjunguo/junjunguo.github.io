@@ -1,19 +1,15 @@
 body {
-    /*background-color      : #183026;*/
-    /*background-image      : url('images/overlay.png'), url('../images/bg.jpg');*/
-    /*background-repeat     : repeat, no-repeat;*/
-    /*background-size       : auto, cover;*/
-    /*background-position   : top left, center 0;*/
-    background-position   : center 0;
-    /*background-attachment : fixed, fixed;*/
+    background-color      : #AEB519;
+    background-image      : url('images/overlay.svg');
+    background-repeat     : repeat;
+    background-position   : top left;
     background-attachment : fixed;
+    background-size       : auto;
     }
 
 body.is-scroll {
     background-attachment : scroll;
-    /*background-attachment : scroll, scroll;*/
-    /*background-size       : auto, 100% auto;*/
-    background-size       : 100% auto;
+    background-size       : auto;
     }
 
 body.is-loading * {
@@ -55,33 +51,30 @@ footer a {
     }
 
 .bcg {
-    background-position   : center;
-    background-repeat     : no-repeat;
-    background-attachment : fixed;
-    height                : 100%;
-    width                 : 100%;
-    cursor                : default;
-    text-shadow           : 0 0 0.5px rgba(255, 255, 255, 0.25);
-    text-align            : center;
-    margin                : 0;
-    color                 : #fff;
 
-    display               : table;
-    table-layout          : fixed;
-    overflow              : hidden;
+    background-position : center;
+    height              : 100%;
+    width               : 100%;
+    cursor              : default;
+    text-shadow         : 0 0 0.5px rgba(255, 255, 255, 0.25);
+    text-align          : center;
+    margin              : 0;
+    color               : #fff;
     }
 
 /* Header   ------------------------------------------ */
 
 #header {
-    position           : relative;
-    background-repeat  : no-repeat;
-    background-size    : cover;
+    position                : relative;
+    background-size         : cover;
+    -moz-background-size    : cover;
+    -webkit-background-size : cover;
+    -o-background-size      : cover;
     /*CSS fadeIN  property duration timing-function delay*/
-    -webkit-transition : background 300ms ease-in 200ms;
-    -moz-transition    : background 300ms ease-in 200ms;
-    -o-transition      : background 300ms ease-in 200ms;
-    transition         : background 300ms ease-in 200ms;
+    -webkit-transition      : background 300ms ease-in 200ms;
+    -moz-transition         : background 300ms ease-in 200ms;
+    -o-transition           : background 300ms ease-in 200ms;
+    transition              : background 300ms ease-in 200ms;
     }
 
 #header header {
@@ -176,18 +169,24 @@ footer a {
 /* myQuotes ------------------------------------------ */
 
 #myQuotes {
-    position              : relative;
-    background            : url('http://static.panoramio.com/photos/large/100026342.jpg');
-    padding               : 4em 0 2em 0;
-    background-repeat     : no-repeat;
-    background-size       : cover;
-    background-attachment : fixed;
+    position        : relative;
+    background      : #63B02E url('http://static.panoramio.com/photos/large/100026342.jpg') no-repeat center center fixed;
+    /*padding               : 4em 0 2em 0;*/
+    /*background-repeat     : no-repeat;*/
+    /*background-size       : cover;*/
+    /*background-attachment : fixed;*/
+    /*background: url('images/body-bg.jpg') no-repeat center center fixed;*/
+
+    background-size : cover;
     }
 
 #anewquote {
-    padding-top : 10%;
+    /*padding-top : 10%;*/
     /*margin     : auto 80px auto 80px;*/
     /*min-height : 16em;*/
+
+    display : inline-block;
+    padding : 0 0 4.5em 0;
     }
 
 #myQuotes header {
@@ -239,7 +238,7 @@ footer a {
 #myHumor {
     position              : relative;
     padding               : 4em 0 2em 0;
-    background-color      : #739E30;
+    background-color      : #46D674;
     background-repeat     : no-repeat;
     background-size       : cover;
     background-attachment : fixed;
@@ -277,7 +276,7 @@ footer a {
 #photography {
     position         : relative;
     padding          : 4em 0 2em 0;
-    background-color : #3d3d3d;
+    background-color : #558A89;
     }
 
 /* Footer   ------------------------------------------ */
@@ -288,10 +287,9 @@ footer a {
 
     text-shadow           : 0 0 0.5px rgba(255, 255, 255, 0.25);
     text-align            : center;
-    /*margin      : 4.5em 0 0 0;*/
     /*background: url("images/overlay-black.svg"), url("http://static.panoramio.com/photos/large/77835780.jpg");*/
     /*background: url("images/overlay.svg"), url("http://static.panoramio.com/photos/large/101153731.jpg");*/
-    background            : url("images/overlay-black.svg"), url("http://static.panoramio.com/photos/large/101153731.jpg");
+    background            : url("images/overlay-black.svg"), #3C4757 url("http://static.panoramio.com/photos/large/101153731.jpg");
     background            : cover;
     background-repeat     : repeat, no-repeat;
     background-size       : auto, cover;
@@ -329,12 +327,7 @@ footer a {
     margin        : 0 0 3em 0;
     }
 
-#footer .copyright {
-    margin    : 0 0 9em 0;
-    font-size : 0.8em;
-    }
-#sitemap{
-    min-height: 10em;
+#sitemap {
     }
 
 /* List     ------------------------------------------ */
@@ -418,7 +411,7 @@ input[type="reset"],
     border             : 0;
     border-radius      : 3.5em;
     background         : #35b88f;
-    color              : #fff;
+    /*color              : #fff;*/
     text-shadow        : 0 0 0.5px rgba(255, 255, 255, 0.25);
     text-decoration    : none;
     text-align         : center;

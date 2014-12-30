@@ -42,12 +42,12 @@ loadFile();
 
 var changeQuotes = document.getElementById("anewquote");
 changeQuotes.onclick = function () {
-    window.open("#banner","_self");
+    document.getElementById('myQuotes').scrollIntoView()
     generateQuotes();
 }
 
 var changeQuoteC = document.getElementById("sectiontopic");
 changeQuoteC.onclick = function () {
-    window.open("#banner","_self");
+    document.getElementById('myQuotes').scrollIntoView()
     generateQuotes();
 }
