@@ -15,7 +15,6 @@
                   breakpoints: {
                       'global': { range: '*', href: '2015/css/style.css', containers: 1140, grid: { gutters: 40 } },
                       'wide': { range: '-1680', href: '2015/css/style-wide.css', containers: 960 },
-                      'normal': { range: '-1080', href: '2015/css/style-normal.css', containers: '95%', viewport: { scalable: false } },
                       'narrow': { range: '-840', href: '2015/css/style-narrow.css', grid: { gutters: 30 } },
                       'mobile': { range: '-736', href: '2015/css/style-mobile.css', containers: '95%!', grid: { collapse: true, gutters: 20 } }
                   }
@@ -174,13 +173,13 @@
         });
 
         // Full screen #fullscreen.
-            var idtags = ['#header','#myQuotes','#myHumor','#photography','#footer'];
+        var idtags = ['#header', '#myQuotes', '#myHumor', '#photography', '#footer'];
 
-            for(i = 0; i<idtags.length; i++ ){
-                FullScreen($(idtags[i]));
-            }
+        for (i = 0; i < idtags.length; i++) {
+            FullScreen($(idtags[i]));
+        }
 
-        function FullScreen(idTag){
+        function FullScreen(idTag) {
             if (idTag.length > 0) {
 
                 var $header_header = idTag.find('header');
@@ -191,18 +190,8 @@
                             if (skel.isActive('mobile'))
                                 idTag.css('padding', '');
                             else {
-
-//                            var p = Math.max(192, ($window.height() - $header_header.outerHeight(true)) / 2);
-
-                                var p = Math.max(0, ($window.height() - $header_header.outerHeight()) / 2);
-                                console.log("$window.height() " + $window.height());
-                                console.log("$header_header.outerHeight(true)) " + $header_header.outerHeight());
-                                console.log(" - : =" + ($window.height() - $header_header.outerHeight()));
-                                console.log(p);
-
-
+                                var p = Math.max(0, ($window.height() - $header_header.outerHeight(true)) / 2);
                                 idTag.css('padding', p + 'px 0 ' + p + 'px 0');
-
                             }
 
                         })

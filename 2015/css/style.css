@@ -36,18 +36,19 @@ body, input, textarea, select {
     }
 
 a {
-    color              : #35b88f;
-    text-shadow        : 0 0 0.5px rgba(53, 184, 143, 0.25);
-    -moz-transition    : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
-    -webkit-transition : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
-    -o-transition      : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
-    -ms-transition     : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
-    transition         : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
-    text-decoration    : none;
+    color               : #35b88f;
+    text-shadow         : 0 0 0.5px rgba(53, 184, 143, 0.25);
+    -moz-transition     : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -webkit-transition  : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -o-transition       : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -ms-transition      : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    transition          : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    text-decoration     : none;
+    border-bottom-color : rgba(255, 255, 255, 0.5);
     }
 
-footer a {
-    margin : 0 20px 0 20px;
+a:hover {
+    border-bottom-color : rgba(255, 255, 255, 0);
     }
 
 .bcg {
@@ -60,6 +61,37 @@ footer a {
     text-align          : center;
     margin              : 0;
     color               : #fff;
+    }
+
+.bcg header h5 {
+    font-family    : 'Architects Daughter', cursive;
+    text-shadow    : 0 0 3px #000000;
+    line-height    : 5em;
+    font-size      : 0.8em;
+    letter-spacing : 8px;
+    cursor         : pointer;
+    }
+
+.bcg p {
+    cursor      : pointer;
+    font-family : 'Architects Daughter', cursive;
+    text-shadow : 0 0 6px #000000;
+    }
+
+footer {
+    position : absolute;
+    bottom   : 2em;
+    margin   : 0;
+    width    : 100%;
+    }
+
+    }
+footer h1, h2, h3, h4, h5, p, a {
+    font-family : 'Oswald', sans-serif;
+    }
+
+footer a {
+    margin : 0 20px 0 20px;
     }
 
 /* Header   ------------------------------------------ */
@@ -78,9 +110,8 @@ footer a {
     }
 
 #header header {
-    display     : inline-block;
-    padding     : 0 0 4.5em 0;
-    font-family : "Open Sans", sans-serif;
+    display : inline-block;
+    padding : 0 0 4.5em 0;
     }
 
 /* Controls Bar : arrow  ----------------*/
@@ -137,6 +168,8 @@ footer a {
     }
 
 #header header p {
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family : 'Oswald', sans-serif;
     color       : rgba(255, 255, 255, 0.8);
     font-size   : 18px;
     font-weight : 100;
@@ -147,67 +180,30 @@ footer a {
     }
 
 #header header h1 {
+    font-family    : "Open Sans", sans-serif;
+    font-weight    : 700;
     font-size      : 36px;
-    font-weight    : 600;
     letter-spacing : -0.05em;
     line-height    : 1.1;
-    }
-
-#header header p:before {
-    content : '';
-    display : block;
-    margin  : 4px 0 0.8em 0;
-    }
-
-#header footer {
-    position : absolute;
-    bottom   : 2em;
-    margin   : 0;
-    width    : 100%;
     }
 
 /* myQuotes ------------------------------------------ */
 
 #myQuotes {
-    position        : relative;
-    background      : #63B02E url('http://static.panoramio.com/photos/large/100026342.jpg') no-repeat center center fixed;
-    /*padding               : 4em 0 2em 0;*/
-    /*background-repeat     : no-repeat;*/
-    /*background-size       : cover;*/
-    /*background-attachment : fixed;*/
-    /*background: url('images/body-bg.jpg') no-repeat center center fixed;*/
-
-    background-size : cover;
-    }
-
-#anewquote {
-    /*padding-top : 10%;*/
-    /*margin     : auto 80px auto 80px;*/
-    /*min-height : 16em;*/
-
-    display : inline-block;
-    padding : 0 0 4.5em 0;
+    position              : relative;
+    background            : #63B02E  url('http://static.panoramio.com/photos/large/100026342.jpg')no-repeat center center fixed;
+    background-repeat     : no-repeat;
+    background-attachment : fixed;
+    background-size       : cover;
     }
 
 #myQuotes header {
-    /*vertical-align : middle;*/
-    min-height : 18em;
-    margin     : auto 80px auto 80px;
+    margin : 0 0 2em 0;
     }
 
-#myQuotes header h5 {
-    font-family    : 'Architects Daughter', cursive;
-    text-shadow    : 0 0 3px #000000;
-    line-height    : 5em;
-    font-size      : 0.8em;
-    letter-spacing : 8px;
-    cursor         : pointer;
-    }
-
-#myQuotes p {
-    cursor      : pointer;
-    font-family : 'Architects Daughter', cursive;
-    text-shadow : 0 0 6px #000000;
+#anewquote {
+min-height : 18em;
+margin     : auto 80px auto 80px;
     }
 
 #sectiontopic h4 {
@@ -223,34 +219,23 @@ footer a {
     font-family : 'Oswald', sans-serif;
     }
 
-#myQuotes a {
-    text-decoration     : none;
-    color               : inherit;
-    border-bottom-color : rgba(255, 255, 255, 0.5);
-    }
-
-#myQuotes a:hover {
-    border-bottom-color : rgba(255, 255, 255, 0);
-    }
-
 /* myHumor  ------------------------------------------ */
 
 #myHumor {
     position              : relative;
-    padding               : 4em 0 2em 0;
-    background-color      : #46D674;
-    background-repeat     : no-repeat;
-    background-size       : cover;
+    background            : url('images/overlay.svg'), url('http://static.panoramio.com/photos/large/101153737.jpg') ;
+    background-repeat     : repeat, no-repeat;
     background-attachment : fixed;
+    background-size       : auto, cover;
     }
 
-#funny header {
-    margin : 4em 0 2em 0;
+#myHumor header {
+    margin : 1em 0 3em 0;
     }
 
 #funny {
     min-height : 18em;
-    margin     : auto 80px auto 80px;
+    margin     : auto 80px 0 80px;
     }
 
 #funny h1 {
@@ -275,7 +260,6 @@ footer a {
 /* section4    ------------------------------------------ */
 #photography {
     position         : relative;
-    padding          : 4em 0 2em 0;
     background-color : #558A89;
     }
 
@@ -283,8 +267,6 @@ footer a {
 
 #footer {
     position              : relative;
-    padding               : 4em 0 2em 0;
-
     text-shadow           : 0 0 0.5px rgba(255, 255, 255, 0.25);
     text-align            : center;
     /*background: url("images/overlay-black.svg"), url("http://static.panoramio.com/photos/large/77835780.jpg");*/
@@ -295,22 +277,24 @@ footer a {
     background-size       : auto, cover;
     background-position   : top left, center 0;
     background-attachment : fixed, fixed;
+    font-family           : 'Oswald', sans-serif;
+
     }
 
 #footer:after {
-    content     : '';
-    display     : block;
-    position    : absolute;
-    top         : -4.5em;
-    left        : 50%;
-    height      : 4.5em;
-    border-left : solid 1px #fff;
+    content  : '';
+    display  : block;
+    position : absolute;
+    top      : -4.5em;
+    left     : 50%;
+    height   : 4.5em;
     }
 
 #footer a {
     color               : #fff;
     text-shadow         : 0 0 0.5px rgba(255, 255, 255, 0.25);
     border-bottom-color : rgba(255, 255, 255, 0.5);
+    margin              : 0 3% 0 3%;
     }
 
 #footer a:hover {
@@ -331,9 +315,6 @@ footer a {
     }
 
 /* List     ------------------------------------------ */
-
-ul {
-    }
 
 ul.default {
     list-style   : disc;
@@ -408,16 +389,16 @@ input[type="submit"],
 input[type="reset"],
 .button {
     display            : inline-block;
-    border             : 0;
+    /*border             : 0;*/
     border-radius      : 3.5em;
-    background         : #35b88f;
+    /*background         : #35b88f;*/
     /*color              : #fff;*/
     text-shadow        : 0 0 0.5px rgba(255, 255, 255, 0.25);
     text-decoration    : none;
     text-align         : center;
     cursor             : pointer;
     outline            : 0;
-    padding            : 0.5em;
+    /*padding            : 0.5em;*/
     position           : relative;
 
     -moz-appearance    : none;
@@ -484,7 +465,7 @@ input[type="reset"].style2,
     /*background : #fff;*/
     box-shadow       : inset 0 0 0 1px #fff;
     background-color : transparent;
-    border           : solid 1px #e5e6e7;
+    /*border           : solid 1px #e5e6e7;*/
     color            : inherit;
     }
 
@@ -495,22 +476,6 @@ input[type="reset"].style2:hover,
     /*background  : rgba(255, 255, 255, 0.1);*/
     color       : #000 !important;
     text-shadow : 0 0 0.5px rgba(0, 0, 0, 0.95) !important;
-    }
-
-input[type="button"].style3,
-input[type="submit"].style3,
-input[type="reset"].style3,
-.button.style3 {
-    background : none;
-    color      : #3a3939;
-    box-shadow : inset 0 0 0 1px #dad9d9;
-    }
-
-input[type="button"].style3:hover,
-input[type="submit"].style3:hover,
-input[type="reset"].style3:hover,
-.button.style3:hover {
-    background : rgba(58, 57, 57, 0.025);
     }
 
 /* Icons    ------------------------------------------ */
