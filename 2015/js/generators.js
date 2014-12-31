@@ -144,8 +144,6 @@ function loadJfile(textFile) {
 function displayJContents() {
     if (readj.readyState == 4) {
         jokelist = readj.responseText.split("#");
-        console.log("jokelist : 4- " + jokelist);
-
         jgenerator();
     } else {
         jokelist =
@@ -162,7 +160,6 @@ function jgenerator() {
         var theImg = images.splice(index, 1);
         setJimage(theImg[0]);
     } else {
-        console.log("jokelist : " + jokelist);
         settextjoke();
     }
 }
@@ -182,17 +179,13 @@ function settextjoke() {
     }
     var index = Math.floor((Math.random() * (jokes.length)));
 
-//    if (jokes[index][0].length > 2) {
-    console.log("jokes.length: " + jokes.length + " index :" + index);
-    document.getElementById("funny").innerHTML = "<p>" + text2html(jokes[index]) + "</p>";
-    console.log(jokes[index]);
-    console.log(text2html(jokes[index]));
-//    }
-//    jokes.splice(index, 1);
+    if (jokes[index].length > 2) {
+        document.getElementById("funny").innerHTML = "<p>" + text2html(jokes[index]) + "</p>";
+    }
+    jokes.splice(index, 1);
 }
 
 function text2html(str) {
-    console.log("str: " + str);
     if (str.charAt(0) == "\n") {
         str = str.substr(1, str.length);
     }
@@ -203,17 +196,10 @@ function text2html(str) {
 }
 
 
-// load functions:   ---------------------
-
+// load functions:   --------------------->
 
 // load joke generator:
 loadJfile(jtextFile);
-
-//var changeJokes = document.getElementById("funny");
-//changeJokes.onclick = function () {
-//    document.getElementById('myHumor').scrollIntoView()
-//    jgenerator();
-//}
 
 var changeJoke = document.getElementById("topichumor");
 changeJoke.onclick = function () {
