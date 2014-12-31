@@ -5,8 +5,10 @@
 
 var qtextfil = './junjunguofiles/quotations.txt';
 
-var quotesArray = [], n, index;
+
 var reader = new XMLHttpRequest() || new ActiveXObject('MSXML2.XMLHTTP');
+var quotesArray = [];
+var qconter = 0, jconter = 0;
 
 function loadQfile(textFile) {
     reader.open('get', textFile, true);
@@ -18,26 +20,38 @@ function loadQfile(textFile) {
 function displayContents() {
     if (reader.readyState == 4) {
         quotesArray = reader.responseText.split("\n");
-        totalQuotes = quotesArray.length;
-        generateQuotes();
+        generateQuotes(qconter);
+        quotesArray = shuffleList(quotesArray);
     } else {
         quotesArray = "Wonder is the beginning of wisdom.    <br>Socrates";
-        totalQuotes = quotesArray.length;
     }
 }
 
-
-function generateQuotes() {
-    n = quotesArray.length;
-    if (n == 0) {
-        loadFile();
-    }
-    index = Math.floor(Math.random() * (n));
-    var theQuotation = quotesArray[index].split("#");
-    quotesArray.splice(index, 1);
-    var thequote = document.getElementById("anewquote");
-    thequote.innerHTML = "<p>" + theQuotation[1] + "</p><h5> - " + theQuotation[0] + "</h5>";
+/**
+ * Generate a quote
+ * @param n
+ */
+function generateQuotes(n) {
+    var theQuotation = quotesArray[n].split("#");
+    document.getElementById("anewquote").innerHTML = "<p>" + theQuotation[1] + "</p><h5> - " + theQuotation[0] + "</h5>";
 }
+
+/**
+ * Shuffle a list
+ *
+ * @param list
+ * @returns {Array}
+ */
+function shuffleList(list) {
+    var copy = [], index, n = list.length;
+    while (n) {
+        index = Math.floor(Math.random() * (n--));
+        copy.push(list[index]);
+        list.splice(index, 1);
+    }
+    return copy;
+}
+
 // random quotations finish
 
 // joke generator start
@@ -72,7 +86,6 @@ var imglist = [
     '去日本最好的季节.jpg',
     '县级公路惊现飘移车神.gif',
     '同学！你男盆友掉了.jpg',
-    '呵呵，交接班.jpg',
     '哥们，好身手啊.gif',
     '哥们，算，算。。。算你很.gif',
     '哪来的蒙面大叔！？？.jpg',
@@ -94,6 +107,7 @@ var imglist = [
     '彪悍的人生不需要解释.gif',
     '很想知道人为什么不能从水里跳这么高.gif',
     '快递小哥你又在卖萌了.jpg',
+    '怎么样 有学问吧.jpg',
     '想开了好，以后还长着呢.jpg',
     '想要看起来像个大人，于是我就帮了他。。.jpg',
     '我只想说：这样有加班费么？？.jpg',
@@ -103,6 +117,7 @@ var imglist = [
     '我来教你怎么走路.gif',
     '挤眉弄眼神马的最开心了.gif',
     '救人一命，胜造七级浮屠.jpg',
+    '此生有这一朋友、足已…….jpg',
     '每个人都是宇宙的中心.GIF',
     '灰太狼失败的基本原因是别的狼都吃生的.jpg',
     '熊孩子，逗姥姥玩是吧！.gif',
@@ -124,6 +139,7 @@ var imglist = [
     '这棵树真大.jpg',
     '这眼神，这表白，妹子跟我走吧.jpg',
     '这觉睡的真累！.jpg',
+    '这车是用来卖萌的吗？.gif',
     '逗比女王，就是69.jpg',
     '都把山药功效吹得神乎其神.jpg',
     '防盗新技能.jpg',
@@ -131,8 +147,8 @@ var imglist = [
     '马拉个币的，只能走路回家了.gif' ]
 
 var jtextFile = './image/fun/joke.txt';
-var images = imglist;
-var jokelist = [];
+//var images = imglist;
+var jokelist = [], htmllist = [];
 
 var readj = new XMLHttpRequest() || new ActiveXObject('MSXML2.XMLHTTP');
 function loadJfile(textFile) {
@@ -144,47 +160,53 @@ function loadJfile(textFile) {
 function displayJContents() {
     if (readj.readyState == 4) {
         jokelist = readj.responseText.split("#");
-        jgenerator();
+        initialload();
+        jgenerator(jconter);
     } else {
         jokelist =
             '"Wife: "How would you describe me?"<br>Husband: "ABCDEFGHIJK."<br>Wife: "What does that mean?"<br>Husband: "Adorable, beautiful, cute, delightful, elegant, fashionable, gorgeous, and hot."<br>Wife: "Aw, thank you, but what about IJK?"<br>Husband: "I m just kidding!"';
     }
 }
-
-function jgenerator() {
-    if (Math.floor((Math.random() * 10) % 2) == 0) { // 50% generate possibility
-        if (images.length == 0) {
-            images = imglist;
-        }
-        var index = Math.floor((Math.random() * (images.length)));
-        var theImg = images.splice(index, 1);
-        setJimage(theImg[0]);
-    } else {
-        settextjoke();
+/**
+ * initial data, and load them ready for use;
+ */
+function initialload() {
+    loadimages();
+    loadjokes();
+    htmllist = shuffleList(htmllist);
+}
+/**
+ * Load images to htmllist
+ */
+function loadimages() {
+    for (i = 0; i < imglist.length; i++) {
+        var str = imglist[i].split(".");
+        var title = str[0];
+//        var fileType = str[1];
+        htmllist.push("<img src='image/fun/" + imglist[i] + "'" + "alt='junjunguo.com'>" + "\n" + "<h1>" + title + "</h1>");
+    }
+}
+/**
+ * Load jokes to htmllist
+ */
+function loadjokes() {
+    for (i = 0; i < jokelist.length; i++) {
+        htmllist.push("<p>" + text2html(jokelist[i]) + "</p>");
     }
 }
 
-function setJimage(theImg) {
-    var str = theImg.split(".");
-    var title = str[0];
-    var fileType = str[1];
-    document.getElementById("funny").innerHTML = "<img src='image/fun/" + theImg + "'" + "alt='junjunguo.com'>" + "\n" +
-        "<h1>" + title + "</h1>";
+/**Generate a joke og a humor image from htmllist[n]
+ *
+ * @param n
+ */
+function jgenerator(n) {
+    document.getElementById("funny").innerHTML = htmllist[n];
 }
-
-var jokes = jokelist;
-function settextjoke() {
-    if (jokes.length == 0) {
-        jokes = jokelist;
-    }
-    var index = Math.floor((Math.random() * (jokes.length)));
-
-    if (jokes[index].length > 2) {
-        document.getElementById("funny").innerHTML = "<p>" + text2html(jokes[index]) + "</p>";
-    }
-    jokes.splice(index, 1);
-}
-
+/**
+ * simple text to html function
+ * @param str
+ * @returns {XML|string|void|*}
+ */
 function text2html(str) {
     if (str.charAt(0) == "\n") {
         str = str.substr(1, str.length);
@@ -201,23 +223,33 @@ function text2html(str) {
 // load joke generator:
 loadJfile(jtextFile);
 
-var changeJoke = document.getElementById("topichumor");
-changeJoke.onclick = function () {
-    document.getElementById('myHumor').scrollIntoView()
-    jgenerator();
+var preJoke = document.getElementById("njl");
+preJoke.onclick = function () {
+    document.getElementById('myHumor').scrollIntoView();
+    jconter--;
+    jgenerator(Math.abs(jconter % htmllist.length));
+}
+var nextJoke = document.getElementById("njr");
+nextJoke.onclick = function () {
+    document.getElementById('myHumor').scrollIntoView();
+    jconter++;
+    jgenerator(Math.abs(jconter % htmllist.length));
 }
 
-//load random quotations:
+
+//load  quotations:
 loadQfile(qtextfil);
 
-var changeQuotes = document.getElementById("anewquote");
-changeQuotes.onclick = function () {
-    document.getElementById('myQuotes').scrollIntoView()
-    generateQuotes();
+var preQuotes = document.getElementById("nql");
+preQuotes.onclick = function () {
+    document.getElementById('myQuotes').scrollIntoView();
+    qconter--;
+    generateQuotes(Math.abs(qconter % quotesArray.length));
 }
 
-var changeQuoteC = document.getElementById("sectiontopic");
-changeQuoteC.onclick = function () {
-    document.getElementById('myQuotes').scrollIntoView()
-    generateQuotes();
+var nextQuote = document.getElementById("nqr");
+nextQuote.onclick = function () {
+    document.getElementById('myQuotes').scrollIntoView();
+    qconter++;
+    generateQuotes(Math.abs(qconter % quotesArray.length));
 }

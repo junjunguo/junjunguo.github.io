@@ -69,11 +69,11 @@ a:hover {
     line-height    : 5em;
     font-size      : 0.8em;
     letter-spacing : 8px;
-    cursor         : pointer;
+    cursor         : default;
     }
 
 .bcg p {
-    cursor      : pointer;
+    cursor      : default;
     font-family : 'Architects Daughter', cursive;
     text-shadow : 0 0 6px #000000;
     }
@@ -198,7 +198,7 @@ footer a {
     }
 
 #myQuotes header {
-    /*margin : 0 0 2em 0;*/
+    cursor: default;
     }
 
 #anewquote {
