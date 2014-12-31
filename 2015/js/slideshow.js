@@ -1,5 +1,5 @@
 /**
- * Created by junjun on 25.12.14.
+ * Created by GuoJunjun on 25.12.14. JunjunGuo.com
  */
 
 
