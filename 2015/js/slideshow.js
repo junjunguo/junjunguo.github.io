@@ -3,7 +3,10 @@
  */
 
 
-
+/**
+ * shuffle inner list and return a photo address list
+ * @returns {Array}
+ */
 function shuffleList() { // shuffle nrlist and return a list with objects ready for slides
     var list = [			//  Images id numbers
         77233663, 105836333, 109199045, 109172199, 92464442, 92464435, 55717739, 77835786, 107909681, 51569735,
@@ -20,7 +23,10 @@ function shuffleList() { // shuffle nrlist and return a list with objects ready 
     return copy;
 }
 
-
+/**
+ * add the image to #header as background image
+ * @param theImg
+ */
 function addImage(theImg) {
     document.getElementById("header").style.backgroundImage = "url('" + theImg + "')";
 }
@@ -46,6 +52,13 @@ function slideShow() {
         counter--;
         showImage();
     });
+    // logo click
+    $('#logo').on('click', function () {
+        document.getElementById('header').scrollIntoView()
+        counter = Math.floor(Math.random() * slides.length);
+        showImage();
+    });
+
 
     showImage();
 }

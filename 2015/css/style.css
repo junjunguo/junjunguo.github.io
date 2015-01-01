@@ -117,7 +117,36 @@ footer a {
 
 #header header {
     display : inline-block;
-    padding : 0 0 4.5em 0;
+    padding : 0 0 1em 0;
+    }
+
+/* logo  ----------------*/
+
+#logo {
+    cursor: pointer;
+    width      : 64px;
+    height     : 48px;
+    display    : inline-block;
+    background : url(../../junjunguofiles/GuoJunJun.png) top center no-repeat;
+    padding    : 0;
+    margin     : 0 auto 2em auto;
+    border     : none;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    overflow: hidden;
+    }
+
+#logo:hover {
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
     }
 
 /* Controls Bar : arrow  ----------------*/
@@ -273,15 +302,19 @@ footer a {
 
 /* section4    ------------------------------------------ */
 #photography {
-    position         : relative;
-    background-color : #558A89;
+    position              : relative;
+    /*background-color : #696969;*/
+    background            : #696969 url('http://static.panoramio.com/photos/large/100026090.jpg') no-repeat center center fixed;
+    background-repeat     : no-repeat;
+    background-attachment : fixed;
+    background-size       : cover;
     }
 
 #photography header {
-    margin: 0 0 4em 0;
+    margin : 0 0 4em 0;
     }
 
-#photography iframe{
+#photography iframe {
 
     }
 
