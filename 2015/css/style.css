@@ -123,30 +123,30 @@ footer a {
 /* logo  ----------------*/
 
 #logo {
-    cursor: pointer;
-    width      : 64px;
-    height     : 48px;
-    display    : inline-block;
-    background : url(../../junjunguofiles/GuoJunJun.png) top center no-repeat;
-    padding    : 0;
-    margin     : 0 auto 2em auto;
-    border     : none;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+    cursor                      : pointer;
+    width                       : 64px;
+    height                      : 48px;
+    display                     : inline-block;
+    background                  : url(../../junjunguofiles/GuoJunJun.png) top center no-repeat;
+    padding                     : 0;
+    margin                      : 0 auto 2em auto;
+    border                      : none;
+    -webkit-transition-duration : 0.5s;
+    -moz-transition-duration    : 0.5s;
+    -o-transition-duration      : 0.5s;
+    transition-duration         : 0.5s;
 
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-    overflow: hidden;
+    -webkit-transition-property : -webkit-transform;
+    -moz-transition-property    : -moz-transform;
+    -o-transition-property      : -o-transform;
+    transition-property         : transform;
+    overflow                    : hidden;
     }
 
 #logo:hover {
-    -webkit-transform:rotate(360deg);
-    -moz-transform:rotate(360deg);
-    -o-transform:rotate(360deg);
+    -webkit-transform : rotate(360deg);
+    -moz-transform    : rotate(360deg);
+    -o-transform      : rotate(360deg);
     }
 
 /* Controls Bar : arrow  ----------------*/
@@ -219,8 +219,109 @@ footer a {
     font-weight    : 700;
     font-size      : 36px;
     letter-spacing : -0.05em;
-    line-height    : 1.1;
+    line-height    : 1.1em;
     }
+
+/*title fly down */
+#header .b0 {
+    position                    : relative;
+    top                         : -350px;
+    -moz-animation              : nav-icons 0.5s ease-in-out forwards;
+    -webkit-animation           : nav-icons 0.5s ease-in-out forwards;
+    -o-animation                : nav-icons 0.5s ease-in-out forwards;
+    -ms-animation               : nav-icons 0.5s ease-in-out forwards;
+    animation                   : nav-icons 0.5s ease-in-out forwards;
+    -moz-backface-visibility    : hidden;
+    -webkit-backface-visibility : hidden;
+    -o-backface-visibility      : hidden;
+    -ms-backface-visibility     : hidden;
+    backface-visibility         : hidden;
+    -moz-transform              : translate3d(0, 0, 0);
+    -webkit-transform           : translate3d(0, 0, 0);
+    -o-transform                : translate3d(0, 0, 0);
+    -ms-transform               : translate3d(0, 0, 0);
+    transform                   : translate3d(0, 0, 0);
+    opacity                     : 0;
+    }
+
+/*navigation animation*/
+
+#header nav {
+    margin : 1.5em 0 0 0;
+    }
+
+#header nav li {
+    -moz-animation              : nav-icons 0.5s ease-in-out forwards;
+    -webkit-animation           : nav-icons 0.5s ease-in-out forwards;
+    -o-animation                : nav-icons 0.5s ease-in-out forwards;
+    -ms-animation               : nav-icons 0.5s ease-in-out forwards;
+    animation                   : nav-icons 0.5s ease-in-out forwards;
+    -moz-backface-visibility    : hidden;
+    -webkit-backface-visibility : hidden;
+    -o-backface-visibility      : hidden;
+    -ms-backface-visibility     : hidden;
+    backface-visibility         : hidden;
+    -moz-transform              : translate3d(0, 0, 0);
+    -webkit-transform           : translate3d(0, 0, 0);
+    -o-transform                : translate3d(0, 0, 0);
+    -ms-transform               : translate3d(0, 0, 0);
+    transform                   : translate3d(0, 0, 0);
+    display                     : inline-block;
+    height                      : 3.5em;
+    width                       : 3.5em;
+    line-height                 : 4.885em;
+    opacity                     : 0;
+    position                    : relative;
+    top                         : 450px;
+
+    }
+
+#header nav a {
+    -webkit-tap-highlight-color : transparent;
+    -webkit-touch-callout       : none;
+    border                      : 0;
+    display                     : inline-block;
+    color                       : rgba(255, 255, 255, 0.7);
+    }
+
+#header nav a:before {
+    -moz-transition    : all 0.2s ease-in-out;
+    -webkit-transition : all 0.2s ease-in-out;
+    -o-transition      : all 0.2s ease-in-out;
+    -ms-transition     : all 0.2s ease-in-out;
+    transition         : all 0.2s ease-in-out;
+    border-radius      : 100%;
+    border             : solid 1px white;
+    display            : block;
+    font-size          : 1.5em;
+    height             : 2em;
+    line-height        : 2em;
+    position           : relative;
+    text-align         : center;
+    top                : 0;
+    width              : 2em;
+    }
+
+#header nav a:hover {
+    font-size : 1.1em;
+    }
+
+#header nav a:hover:before {
+    background-color : rgba(255, 255, 255, 0.175);
+    color            : white;
+    }
+
+#header nav a:active {
+    font-size  : 0.95em;
+    background : none;
+    }
+
+#header nav a:active:before {
+    background-color : rgba(255, 255, 255, 0.35);
+    color            : white;
+    }
+
+/**/
 
 /* myQuotes ------------------------------------------ */
 
@@ -410,8 +511,8 @@ footer a {
     text-shadow           : 0 0 0.5px rgba(255, 255, 255, 0.25);
     text-align            : center;
     /*background: url("images/overlay-black.svg"), url("http://static.panoramio.com/photos/large/77835780.jpg");*/
-    /*background: url("images/overlay.svg"), url("http://static.panoramio.com/photos/large/101153731.jpg");*/
-    background            : url("images/overlay-black.svg"), #3C4757 url("http://static.panoramio.com/photos/large/101153731.jpg");
+    /*background            : url("images/overlay-black.svg"), #3C4757 url("http://static.panoramio.com/photos/large/101153731.jpg");*/
+    background            : url("images/overlay-black.svg"), #3C4757 url("http://static.panoramio.com/photos/large/106397977.jpg");
     background            : cover;
     background-repeat     : repeat, no-repeat;
     background-size       : auto, cover;
@@ -446,12 +547,39 @@ footer a {
 #footer .icons {
     padding       : 0.75em 2em 0.75em 2em;
     border-radius : 3em;
-    border        : solid 1px #FFFFFF;
+    /*border        : solid 1px #FFFFFF;*/
     display       : inline-block;
     margin        : 0 0 3em 0;
     }
 
 #sitemap {
+    /*background-color: #000;*/
+    margin-bottom  : 2em;
+    text-transform : uppercase;
+    }
+
+/*#sitmap td a{*/
+/*font-family : 'Oswald', sans-serif;*/
+
+/*}*/
+
+#sitemap table {
+    text-align : center;
+    margin     : 0 auto 0 auto;
+    }
+
+#sitemap table tr td {
+    padding : 0.5em 2em;
+    }
+
+#sitemap table td {
+    text-align : left;
+    font-size  : 18px;
+
+    }
+
+#sitemap .sitemapl {
+    text-align : right;
     }
 
 /* List     ------------------------------------------ */

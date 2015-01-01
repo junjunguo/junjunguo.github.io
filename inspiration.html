@@ -3,23 +3,46 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+
+    <style>
+        div {
+            position         : relative;
+            background-color : #abc;
+            width            : 40px;
+            height           : 40px;
+            float            : left;
+            margin           : 5px;
+            top: 200px;
+            }
+    </style>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-<div id="thePics"></div>
-<pre>
+<p>
+    <button id="go">Run »</button>
+</p>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
 
+<script>
+    $("#go").click(function () {
+        $(".block:first").animate({down: 300}, {
+            duration: 100,
+            step: function (now, fx) {
+                $(".block:gt(0)").css("left", now);
+            }
+        });
+    });
 
-</pre>
-<div id="div_list_ex" style="float: right; margin: 10px 15px"></div>
-<script type="text/javascript">
-    var birds = {'tag': 'birds'};
-    var list_ex_options = {'width': 400, 'height': 100, 'columns': 5, 'croppedPhotos': true};
-    var list_ex_widget = new panoramio.PhotoWidget('div_list_ex', birds, list_ex_options);
-    list_ex_widget.setPosition(0);
-
-    var panoramioLayer = new google.maps.panoramio.PanoramioLayer();
-    panoramioLayer.setMap(map);
-    panoramioLayer.setUserId("7916283");
+    $("#go").click(function () {
+        $(".block").animate({opacity: 0.5, "top": "-=150px" }, 1000);
+    });
 </script>
+
+
 </body>
 </html>

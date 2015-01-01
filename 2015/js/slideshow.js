@@ -10,7 +10,7 @@
 function shuffleList() { // shuffle nrlist and return a list with objects ready for slides
     var list = [			//  Images id numbers
         77233663, 105836333, 109199045, 109172199, 92464442, 92464435, 55717739, 77835786, 107909681, 51569735,
-        108930464, 109049207, 109100961, 106397977, 106419102, 77835780, 51569745, 78491829, 49428516, 43143230,
+        108930464, 109049207, 109100961, 106419102, 77835780, 51569745, 78491829, 49428516, 43143230,
         42462727, 106397984, 100920020, 100920022
     ]
 
@@ -64,4 +64,29 @@ function slideShow() {
 }
 
 //run the script:
+
+//run slide show
 slideShow();
+
+
+/**
+ * Fly down
+ */
+$(".b0").animate({ "top": "+=350px", opacity: 1}, 1500);
+
+// fly up
+var list = [".b1", ".b2", ".b3", ".b4"];
+
+for (i = 0; i < list.length; i++) {
+    $(list[i]).animate({ "top": "-=450px", opacity: 1}, 2000 + i * 500, function () {
+//            $(list[i]).animate({opacity: 1});
+    });
+}
+
+//$("#gouponebyone").click(function () {
+//    for (i = 0; i < list.length; i++) {
+//        $(list[i]).animate({ "top": "-=350px", opacity: "show"}, 1000 + i * 300, function () {
+////            $(list[i]).animate({opacity: 1});
+//        });
+//    }
+//});
