@@ -12,16 +12,16 @@ var qconter = 0, jconter = 0;
 
 function loadQfile(textFile) {
     reader.open('get', textFile, true);
-    reader.onreadystatechange = displayContents;
+    reader.onreadystatechange = displayQContents;
     reader.send(null);
 }
 
 
-function displayContents() {
+function displayQContents() {
     if (reader.readyState == 4) {
         quotesArray = reader.responseText.split("\n");
-        generateQuotes(qconter);
         quotesArray = shuffleList(quotesArray);
+        generateQuotes(qconter);
     } else {
         quotesArray = "Wonder is the beginning of wisdom.    <br>Socrates";
     }
@@ -228,12 +228,14 @@ preJoke.onclick = function () {
     document.getElementById('myHumor').scrollIntoView();
     jconter--;
     jgenerator(Math.abs(jconter % htmllist.length));
+//    adjustscreensize($("myHumor"));
 }
 var nextJoke = document.getElementById("njr");
 nextJoke.onclick = function () {
     document.getElementById('myHumor').scrollIntoView();
     jconter++;
     jgenerator(Math.abs(jconter % htmllist.length));
+//    adjustscreensize($("myHumor"));
 }
 
 
@@ -245,6 +247,7 @@ preQuotes.onclick = function () {
     document.getElementById('myQuotes').scrollIntoView();
     qconter--;
     generateQuotes(Math.abs(qconter % quotesArray.length));
+//    adjustscreensize($("myQuotes"));
 }
 
 var nextQuote = document.getElementById("nqr");
@@ -252,4 +255,19 @@ nextQuote.onclick = function () {
     document.getElementById('myQuotes').scrollIntoView();
     qconter++;
     generateQuotes(Math.abs(qconter % quotesArray.length));
+//    adjustscreensize($("myQuotes"));
 }
+
+
+//function adjustscreensize(idTag) {
+//    var $header = idTag.find('header');
+//    var $window = $(window);
+//    var diff = ($window.height() - $header.outerHeight(true));
+//    if (diff < 0) {
+//        idTag.css('padding', 5 + 'px 0 ' + 60 + 'px 0');
+//        console.log(('padding <0 : '+ 5 + 'px 0 ' + 60 + 'px 0'));
+//    } else {
+//        idTag.css('padding', (diff / 2) + 'px 0 ' + (diff / 2) + 'px 0');
+//        console.log('padding: '+ (diff / 2) + 'px 0 ' + (diff / 2) + 'px 0');
+//    }
+//}

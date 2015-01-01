@@ -52,7 +52,7 @@ a:hover {
     }
 
 .bcg {
-
+    /*background-color    : rgba(0, 255, 0, 0.25);*/
     background-position : center;
     height              : 100%;
     width               : 100%;
@@ -78,14 +78,20 @@ a:hover {
     text-shadow : 0 0 6px #000000;
     }
 
+header {
+    /*background-color : rgba(0, 255, 0, 0.25);*/
+    margin-bottom : 7em;
+    position      : relative;
+    }
+
 footer {
     position : absolute;
     bottom   : 2em;
     margin   : 0;
     width    : 100%;
+    /*background-color : rgba(0, 0, 255, 0.25);*/
     }
 
-    }
 footer h1, h2, h3, h4, h5, p, a {
     font-family : 'Oswald', sans-serif;
     }
@@ -198,12 +204,17 @@ footer a {
     }
 
 #myQuotes header {
-    cursor: default;
+    cursor : default;
+    }
+
+#myQuotes header p {
+    padding-top : 90px;
     }
 
 #anewquote {
     min-height : 18em;
     margin     : auto 80px auto 80px;
+    /*background-color : rgba(255, 0, 0, 0.5);*/
     }
 
 #sectiontopic h4 {
@@ -236,7 +247,8 @@ footer a {
 
 #funny {
     min-height : 18em;
-    margin     : auto 80px 0 80px;
+    margin     : 10px 80px auto 80px;
+    /*background-color : rgba(255, 0, 0, 0.5);*/
     }
 
 #funny h1 {
@@ -265,6 +277,14 @@ footer a {
     background-color : #558A89;
     }
 
+#photography header {
+    margin: 0 0 4em 0;
+    }
+
+#photography iframe{
+
+    }
+
 /* navigation   ------------------------------- */
 #nql, #nqr, #njl, #njr {
     margin             : 0;
@@ -290,10 +310,10 @@ footer a {
     }
 
 #nql, #nqr {
-    height            : 20px;
-    background-repeat : no-repeat;
-    overflow          : hidden;
-    background-position: center;
+    height              : 20px;
+    background-repeat   : no-repeat;
+    overflow            : hidden;
+    background-position : center;
     }
 
 #nql {
@@ -323,14 +343,14 @@ footer a {
     }
 
 /*#nql:hover:before {*/
-    /*}*/
+/*}*/
 
 /*#nqr:before {*/
-    /*}*/
+/*}*/
 
 /*#nqr:hover:before {*/
 
-    /*}*/
+/*}*/
 
 #njl :before {
     content : "\f104";

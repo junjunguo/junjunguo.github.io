@@ -1,225 +1,224 @@
-/*
-	Overflow by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-/*********************************************************************************/
-/* Basic                                                                         */
-/*********************************************************************************/
-
-	*
-	{
-		text-shadow: none !important;
-	}
-
-	body,input,textarea,select
-	{
-		line-height: 1.5em;
-		font-size: 12pt;
-		letter-spacing: 0;
-	}
-
-	h2, h3, h4, h5, h6
-	{
-		font-size: 1em;
-	}
-	
-	h2
-	{
-		font-size: 1.25em;
-		letter-spacing: 4px;
-	}
-
-	/* List */
-
-		ul
-		{
-		}
-
-			ul.default
-			{
-			}
-			
-				ul.default li
-				{
-					padding-left: 0.5em;
-				}		
-
-			ul.icons
-			{
-			}	
-			
-				ul.icons li
-				{
-				}
-				
-					ul.icons a
-					{
-						width: 2em;
-						height: 2em;
-						line-height: 2em;
-					}
-
-			ul.menu
-			{
-			}
-			
-				ul.menu li
-				{
-					display: block;
-					padding: 0;
-					border: 0;
-					margin: 1em 0 0 0;
-				}
-				
-				ul.menu li:first-child
-				{
-					margin-top: 0;
-				}
-
-			ul.actions
-			{
-			}
-			
-				ul.actions li
-				{
-					display: block;
-					margin: 1em 0 0 0;
-				}
-				
-				ul.actions li:first-child
-				{
-					margin-top: 0;
-				}
-
-		ol
-		{
-		}
-
-			ol.default
-			{
-			}
-
-				ol.default li
-				{
-					padding-left: 0.25em;
-				}
-
-	/* Button */
-		
-		input[type="button"],
-		input[type="submit"],
-		input[type="reset"],
-		.button
-		{
-			padding: 0.75em 0 0.75em 0;
-			width: 100%;
-			max-width: 320px;
-		}
-
-
-/*********************************************************************************/
-/* Header                                                                        */
-/*********************************************************************************/
-
-	#header
-	{
-		padding: 6em 0 6em 0;
-	}
-
-		#header header
-		{
-			padding-left: 2em;
-			padding-right: 2em;
-		}
-		
-			#header header h1
-			{
-				font-size: 1.75em;
-				letter-spacing: 6px;
-			}
-
-		#header footer
-		{
-			bottom: 4.5em;
-			padding: 0 2em 0 2em;
-		}
-
-			#header footer:after
-			{
-				bottom: -4.5em;
-				left: 50%;
-				height: 4.5em;
-			}
-		
-			#header footer:before
-			{
-				width: 45px;
-				height: 33px;
-				bottom: -2.25em;
-				margin-left: -22.5px;
-				margin-bottom: -16.5px;
-				background-size: 45px 33px;
-			}
-
-/*********************************************************************************/
-/* Banner                                                                        */
-/*********************************************************************************/
-
-	#myQuotes
-	{
-		padding: 3em 2em 3em 2em;
-		background-size: auto 150%;
-	}
-
-		#myQuotes header
-		{
-			margin: 0 0 1em 0;
-		}
-		
-			#myQuotes header h2
-			{
-				font-size: 1.5em;
-				letter-spacing: 6px;
-			}
-
-/*********************************************************************************/
-/* Footer                                                                        */
-/*********************************************************************************/
-	
-	#footer
-	{
-	}
-
-		#footer .icons
-		{
-			padding: 0.5em 1.25em 0.5em 1.25em;
-		}
-		
-		#footer .copyright
-		{
-			font-size: 1em;
-			margin: 0 0 4em 0;
-		}
-
-/*********************************************************************************/
-/* bcg                                                                        */
-/*********************************************************************************/
-.bcg header
-{
-    padding: 1em 1em 1em 1em;
-    background-size: auto 150%;
-    margin: 0 0 1em 0;
+* {
+    text-shadow : none !important;
     }
 
-#myQuotes header
-{
+body, input, textarea, select {
+    line-height    : 1.5em;
+    font-size      : 12pt;
+    letter-spacing : 0;
     }
-.bcg header h5
-{
-    line-height    : 4em;
-    font-size      : 0.7em;
+
+h2, h3, h4, h5, h6 {
+    font-size : 1em;
+    }
+
+h2 {
+    font-size      : 1.25em;
+    letter-spacing : 4px;
+    }
+
+/* List */
+
+ul {
+    }
+
+ul.default {
+    }
+
+ul.default li {
+    padding-left : 0.5em;
+    }
+
+ul.icons {
+    }
+
+ul.icons li {
+    }
+
+ul.icons a {
+    width       : 2em;
+    height      : 2em;
+    line-height : 2em;
+    }
+
+ul.menu {
+    }
+
+ul.menu li {
+    display : block;
+    padding : 0;
+    border  : 0;
+    margin  : 1em 0 0 0;
+    }
+
+ul.menu li:first-child {
+    margin-top : 0;
+    }
+
+ul.actions {
+    }
+
+ul.actions li {
+    display : block;
+    margin  : 1em 0 0 0;
+    }
+
+ul.actions li:first-child {
+    margin-top : 0;
+    }
+
+ol {
+    }
+
+ol.default {
+    }
+
+ol.default li {
+    padding-left : 0.25em;
+    }
+
+img {
+    max-width : 100%;
+    height    : auto
+    }
+
+/* Button */
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.button {
+    padding   : 0.75em 0 0.75em 0;
+    /*width     : 100%;*/
+    max-width : 320px;
+    }
+
+/* Header              ---------------------------- >  */
+
+#header {
+    padding : 6em 0 6em 0;
+    }
+
+#header header h1 {
+    font-size      : 1.65em;
+    letter-spacing : 5px;
+    }
+
+#header footer {
+    bottom  : 4.5em;
+    padding : 0 2em 0 2em;
+    }
+
+#header footer:after {
+    bottom : -4.5em;
+    height : 4.5em;
+    }
+
+#header footer:before {
+    width           : 45px;
+    height          : 33px;
+    bottom          : -2.25em;
+    margin-left     : -22.5px;
+    margin-bottom   : -16.5px;
+    background-size : 45px 33px;
+    }
+
+/* my quotes              ---------------------------- >  */
+
+#myQuotes {
+    padding : 1em 0 14em 0;
+    /*background-size : auto 150%;*/
+    }
+
+#myQuotes header {
+    /*margin : 0 0 1em 0;*/
+    }
+
+#myQuotes header h2 {
+    font-size      : 1.5em;
     letter-spacing : 6px;
-    cursor         : pointer;
     }
+
+#myQuotes footer {
+    bottom  : 4.5em;
+    padding : 0 0 0 0;
+    }
+
+/* my humor              ---------------------------- >  */
+#myHumor {
+    padding : 1em 0 14em 0;
+    /*background-size : auto 150%;*/
+    }
+
+#myHumor header {
+    /*margin : 0 0 1em 0;*/
+    }
+
+#myHumor header h2 {
+    font-size      : 1.5em;
+    letter-spacing : 5px;
+    }
+
+#myQuotes footer {
+    bottom  : 4.5em;
+    padding : 0 0 0 0;
+    }
+
+#topichumor i {
+    padding-right : 10px;
+    padding-left  : 10px;
+    margin-left   : 0;
+    margin-right  : 0;
+    }
+
+footer a {
+    margin : 0 5px 0 5px;
+    }
+
+/* my quotes              ---------------------------- >  */
+
+#photography {
+    padding : 1em 0 6em 0;
+    }
+
+#photography header {
+    /*margin : 0 0 1em 0;*/
+    }
+
+#photography header h2 {
+    font-size      : 1.5em;
+    letter-spacing : 6px;
+    }
+
+#photography footer {
+    bottom  : 4.5em;
+    padding : 0 0 0 0;
+    }
+
+#photography iframe {
+    max-width : 100%;
+    height    : auto
+    }
+
+/* Footer              ---------------------------- >  */
+
+#footer ul.menu li {
+    /*line-height : 1em;*/
+    border      : none;
+    /*border-left : solid 1px #DAD9D9;*/
+    padding     : 0 0 0 0;
+    margin      : 0 0 0 0;
+    }
+
+#footer footer a {
+    font-size     : 0.7em;
+    padding-right : 0;
+    padding-left  : 0;
+    }
+
+#footer .icons a {
+    width       : 2em;
+    height      : 2em;
+    line-height : 2em;
+    }
+

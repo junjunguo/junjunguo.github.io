@@ -5,6 +5,69 @@
     <title></title>
 </head>
 <body>
+<div id="thePics"></div>
+<pre>
+    for "order" :
 
+    popularity
+    upload_date
+
+    ------------
+
+    for "set" :
+
+    public (popular photos)
+    full (all photos)
+    user ID number
+
+    ------------
+
+    for "size" :
+
+    original
+    medium (default value)
+    small
+    thumbnailsquare
+    mini_square
+
+</pre>
+<script>
+    $.getJSON("http://www.panoramio.com/map/get_panoramas.php?order=popularity&set=full&from=0&to=10&minx=-3.59&miny=37.17&maxx=-3.79&maxy=37.37&size=medium",
+//    $.getJSON("http://www.panoramio.com/map/get_panoramas.php?set=user&user=2481456&&size=medium",
+
+    {},
+
+    function(data) {
+
+        var thePicsHTML;
+
+        $(data).each(function(i, item) {
+
+            thePhoto=$(this)[0].photos[i];
+
+            thePicsHTML +="<img src='" + thePhoto.photo_file_url + "'>";
+
+            thePicsHTML += "";
+
+            thePicsHTML += thePhoto.photo_title;
+
+            thePicsHTML += "";
+
+            thePicsHTML += "Photo from: " + thePhoto.owner_name;
+
+            thePicsHTML += "";
+
+            thePicsHTML += "<a href='" + thePhoto.photo_url + "' target=_blank>Check the photo at Panoramio</a>";
+
+            thePicsHTML += "<p>";
+
+        })
+
+        $("#thePics").html(thePicsHTML);
+
+    }
+
+    );
+</script>
 </body>
 </html>

@@ -190,7 +190,7 @@
                             if (skel.isActive('mobile'))
                                 idTag.css('padding', '');
                             else {
-                                var p = Math.max(120, ($window.height() - $header_header.outerHeight(true)) / 2);
+                                var p = Math.max(60, ($window.height() - $header_header.outerHeight(true)) / 2);
                                 idTag.css('padding', p + 'px 0 ' + p + 'px 0');
                             }
 
