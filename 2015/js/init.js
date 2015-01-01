@@ -187,9 +187,11 @@
                 $window
                     .on('resize.overflow_fsh', function () {
 
-                            if (skel.isActive('mobile'))
+                            if (skel.isActive('mobile')) {
                                 idTag.css('padding', '');
-                            else {
+                                document.getElementById("panoramio").innerHTML =
+                                    '<iframe frameborder="0" height="200" marginheight="0" marginwidth="0" scrolling="no"src="http://www.panoramio.com/wapi/template/slideshow.html?user=2481456&amp;tag=best&amp;width=330&amp;height=200&amp;order=date_desc&amp;delay=8"width="330"></iframe>';
+                            } else {
                                 var p = Math.max(60, ($window.height() - $header_header.outerHeight(true)) / 2);
                                 idTag.css('padding', p + 'px 0 ' + p + 'px 0');
                             }
