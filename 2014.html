@@ -23,13 +23,15 @@
 
     <script type="text/javascript">
         var nrlist = [			//  Images id numbers
-            77233663, 105836333, 109199045, 109172199, 92464442, 92464435, 55717739, 77835786, 107909681, 51569735, 108930464, 109049207, 109100961, 106397977, 92401424
+            77233663, 105836333, 109199045, 109172199, 92464442, 92464435, 55717739, 77835786, 107909681, 51569735,
+            108930464, 109049207, 109100961, 106397977, 92401424
         ]
         function shuffleList(list) { // shuffle nrlist and return a list with objects ready for slides
             var copy = [], n = list.length, index;
             while (n) {
                 index = Math.floor(Math.random() * (n--));
-                copy.push({'image': 'http://static.panoramio.com/photos/large/' + list[index] + '.jpg', 'title': 'Image Credit: GuoJunjun', 'thumb': '', 'url': ''});
+                copy.push({'image': 'http://static.panoramio.com/photos/large/' + list[index] +
+                        '.jpg', 'title': 'Image Credit: GuoJunjun', 'thumb': '', 'url': ''});
                 list.splice(index, 1);
             }
             return copy;
@@ -39,15 +41,15 @@
 
             $.supersized({
 
-                // Functionality
-                slide_interval: 99000,		// Length between transitions
-                transition: 1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-                transition_speed: 300,		// Speed of transition
+                             // Functionality
+                             slide_interval: 99000,		// Length between transitions
+                             transition: 1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+                             transition_speed: 300,		// Speed of transition
 
-                // Components
-                slide_links: 'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
-                slides: shuffleList(nrlist) //slide images
-            });
+                             // Components
+                             slide_links: 'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+                             slides: shuffleList(nrlist) //slide images
+                         });
         });
 
     </script>
@@ -65,7 +67,7 @@
             m.parentNode.insertBefore(a, m)
         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-49981756-1', 'junjunguo.com');
+        ga('create', 'UA-49981756-1', 'auto');
         ga('send', 'pageview');
 
     </script>
@@ -78,82 +80,82 @@
     <style type="text/css">
 
         .post_header h2, h1, h2, h3, h4, h5 {
-            color: #ffc800;
-        }
+            color : #ffc800;
+            }
 
         body, #page_content_wrapper .sidebar .content .sidebar_widget li a {
-            color: #cccccc;
-        }
+            color : #cccccc;
+            }
 
         .nav, .subnav {
-            font-size: 32px;
-        }
+            font-size : 32px;
+            }
 
         .nav li.current-menu-item > a, .nav li > a:hover, .nav li > a:active {
-            color: #ffc800;
-        }
+            color : #ffc800;
+            }
 
         h1 {
-            font-size: 40px;
-        }
+            font-size : 40px;
+            }
 
         h2 {
-            font-size: 32px;
-        }
+            font-size : 32px;
+            }
 
         h3 {
-            font-size: 26px;
-        }
+            font-size : 26px;
+            }
 
         h4 {
-            font-size: 24px;
-        }
+            font-size : 24px;
+            }
 
         h5 {
-            font-size: 22px;
-        }
+            font-size : 22px;
+            }
 
         h6 {
-            font-size: 18px;
-        }
+            font-size : 18px;
+            }
 
         a {
-            color: #ffffff;
-        }
+            color : #ffffff;
+            }
 
         a:hover, a:active {
-            color: #bdbdbd;
-        }
+            color : #bdbdbd;
+            }
 
         input[type=submit], input[type=button], a.button {
-            background: #000000;
-            background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#000000));
-            background: -moz-linear-gradient(top, #333333, #000000);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#000000');
-        }
+            background : #000000;
+            background : -webkit-gradient(linear, left top, left bottom, from(#333333), to(#000000));
+            background : -moz-linear-gradient(top, #333333, #000000);
+            filter     : progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#000000');
+            }
 
         input[type=submit]:active, input[type=button]:active, a.button:active {
-            background: #000000;
-            background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#333333));
-            background: -moz-linear-gradient(top, #000000, #333333);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#000000');
-        }
+            background : #000000;
+            background : -webkit-gradient(linear, left top, left bottom, from(#000000), to(#333333));
+            background : -moz-linear-gradient(top, #000000, #333333);
+            filter     : progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#000000');
+            }
 
         input[type=submit], input[type=button], a.button {
-            color: #ffffff;
-        }
+            color : #ffffff;
+            }
 
         input[type=submit]:hover, input[type=button]:hover, a.button:hover {
-            color: #ffffff;
-        }
+            color : #ffffff;
+            }
 
         input[type=submit], input[type=button], a.button {
-            border: 1px solid #444444;
-        }
+            border : 1px solid #444444;
+            }
 
         .post_header h2, h1, h2, h3, h4, h5 {
-            color: #ffc800;
-        }
+            color : #ffc800;
+            }
 
     </style>
 
