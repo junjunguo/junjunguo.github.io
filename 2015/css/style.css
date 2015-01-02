@@ -36,8 +36,8 @@ body, input, textarea, select {
     }
 
 a {
-    color               : #35B88F;
-    text-shadow         : 0 0 0.5px rgba(53, 184, 143, 0.25);
+    color               : #32CD32;
+    text-shadow         : 0 0 0.5px rgba(50, 205, 50, 0.3);
     -moz-transition     : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
     -webkit-transition  : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
     -o-transition       : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
@@ -104,15 +104,15 @@ footer a {
 
 #header {
     position                : relative;
-    background-size         : cover;
+    background-size         : cover, cover;
     -moz-background-size    : cover;
     -webkit-background-size : cover;
     -o-background-size      : cover;
     /*CSS fadeIN  property duration timing-function delay*/
-    -webkit-transition      : background 300ms ease-in 200ms;
-    -moz-transition         : background 300ms ease-in 200ms;
-    -o-transition           : background 300ms ease-in 200ms;
-    transition              : background 300ms ease-in 200ms;
+    -webkit-transition      : background 600ms ease-in 500ms;
+    -moz-transition         : background 600ms ease-in 500ms;
+    -o-transition           : background 600ms ease-in 500ms;
+    transition              : background 600ms ease-in 500ms;
     }
 
 #header header {
@@ -179,12 +179,12 @@ footer a {
     }
 
 .prevslide {
-    left             : 35px;
+    left             : 535px;
     background-image : url('images/navleftr.svg');
     }
 
 .nextslide {
-    right            : 35px;
+    right            : 535px;
     background-image : url('images/navrightl.svg');
     }
 
@@ -224,24 +224,9 @@ footer a {
 
 /*title fly down */
 #header .b0 {
-    position                    : relative;
-    top                         : -350px;
-    -moz-animation              : nav-icons 0.5s ease-in-out forwards;
-    -webkit-animation           : nav-icons 0.5s ease-in-out forwards;
-    -o-animation                : nav-icons 0.5s ease-in-out forwards;
-    -ms-animation               : nav-icons 0.5s ease-in-out forwards;
-    animation                   : nav-icons 0.5s ease-in-out forwards;
-    -moz-backface-visibility    : hidden;
-    -webkit-backface-visibility : hidden;
-    -o-backface-visibility      : hidden;
-    -ms-backface-visibility     : hidden;
-    backface-visibility         : hidden;
-    -moz-transform              : translate3d(0, 0, 0);
-    -webkit-transform           : translate3d(0, 0, 0);
-    -o-transform                : translate3d(0, 0, 0);
-    -ms-transform               : translate3d(0, 0, 0);
-    transform                   : translate3d(0, 0, 0);
-    opacity                     : 0;
+    position : relative;
+    top      : -350px;
+    opacity  : 0;
     }
 
 /*navigation animation*/
@@ -285,21 +270,21 @@ footer a {
     }
 
 #header nav a:before {
-    -moz-transition    : all 0.2s ease-in-out;
-    -webkit-transition : all 0.2s ease-in-out;
-    -o-transition      : all 0.2s ease-in-out;
-    -ms-transition     : all 0.2s ease-in-out;
-    transition         : all 0.2s ease-in-out;
+    -moz-transition    : all 0.3s ease-in-out;
+    -webkit-transition : all 0.3s ease-in-out;
+    -o-transition      : all 0.3s ease-in-out;
+    -ms-transition     : all 0.3s ease-in-out;
+    transition         : all 0.3s ease-in-out;
     border-radius      : 100%;
     border             : solid 1px white;
     display            : block;
     font-size          : 1.5em;
     height             : 2em;
+    width              : 2em;
     line-height        : 2em;
     position           : relative;
     text-align         : center;
     top                : 0;
-    width              : 2em;
     }
 
 #header nav a:hover {
@@ -451,12 +436,10 @@ footer a {
     }
 
 #nql {
-    /*float: left;*/
     background-image : url('images/navleftr.svg');
     }
 
 #nqr {
-    /*float: right;*/
     background-image : url('images/navrightl.svg');
     }
 
@@ -510,8 +493,6 @@ footer a {
     position              : relative;
     text-shadow           : 0 0 0.5px rgba(255, 255, 255, 0.25);
     text-align            : center;
-    /*background: url("images/overlay-black.svg"), url("http://static.panoramio.com/photos/large/77835780.jpg");*/
-    /*background            : url("images/overlay-black.svg"), #3C4757 url("http://static.panoramio.com/photos/large/101153731.jpg");*/
     background            : url("images/overlay-black.svg"), #3C4757 url("http://static.panoramio.com/photos/large/106397977.jpg");
     background            : cover;
     background-repeat     : repeat, no-repeat;
@@ -519,6 +500,11 @@ footer a {
     background-position   : top left, center 0;
     background-attachment : fixed, fixed;
     font-family           : 'Oswald', sans-serif;
+    /*CSS fadeIN  property duration timing-function delay*/
+    -webkit-transition    : background 500ms ease-in 600ms;
+    -moz-transition       : background 500ms ease-in 600ms;
+    -o-transition         : background 500ms ease-in 600ms;
+    transition            : background 500ms ease-in 600ms;
 
     }
 
@@ -539,29 +525,123 @@ footer a {
     }
 
 #footer a:hover {
-    color               : #35B88F;
-    text-shadow         : 0 0 0.5px rgba(69, 200, 159, 0.25);
-    border-bottom-color : rgba(53, 184, 143, 0.5);
+    color               : #32CD32;
+    text-shadow         : 0 0 5px rgba(50, 205, 50, 0.4);
+    border-bottom-color : rgba(50, 205, 50, 0.6);
     }
 
-#footer .icons {
-    padding       : 0.75em 2em 0.75em 2em;
-    border-radius : 3em;
-    /*border        : solid 1px #FFFFFF;*/
-    display       : inline-block;
-    margin        : 0 0 3em 0;
+#footer .socialicons {
+    margin : 1.5em 0 0 0;
+    }
+
+#footer .socialicons li {
+    -moz-animation    : nav-icons 0.5s ease-in-out forwards;
+    -webkit-animation : nav-icons 0.5s ease-in-out forwards;
+    -o-animation      : nav-icons 0.5s ease-in-out forwards;
+    -ms-animation     : nav-icons 0.5s ease-in-out forwards;
+    animation         : nav-icons 0.5s ease-in-out forwards;
+    -moz-transform    : translate3d(0, 0, 0);
+    -webkit-transform : translate3d(0, 0, 0);
+    -o-transform      : translate3d(0, 0, 0);
+    -ms-transform     : translate3d(0, 0, 0);
+    transform         : translate3d(0, 0, 0);
+    display           : inline-block;
+    height            : 3.5em;
+    width             : 3.5em;
+    line-height       : 4.885em;
+    position          : relative;
+    }
+
+#footer .socialicons a {
+    -webkit-tap-highlight-color : transparent;
+    -webkit-touch-callout       : none;
+    border                      : 0;
+    display                     : inline-block;
+    color                       : rgba(255, 255, 255, 0.5);
+    }
+
+#footer .socialicons a:before {
+    -moz-transition    : all 0.4s ease-in-out;
+    -webkit-transition : all 0.4s ease-in-out;
+    -o-transition      : all 0.4s ease-in-out;
+    -ms-transition     : all 0.4s ease-in-out;
+    transition         : all 0.4s ease-in-out;
+    border-radius      : 100%;
+    border             : solid 1px white;
+    display            : block;
+    font-size          : 1.3em;
+    height             : 2em;
+    width              : 2em;
+    line-height        : 2em;
+    position           : relative;
+    text-align         : center;
+    top                : 0;
+    }
+
+#footer ul.socialicons a:hover {
+    font-size : 1.2em;
+    color     : rgba(50, 205, 50, 1);
     }
 
 #sitemap {
-    /*background-color: #000;*/
     margin-bottom  : 2em;
     text-transform : uppercase;
     }
 
-/*#sitmap td a{*/
-/*font-family : 'Oswald', sans-serif;*/
+#footer footer {
+    /*margin-bottom: 2em;*/
+    bottom : 5em;
+    }
 
+#footer .copyright {
+    position         : absolute;
+    width            : 100%;
+    background-color : rgba(0, 0, 0, 0.6);
+    bottom           : -5em;
+    padding-bottom   : 0;
+    margin-bottom    : 0;
+    }
+
+#footer .copyright P {
+    font-family : "Open Sans", sans-serif;
+    font-weight : 100;
+    font-size   : 12px;
+    margin-left : 20%;
+    }
+
+#footer .copyright a {
+    /*font-family    : "Open Sans", sans-serif;*/
+    font-weight : 100;
+    font-size   : 12px;
+    }
+
+/*#footer .copyright i {*/
+/*float : right;*/
+/*margin-left: 20%;*/
+/*font-size   : 24px;*/
 /*}*/
+
+#footer .copyright img {
+    cursor             : zoom-in;
+    height             : 30px;
+    width              : auto;
+    vertical-align     : middle;
+    margin-left        : 20%;
+    padding            : 0 5em 0 5em;
+    /*background-color   : #000000;*/
+    -webkit-transition : all 1s ease;
+    -moz-transition    : all 1s ease;
+    -o-transition      : all 1s ease;
+    -ms-transition     : all 1s ease;
+    transition         : all 1s ease;
+    }
+
+#footer .copyright img:hover {
+    -webkit-filter   : blur(3px);
+    border-radius    : 100%;
+
+    background-color : rgba(255, 255, 255, 0.1);
+    }
 
 #sitemap table {
     text-align : center;
@@ -575,7 +655,6 @@ footer a {
 #sitemap table td {
     text-align : left;
     font-size  : 18px;
-
     }
 
 #sitemap .sitemapl {
@@ -596,23 +675,6 @@ ul.default li {
 
 ul.default li:first-child {
     margin-top : 0;
-    }
-
-ul.icons {
-    cursor : default;
-    }
-
-ul.icons li {
-    display : inline-block;
-    }
-
-ul.icons a {
-    display     : inline-block;
-    width       : 2.5em;
-    height      : 2.5em;
-    line-height : 2.5em;
-    text-align  : center;
-    border      : 0;
     }
 
 ul.menu {
