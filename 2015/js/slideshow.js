@@ -31,7 +31,7 @@ function addImage(theImg) {
 }
 var listh = [			//  Images id numbers for header
     77233663, 105836333, 109199045, 109172199, 92464442, 92464435, 107909681, 51569735, 108930464,
-    109049207, 109100961, 106419102, 51569745, 78491829, 49428516, 43143230,  106397984, 100920020
+    109049207, 109100961, 106419102, 51569745, 78491829, 49428516, 43143230, 106397984
 ];
 function slideShow() {
     var counter = 0; // to keep track of current slide
@@ -92,8 +92,8 @@ $(".nextslide").animate({ "right": "-=500px", opacity: 1}, 2000);
 
 
 //
-var listf = [			//  Images id numbers for header
-    106397977, 101153731, 77835780,100920022,42462727, 55717739, 77835786
+var listf = [			//  Images id numbers for footer
+    106397977, 101153731, 77835780, 100920022, 42462727, 55717739, 77835786, 100920020
 ];
 function changeBCP() {
 
