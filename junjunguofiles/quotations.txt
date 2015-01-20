@@ -71,13 +71,19 @@ Immanuel Kant	#	But, though all our knowledge begins with experience, it by no m
 Immanuel Kant	#	Jeg skal alltid handle slik at den regelen jeg handler etter kunne gjelde som allmenn lov.
 Albert Einstein	#	Any fool can know. The point is to understand.
 Albert Einstein	#	It is not that I'm so smart. But I stay with the questions much longer.
+Albert Einstein	#	I have no special talents. I am only passionately curious.
 Audrey Hepburn  #   Nothing is impossible, the word itself says 'I'm possible'!
 Benjamin Franklin	#	Tell me and I forget, teach me and I may remember, involve me and I learn.
+Benjamin Franklin	#	Diligence is the mother of good luck.
 Bram Stoker	#	We learn from failure, not from success!
 Bil Keane   #   Yesterday is history, tomorrow is a mystery, today is a gift of God, which is why we call it the present.
 Bernard M. Baruch	#	Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.
 Beverly Sills	#	There are no shortcuts to any place worth going. <br> 任何值得去的地方，都没有捷径。
 Confucius	#	Study the past if you would define the future.
+Confucius	#	Wherever you go, go with all your heart.<br>既来之则安之.
+Confucius	#	工欲善其事，必先利其器.<br>The expectations of life depend upon diligence; the mechanic that would perfect his work must first sharpen his tools.
+Confucius	#	Choose a job you love, and you will never have to work a day in your life.<br>知之者不如好之者，好之者不如乐之者.
+Confucius	#	<b>You Can Learn From Everyone.</b> <br>三人行，必有我师焉；择其善者而从之，其不善者而改之.<br>In a group of three people, there is always something I can learn from. Choose to follow the strengths of others, use the shortcomings to reflect upon ourselves.
 Confucius	#	You cannot open a book without learning something.
 Carl Sagan  #   Biology is more like history than it is like physics: <b>you have to know the past to understand the present.</b> There’s no predictive theory of biology just as there’s no predictive theory of history. The reason is the same: both subjects are still too complicated for us. But we can understand ourselves much better by understanding other cases.
 Dr. Seuss	#	You know you're in love when you can't fall asleep because reality is finally better than your dreams.
@@ -100,3 +106,8 @@ William Shakespeare #   The fool doth think he is wise, but the wise man knows h
 村上春树	#	活着就意味着必须要做点什么 请好好努力。
 张德芬	#	<b>你处理情绪的速度，就是你迈向成功的速度</b><br>真正的问题是在于你的“情绪”。一件事情发生了，你不喜欢的事情发生了，而真正为你带来的困难，真正阻碍你的能量流动，真正让你不能够每天开怀自在有那种解脱自在的感受是什么？是你的“情绪”。所以有位大师曾经说过：“你处理情绪的速度，就是你迈向成功的速度。”
 网络	#	真正能让你倒下的，不是对手，而是你绝望的内心。
+Harriet Tubman	#	Every great dream begins with a dreamer. Always remember, you have within you the strength, the patience, and the passion to reach for the stars to change the world.
+Donovan Bailey	#	Follow your passion, be prepared to work hard and sacrifice, and, above all, don't let anyone limit your dreams.
+Jess C. Scott, The Intern	#	When someone loves you, the way they talk about you is different. You feel safe and comfortable.
+John Lennon	#	There are two basic motivating forces: fear and love. When we are afraid, we pull back from life. When we are in love, we open to all that life has to offer with passion, excitement, and acceptance. We need to learn to love ourselves first, in all our glory and our imperfections. If we cannot love ourselves, we cannot fully open to our ability to love others or our potential to create. Evolution and all hopes for a better world rest in the fearlessness and open-hearted vision of people who embrace life.
+Georg Wilhelm Friedrich Hegel	#	Nothing great in the world was accomplished without passion.
