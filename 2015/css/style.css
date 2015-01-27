@@ -411,6 +411,7 @@ footer a {
     background-repeat     : repeat, no-repeat;
     background-attachment : fixed;
     background-size       : auto, cover;
+    padding: 20px 0 30px 0;
     }
 
 #myportfolio {
@@ -425,11 +426,9 @@ footer a {
     display        : inline-block;
     height         : 400px;
     width          : 300px;
-    /*line-height       : 20em;*/
     position       : relative;
-    /*border            : double;*/
+    border            : double;
     margin         : 0 0 0 0;
-    /*text-align: center;*/
     vertical-align : middle;
     }
 
