@@ -404,6 +404,113 @@ footer a {
 
     }
 
+/* my portfolio  ------------------------------------------ */
+#portfolio {
+    position              : relative;
+    background            : url('images/overlay.svg'), url('http://static.panoramio.com/photos/large/101153737.jpg');
+    background-repeat     : repeat, no-repeat;
+    background-attachment : fixed;
+    background-size       : auto, cover;
+    }
+
+#myportfolio {
+    min-height : 550px;
+    }
+
+#myportfolio ul {
+    padding : 80px 20px 20px 20px;
+    }
+
+#myportfolio li {
+    display        : inline-block;
+    height         : 400px;
+    width          : 300px;
+    /*line-height       : 20em;*/
+    position       : relative;
+    /*border            : double;*/
+    margin         : 0 0 0 0;
+    /*text-align: center;*/
+    vertical-align : middle;
+    }
+
+#myportfolio img {
+    height                      : 300px;
+    width                       : auto;
+    -moz-transition-duration    : 2s; /* firefox */
+    -webkit-transition-duration : 2s; /* chrome, safari */
+    -o-transition-duration      : 2s; /* opera */
+    -ms-transition-duration     : 2s; /* ie 9 */
+    }
+
+#myportfolio img:hover {
+    height : 400px;
+    width  : auto;
+
+    }
+
+/*
+
+====== 3d unfold ======
+
+*/
+
+.portfolio-popup a{
+    color: white;
+    font-size: 16px;
+    }
+
+.portfolio-popup a:hover{
+    color: white;
+    font-size: 17px;
+    color               : #32CD32;
+    text-shadow         : 0 0 5px rgba(50, 205, 50, 0.4);
+    border-bottom-color : rgba(50, 205, 50, 0.6);
+    }
+
+/* text-based popup styling */
+.white-popup {
+    position   : relative;
+    background : rgba(0, 0, 0, 0.05);
+    padding    : 25px;
+    width      : auto;
+    max-width  : 500px;
+    margin     : 0 auto;
+    text-align: center;
+    }
+
+.mfp-3d-unfold {
+    /* start state */
+    /* animate in */
+    /* animate out */
+    }
+.mfp-3d-unfold .mfp-content {
+    perspective: 2000px;
+    }
+.mfp-3d-unfold .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transform-style: preserve-3d;
+    transform: rotateY(-60deg);
+    }
+.mfp-3d-unfold.mfp-bg {
+    opacity: 0;
+    transition: all 0.5s;
+    }
+.mfp-3d-unfold.mfp-ready .mfp-with-anim {
+    opacity: 1;
+    transform: rotateY(0deg);
+    }
+.mfp-3d-unfold.mfp-ready.mfp-bg {
+    opacity: 0.8;
+    }
+.mfp-3d-unfold.mfp-removing .mfp-with-anim {
+    transform: rotateY(60deg);
+    opacity: 0;
+    }
+.mfp-3d-unfold.mfp-removing.mfp-bg {
+    opacity: 0;
+    }
+
 /* navigation   ------------------------------- */
 #nql, #nqr, #njl, #njr {
     margin             : 0;
@@ -550,6 +657,7 @@ footer a {
     width             : 3.5em;
     line-height       : 4.885em;
     position          : relative;
+    /*border : double;*/
     }
 
 #footer .socialicons a {
@@ -829,3 +937,5 @@ input[type="reset"].style2:hover,
 .icon > .label {
     display : none;
     }
+
+

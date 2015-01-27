@@ -14,8 +14,10 @@
     <script src="2015/js/jquery.scrolly.min.js"></script>
     <script src="2015/js/skel.min.js"></script>
     <script src="2015/js/init.js"></script>
+    <script src="2015/js/jquery.magnific-popup.js"></script>
     <!--<link rel="stylesheet" href="2015/css/skel.css"/>-->
     <link rel="stylesheet" href="2015/css/style.css"/>
+    <link rel="stylesheet" href="2015/css/magnific-popup.css"/>
     <link rel="stylesheet" href="2015/css/font-awesome.css"/>
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
@@ -129,11 +131,75 @@
                 <p>Slide show fra panoramio !</p>
             </div>
             <a href="#myHumor" class="button up style2 scrolly scrolly-centered"></a>
-            <a href="#footer" class="button down style2 scrolly scrolly-centered"></a>
+            <a href="#portfolio" class="button down style2 scrolly scrolly-centered"></a>
         </footer>
     </div>
 </section>
 
+<!-- section 4  ------------------------------------------------------------>
+<section id="portfolio">
+    <div class="bcg">
+        <header>
+            <div id="myportfolio" class="links">
+                <ul id="inline-popups">
+                    <!-- Images -->
+                    <li><a href="#calculator-popup" data-effect="mfp-3d-unfold"><img
+                            src="./data/calculator/calculator.png"></a></li>
+
+                    <li><a href="#currencyConverter-popup" data-effect="mfp-3d-unfold">
+                        <img src="./data/currencyConverter/currencyconverter1.png"></a></li>
+                    <li><a href="#timer-popup" data-effect="mfp-3d-unfold"><img src="./data/timer/timer.png"></a></li>
+
+
+                    <!-- Popups -->
+                    <div id="calculator-popup" class="white-popup mfp-with-anim mfp-hide portfolio-popup">
+                        <ul>
+                            <li><a href="./data/calculator/calculator.jar">Download Application</a></li>
+                            <li>
+                                <a href="https://github.com/junjunguo/HumanComputerInteraction/tree/master/Calculator">
+                                    see source code </a>
+                            </li>
+                            <li><img src="./data/calculator/calculator2.png"</li>
+                            <li><img src="./data/calculator/calculator3.png"</li>
+                        </ul>
+                    </div>
+                    <div id="currencyConverter-popup" class="white-popup mfp-with-anim mfp-hide portfolio-popup">
+                        <ul>
+                            <li><a href="./data/currencyConverter/currencyconverter.jar">Download Application</a></li>
+                            <li>
+                                <a href="https://github.com/junjunguo/HumanComputerInteraction/tree/master/currencyConverter">
+                                    see source code </a>
+                            </li>
+                            <li><img src="./data/currencyConverter/currencyconverter2.png"</li>
+                            <li><img src="./data/currencyConverter/currencyconverter3.png"</li>
+                            <li><img src="./data/currencyConverter/currencyconverter4.png"</li>
+                        </ul>
+                    </div>
+                    <div id="timer-popup" class="white-popup mfp-with-anim mfp-hide portfolio-popup">
+                        <ul>
+                            <li><a href="./data/timer/timer.jar">Download Application</a></li>
+                            <li>
+                                <a href="https://github.com/junjunguo/HumanComputerInteraction/tree/master/timer">
+                                    see source code </a>
+                            </li>
+                            <li><img src="./data/timer/timer2.png"</li>
+                        </ul>
+                    </div>
+
+                </ul>
+            </div>
+        </header>
+        <footer>
+            <div id="topichumor">
+                <h4>My Portfolio</h4>
+
+                <p>Some of my works</p>
+            </div>
+            <a href="#photography" class="button up style2 scrolly scrolly-centered"></a>
+            <a href="#footer" class="button down style2 scrolly scrolly-centered"></a>
+        </footer>
+    </div>
+</section>
 <!-- Footer ------------------------------------------------------------------------------>
 <section id="footer">
     <div class="bcg">

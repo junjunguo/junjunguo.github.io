@@ -30,8 +30,23 @@ function addImage(theImg) {
     document.getElementById("header").style.backgroundImage = "url('" + theImg + "')";
 }
 var listh = [			//  Images id numbers for header
-    77233663, 105836333, 109199045, 109172199, 92464442, 92464435, 107909681, 51569735, 108930464,
-    109049207, 109100961, 106419102, 51569745, 78491829, 49428516, 43143230, 106397984
+    77233663,
+    105836333,
+    109199045,
+    109172199,
+    92464442,
+    92464435,
+    107909681,
+    51569735,
+    108930464,
+    109049207,
+    109100961,
+    106419102,
+    51569745,
+    78491829,
+    49428516,
+    43143230,
+    106397984
 ];
 function slideShow() {
     var counter = 0; // to keep track of current slide
@@ -77,7 +92,10 @@ slideShow();
 $(".b0").animate({ "top": "+=350px", opacity: 1}, 1500);
 
 // fly up
-var list = [".b1", ".b2", ".b3", ".b4"];
+var list = [".b1",
+            ".b2",
+            ".b3",
+            ".b4"];
 
 for (i = 0; i < list.length; i++) {
     $(list[i]).animate({ "top": "-=450px", opacity: 1}, 2000 + i * 500, function () {
@@ -93,7 +111,14 @@ $(".nextslide").animate({ "right": "-=500px", opacity: 1}, 2000);
 
 //
 var listf = [			//  Images id numbers for footer
-    106397977, 101153731, 77835780, 100920022, 42462727, 55717739, 77835786, 100920020
+    106397977,
+    101153731,
+    77835780,
+    100920022,
+    42462727,
+    55717739,
+    77835786,
+    100920020
 ];
 function changeBCP() {
 
@@ -117,3 +142,17 @@ function changeBCP() {
 }
 
 changeBCP();
+
+
+//Magnific Popup ------------->
+// Inline popups
+$('#inline-popups').magnificPopup({
+                                      delegate: 'a',
+                                      removalDelay: 500, //delay removal by X to allow out-animation
+                                      callbacks: {
+                                          beforeOpen: function () {
+                                              this.st.mainClass = this.st.el.attr('data-effect');
+                                          }
+                                      },
+                                      midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+                                  });
