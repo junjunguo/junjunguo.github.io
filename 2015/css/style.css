@@ -411,7 +411,7 @@ footer a {
     background-repeat     : repeat, no-repeat;
     background-attachment : fixed;
     background-size       : auto, cover;
-    padding: 20px 0 30px 0;
+    padding               : 20px 0 30px 0;
     }
 
 #myportfolio {
@@ -453,14 +453,14 @@ footer a {
 
 */
 
-.portfolio-popup a{
-    color: white;
-    font-size: 16px;
+.portfolio-popup a {
+    color     : white;
+    font-size : 16px;
     }
 
-.portfolio-popup a:hover{
-    color: white;
-    font-size: 17px;
+.portfolio-popup a:hover {
+    color               : white;
+    font-size           : 16px;
     color               : #32CD32;
     text-shadow         : 0 0 5px rgba(50, 205, 50, 0.4);
     border-bottom-color : rgba(50, 205, 50, 0.6);
@@ -474,7 +474,7 @@ footer a {
     width      : auto;
     max-width  : 500px;
     margin     : 0 auto;
-    text-align: center;
+    text-align : center;
     }
 
 .mfp-3d-unfold {
@@ -482,32 +482,43 @@ footer a {
     /* animate in */
     /* animate out */
     }
+
 .mfp-3d-unfold .mfp-content {
-    perspective: 2000px;
+    perspective : 2000px;
     }
+
 .mfp-3d-unfold .mfp-with-anim {
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    transform-style: preserve-3d;
-    transform: rotateY(-60deg);
+    opacity         : 0;
+    transition      : all 0.3s ease-in-out;
+    transform-style : preserve-3d;
+    transform       : rotateY(-60deg);
     }
+
 .mfp-3d-unfold.mfp-bg {
-    opacity: 0;
-    transition: all 0.5s;
+    opacity    : 0;
+    transition : all 0.5s;
     }
+
 .mfp-3d-unfold.mfp-ready .mfp-with-anim {
-    opacity: 1;
-    transform: rotateY(0deg);
+    opacity   : 1;
+    transform : rotateY(0deg);
     }
+
 .mfp-3d-unfold.mfp-ready.mfp-bg {
-    opacity: 0.8;
+    opacity : 0.8;
     }
+
 .mfp-3d-unfold.mfp-removing .mfp-with-anim {
-    transform: rotateY(60deg);
-    opacity: 0;
+    transform : rotateY(60deg);
+    opacity   : 0;
     }
+
 .mfp-3d-unfold.mfp-removing.mfp-bg {
-    opacity: 0;
+    opacity : 0;
+    }
+
+.mfp-close-btn-in .mfp-close {
+    font-size : 50px;
     }
 
 /* navigation   ------------------------------- */
