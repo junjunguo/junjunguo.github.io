@@ -424,12 +424,20 @@ footer a {
 
 #myportfolio li {
     display        : inline-block;
-    height         : 400px;
-    width          : 300px;
     position       : relative;
-    /*border            : double;*/
+    /*border         : double;*/
     margin         : 0 0 0 0;
     vertical-align : middle;
+    }
+
+.portfolioImgSizeA {
+    height : 400px;
+    width  : 300px;
+    }
+
+.portfolioImgSizeB {
+    height : 400px;
+    width  : 500px;
     }
 
 #myportfolio img {
@@ -442,7 +450,7 @@ footer a {
     }
 
 #myportfolio img:hover {
-    height : 400px;
+    height : 360px;
     width  : auto;
 
     }
@@ -472,7 +480,7 @@ footer a {
     background : rgba(0, 0, 0, 0.05);
     padding    : 25px;
     width      : auto;
-    max-width  : 500px;
+    max-width  : 800px;
     margin     : 0 auto;
     text-align : center;
     }
