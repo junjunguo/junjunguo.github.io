@@ -24,6 +24,19 @@ Using Github to host my Personal Website:
 
 ![2014](./image/readme/7.png)
 
+Fun:
+
+![2014](./image/readme/8.png)
+
+Quotes:
+
+![2014](./image/readme/9.png)
+
+Photo:
+
+![2014](./image/readme/10.png)
+![2014](./image/readme/11.png)
+
 
 
 
