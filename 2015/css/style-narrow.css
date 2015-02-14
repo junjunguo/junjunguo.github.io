@@ -71,3 +71,7 @@ header p {
 .box.style3 {
     padding : 2.5em 2em 2.5em 2em;
     }
+#photography iframe {
+    max-width : 100%;
+    height    : auto
+    }
