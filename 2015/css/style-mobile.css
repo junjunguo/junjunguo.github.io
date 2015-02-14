@@ -99,14 +99,14 @@ footer a {
 
 #myQuotes header {
     /*background-color : #DEDEDE;*/
-    padding          : 0 0 1em 0;
-    margin           : 0 0 8em 0;
+    padding : 0 0 1em 0;
+    margin  : 0 0 8em 0;
     }
 
 #anewquote {
     /*background-color : #000000;*/
-    margin           : 0 0.5em 0 0.5em;
-    padding-top: 0;
+    margin      : 0 0.5em 0 0.5em;
+    padding-top : 0;
     }
 
 #sectiontopic a {
@@ -115,6 +115,7 @@ footer a {
     margin-left   : 0;
     margin-right  : 0;
     }
+
 #myQuotes header h5 {
     font-size      : 0.7em;
     letter-spacing : 3px;
@@ -172,6 +173,19 @@ footer a {
     max-width : 100%;
     height    : auto
     }
+
+/* my portfolio  ------------------------------------------ */
+
+.portfolioImgSizeA {
+    max-width : 100%;
+    height    : auto
+    }
+
+.portfolioImgSizeB {
+    max-width : 100%;
+    height    : auto
+    }
+
 
 /* Footer              ---------------------------- >  */
 
