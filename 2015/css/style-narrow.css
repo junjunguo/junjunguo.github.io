@@ -71,7 +71,25 @@ header p {
 .box.style3 {
     padding : 2.5em 2em 2.5em 2em;
     }
+
 #photography iframe {
     max-width : 100%;
-    height    : auto
+    }
+
+/* my portfolio  ------------------------------------------ */
+
+.portfolioImgSizeA {
+    max-width : 100%;
+    /*height    : 100%;*/
+    }
+
+.portfolioImgSizeB {
+    max-width : 100%;
+    /*height    : 100%;*/
+    }
+
+/* text-based popup styling */
+.white-popup {
+    max-width : 100%;
+    /*height    : 100%;*/
     }
