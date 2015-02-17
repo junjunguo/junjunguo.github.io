@@ -4,19 +4,34 @@
 
 
 /**
+ * check if client from China
+ */
+//function clientlocationplugin() {
+//    return jQuery.getScript('http://www.geoplugin.net/javascript.gp', function () {
+//        var country = geoplugin_countryName();
+//        var zone = geoplugin_region();
+//        var district = geoplugin_city();
+//        console.log("Your location is: " + country + ", " + zone + ", " + district);
+//    })();
+//}
+console.log("Your location: " + geoplugin_countryName());
+/**
  *  * shuffle the list and return a photo addressed list
-
  * @param list
  * @returns {Array}
  */
 function shuffleList(list) { // shuffle nrlist and return a list with objects ready for slides
-
-
     var copy = [], n = list.length, index;
+    var bgimgaddress;
+    if (geoplugin_countryName() == "China") {
+        bgimgaddress = './2015/images/bg/';
+    } else {
+        bgimgaddress = 'http://static.panoramio.com/photos/large/';
+    }
     while (n) {
         index = Math.floor(Math.random() * (n--));
 //        var overlay = 'url(".2015/css/images/overlay-black.svg"),'
-        copy.push('http://static.panoramio.com/photos/large/' + list[index] + '.jpg');
+        copy.push(bgimgaddress + list[index] + '.jpg');
         list.splice(index, 1);
     }
     return copy;

@@ -312,7 +312,7 @@ footer a {
 
 #myQuotes {
     position              : relative;
-    background            : #63B02E url('http://static.panoramio.com/photos/large/100026342.jpg') no-repeat center center fixed;
+    background            : #63B02E url('../../2015/images/bg/100026342.jpg') no-repeat center center fixed;
     background-repeat     : no-repeat;
     background-attachment : fixed;
     background-size       : cover;
@@ -350,7 +350,7 @@ footer a {
 
 #myHumor {
     position              : relative;
-    background            : url('images/overlay.svg'), url('http://static.panoramio.com/photos/large/101153737.jpg');
+    background            : url('images/overlay.svg'), url('../../2015/images/bg/101153737.jpg');
     background-repeat     : repeat, no-repeat;
     background-attachment : fixed;
     background-size       : auto, cover;
@@ -390,7 +390,7 @@ footer a {
 #photography {
     position              : relative;
     /*background-color : #696969;*/
-    background            : #696969 url('http://static.panoramio.com/photos/large/100026090.jpg') no-repeat center center fixed;
+    background            : #696969 url('../../2015/images/bg/100026090.jpg') no-repeat center center fixed;
     background-repeat     : no-repeat;
     background-attachment : fixed;
     background-size       : cover;
@@ -407,7 +407,7 @@ footer a {
 /* my portfolio  ------------------------------------------ */
 #portfolio {
     position              : relative;
-    background            : url('images/overlay.svg'), url('http://static.panoramio.com/photos/large/77233663.jpg');
+    background            : url('images/overlay.svg'), url('../../2015/images/bg/77233663.jpg');
     background-repeat     : repeat, no-repeat;
     background-attachment : fixed;
     background-size       : auto, cover;
@@ -626,7 +626,7 @@ footer a {
     position              : relative;
     text-shadow           : 0 0 0.5px rgba(255, 255, 255, 0.25);
     text-align            : center;
-    background            : url("images/overlay-black.svg"), #3C4757 url("http://static.panoramio.com/photos/large/106397977.jpg");
+    background            : url("images/overlay-black.svg"), #3C4757 url("../../2015/images/bg/106397977.jpg");
     background            : cover;
     background-repeat     : repeat, no-repeat;
     background-size       : auto, cover;
