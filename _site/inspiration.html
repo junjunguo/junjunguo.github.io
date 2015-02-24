@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        div {
+            position         : relative;
+            background-color : #abc;
+            width            : 40px;
+            height           : 40px;
+            float            : left;
+            margin           : 5px;
+            top              : 200px;
+            }
+    </style>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="2015/js/GuoJunjun.js"></script>
+</head>
+<body>
+<p>
+    <button id="go">Run »</button>
+</p>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+
+<script>
+    $("#go").click(function () {
+        $(".block:first").animate({down: 300}, {
+            duration: 100,
+            step: function (now, fx) {
+                $(".block:gt(0)").css("left", now);
+            }
+        });
+    });
+
+    $("#go").click(function () {
+        $(".block").animate({opacity: 0.5, "top": "-=150px" }, 1000);
+    });
+</script>
+
+
+</body>
+</html>

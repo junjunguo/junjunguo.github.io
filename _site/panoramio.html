@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="GuoJunjun's photo gallery"/>
+    <meta name="keywords"
+          content="GuoJunjun, Guo Junjun, Junjun Guo, JunjunGuo, GuoJunjun's photo gallery, Natural Photography Gallery, natural photo, Picture, photo, slr camera photography, slr digital photography, slr photography, photography digital"/>
+    <title>GuoJunjun's photo gallery: HTML test</title>
+    <link rel="stylesheet" type="text/css" href="font.css">
+    <script src="2015/js/GuoJunjun.js"></script>
+
+    <style>
+        body {
+            width   : 1024px;
+            height  : 1600px;
+            margin  : 0 auto 20px auto;
+            padding : 0 auto 20px auto;
+            }
+
+        figcaption {
+            padding : 15px 5px 10px 5px;
+            }
+
+        h1 {
+            text-align : center;
+            }
+
+        #div1 {
+            position : relative;
+            height   : 650px;
+            }
+
+        #div3 {
+            position : relative;
+            height   : 200px;
+            }
+
+        #div1 figure {
+            border           : 2px solid #373737;
+            width            : 1000px;
+            height           : 650px;
+            padding          : 10px;
+            margin           : 0 auto;
+            background-color : #EBEBEB;
+            font-family      : Papyrus;
+            text-align       : center;
+            font-size        : 12px;
+            }
+
+        #div2:hover {
+            position          : relative;
+            height            : 600px;
+            width             : auto;
+            transform         : rotate(7deg);
+            -ms-transform     : rotate(7deg); /* IE 9 */
+            -moz-transform    : rotate(7deg); /* Firefox */
+            -webkit-transform : rotate(7deg); /* Safari and Chrome */
+            -o-transform      : rotate(7deg); /* Opera */
+            }
+
+        #div2 figure {
+            border           : 2px solid #373737;
+            width            : 720px;
+            height           : 420px;
+            padding          : 5px;
+            margin           : 0 auto;
+            background-color : #EBEBEB;
+            font-family      : Papyrus;
+            text-align       : center;
+            font-size        : 12px;
+            }
+
+        #div2 iframe {
+            padding : 15px 5px;
+            margin  : 0 auto;
+            float   : right;
+            }
+
+        #div3 iframe {
+            padding : 15px 2px;
+            margin  : 0 auto;
+            float   : right;
+            }
+
+        #property {
+            width                       : 320px;
+            height                      : 210px;
+            background                  : red;
+            position                    : relative;
+            animation                   : myfirst 8s infinite;
+            animation-direction         : alternate;
+            /* Firefox */
+            -moz-animation              : myfirst 8s infinite;
+            -moz-animation-direction    : alternate;
+            /* Safari and Chrome */
+            -webkit-animation           : myfirst 8s infinite;
+            -webkit-animation-direction : alternate;
+            /* Opera */
+            -o-animation                : myfirst 8s infinite;
+            -o-animation-direction      : alternate;
+            }
+
+        #property iframe {
+            margin : 5px 10px 5px 10px;
+            }
+
+        @keyframes myfirst {
+            0% {
+                background : red;
+                left       : 0px;
+                top        : 0px;
+                }
+            25% {
+                background : yellow;
+                left       : 650px;
+                top        : 0px;
+                }
+            50% {
+                background : blue;
+                left       : 650px;
+                top        : 700px;
+                }
+            75% {
+                background : green;
+                left       : 0px;
+                top        : 700px;
+                }
+            100% {
+                background : red;
+                left       : 0px;
+                top        : 0px;
+                }
+            }
+
+        @-moz-keyframes myfirst /* Firefox */
+        {
+            0% {
+                background : red;
+                left       : -300px;
+                top        : 0px;
+                }
+            25% {
+                background : yellow;
+                left       : 650px;
+                top        : 0px;
+                }
+            50% {
+                background : blue;
+                left       : 650px;
+                top        : 700px;
+                }
+            75% {
+                background : green;
+                left       : -300px;
+                top        : 700px;
+                }
+            100% {
+                background : red;
+                left       : -300px;
+                top        : 0px;
+                }
+            }
+
+        @-webkit-keyframes myfirst /* Safari and Chrome */
+        {
+            0% {
+                background : red;
+                left       : -250px;
+                top        : 0px;
+                }
+            25% {
+                background : yellow;
+                left       : 650px;
+                top        : 0px;
+                }
+            50% {
+                background : blue;
+                left       : 650px;
+                top        : 700px;
+                }
+            75% {
+                background : green;
+                left       : -250px;
+                top        : 700px;
+                }
+            100% {
+                background : red;
+                left       : -250px;
+                top        : 0px;
+                }
+
+            }
+
+        @-o-keyframes myfirst /* Opera */
+        {
+            0% {
+                background : red;
+                left       : 0px;
+                top        : 0px;
+                }
+            25% {
+                background : yellow;
+                left       : 650px;
+                top        : 0px;
+                }
+            50% {
+                background : blue;
+                left       : 650px;
+                top        : 700px;
+                }
+            75% {
+                background : green;
+                left       : 0px;
+                top        : 700px;
+                }
+            100% {
+                background : red;
+                left       : 0px;
+                top        : 0px;
+                }
+            }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <h1>Photo Slide show</h1>
+    <figure>
+        <iframe frameborder="0" height="600" marginheight="0" marginwidth="0" scrolling="no"
+                src="http://www.panoramio.com/wapi/template/slideshow.html?user=2481456&amp;tag=best&amp;width=1000&amp;height=600&amp;order=date_desc&amp;delay=8"
+                width="1000">
+        </iframe>
+        <figcaption>Slide show fra panoramio</figcaption>
+    </figure>
+
+</div>
+<div id="property">
+    <iframe frameborder="0" height="200" marginheight="0" marginwidth="0" scrolling="no"
+            src="http://www.panoramio.com/wapi/template/slideshow.html?user=2481456&amp;tag=best&amp;width=300&amp;height=200&amp;order=date_desc&amp;bgcolor=white&amp;delay=3.5"
+            width="300">
+    </iframe>
+</div>
+<div id="div3">
+    <iframe frameborder="0" height="200" marginheight="0" marginwidth="0" scrolling="no"
+            src="http://www.panoramio.com/wapi/template/slideshow.html?user=2481456&amp;tag=like&amp;width=250&amp;height=200&amp;order=date_desc&amp;delay=4.12"
+            width="250">
+    </iframe>
+    <iframe frameborder="0" height="200" marginheight="0" marginwidth="0" scrolling="no"
+            src="http://www.panoramio.com/wapi/template/slideshow.html?user=2481456&amp;tag=like&amp;width=250&amp;height=200&amp;order=date_desc&amp;delay=4.14"
+            width="250">
+    </iframe>
+    <iframe frameborder="0" height="200" marginheight="0" marginwidth="0" scrolling="no"
+            src="http://www.panoramio.com/wapi/template/slideshow.html?user=2481456&amp;tag=like&amp;width=250&amp;height=200&amp;order=date_desc&amp;delay=4.16"
+            width="250">
+    </iframe>
+    <iframe frameborder="0" height="200" marginheight="0" marginwidth="0" scrolling="no"
+            src="http://www.panoramio.com/wapi/template/slideshow.html?user=2481456&amp;tag=like&amp;width=250&amp;height=200&amp;order=date_desc&amp;delay=4.18"
+            width="250">
+    </iframe>
+</div>
+<div id="div2">
+    <figure>
+        <iframe frameborder="0" height="350" marginheight="0" marginwidth="0" scrolling="no"
+                src="http://www.panoramio.com/wapi/template/slideshow.html?user=2481456&amp;tag=2013&amp;width=350&amp;height=350&amp;order=date_desc&amp;delay=4.5"
+                width="350">
+        </iframe>
+        <iframe frameborder="0" height="350" marginheight="0" marginwidth="0" scrolling="no"
+                src="http://www.panoramio.com/wapi/template/slideshow.html?user=2481456&amp;width=350&amp;height=350&amp;order=date_desc&amp;delay=3.5"
+                width="350">
+        </iframe>
+        <figcaption>Roterer - Slide show fra panoramio</figcaption>
+    </figure>
+</div>
+<div id="foot">
+    <p>
+        Menneskelivet er egentlig for kort til at man kan bli klok nok!
+
+        — Aristoteles
+    </p>
+</div>
+</body>
+</html>
+
+
+
+
