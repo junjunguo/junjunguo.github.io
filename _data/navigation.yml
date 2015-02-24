@@ -1,0 +1,19 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+
+- title: Articles
+  url: /articles/
+
+- title: Blog
+  url: /blog/
+
+- title: Tags
+  url: /tags/
+
+- title: Main
+  url: http://junjunguo.com
+
+- title: Search
+  url: /search/

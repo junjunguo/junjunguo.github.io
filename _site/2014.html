@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" class="cufon-active cufon-ready">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="GuoJunjun's Personal Web"/>
+    <meta name="keywords"
+          content="GuoJunjun, Guo Junjun, Junjun Guo, JunjunGuo, GuoJunjun's Personal Web, GuoJunjun's photo gallery, Computer Science, Informatikk, Datateknologi, Datateknikk, NTNU"/>
+    <title>GuoJunjun</title>
+
+
+    <!-- Template stylesheet -->
+    <link rel="shortcut icon" href="./junjunguofiles/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" id="screen_css-css" href="./junjunguofiles/screen.css" type="text/css" media="all">
+
+
+    <!--	Supersized - Fullscreen Slideshow jQuery Plugin Version : 3.2.7 -->
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="junjunguofiles/jquery.easing.min.js"></script>
+
+    <script type="text/javascript" src="junjunguofiles/supersized.3.2.7.min.js"></script>
+    <script type="text/javascript" src="junjunguofiles/supersized.shutter.min.js"></script>
+
+    <script type="text/javascript">
+        var nrlist = [			//  Images id numbers
+            77233663, 105836333, 109199045, 109172199, 92464442, 92464435, 55717739, 77835786, 107909681, 51569735,
+            108930464, 109049207, 109100961, 106397977, 92401424
+        ]
+        function shuffleList(list) { // shuffle nrlist and return a list with objects ready for slides
+            var copy = [], n = list.length, index;
+            while (n) {
+                index = Math.floor(Math.random() * (n--));
+                copy.push({'image': 'http://static.panoramio.com/photos/large/' + list[index] +
+                        '.jpg', 'title': 'Image Credit: GuoJunjun', 'thumb': '', 'url': ''});
+                list.splice(index, 1);
+            }
+            return copy;
+        }
+
+        jQuery(function ($) {
+
+            $.supersized({
+
+                             // Functionality
+                             slide_interval: 99000,		// Length between transitions
+                             transition: 1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+                             transition_speed: 300,		// Speed of transition
+
+                             // Components
+                             slide_links: 'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+                             slides: shuffleList(nrlist) //slide images
+                         });
+        });
+
+    </script>
+    <!--	Supersized - Fullscreen Slideshow jQuery Plugin Version : 3.2.7  end-->
+    <script src="2015/js/GuoJunjun.js"></script>
+
+
+    <!--[if IE 7]>
+    <link rel="stylesheet" href=".junjunguofiles/ie7.css" type="text/css" media="all"/>
+    <![endif]-->
+
+    <style type="text/css">
+
+        .post_header h2, h1, h2, h3, h4, h5 {
+            color : #ffc800;
+            }
+
+        body, #page_content_wrapper .sidebar .content .sidebar_widget li a {
+            color : #cccccc;
+            }
+
+        .nav, .subnav {
+            font-size : 32px;
+            }
+
+        .nav li.current-menu-item > a, .nav li > a:hover, .nav li > a:active {
+            color : #ffc800;
+            }
+
+        h1 {
+            font-size : 40px;
+            }
+
+        h2 {
+            font-size : 32px;
+            }
+
+        h3 {
+            font-size : 26px;
+            }
+
+        h4 {
+            font-size : 24px;
+            }
+
+        h5 {
+            font-size : 22px;
+            }
+
+        h6 {
+            font-size : 18px;
+            }
+
+        a {
+            color : #ffffff;
+            }
+
+        a:hover, a:active {
+            color : #bdbdbd;
+            }
+
+        input[type=submit], input[type=button], a.button {
+            background : #000000;
+            background : -webkit-gradient(linear, left top, left bottom, from(#333333), to(#000000));
+            background : -moz-linear-gradient(top, #333333, #000000);
+            filter     : progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#000000');
+            }
+
+        input[type=submit]:active, input[type=button]:active, a.button:active {
+            background : #000000;
+            background : -webkit-gradient(linear, left top, left bottom, from(#000000), to(#333333));
+            background : -moz-linear-gradient(top, #000000, #333333);
+            filter     : progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#000000');
+            }
+
+        input[type=submit], input[type=button], a.button {
+            color : #ffffff;
+            }
+
+        input[type=submit]:hover, input[type=button]:hover, a.button:hover {
+            color : #ffffff;
+            }
+
+        input[type=submit], input[type=button], a.button {
+            border : 1px solid #444444;
+            }
+
+        .post_header h2, h1, h2, h3, h4, h5 {
+            color : #ffc800;
+            }
+
+    </style>
+
+</head>
+
+<body>
+<div id="supersized" class="quality" style="display: block;"></div>
+<div id="supersized-loader" style="display: none;"></div>
+<div class="background-overlay"
+     style="margin: 0px; padding: 0px; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%;"></div>
+<div class="content">
+    <div class="logo"><h1><a href="index.html" title="Guo Junjun">Junjun Guo</a></h1></div>
+    <p><strong>I'm Junjun Guo</strong>, Computer Science Student at <br> Norwegian University of Science and Technology
+    </p>
+    <ul class="actions">
+        <li class="github"><a href="http://github.com/junjunguo" title="Github" target="_blank"></a></li>
+        <li class="linkedin"><a href="http://www.linkedin.com/in/guojunjun" title="LinkedIn" target="_blank"></a></li>
+        <li class="panoramio"><a href="http://www.panoramio.com/user/guojunjun" title="Panoramio" target="_blank"></a>
+        </li>
+        <li class="photo"><a href="photo.html" title="Photos"></a></li>
+        <li class="email"><a href="mailto:guojunjun@gmail.com" title="Email"></a></li>
+    </ul>
+</div>
+<!--Arrow Navigation-->
+<a id="prevslide"></a>
+<a id="nextslide"></a>
+
+<div id="footer">
+    <p id="myquotes"></p>
+    <script src="junjunguofiles/randomQuotes.js"></script>
+</div>
+</body>
+</html>
