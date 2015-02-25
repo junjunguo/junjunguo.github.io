@@ -6,8 +6,8 @@ categories: articles
 tags: [sample-post, readability, test, intro]
 image:
   feature: so-simple-sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  credit: photographer 
+  creditlink: http://junjunguo.com
 comments: true
 share: true
 ---

@@ -6,8 +6,8 @@ categories: articles
 tags: [sample-post, code, highlighting]
 image:
   feature: so-simple-sample-image-5.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  credit: photographer
+  creditlink: http://junjunguo
 comments: true
 share: true
 ---

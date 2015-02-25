@@ -9,8 +9,8 @@ comments: true
 share: true
 image:
   feature: so-simple-sample-image-7.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  credit: photographer
+  creditlink: http://junjunguo.com
 ---
 
 For those of you who may have content written by multiple authors on your site you can now assign different authors to each post if desired.

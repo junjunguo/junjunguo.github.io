@@ -1,19 +1,20 @@
 # Site navigation links
 
+
+- title: Main
+  url: /main.html
+
+- title: Articles
+  url: /articles/
+
 - title: Blog
   url: /blog/
 
 - title: Tags
   url: /tags/
 
-- title: Main
-  url: http://junjunguo.com
-
 - title: Search
   url: /search/
 
-  - title: Latest Posts
-    url: http://junjunguo.com/myblog.html
-
-  - title: Articles
-    url: /articles/
+- title: About
+  url: /index.html

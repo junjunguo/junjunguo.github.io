@@ -7,8 +7,8 @@ categories: articles
 tags: [sample-post]
 image:
   feature: so-simple-sample-image-1.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  credit: photographer
+  creditlink: http://junjunguo.com
 comments: true
 share: true
 ---
@@ -93,4 +93,4 @@ Non Pygments/Rouge code example
 
 Make any link standout more when applying the `.btn` class.
 
-<div markdown="0"><a href="http://mademistakes.com" class="btn">This is a button</a></div>
+<div markdown="0"><a href="http://junjunguo.com" class="btn">This is a button</a></div>
