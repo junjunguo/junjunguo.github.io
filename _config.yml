@@ -38,14 +38,14 @@ owner:
   disqus-shortname:
   twitter: #username
   facebook: #username
-  github: github.com/junjunguo
+  github: junjunguo
   stackexchange: #http://stackoverflow.com/users/123456/username
-  linkedin: linkedin.com/in/guojunjun
+  linkedin: guojunjun
   instagram: #username
-  flickr: https://www.flickr.com/photos/guojunjun/
+  flickr: guojunjun
   tumblr: #username
   google:
-    plus: https://plus.google.com/+JunjunGuo
+    plus: +JunjunGuo
     analytics: UA-49981756-1
     verify:
     ad-client:

@@ -1,11 +1,5 @@
 # Site navigation links
 
-#- title: About
-#  url: /about/
-
-- title: Articles
-  url: /articles/
-
 - title: Blog
   url: /blog/
 
@@ -17,3 +11,9 @@
 
 - title: Search
   url: /search/
+
+  - title: Latest Posts
+    url: http://junjunguo.com/myblog.html
+
+  - title: Articles
+    url: /articles/
