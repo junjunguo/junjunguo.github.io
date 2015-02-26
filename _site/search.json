@@ -10,30 +10,9 @@
 
   
     ,{
-      "title"			: "How To Implement Openstreetmap On Android 1",
-      "link"			: "http://junjunguo.com/how-to-implement-openstreetmap-on-android-1/",
-      "excerpt"		: "<p>OpenSteetMap (OSM) is a free editable map of the world, was inspired by Wikipedia, and it’s slogan is “The Free Wiki World
- Map”. </p>
-
-"
-    }
-  
-
-  
-    ,{
       "title"			: "Android Menu",
       "link"			: "http://junjunguo.com/articles/android-activitybar-menu/",
       "excerpt"		: "Example code for implementing Android action overflow menu"
-    }
-  
-
-  
-    ,{
-      "title"			: "Android Activitybar Menu",
-      "link"			: "http://junjunguo.com/android-activitybar-menu/",
-      "excerpt"		: "<p>Android Action Bar are used in many applications, it is easy to implemnet and for consistency in UI design it offers user a familiar interface across applications.</p>
-
-"
     }
   
 
