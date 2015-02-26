@@ -1,0 +1,95 @@
+<p>OpenSteetMap (OSM) is a free editable map of the world, was inspired by Wikipedia, and it’s slogan is “The Free Wiki World
+ Map”. </p>
+
+<p>OSM allows user to download maps for offline use, this is a big advantage over Google Map, 
+which only allows user to catch the map. With OSM a map can be per download to an application, 
+and can be used with out internet. </p>
+
+<h3 id="pygments-or-rouge-code-blocks">Pygments or Rouge Code Blocks</h3>
+
+<p>To modify styling and highlight colors edit <code>/_sass/_syntax.scss</code>.</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#container</span> <span class="p">{</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">-240px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;pagination&quot;</span> <span class="na">role=</span><span class="s">&quot;navigation&quot;</span><span class="nt">&gt;</span>
+    {% if page.previous %}
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;{{ site.url }}{{ page.previous.url }}&quot;</span> <span class="na">class=</span><span class="s">&quot;btn&quot;</span> <span class="na">title=</span><span class="s">&quot;{{ page.previous.title }}&quot;</span><span class="nt">&gt;</span>Previous article<span class="nt">&lt;/a&gt;</span>
+    {% endif %}
+    {% if page.next %}
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;{{ site.url }}{{ page.next.url }}&quot;</span> <span class="na">class=</span><span class="s">&quot;btn&quot;</span> <span class="na">title=</span><span class="s">&quot;{{ page.next.title }}&quot;</span><span class="nt">&gt;</span>Next article<span class="nt">&lt;/a&gt;</span>
+    {% endif %}
+<span class="nt">&lt;/nav&gt;</span><span class="c">&lt;!-- /.pagination --&gt;</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">module</span> <span class="nn">Jekyll</span>
+  <span class="k">class</span> <span class="nc">TagIndex</span> <span class="o">&lt;</span> <span class="no">Page</span>
+    <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">site</span><span class="p">,</span> <span class="n">base</span><span class="p">,</span> <span class="n">dir</span><span class="p">,</span> <span class="n">tag</span><span class="p">)</span>
+      <span class="vi">@site</span> <span class="o">=</span> <span class="n">site</span>
+      <span class="vi">@base</span> <span class="o">=</span> <span class="n">base</span>
+      <span class="vi">@dir</span> <span class="o">=</span> <span class="n">dir</span>
+      <span class="vi">@name</span> <span class="o">=</span> <span class="s1">&#39;index.html&#39;</span>
+      <span class="nb">self</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="vi">@name</span><span class="p">)</span>
+      <span class="nb">self</span><span class="o">.</span><span class="n">read_yaml</span><span class="p">(</span><span class="no">File</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="s1">&#39;_layouts&#39;</span><span class="p">),</span> <span class="s1">&#39;tag_index.html&#39;</span><span class="p">)</span>
+      <span class="nb">self</span><span class="o">.</span><span class="n">data</span><span class="o">[</span><span class="s1">&#39;tag&#39;</span><span class="o">]</span> <span class="o">=</span> <span class="n">tag</span>
+      <span class="n">tag_title_prefix</span> <span class="o">=</span> <span class="n">site</span><span class="o">.</span><span class="n">config</span><span class="o">[</span><span class="s1">&#39;tag_title_prefix&#39;</span><span class="o">]</span> <span class="o">||</span> <span class="s1">&#39;Tagged: &#39;</span>
+      <span class="n">tag_title_suffix</span> <span class="o">=</span> <span class="n">site</span><span class="o">.</span><span class="n">config</span><span class="o">[</span><span class="s1">&#39;tag_title_suffix&#39;</span><span class="o">]</span> <span class="o">||</span> <span class="s1">&#39;&amp;#8211;&#39;</span>
+      <span class="nb">self</span><span class="o">.</span><span class="n">data</span><span class="o">[</span><span class="s1">&#39;title&#39;</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">tag_title_prefix</span><span class="si">}#{</span><span class="n">tag</span><span class="si">}</span><span class="s2">&quot;</span>
+      <span class="nb">self</span><span class="o">.</span><span class="n">data</span><span class="o">[</span><span class="s1">&#39;description&#39;</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;An archive of posts tagged </span><span class="si">#{</span><span class="n">tag</span><span class="si">}</span><span class="s2">.&quot;</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+
+<h3 id="standard-code-block">Standard Code Block</h3>
+
+<pre><code>&lt;nav class="pagination" role="navigation"&gt;
+    {% if page.previous %}
+        &lt;a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}"&gt;Previous article&lt;/a&gt;
+    {% endif %}
+    {% if page.next %}
+        &lt;a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}"&gt;Next article&lt;/a&gt;
+    {% endif %}
+&lt;/nav&gt;&lt;!-- /.pagination --&gt;
+</code></pre>
+
+<h3 id="fenced-code-blocks">Fenced Code Blocks</h3>
+
+<p>To modify styling and highlight colors edit <code>/_sass/_coderay.scss</code>. Line numbers and a few other things can be modified in <code>_config.yml</code>. Consult <a href="http://jekyllrb.com/docs/configuration/">Jekyll’s documentation</a> for more information.</p>
+
+<pre><code class="language-css">#container {
+    float: left;
+    margin: 0 -240px 0 0;
+    width: 100%;
+}
+</code></pre>
+
+<pre><code class="language-html">&lt;nav class="pagination" role="navigation"&gt;
+    {% if page.previous %}
+        &lt;a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}"&gt;Previous article&lt;/a&gt;
+    {% endif %}
+    {% if page.next %}
+        &lt;a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}"&gt;Next article&lt;/a&gt;
+    {% endif %}
+&lt;/nav&gt;&lt;!-- /.pagination --&gt;
+</code></pre>
+
+<pre><code class="language-ruby">module Jekyll
+  class TagIndex &lt; Page
+    def initialize(site, base, dir, tag)
+      @site = site
+      @base = base
+      @dir = dir
+      @name = 'index.html'
+      self.process(@name)
+      self.read_yaml(File.join(base, '_layouts'), 'tag_index.html')
+      self.data['tag'] = tag
+      tag_title_prefix = site.config['tag_title_prefix'] || 'Tagged: '
+      tag_title_suffix = site.config['tag_title_suffix'] || '&amp;#8211;'
+      self.data['title'] = "#{tag_title_prefix}#{tag}"
+      self.data['description'] = "An archive of posts tagged #{tag}."
+    end
+  end
+end
+</code></pre>

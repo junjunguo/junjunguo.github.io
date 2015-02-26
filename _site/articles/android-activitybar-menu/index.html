@@ -1,0 +1,348 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Android Menu &#8211; GuoJunjun's Blog</title>
+<meta name="description" content="Example code for implementing Android action overflow menu">
+<meta name="keywords" content="Android, code, Java, Mobile, UI">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Android Menu">
+<meta name="twitter:description" content="Example code for implementing Android action overflow menu">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:4000/images/14788493716_b68010de78_k.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android Menu">
+<meta property="og:description" content="Example code for implementing Android action overflow menu">
+<meta property="og:url" content="http://localhost:4000/articles/android-activitybar-menu/">
+<meta property="og:site_name" content="GuoJunjun's Blog">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/articles/android-activitybar-menu/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="GuoJunjun's Blog Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/main.html" >Main</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/articles/" >Articles</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/blog/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/tags/" >Tags</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/search/" >Search</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/index.html" >About</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	
+		<div class="wrap">
+			<a href="http://localhost:4000/" class="site-logo" rel="home" title="GuoJunjun's Blog"><img src="http://localhost:4000/images/site-logo.png" width="200" height="200" alt="GuoJunjun's Blog logo" class="animated bounceInDown"></a>
+		</div>
+	
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+<div id="main" role="main">
+  <article class="hentry">
+    <img src="http://localhost:4000/images/14788493716_b68010de78_k.jpg" class="entry-feature-image" alt="Android Menu" ><p class="image-credit">Photo Credit: <a href="http://junjunguo.com">GuoJunjun</a>
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="http://localhost:4000/tags/#Android" title="Pages tagged Android">Android</a>&nbsp;&bull;&nbsp;<a href="http://localhost:4000/tags/#code" title="Pages tagged code">code</a>&nbsp;&bull;&nbsp;<a href="http://localhost:4000/tags/#Java" title="Pages tagged Java">Java</a>&nbsp;&bull;&nbsp;<a href="http://localhost:4000/tags/#Mobile" title="Pages tagged Mobile">Mobile</a>&nbsp;&bull;&nbsp;<a href="http://localhost:4000/tags/#UI" title="Pages tagged UI">UI</a></span>
+        
+          <h1 class="entry-title">Android Menu</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="GuoJunjun bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">GuoJunjun</span></span>
+        <span class="entry-date date published"><time datetime="2015-02-25T00:00:00+01:00"><i class="fa fa-calendar-o"></i> February 25, 2015</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=Android,code,Java,Mobile,UI&amp;text=Android%20Menu&amp;url=http://localhost:4000/articles/android-activitybar-menu/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/articles/android-activitybar-menu/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://localhost:4000/articles/android-activitybar-menu/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <p>Android Action Bar are used in many applications, it is easy to implement and for consistency in UI design it offers user a familiar interface across applications.</p>
+
+<h3 id="implement-the-overflow-menu">Implement the overflow menu</h3>
+
+<p>Create a new Android project.</p>
+
+<p>In the main activity class, inflate the menu which will adds the items to the action bar. </p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">onCreateOptionsMenu</span><span class="o">(</span><span class="n">Menu</span> <span class="n">menu</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">getMenuInflater</span><span class="o">().</span><span class="na">inflate</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">menu</span><span class="o">.</span><span class="na">menu_main</span><span class="o">,</span> <span class="n">menu</span><span class="o">);</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="o">}</span></code></pre></div>
+
+<p>to handle the item select action rewrite the to do code in onOptionsItemSelected method:</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">onOptionsItemSelected</span><span class="o">(</span><span class="n">MenuItem</span> <span class="n">item</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">switch</span> <span class="o">(</span><span class="n">item</span><span class="o">.</span><span class="na">getItemId</span><span class="o">())</span> <span class="o">{</span>
+        <span class="k">case</span> <span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">action_activity1</span><span class="o">:</span>
+            <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="s">&quot;item selected! move to Main activity&quot;</span><span class="o">,</span> <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
+            <span class="n">startActivity</span><span class="o">(</span><span class="k">new</span> <span class="nf">Intent</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">MainActivity</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+        <span class="k">case</span> <span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">action_activity2</span><span class="o">:</span>
+            <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="s">&quot;item selected! move to activity 2&quot;</span><span class="o">,</span> <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
+            <span class="n">startActivity</span><span class="o">(</span><span class="k">new</span> <span class="nf">Intent</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">MainActivity2</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+        <span class="k">default</span><span class="o">:</span>
+            <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="s">&quot;item selected! default&quot;</span><span class="o">,</span> <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
+            <span class="k">return</span> <span class="kd">super</span><span class="o">.</span><span class="na">onOptionsItemSelected</span><span class="o">(</span><span class="n">item</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></div>
+
+<p>in the <code>res/menu/menu_main.xml</code> add the optional items for selection:</p>
+
+<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;item</span> <span class="na">android:id=</span><span class="s">&quot;@+id/action_settings&quot;</span>
+      <span class="na">android:title=</span><span class="s">&quot;@string/action_settings&quot;</span>
+      <span class="na">android:orderInCategory=</span><span class="s">&quot;100&quot;</span>
+      <span class="na">app:showAsAction=</span><span class="s">&quot;never&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;item</span> <span class="na">android:id=</span><span class="s">&quot;@+id/action_activity1&quot;</span>
+      <span class="na">android:title=</span><span class="s">&quot;Main Activity&quot;</span>
+      <span class="na">android:orderInCategory=</span><span class="s">&quot;100&quot;</span>
+      <span class="na">app:showAsAction=</span><span class="s">&quot;never&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;item</span> <span class="na">android:id=</span><span class="s">&quot;@+id/action_activity2&quot;</span>
+      <span class="na">android:title=</span><span class="s">&quot;Activity 2&quot;</span>
+      <span class="na">android:orderInCategory=</span><span class="s">&quot;100&quot;</span>
+      <span class="na">app:showAsAction=</span><span class="s">&quot;never&quot;</span><span class="nt">/&gt;</span></code></pre></div>
+
+<p>Here is the simple overflow menu bar:</p>
+
+<p><img src="https://raw.githubusercontent.com/junjunguo/android/39976ba2ddd44b7479c03f8d3070fc7268678cd9/AndroidMenubar/overflowmenu.png" alt="oerfolw menu bar screenshot" /></p>
+
+<h3 id="add-buttons-to-action-bar">Add buttons to Action bar</h3>
+
+<p>Sometime buttons or other actions are needed outside the overflow menu, it is easy to add buttons on the action bar when 
+we already have the overflow menu.</p>
+
+<p>add buttons in  <code>res/menu/menu_main.xml</code>:</p>
+
+<div class="highlight"><pre><code class="language-xml" data-lang="xml">...
+<span class="nt">&lt;item</span> <span class="na">android:id=</span><span class="s">&quot;@+id/status_button&quot;</span>
+      <span class="na">android:title=</span><span class="s">&quot;actionBtn&quot;</span>
+      <span class="na">android:orderInCategory=</span><span class="s">&quot;100&quot;</span>
+      <span class="na">app:showAsAction=</span><span class="s">&quot;ifRoom&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;item</span> <span class="na">android:id=</span><span class="s">&quot;@+id/action_button&quot;</span>
+      <span class="na">android:title=</span><span class="s">&quot;actionBtn&quot;</span>
+      <span class="na">android:orderInCategory=</span><span class="s">&quot;100&quot;</span>
+      <span class="na">app:showAsAction=</span><span class="s">&quot;ifRoom&quot;</span><span class="nt">/&gt;</span></code></pre></div>
+
+<p>to handle the button onClick action add code in onOptionsItemSelected method:</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">onOptionsItemSelected</span><span class="o">(</span><span class="n">MenuItem</span> <span class="n">item</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">switch</span> <span class="o">(</span><span class="n">item</span><span class="o">.</span><span class="na">getItemId</span><span class="o">())</span> <span class="o">{</span>
+        <span class="o">...</span>
+        <span class="k">case</span> <span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">status_button</span><span class="o">:</span>
+            <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="s">&quot;change button color&quot;</span><span class="o">,</span> <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+        <span class="o">...</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></div>
+
+<p>This is how it looks like:</p>
+
+<p><img src="https://raw.githubusercontent.com/junjunguo/android/master/AndroidMenubar/actionbarbutton.png" alt="action bar button screenshot" /></p>
+
+<p>To build menu in action bar, first selection items need to be ready in menu xml file, 
+then add the items to action bar when Action created “onCreateOptionsMenu”, and finally handle the actions at 
+“onOptionsItemSelected”.</p>
+
+<p>Source code <a href="https://github.com/junjunguo/android/tree/master/AndroidMenubar">on Github</a></p>
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'guojunjunsblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://localhost:4000/android-activitybar-menu/" class="btn" title="Android Activitybar Menu">Previous</a>
+      
+      
+        <a href="http://localhost:4000/how-to-implement-openstreetmap-on-android-1/" class="btn" title="How To Implement Openstreetmap On Android 1">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2015 <a href="http://junjunguo.com" rel="nofollow">  GuoJunjun</a></span>
+<div class="social-icons">
+    
+    
+    <a href="http://plus.google.com/+GuoJunjun"
+                                      title="GuoJunjun on Google+" target="_blank"><i
+        class="fa fa-google-plus-square fa-2x"></i></a>
+    <a href="http://linkedin.com/in/guojunjun"
+                                   title="GuoJunjun on LinkedIn" target="_blank"><i
+        class="fa fa-linkedin-square fa-2x"></i></a>
+    
+    
+    <a href="http://www.flickr.com/photos/guojunjun"
+                                 title="GuoJunjun on Flickr" target="_blank"><i
+        class="fa fa-flickr fa-2x"></i></a>
+    <a href="http://github.com/junjunguo" title="GuoJunjun on Github"
+                                 target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+    
+    <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://localhost:4000';
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-49981756-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+	        
+
+</body>
+</html>

@@ -2,17 +2,46 @@
 
   
     {
-      "title"			: "Hello World",
-      "link"			: "http://junjunguo.com/blog/hello-world/",
-      "excerpt"		: ""
+      "title"			: "How to implement a simple OpenStreetMap on Android",
+      "link"			: "http://localhost:4000/articles/implement-openstreetmap-on-android-1/",
+      "excerpt"		: "Example code for implementing a simple OSM on Android."
     }
   
 
   
     ,{
-      "title"			: "Syntax Highlighting Post",
-      "link"			: "http://junjunguo.com/articles/code-highlighting-post/",
-      "excerpt"		: "Demo post displaying the various ways of highlighting code in Markdown."
+      "title"			: "How To Implement Openstreetmap On Android 1",
+      "link"			: "http://localhost:4000/how-to-implement-openstreetmap-on-android-1/",
+      "excerpt"		: "<p>OpenSteetMap (OSM) is a free editable map of the world, was inspired by Wikipedia, and it’s slogan is “The Free Wiki World
+ Map”. </p>
+
+"
+    }
+  
+
+  
+    ,{
+      "title"			: "Android Menu",
+      "link"			: "http://localhost:4000/articles/android-activitybar-menu/",
+      "excerpt"		: "Example code for implementing Android action overflow menu"
+    }
+  
+
+  
+    ,{
+      "title"			: "Android Activitybar Menu",
+      "link"			: "http://localhost:4000/android-activitybar-menu/",
+      "excerpt"		: "<p>Android Action Bar are used in many applications, it is easy to implemnet and for consistency in UI design it offers user a familiar interface across applications.</p>
+
+"
+    }
+  
+
+  
+    ,{
+      "title"			: "Hello World",
+      "link"			: "http://localhost:4000/blog/hello-world/",
+      "excerpt"		: ""
     }
   
 
@@ -29,7 +58,7 @@
   
     ,{
       "title"			: "About the Jekyll Theme",
-      "link"			: "http://junjunguo.com/about/",
+      "link"			: "http://localhost:4000/about/",
       "excerpt"		: "So Simple is a responsive Jekyll theme for your words and images."
     }
   
@@ -39,7 +68,7 @@
   
     ,{
       "title"			: "Theme Setup",
-      "link"			: "http://junjunguo.com/theme-setup/",
+      "link"			: "http://localhost:4000/theme-setup/",
       "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
     }
   

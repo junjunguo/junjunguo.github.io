@@ -1,151 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://junjunguo.com/blog/hello-world/</loc>
+    <loc>http://localhost:4000/articles/implement-openstreetmap-on-android-1/</loc>
+    <lastmod>2015-02-26T00:00:00+01:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/how-to-implement-openstreetmap-on-android-1/</loc>
+    <lastmod>2015-02-26T00:00:00+01:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/articles/android-activitybar-menu/</loc>
+    <lastmod>2015-02-25T00:00:00+01:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/android-activitybar-menu/</loc>
+    <lastmod>2015-02-22T00:00:00+01:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/blog/hello-world/</loc>
     <lastmod>2014-08-08T21:39:55+02:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/articles/code-highlighting-post/</loc>
-    <lastmod>2013-08-16T00:00:00+02:00</lastmod>
+    <loc>http://localhost:4000/blog/</loc>
+    <lastmod>2015-02-26T19:03:50+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/blog/</loc>
-    <lastmod>2015-02-26T01:12:30+01:00</lastmod>
+    <loc>http://localhost:4000/tags/</loc>
+    <lastmod>2015-02-26T19:03:50+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/tags/</loc>
-    <lastmod>2015-02-26T01:12:30+01:00</lastmod>
+    <loc>http://localhost:4000/about/</loc>
+    <lastmod>2015-02-26T19:03:50+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/about/</loc>
-    <lastmod>2015-02-26T01:12:30+01:00</lastmod>
+    <loc>http://localhost:4000/articles/</loc>
+    <lastmod>2015-02-26T19:03:50+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/articles/</loc>
-    <lastmod>2015-02-26T01:12:30+01:00</lastmod>
+    <loc>http://localhost:4000/theme-setup/</loc>
+    <lastmod>2015-02-26T19:03:50+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/theme-setup/</loc>
-    <lastmod>2015-02-26T01:12:30+01:00</lastmod>
+    <loc>http://localhost:4000/main.html</loc>
+    <lastmod>2015-02-26T19:03:50+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/main.html</loc>
-    <lastmod>2015-02-26T01:12:30+01:00</lastmod>
+    <loc>http://localhost:4000/myblog.html</loc>
+    <lastmod>2015-02-26T19:03:50+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/myblog.html</loc>
-    <lastmod>2015-02-26T01:12:30+01:00</lastmod>
-  </url>
-  <url>
-    <loc>http://junjunguo.com/2014.html</loc>
+    <loc>http://localhost:4000/2014.html</loc>
     <lastmod>2015-01-20T13:26:55+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/404.html</loc>
+    <loc>http://localhost:4000/404.html</loc>
     <lastmod>2015-01-20T13:26:29+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/cv.html</loc>
+    <loc>http://localhost:4000/cv.html</loc>
     <lastmod>2015-01-20T13:24:14+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/fun.html</loc>
+    <loc>http://localhost:4000/fun.html</loc>
     <lastmod>2015-01-20T13:26:07+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/garden.html</loc>
+    <loc>http://localhost:4000/garden.html</loc>
     <lastmod>2015-01-20T13:27:20+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/help/author-override/index.html</loc>
+    <loc>http://localhost:4000/help/author-override/index.html</loc>
     <lastmod>2015-02-25T19:04:26+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/help/code-highlighting-post/index.html</loc>
+    <loc>http://localhost:4000/help/code-highlighting-post/index.html</loc>
     <lastmod>2015-02-25T19:04:26+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/help/readability-feature-post/index.html</loc>
+    <loc>http://localhost:4000/help/readability-feature-post/index.html</loc>
     <lastmod>2015-02-25T19:04:26+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/help/readability-post/index.html</loc>
+    <loc>http://localhost:4000/help/readability-post/index.html</loc>
     <lastmod>2015-02-25T19:04:26+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/help/sample-link-post/index.html</loc>
+    <loc>http://localhost:4000/help/sample-link-post/index.html</loc>
     <lastmod>2015-02-25T19:04:26+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/help/sample-post/index.html</loc>
+    <loc>http://localhost:4000/help/sample-post/index.html</loc>
     <lastmod>2015-02-25T19:04:26+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/help/sample-post-images/index.html</loc>
+    <loc>http://localhost:4000/help/sample-post-images/index.html</loc>
     <lastmod>2015-02-25T19:04:26+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/help/video-post/index.html</loc>
+    <loc>http://localhost:4000/help/video-post/index.html</loc>
     <lastmod>2015-02-25T19:04:26+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/index.html</loc>
+    <loc>http://localhost:4000/index.html</loc>
     <lastmod>2015-02-25T15:31:50+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/inspiration.html</loc>
+    <loc>http://localhost:4000/inspiration.html</loc>
     <lastmod>2015-01-20T13:27:43+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/june2014.html</loc>
+    <loc>http://localhost:4000/june2014.html</loc>
     <lastmod>2015-01-20T13:27:50+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/motivation.html</loc>
+    <loc>http://localhost:4000/motivation.html</loc>
     <lastmod>2015-02-08T12:38:35+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/multiplePagesinOneHTMLfile.html</loc>
+    <loc>http://localhost:4000/multiplePagesinOneHTMLfile.html</loc>
     <lastmod>2015-01-20T13:28:01+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/newindex.html</loc>
+    <loc>http://localhost:4000/newindex.html</loc>
     <lastmod>2015-01-20T13:28:43+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/panoramio.html</loc>
+    <loc>http://localhost:4000/panoramio.html</loc>
     <lastmod>2015-01-20T13:28:43+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/panoramioapi.html</loc>
+    <loc>http://localhost:4000/panoramioapi.html</loc>
     <lastmod>2015-01-20T13:29:12+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/panoramioThumbnail.html</loc>
+    <loc>http://localhost:4000/panoramioThumbnail.html</loc>
     <lastmod>2015-01-20T13:29:28+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/photo.html</loc>
+    <loc>http://localhost:4000/photo.html</loc>
     <lastmod>2015-02-08T12:40:15+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/photogeo.html</loc>
+    <loc>http://localhost:4000/photogeo.html</loc>
     <lastmod>2015-01-20T13:30:05+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/photomap.html</loc>
+    <loc>http://localhost:4000/photomap.html</loc>
     <lastmod>2015-01-20T13:30:34+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/photos/easter2014.html</loc>
+    <loc>http://localhost:4000/photos/easter2014.html</loc>
     <lastmod>2015-01-20T13:31:44+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/pinterest-322b1.html</loc>
+    <loc>http://localhost:4000/pinterest-322b1.html</loc>
     <lastmod>2015-01-20T13:30:34+01:00</lastmod>
   </url>
   <url>
-    <loc>http://junjunguo.com/quotes.html</loc>
+    <loc>http://localhost:4000/quotes.html</loc>
     <lastmod>2015-01-20T13:30:43+01:00</lastmod>
   </url>
 </urlset>

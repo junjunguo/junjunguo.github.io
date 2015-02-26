@@ -5,8 +5,8 @@ locale: en_US
 description: We are what we repeatedly do. Excellence, therefore, is not an act, but a habit.
 logo: site-logo.png
 search: true
-url: http://junjunguo.com
-#url: http://localhost:4000
+#url: http://junjunguo.com
+url: http://localhost:4000
 
 # Jekyll configuration
 
@@ -31,13 +31,14 @@ exclude: ["help/md/", "lib", "config.rb", "Capfile", "config", "log", "Rakefile"
 "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile",
 "Gemfile.lock", "LICENSE", "README.md", "vendor"]
 
+comments: true
 
 # Site owner
 owner:
   name: GuoJunjun
   avatar: bio-photo.jpg
-  website: JunjunGuo.com
-  disqus-shortname:
+  email: guojunjun@gmail.com
+  disqus-shortname: guojunjunsblog
   twitter: #username
   facebook: #username
   github: junjunguo
@@ -47,16 +48,9 @@ owner:
   flickr: guojunjun
   tumblr: #username
   google:
-    plus: +JunjunGuo
+    plus: GuoJunjun
     analytics: UA-49981756-1
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-
-# Disqus Comments
-site:
-   owner:
-     disqus-shortname: guojunjunsblog
-# If you would like comments to appear on every post or page that uses the post.html
-comments: true
