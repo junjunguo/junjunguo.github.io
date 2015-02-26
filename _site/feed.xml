@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">GuoJunjun's Blog</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
-<link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2015-02-26T19:03:50+01:00</updated>
-<id>http://localhost:4000/</id>
+<link rel="self" type="application/atom+xml" href="http://junjunguo.com/feed.xml" />
+<link rel="alternate" type="text/html" href="http://junjunguo.com" />
+<updated>2015-02-26T19:10:28+01:00</updated>
+<id>http://junjunguo.com/</id>
 <author>
   <name>GuoJunjun</name>
-  <uri>http://localhost:4000/</uri>
+  <uri>http://junjunguo.com/</uri>
   <email>guojunjun@gmail.com</email>
 </author>
 
@@ -17,13 +17,13 @@
 
 <entry>
   <title type="html"><![CDATA[How to implement a simple OpenStreetMap on Android]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/implement-openstreetmap-on-android-1/" />
-  <id>http://localhost:4000/articles/implement-openstreetmap-on-android-1</id>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/articles/implement-openstreetmap-on-android-1/" />
+  <id>http://junjunguo.com/articles/implement-openstreetmap-on-android-1</id>
   <published>2015-02-26T00:00:00+01:00</published>
   <updated>2015-02-26T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://junjunguo.com</uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -103,7 +103,7 @@ view in layout file, then you can add more functions in the map Activity.&lt;/p&
 
 &lt;p&gt;Source code: &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/OpenStreetMap&quot;&gt;on GitHub&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/implement-openstreetmap-on-android-1/&quot;&gt;How to implement a simple OpenStreetMap on Android&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://localhost:4000&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on February 26, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/implement-openstreetmap-on-android-1/&quot;&gt;How to implement a simple OpenStreetMap on Android&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on February 26, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -112,13 +112,13 @@ view in layout file, then you can add more functions in the map Activity.&lt;/p&
 
 <entry>
   <title type="html"><![CDATA[How To Implement Openstreetmap On Android 1]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/how-to-implement-openstreetmap-on-android-1/" />
-  <id>http://localhost:4000/how-to-implement-openstreetmap-on-android-1</id>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/how-to-implement-openstreetmap-on-android-1/" />
+  <id>http://junjunguo.com/how-to-implement-openstreetmap-on-android-1</id>
   <published>2015-02-26T00:00:00+01:00</published>
   <updated>2015-02-26T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://junjunguo.com</uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -141,10 +141,10 @@ and can be used with out internet. &lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;nav&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;pagination&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navigation&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://localhost:4000/articles/android-activitybar-menu/&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Android Menu&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Previous article&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://junjunguo.com/articles/android-activitybar-menu/&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Android Menu&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Previous article&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
     
     
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://localhost:4000/articles/implement-openstreetmap-on-android-1/&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;How to implement a simple OpenStreetMap on Android&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Next article&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://junjunguo.com/articles/implement-openstreetmap-on-android-1/&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;How to implement a simple OpenStreetMap on Android&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Next article&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
     
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- /.pagination --&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
@@ -170,10 +170,10 @@ and can be used with out internet. &lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;nav class=&quot;pagination&quot; role=&quot;navigation&quot;&amp;gt;
     
-        &amp;lt;a href=&quot;http://localhost:4000/articles/android-activitybar-menu/&quot; class=&quot;btn&quot; title=&quot;Android Menu&quot;&amp;gt;Previous article&amp;lt;/a&amp;gt;
+        &amp;lt;a href=&quot;http://junjunguo.com/articles/android-activitybar-menu/&quot; class=&quot;btn&quot; title=&quot;Android Menu&quot;&amp;gt;Previous article&amp;lt;/a&amp;gt;
     
     
-        &amp;lt;a href=&quot;http://localhost:4000/articles/implement-openstreetmap-on-android-1/&quot; class=&quot;btn&quot; title=&quot;How to implement a simple OpenStreetMap on Android&quot;&amp;gt;Next article&amp;lt;/a&amp;gt;
+        &amp;lt;a href=&quot;http://junjunguo.com/articles/implement-openstreetmap-on-android-1/&quot; class=&quot;btn&quot; title=&quot;How to implement a simple OpenStreetMap on Android&quot;&amp;gt;Next article&amp;lt;/a&amp;gt;
     
 &amp;lt;/nav&amp;gt;&amp;lt;!-- /.pagination --&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -191,10 +191,10 @@ and can be used with out internet. &lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;nav class=&quot;pagination&quot; role=&quot;navigation&quot;&amp;gt;
     
-        &amp;lt;a href=&quot;http://localhost:4000/articles/android-activitybar-menu/&quot; class=&quot;btn&quot; title=&quot;Android Menu&quot;&amp;gt;Previous article&amp;lt;/a&amp;gt;
+        &amp;lt;a href=&quot;http://junjunguo.com/articles/android-activitybar-menu/&quot; class=&quot;btn&quot; title=&quot;Android Menu&quot;&amp;gt;Previous article&amp;lt;/a&amp;gt;
     
     
-        &amp;lt;a href=&quot;http://localhost:4000/articles/implement-openstreetmap-on-android-1/&quot; class=&quot;btn&quot; title=&quot;How to implement a simple OpenStreetMap on Android&quot;&amp;gt;Next article&amp;lt;/a&amp;gt;
+        &amp;lt;a href=&quot;http://junjunguo.com/articles/implement-openstreetmap-on-android-1/&quot; class=&quot;btn&quot; title=&quot;How to implement a simple OpenStreetMap on Android&quot;&amp;gt;Next article&amp;lt;/a&amp;gt;
     
 &amp;lt;/nav&amp;gt;&amp;lt;!-- /.pagination --&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -218,7 +218,7 @@ and can be used with out internet. &lt;/p&gt;
 end
 &lt;/code&gt;&lt;/pre&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-implement-openstreetmap-on-android-1/&quot;&gt;How To Implement Openstreetmap On Android 1&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://localhost:4000&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on February 26, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/how-to-implement-openstreetmap-on-android-1/&quot;&gt;How To Implement Openstreetmap On Android 1&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on February 26, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -227,13 +227,13 @@ end
 
 <entry>
   <title type="html"><![CDATA[Android Menu]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/android-activitybar-menu/" />
-  <id>http://localhost:4000/articles/android-activitybar-menu</id>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/articles/android-activitybar-menu/" />
+  <id>http://junjunguo.com/articles/android-activitybar-menu</id>
   <published>2015-02-25T00:00:00+01:00</published>
   <updated>2015-02-25T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://junjunguo.com</uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -329,7 +329,7 @@ then add the items to action bar when Action created “onCreateOptionsMenu”, 
 
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/AndroidMenubar&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/android-activitybar-menu/&quot;&gt;Android Menu&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://localhost:4000&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on February 25, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-activitybar-menu/&quot;&gt;Android Menu&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on February 25, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -338,13 +338,13 @@ then add the items to action bar when Action created “onCreateOptionsMenu”, 
 
 <entry>
   <title type="html"><![CDATA[Android Activitybar Menu]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/android-activitybar-menu/" />
-  <id>http://localhost:4000/android-activitybar-menu</id>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/android-activitybar-menu/" />
+  <id>http://junjunguo.com/android-activitybar-menu</id>
   <published>2015-02-22T00:00:00+01:00</published>
   <updated>2015-02-22T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://junjunguo.com</uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -410,10 +410,10 @@ then add the items to action bar when Action created “onCreateOptionsMenu”, 
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;nav&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;pagination&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navigation&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://localhost:4000/blog/hello-world/&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Hello World&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Previous article&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://junjunguo.com/blog/hello-world/&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Hello World&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Previous article&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
     
     
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://localhost:4000/articles/android-activitybar-menu/&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Android Menu&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Next article&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://junjunguo.com/articles/android-activitybar-menu/&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Android Menu&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Next article&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
     
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- /.pagination --&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
@@ -439,10 +439,10 @@ then add the items to action bar when Action created “onCreateOptionsMenu”, 
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;nav class=&quot;pagination&quot; role=&quot;navigation&quot;&amp;gt;
     
-        &amp;lt;a href=&quot;http://localhost:4000/blog/hello-world/&quot; class=&quot;btn&quot; title=&quot;Hello World&quot;&amp;gt;Previous article&amp;lt;/a&amp;gt;
+        &amp;lt;a href=&quot;http://junjunguo.com/blog/hello-world/&quot; class=&quot;btn&quot; title=&quot;Hello World&quot;&amp;gt;Previous article&amp;lt;/a&amp;gt;
     
     
-        &amp;lt;a href=&quot;http://localhost:4000/articles/android-activitybar-menu/&quot; class=&quot;btn&quot; title=&quot;Android Menu&quot;&amp;gt;Next article&amp;lt;/a&amp;gt;
+        &amp;lt;a href=&quot;http://junjunguo.com/articles/android-activitybar-menu/&quot; class=&quot;btn&quot; title=&quot;Android Menu&quot;&amp;gt;Next article&amp;lt;/a&amp;gt;
     
 &amp;lt;/nav&amp;gt;&amp;lt;!-- /.pagination --&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -460,10 +460,10 @@ then add the items to action bar when Action created “onCreateOptionsMenu”, 
 
 &lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;nav class=&quot;pagination&quot; role=&quot;navigation&quot;&amp;gt;
     
-        &amp;lt;a href=&quot;http://localhost:4000/blog/hello-world/&quot; class=&quot;btn&quot; title=&quot;Hello World&quot;&amp;gt;Previous article&amp;lt;/a&amp;gt;
+        &amp;lt;a href=&quot;http://junjunguo.com/blog/hello-world/&quot; class=&quot;btn&quot; title=&quot;Hello World&quot;&amp;gt;Previous article&amp;lt;/a&amp;gt;
     
     
-        &amp;lt;a href=&quot;http://localhost:4000/articles/android-activitybar-menu/&quot; class=&quot;btn&quot; title=&quot;Android Menu&quot;&amp;gt;Next article&amp;lt;/a&amp;gt;
+        &amp;lt;a href=&quot;http://junjunguo.com/articles/android-activitybar-menu/&quot; class=&quot;btn&quot; title=&quot;Android Menu&quot;&amp;gt;Next article&amp;lt;/a&amp;gt;
     
 &amp;lt;/nav&amp;gt;&amp;lt;!-- /.pagination --&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -487,7 +487,7 @@ then add the items to action bar when Action created “onCreateOptionsMenu”, 
 end
 &lt;/code&gt;&lt;/pre&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/android-activitybar-menu/&quot;&gt;Android Activitybar Menu&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://localhost:4000&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on February 22, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/android-activitybar-menu/&quot;&gt;Android Activitybar Menu&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on February 22, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -496,13 +496,13 @@ end
 
 <entry>
   <title type="html"><![CDATA[Hello World]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/hello-world/" />
-  <id>http://localhost:4000/blog/hello-world</id>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/blog/hello-world/" />
+  <id>http://junjunguo.com/blog/hello-world</id>
   <published>2014-08-08T21:39:55+02:00</published>
   <updated>2014-08-08T21:39:55+02:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://junjunguo.com</uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -524,7 +524,7 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/hello-world/&quot;&gt;Hello World&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://localhost:4000&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on August 08, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/blog/hello-world/&quot;&gt;Hello World&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on August 08, 2014.&lt;/p&gt;
   </content>
 </entry>
 
