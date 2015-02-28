@@ -4,13 +4,176 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://junjunguo.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://junjunguo.com" />
-<updated>2015-02-26T19:15:16+01:00</updated>
+<updated>2015-02-28T16:10:43+01:00</updated>
 <id>http://junjunguo.com/</id>
 <author>
   <name>GuoJunjun</name>
   <uri>http://junjunguo.com/</uri>
   <email>guojunjun@gmail.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[JavaFX use CSS to define color]]></title>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/articles/javafx-use-css-to-define-color/" />
+  <id>http://junjunguo.com/articles/javafx-use-css-to-define-color</id>
+  <published>2015-02-27T00:00:00+01:00</published>
+  <updated>2015-02-27T00:00:00+01:00</updated>
+  <author>
+    <name>GuoJunjun</name>
+    <uri>http://junjunguo.com</uri>
+    <email>guojunjun@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;JavaFX is intended to replace Swing as the standard GUI library for Java SE, it supports desktop computers and web browsers. Oracle: &lt;a href=&quot;http://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784&quot;&gt;JavaFX overview&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;JavaFX delivers many options for developers to decide how to implement their GUI. &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Java Class: all can be done in a standard Java Class.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;FXML: The FXML scripting language and be used to separate the user interface and the back-end logic. UI can be presented in FXML and application logic can be write in Java code.
+    &lt;ul&gt;
+      &lt;li&gt;JavaFX scene builder: Can be used to define your UI.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;CSS: Cascading Style Sheets can be used to separate appearance and style.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Even all can be done in Java code, but there are many advantages for using FXML and CSS separately. &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Developer who has web design background would like to do it this way.&lt;/li&gt;
+  &lt;li&gt;It is more structured, easy to organize, divide jobs if you are working with others. &lt;/li&gt;
+  &lt;li&gt;Increase code reusability, since logic code, UI, and style are organized separately, all part can be easily used again.&lt;/li&gt;
+  &lt;li&gt;Easy to maintain, modifier, replace and debug …&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;use-javafx-to-build-a-login-screen&quot;&gt;Use JavaFX to build a Login screen&lt;/h3&gt;
+
+&lt;p&gt;Example code are created with IntelliJ, but any IDE should work the same way.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Build a JavaFX Application.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use JavaFX scene builder to build UI.&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Reference your CSS style file in Scene Builder or add &lt;code&gt;stylesheets=&quot;@yourstylesheetName.css&quot;&lt;/code&gt; to your fxml code. &lt;/li&gt;
+      &lt;li&gt;Reference your CSS styleClass in Scene Builder or add &lt;code&gt;styleClass=&quot;yourstyleClassName&quot;&lt;/code&gt; to the desired Object. &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This is how my FXML look like:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;?import javafx.scene.control.*?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;?import javafx.scene.layout.*?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;?import javafx.scene.text.Text?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;Pane&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;maxHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;-Infinity&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;maxWidth=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;-Infinity&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;minHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;-Infinity&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;minWidth=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;-Infinity&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;prefHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;555.0&amp;quot;&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;prefWidth=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;800.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;styleClass=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;thebackground&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;stylesheets=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@style.css&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://javafx.com/javafx/8&amp;quot;&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;xmlns:fx=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://javafx.com/fxml/1&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;fx:controller=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sample.Controller&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;children&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;GridPane&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alignment=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;CENTER&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;layoutX=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;300.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;layoutY=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;50.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;prefHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;300.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;prefWidth=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;200.0&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;columnConstraints&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;ColumnConstraints&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;hgrow=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;SOMETIMES&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;minWidth=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;10.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;prefWidth=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;100.0&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/columnConstraints&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;rowConstraints&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;RowConstraints&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;maxHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;minHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;prefHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;vgrow=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;SOMETIMES&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;RowConstraints&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;maxHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;minHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;prefHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;vgrow=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;SOMETIMES&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;RowConstraints&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;maxHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;minHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;prefHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;vgrow=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;SOMETIMES&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;RowConstraints&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;maxHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;minHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;prefHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;vgrow=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;SOMETIMES&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;RowConstraints&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;maxHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;minHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;prefHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;vgrow=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;SOMETIMES&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;RowConstraints&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;maxHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;minHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;prefHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;vgrow=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;SOMETIMES&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;RowConstraints&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;maxHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;80.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;minHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;80.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;prefHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;55.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;vgrow=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;SOMETIMES&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/rowConstraints&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;children&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;TextField&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;fx:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;userName&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alignment=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;CENTER&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;prefHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;40.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;promptText=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;User ID&amp;quot;&lt;/span&gt;
+                           &lt;span class=&quot;na&quot;&gt;styleClass=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;inputSection&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;GridPane.halignment=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;CENTER&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;GridPane.rowIndex=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;2&amp;quot;&lt;/span&gt;
+                           &lt;span class=&quot;na&quot;&gt;GridPane.valignment=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;CENTER&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;Label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;styleClass=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sectionTitle&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;text=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Login&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;GridPane.halignment=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;CENTER&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;GridPane.rowIndex=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;1&amp;quot;&lt;/span&gt;
+                       &lt;span class=&quot;na&quot;&gt;GridPane.valignment=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;CENTER&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;Label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;styleClass=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sectionTitle&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;text=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Calendar&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;GridPane.halignment=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;CENTER&amp;quot;&lt;/span&gt;
+                       &lt;span class=&quot;na&quot;&gt;GridPane.valignment=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;CENTER&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;Button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;mnemonicParsing=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;false&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onAction=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#loginOnclick&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;prefHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;40.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;prefWidth=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;200.0&amp;quot;&lt;/span&gt;
+                        &lt;span class=&quot;na&quot;&gt;text=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Login&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;GridPane.halignment=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;CENTER&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;GridPane.rowIndex=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;4&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;GridPane.valignment=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;CENTER&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;Button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;mnemonicParsing=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;false&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onAction=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#registerOnClick&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;prefHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;40.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;prefWidth=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;200.0&amp;quot;&lt;/span&gt;
+                        &lt;span class=&quot;na&quot;&gt;text=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Register&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;GridPane.rowIndex=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;5&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;Text&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;fx:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;warningText&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;strokeType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;OUTSIDE&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;strokeWidth=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;0.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;GridPane.rowIndex=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;6&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;PasswordField&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;fx:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;userPassword&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alignment=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;CENTER&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;prefHeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;40.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;promptText=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Password&amp;quot;&lt;/span&gt;
+                               &lt;span class=&quot;na&quot;&gt;GridPane.halignment=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;CENTER&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;GridPane.rowIndex=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;3&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;GridPane.valignment=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;CENTER&amp;quot;&lt;/span&gt;
+                               &lt;span class=&quot;na&quot;&gt;styleClass=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;inputSection&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/children&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/GridPane&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/children&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Pane&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Logical code in Controller:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@FXML&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;warningText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;nd&quot;&gt;@FXML&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TextField&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;userName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@FXML&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PasswordField&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;userPassword&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;nd&quot;&gt;@FXML&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;loginOnclick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ActionEvent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//logic code:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;warningText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Wrong id or password!&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nd&quot;&gt;@FXML&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;registerOnClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ActionEvent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//logic code:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;warningText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Register not yet implemented!&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Finally define the application style in CSS:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.thebackground&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#B3E5FC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.sectionTitle&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;   &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#01579B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font-weight&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;bolder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;   &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;14px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.warningText&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#0277BD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.inputSection&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#E1F5FE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.button&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#29B6F6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#E1F5FE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font-weight&lt;/span&gt;      &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;900&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.button&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#01579B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Here is a screenshot of the Light blue theme has been built:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent
+.com/junjunguo/HumanComputerInteraction/ce1607d4885edfc942fc42a0073a27e772578da2/ExampleCode/lightbluelogin.png&quot; alt=&quot;light blue theme&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/junjunguo/HumanComputerInteraction/ce1607d4885edfc942fc42a0073a27e772578da2/ExampleCode/lightblueloginr.png&quot; alt=&quot;light blue theme&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Source code: &lt;a href=&quot;https://github.com/junjunguo/HumanComputerInteraction/tree/master/ExampleCode&quot;&gt;on GitHub&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/javafx-use-css-to-define-color/&quot;&gt;JavaFX use CSS to define color&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on February 27, 2015.&lt;/p&gt;
+  </content>
+</entry>
 
 
   

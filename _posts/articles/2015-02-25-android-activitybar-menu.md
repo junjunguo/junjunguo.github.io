@@ -3,7 +3,7 @@ layout: post
 title: Android Menu
 excerpt: "Example code for implementing Android action overflow menu"
 categories: articles
-tags: [Android, code, Java, Mobile, UI]
+tags: [Android, code, Java, Mobile, GUI]
 image:
   feature: 14788493716_b68010de78_k.jpg
   credit: GuoJunjun

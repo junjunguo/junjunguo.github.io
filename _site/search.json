@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "JavaFX use CSS to define color",
+      "link"			: "http://junjunguo.com/articles/javafx-use-css-to-define-color/",
+      "excerpt"		: "Example code for using CSS to create JavaFX color theme"
+    }
+  
+
+  
+    ,{
       "title"			: "How to implement a simple OpenStreetMap on Android",
       "link"			: "http://junjunguo.com/articles/implement-openstreetmap-on-android-1/",
       "excerpt"		: "Example code for implementing a simple OSM on Android."
@@ -40,8 +48,6 @@
       "link"			: "http://junjunguo.com/about/",
       "excerpt"		: "So Simple is a responsive Jekyll theme for your words and images."
     }
-  
-
   
 
   

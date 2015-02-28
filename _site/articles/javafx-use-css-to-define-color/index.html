@@ -1,0 +1,398 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>JavaFX use CSS to define color &#8211; GuoJunjun's Blog</title>
+<meta name="description" content="Example code for using CSS to create JavaFX color theme">
+<meta name="keywords" content="code, Java, JavaFX, GUI, CSS, fxml">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="JavaFX use CSS to define color">
+<meta name="twitter:description" content="Example code for using CSS to create JavaFX color theme">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://junjunguo.com/images/14771654073_df0ddb828f_o.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaFX use CSS to define color">
+<meta property="og:description" content="Example code for using CSS to create JavaFX color theme">
+<meta property="og:url" content="http://junjunguo.com/articles/javafx-use-css-to-define-color/">
+<meta property="og:site_name" content="GuoJunjun's Blog">
+
+
+
+
+
+<link rel="canonical" href="http://junjunguo.com/articles/javafx-use-css-to-define-color/">
+<link href="http://junjunguo.com/feed.xml" type="application/atom+xml" rel="alternate" title="GuoJunjun's Blog Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://junjunguo.com/assets/css/main.css">
+<!-- Webfonts -->
+<script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://junjunguo.com/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://junjunguo.com/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://junjunguo.com/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://junjunguo.com/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://junjunguo.com/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://junjunguo.com/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://junjunguo.com/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://junjunguo.com/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://junjunguo.com/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="http://junjunguo.com/main.html" >Main</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://junjunguo.com/articles/" >Articles</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://junjunguo.com/blog/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://junjunguo.com/tags/" >Tags</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://junjunguo.com/search/" >Search</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://junjunguo.com/index.html" >About</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	
+		<div class="wrap">
+			<a href="http://junjunguo.com/" class="site-logo" rel="home" title="GuoJunjun's Blog"><img src="http://junjunguo.com/images/site-logo.png" width="200" height="200" alt="GuoJunjun's Blog logo" class="animated bounceInDown"></a>
+		</div>
+	
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+<div id="main" role="main">
+  <article class="hentry">
+    <img src="http://junjunguo.com/images/14771654073_df0ddb828f_o.jpg" class="entry-feature-image" alt="JavaFX use CSS to define color" ><p class="image-credit">Photo Credit: <a href="http://junjunguo.com">GuoJunjun</a>
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="http://junjunguo.com/tags/#code" title="Pages tagged code">code</a>&nbsp;&bull;&nbsp;<a href="http://junjunguo.com/tags/#Java" title="Pages tagged Java">Java</a>&nbsp;&bull;&nbsp;<a href="http://junjunguo.com/tags/#JavaFX" title="Pages tagged JavaFX">JavaFX</a>&nbsp;&bull;&nbsp;<a href="http://junjunguo.com/tags/#GUI" title="Pages tagged GUI">GUI</a>&nbsp;&bull;&nbsp;<a href="http://junjunguo.com/tags/#CSS" title="Pages tagged CSS">CSS</a>&nbsp;&bull;&nbsp;<a href="http://junjunguo.com/tags/#fxml" title="Pages tagged fxml">fxml</a></span>
+        
+          <h1 class="entry-title">JavaFX use CSS to define color</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="http://junjunguo.com/images/bio-photo.jpg" class="bio-photo" alt="GuoJunjun bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">GuoJunjun</span></span>
+        <span class="entry-date date published"><time datetime="2015-02-27T00:00:00+01:00"><i class="fa fa-calendar-o"></i> February 27, 2015</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=code,Java,JavaFX,GUI,CSS,fxml&amp;text=JavaFX%20use%20CSS%20to%20define%20color&amp;url=http://junjunguo.com/articles/javafx-use-css-to-define-color/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://junjunguo.com/articles/javafx-use-css-to-define-color/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://junjunguo.com/articles/javafx-use-css-to-define-color/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <p>JavaFX is intended to replace Swing as the standard GUI library for Java SE, it supports desktop computers and web browsers. Oracle: <a href="http://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784">JavaFX overview</a></p>
+
+<p>JavaFX delivers many options for developers to decide how to implement their GUI. </p>
+
+<ol>
+  <li>
+    <p>Java Class: all can be done in a standard Java Class.</p>
+  </li>
+  <li>FXML: The FXML scripting language and be used to separate the user interface and the back-end logic. UI can be presented in FXML and application logic can be write in Java code.
+    <ul>
+      <li>JavaFX scene builder: Can be used to define your UI.</li>
+    </ul>
+  </li>
+  <li>CSS: Cascading Style Sheets can be used to separate appearance and style.</li>
+</ol>
+
+<p>Even all can be done in Java code, but there are many advantages for using FXML and CSS separately. </p>
+
+<ul>
+  <li>Developer who has web design background would like to do it this way.</li>
+  <li>It is more structured, easy to organize, divide jobs if you are working with others. </li>
+  <li>Increase code reusability, since logic code, UI, and style are organized separately, all part can be easily used again.</li>
+  <li>Easy to maintain, modifier, replace and debug …</li>
+</ul>
+
+<h3 id="use-javafx-to-build-a-login-screen">Use JavaFX to build a Login screen</h3>
+
+<p>Example code are created with IntelliJ, but any IDE should work the same way.</p>
+
+<ol>
+  <li>
+    <p>Build a JavaFX Application.</p>
+  </li>
+  <li>
+    <p>Use JavaFX scene builder to build UI.</p>
+    <ul>
+      <li>Reference your CSS style file in Scene Builder or add <code>stylesheets="@yourstylesheetName.css"</code> to your fxml code. </li>
+      <li>Reference your CSS styleClass in Scene Builder or add <code>styleClass="yourstyleClassName"</code> to the desired Object. </li>
+    </ul>
+  </li>
+</ol>
+
+<p>This is how my FXML look like:</p>
+
+<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="cp">&lt;?import javafx.scene.control.*?&gt;</span>
+<span class="cp">&lt;?import javafx.scene.layout.*?&gt;</span>
+<span class="cp">&lt;?import javafx.scene.text.Text?&gt;</span>
+<span class="nt">&lt;Pane</span> <span class="na">maxHeight=</span><span class="s">&quot;-Infinity&quot;</span> <span class="na">maxWidth=</span><span class="s">&quot;-Infinity&quot;</span> <span class="na">minHeight=</span><span class="s">&quot;-Infinity&quot;</span> <span class="na">minWidth=</span><span class="s">&quot;-Infinity&quot;</span> <span class="na">prefHeight=</span><span class="s">&quot;555.0&quot;</span>
+      <span class="na">prefWidth=</span><span class="s">&quot;800.0&quot;</span> <span class="na">styleClass=</span><span class="s">&quot;thebackground&quot;</span> <span class="na">stylesheets=</span><span class="s">&quot;@style.css&quot;</span> <span class="na">xmlns=</span><span class="s">&quot;http://javafx.com/javafx/8&quot;</span>
+      <span class="na">xmlns:fx=</span><span class="s">&quot;http://javafx.com/fxml/1&quot;</span> <span class="na">fx:controller=</span><span class="s">&quot;sample.Controller&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;children&gt;</span>
+        <span class="nt">&lt;GridPane</span> <span class="na">alignment=</span><span class="s">&quot;CENTER&quot;</span> <span class="na">layoutX=</span><span class="s">&quot;300.0&quot;</span> <span class="na">layoutY=</span><span class="s">&quot;50.0&quot;</span> <span class="na">prefHeight=</span><span class="s">&quot;300.0&quot;</span> <span class="na">prefWidth=</span><span class="s">&quot;200.0&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;columnConstraints&gt;</span>
+                <span class="nt">&lt;ColumnConstraints</span> <span class="na">hgrow=</span><span class="s">&quot;SOMETIMES&quot;</span> <span class="na">minWidth=</span><span class="s">&quot;10.0&quot;</span> <span class="na">prefWidth=</span><span class="s">&quot;100.0&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/columnConstraints&gt;</span>
+            <span class="nt">&lt;rowConstraints&gt;</span>
+                <span class="nt">&lt;RowConstraints</span> <span class="na">maxHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">minHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">prefHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">vgrow=</span><span class="s">&quot;SOMETIMES&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;RowConstraints</span> <span class="na">maxHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">minHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">prefHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">vgrow=</span><span class="s">&quot;SOMETIMES&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;RowConstraints</span> <span class="na">maxHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">minHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">prefHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">vgrow=</span><span class="s">&quot;SOMETIMES&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;RowConstraints</span> <span class="na">maxHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">minHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">prefHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">vgrow=</span><span class="s">&quot;SOMETIMES&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;RowConstraints</span> <span class="na">maxHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">minHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">prefHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">vgrow=</span><span class="s">&quot;SOMETIMES&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;RowConstraints</span> <span class="na">maxHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">minHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">prefHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">vgrow=</span><span class="s">&quot;SOMETIMES&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;RowConstraints</span> <span class="na">maxHeight=</span><span class="s">&quot;80.0&quot;</span> <span class="na">minHeight=</span><span class="s">&quot;80.0&quot;</span> <span class="na">prefHeight=</span><span class="s">&quot;55.0&quot;</span> <span class="na">vgrow=</span><span class="s">&quot;SOMETIMES&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/rowConstraints&gt;</span>
+            <span class="nt">&lt;children&gt;</span>
+                <span class="nt">&lt;TextField</span> <span class="na">fx:id=</span><span class="s">&quot;userName&quot;</span> <span class="na">alignment=</span><span class="s">&quot;CENTER&quot;</span> <span class="na">prefHeight=</span><span class="s">&quot;40.0&quot;</span> <span class="na">promptText=</span><span class="s">&quot;User ID&quot;</span>
+                           <span class="na">styleClass=</span><span class="s">&quot;inputSection&quot;</span> <span class="na">GridPane.halignment=</span><span class="s">&quot;CENTER&quot;</span> <span class="na">GridPane.rowIndex=</span><span class="s">&quot;2&quot;</span>
+                           <span class="na">GridPane.valignment=</span><span class="s">&quot;CENTER&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Label</span> <span class="na">styleClass=</span><span class="s">&quot;sectionTitle&quot;</span> <span class="na">text=</span><span class="s">&quot;Login&quot;</span> <span class="na">GridPane.halignment=</span><span class="s">&quot;CENTER&quot;</span> <span class="na">GridPane.rowIndex=</span><span class="s">&quot;1&quot;</span>
+                       <span class="na">GridPane.valignment=</span><span class="s">&quot;CENTER&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Label</span> <span class="na">styleClass=</span><span class="s">&quot;sectionTitle&quot;</span> <span class="na">text=</span><span class="s">&quot;Calendar&quot;</span> <span class="na">GridPane.halignment=</span><span class="s">&quot;CENTER&quot;</span>
+                       <span class="na">GridPane.valignment=</span><span class="s">&quot;CENTER&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Button</span> <span class="na">mnemonicParsing=</span><span class="s">&quot;false&quot;</span> <span class="na">onAction=</span><span class="s">&quot;#loginOnclick&quot;</span> <span class="na">prefHeight=</span><span class="s">&quot;40.0&quot;</span> <span class="na">prefWidth=</span><span class="s">&quot;200.0&quot;</span>
+                        <span class="na">text=</span><span class="s">&quot;Login&quot;</span> <span class="na">GridPane.halignment=</span><span class="s">&quot;CENTER&quot;</span> <span class="na">GridPane.rowIndex=</span><span class="s">&quot;4&quot;</span> <span class="na">GridPane.valignment=</span><span class="s">&quot;CENTER&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Button</span> <span class="na">mnemonicParsing=</span><span class="s">&quot;false&quot;</span> <span class="na">onAction=</span><span class="s">&quot;#registerOnClick&quot;</span> <span class="na">prefHeight=</span><span class="s">&quot;40.0&quot;</span> <span class="na">prefWidth=</span><span class="s">&quot;200.0&quot;</span>
+                        <span class="na">text=</span><span class="s">&quot;Register&quot;</span> <span class="na">GridPane.rowIndex=</span><span class="s">&quot;5&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Text</span> <span class="na">fx:id=</span><span class="s">&quot;warningText&quot;</span> <span class="na">strokeType=</span><span class="s">&quot;OUTSIDE&quot;</span> <span class="na">strokeWidth=</span><span class="s">&quot;0.0&quot;</span> <span class="na">GridPane.rowIndex=</span><span class="s">&quot;6&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;PasswordField</span> <span class="na">fx:id=</span><span class="s">&quot;userPassword&quot;</span> <span class="na">alignment=</span><span class="s">&quot;CENTER&quot;</span> <span class="na">prefHeight=</span><span class="s">&quot;40.0&quot;</span> <span class="na">promptText=</span><span class="s">&quot;Password&quot;</span>
+                               <span class="na">GridPane.halignment=</span><span class="s">&quot;CENTER&quot;</span> <span class="na">GridPane.rowIndex=</span><span class="s">&quot;3&quot;</span> <span class="na">GridPane.valignment=</span><span class="s">&quot;CENTER&quot;</span>
+                               <span class="na">styleClass=</span><span class="s">&quot;inputSection&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/children&gt;</span>
+        <span class="nt">&lt;/GridPane&gt;</span>
+    <span class="nt">&lt;/children&gt;</span>
+<span class="nt">&lt;/Pane&gt;</span></code></pre></div>
+
+<p>Logical code in Controller:</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="nd">@FXML</span> <span class="kd">private</span> <span class="n">Text</span> <span class="n">warningText</span><span class="o">;</span>
+
+<span class="nd">@FXML</span> <span class="kd">private</span> <span class="n">TextField</span> <span class="n">userName</span><span class="o">;</span>
+<span class="nd">@FXML</span> <span class="kd">private</span> <span class="n">PasswordField</span> <span class="n">userPassword</span><span class="o">;</span>
+
+<span class="nd">@FXML</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">loginOnclick</span><span class="o">(</span><span class="n">ActionEvent</span> <span class="n">event</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">//logic code:</span>
+    <span class="n">warningText</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="s">&quot;Wrong id or password!&quot;</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="nd">@FXML</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">registerOnClick</span><span class="o">(</span><span class="n">ActionEvent</span> <span class="n">event</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">//logic code:</span>
+    <span class="n">warningText</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="s">&quot;Register not yet implemented!&quot;</span><span class="o">);</span>
+<span class="o">}</span></code></pre></div>
+
+<p>Finally define the application style in CSS:</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.thebackground</span> <span class="p">{</span>
+    <span class="o">-</span><span class="n">fx</span><span class="o">-</span><span class="k">background-color</span> <span class="o">:</span> <span class="m">#B3E5FC</span><span class="p">;</span>
+    <span class="p">}</span>
+
+<span class="nc">.sectionTitle</span> <span class="p">{</span>
+    <span class="o">-</span><span class="n">fx</span><span class="o">-</span><span class="k">text</span><span class="o">-</span><span class="n">fill</span>   <span class="o">:</span> <span class="m">#01579B</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">fx</span><span class="o">-</span><span class="k">font-weight</span> <span class="o">:</span> <span class="k">bolder</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">fx</span><span class="o">-</span><span class="k">font-size</span>   <span class="o">:</span> <span class="m">14px</span><span class="p">;</span>
+    <span class="p">}</span>
+
+<span class="nc">.warningText</span> <span class="p">{</span>
+    <span class="o">-</span><span class="n">fx</span><span class="o">-</span><span class="n">fill</span> <span class="o">:</span> <span class="m">#0277BD</span><span class="p">;</span>
+    <span class="p">}</span>
+
+<span class="nc">.inputSection</span> <span class="p">{</span>
+    <span class="o">-</span><span class="n">fx</span><span class="o">-</span><span class="k">background-color</span> <span class="o">:</span> <span class="m">#E1F5FE</span><span class="p">;</span>
+    <span class="p">}</span>
+
+<span class="nc">.button</span> <span class="p">{</span>
+    <span class="o">-</span><span class="n">fx</span><span class="o">-</span><span class="k">background-color</span> <span class="o">:</span> <span class="m">#29B6F6</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">fx</span><span class="o">-</span><span class="k">text</span><span class="o">-</span><span class="n">fill</span>        <span class="o">:</span> <span class="m">#E1F5FE</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">fx</span><span class="o">-</span><span class="k">font-weight</span>      <span class="o">:</span> <span class="m">900</span><span class="p">;</span>
+    <span class="p">}</span>
+
+<span class="nc">.button</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="o">-</span><span class="n">fx</span><span class="o">-</span><span class="k">background-color</span> <span class="o">:</span> <span class="m">#01579B</span><span class="p">;</span>
+    <span class="p">}</span></code></pre></div>
+
+<p>Here is a screenshot of the Light blue theme has been built:</p>
+
+<p><img src="https://raw.githubusercontent
+.com/junjunguo/HumanComputerInteraction/ce1607d4885edfc942fc42a0073a27e772578da2/ExampleCode/lightbluelogin.png" alt="light blue theme" /></p>
+
+<p><img src="https://raw.githubusercontent.com/junjunguo/HumanComputerInteraction/ce1607d4885edfc942fc42a0073a27e772578da2/ExampleCode/lightblueloginr.png" alt="light blue theme" /></p>
+
+<p>Source code: <a href="https://github.com/junjunguo/HumanComputerInteraction/tree/master/ExampleCode">on GitHub</a></p>
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'guojunjunsblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://junjunguo.com/articles/implement-openstreetmap-on-android-1/" class="btn" title="How to implement a simple OpenStreetMap on Android">Previous</a>
+      
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2015 <a href="http://junjunguo.com" rel="nofollow">  GuoJunjun</a></span>
+<div class="social-icons">
+    
+    
+    <a href="http://plus.google.com/+GuoJunjun"
+                                      title="GuoJunjun on Google+" target="_blank"><i
+        class="fa fa-google-plus-square fa-2x"></i></a>
+    <a href="http://linkedin.com/in/guojunjun"
+                                   title="GuoJunjun on LinkedIn" target="_blank"><i
+        class="fa fa-linkedin-square fa-2x"></i></a>
+    
+    
+    <a href="http://www.flickr.com/photos/guojunjun"
+                                 title="GuoJunjun on Flickr" target="_blank"><i
+        class="fa fa-flickr fa-2x"></i></a>
+    <a href="http://github.com/junjunguo" title="GuoJunjun on Github"
+                                 target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+    
+    <a href="http://junjunguo.com/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://junjunguo.com';
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://junjunguo.com/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://junjunguo.com/assets/js/scripts.min.js"></script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-49981756-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+	        
+
+</body>
+</html>

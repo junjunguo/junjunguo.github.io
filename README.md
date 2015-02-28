@@ -1,7 +1,7 @@
-All data here are for my Personal Website
+My Website & Blog
 ===
 
-Using Github to host my Personal Website:
+Using Github to host my Website and my Blog:
 --
 [My Domain][1] :            
 
