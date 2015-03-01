@@ -7,7 +7,7 @@ tags: [code, Java, JavaFX, GUI, CSS, fxml]
 image:
   feature: 14771654073_df0ddb828f_o.jpg
   credit: GuoJunjun
-  creditlink: http://junjunguo.com
+  creditlink: http://junjunguo.com/main.html
 comments: true
 share: true
 ---
@@ -16,9 +16,10 @@ JavaFX is intended to replace Swing as the standard GUI library for Java SE, it 
 
 JavaFX delivers many options for developers to decide how to implement their GUI. 
 
-1. Java Class: all can be done in a standard Java Class.
+1. Java Class: all can be done in the standard Java Class.
 
-2. FXML: The FXML scripting language and be used to separate the user interface and the back-end logic. UI can be presented in FXML and application logic can be write in Java code.
+2. FXML: The FXML scripting language can be used to separate the user interface and the back-end logic. UI can be presented
+in FXML and write application logic in Java code.
     * JavaFX scene builder: Can be used to define your UI.
 
 3. CSS: Cascading Style Sheets can be used to separate appearance and style.

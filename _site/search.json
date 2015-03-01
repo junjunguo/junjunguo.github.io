@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Functional and nonfunctional requirement",
+      "link"			: "http://junjunguo.com/blog/functional-non-functional-requirement/",
+      "excerpt"		: "Different between functional and nonfunctional requirement"
+    }
+  
+
+  
+    ,{
       "title"			: "JavaFX use CSS to define color",
       "link"			: "http://junjunguo.com/articles/javafx-use-css-to-define-color/",
       "excerpt"		: "Example code for using CSS to create JavaFX color theme"
@@ -21,14 +29,6 @@
       "title"			: "Android Menu",
       "link"			: "http://junjunguo.com/articles/android-activitybar-menu/",
       "excerpt"		: "Example code for implementing Android action overflow menu"
-    }
-  
-
-  
-    ,{
-      "title"			: "Hello World",
-      "link"			: "http://junjunguo.com/blog/hello-world/",
-      "excerpt"		: ""
     }
   
 

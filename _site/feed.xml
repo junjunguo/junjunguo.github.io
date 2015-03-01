@@ -4,13 +4,106 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://junjunguo.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://junjunguo.com" />
-<updated>2015-02-28T16:10:43+01:00</updated>
+<updated>2015-03-01T12:58:00+01:00</updated>
 <id>http://junjunguo.com/</id>
 <author>
   <name>GuoJunjun</name>
   <uri>http://junjunguo.com/</uri>
   <email>guojunjun@gmail.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Functional and nonfunctional requirement]]></title>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/blog/functional-non-functional-requirement/" />
+  <id>http://junjunguo.com/blog/functional-non-functional-requirement</id>
+  <published>2015-02-28T00:00:00+01:00</published>
+  <updated>2015-02-28T00:00:00+01:00</updated>
+  <author>
+    <name>GuoJunjun</name>
+    <uri>http://junjunguo.com</uri>
+    <email>guojunjun@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Software requirements are simply the needs of stakeholders that will be solved by software.&lt;/p&gt;
+
+&lt;p&gt;We can’t start design software architecture, or decide a software development model without knowing any requirements. &lt;/p&gt;
+
+&lt;p&gt;Identifying requirements are important in software process. Any design activities should begin after requirements are understood. &lt;/p&gt;
+
+&lt;h3 id=&quot;functional-and-nonfunctional-requirements&quot;&gt;Functional and Nonfunctional requirements&lt;/h3&gt;
+
+&lt;h4 id=&quot;why-it-matters&quot;&gt;Why it matters?&lt;/h4&gt;
+
+&lt;p&gt;In General:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Functional Requirements specifies the functionality of the system.&lt;/li&gt;
+  &lt;li&gt;Non functional Requirements specifies the quality of the system.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If the system has been build does not do what stakeholders want (functionalities does not meet the stakeholders need), the system will be considered failure. &lt;/p&gt;
+
+&lt;p&gt;If the system do what stakeholder want but without quality (low satisfiability, availability …), for example, the system must send a warning message if the server is down with a latency of no greater than 5 minutes, and the stakeholders wouldn’t happy if warning message was sent after few hours or days. &lt;/p&gt;
+
+&lt;h4 id=&quot;functional-requirements&quot;&gt;Functional requirements&lt;/h4&gt;
+&lt;p&gt;Functional requirements describes what a software system must do, the behavior of the system which is related to system’s functionality. &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Functional requirements are captured in &lt;code&gt;use cases&lt;/code&gt;. &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Functional requirements are supported by non functional requirements. &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;non-functional-requirements&quot;&gt;Non functional requirements&lt;/h4&gt;
+&lt;p&gt;No functional requirements place constraints on how the system will do, specifies criteria that can be used to judge the software system. &lt;/p&gt;
+
+&lt;p&gt;Non functional requirements may include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Accessibility&lt;/li&gt;
+  &lt;li&gt;Availability&lt;/li&gt;
+  &lt;li&gt;Documentation&lt;/li&gt;
+  &lt;li&gt;Disaster recovery&lt;/li&gt;
+  &lt;li&gt;Efficiency&lt;/li&gt;
+  &lt;li&gt;Extensibility&lt;/li&gt;
+  &lt;li&gt;Fault tolerance&lt;/li&gt;
+  &lt;li&gt;Maintainability&lt;/li&gt;
+  &lt;li&gt;Modifiability&lt;/li&gt;
+  &lt;li&gt;Open source&lt;/li&gt;
+  &lt;li&gt;Performance&lt;/li&gt;
+  &lt;li&gt;Price&lt;/li&gt;
+  &lt;li&gt;Privacy&lt;/li&gt;
+  &lt;li&gt;Portability&lt;/li&gt;
+  &lt;li&gt;Quality&lt;/li&gt;
+  &lt;li&gt;Reliability&lt;/li&gt;
+  &lt;li&gt;Response time&lt;/li&gt;
+  &lt;li&gt;Reusability&lt;/li&gt;
+  &lt;li&gt;Safety&lt;/li&gt;
+  &lt;li&gt;Scalability &lt;/li&gt;
+  &lt;li&gt;Security&lt;/li&gt;
+  &lt;li&gt;Stability&lt;/li&gt;
+  &lt;li&gt;Supportability&lt;/li&gt;
+  &lt;li&gt;Testability&lt;/li&gt;
+  &lt;li&gt;Usability&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;reference&quot;&gt;Reference&lt;/h5&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Software_requirements&quot;&gt;Software requirements&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Non-functional_requirement&quot;&gt;Non-functional requirement&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Functional_requirement&quot;&gt;Functional requirement&lt;/a&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/blog/functional-non-functional-requirement/&quot;&gt;Functional and nonfunctional requirement&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on February 28, 2015.&lt;/p&gt;
+  </content>
+</entry>
 
 
   
@@ -33,9 +126,10 @@
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Java Class: all can be done in a standard Java Class.&lt;/p&gt;
+    &lt;p&gt;Java Class: all can be done in the standard Java Class.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;FXML: The FXML scripting language and be used to separate the user interface and the back-end logic. UI can be presented in FXML and application logic can be write in Java code.
+  &lt;li&gt;FXML: The FXML scripting language can be used to separate the user interface and the back-end logic. UI can be presented
+in FXML and write application logic in Java code.
     &lt;ul&gt;
       &lt;li&gt;JavaFX scene builder: Can be used to define your UI.&lt;/li&gt;
     &lt;/ul&gt;
@@ -378,43 +472,6 @@ then add the items to action bar when Action created “onCreateOptionsMenu”, 
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/AndroidMenubar&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
     &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-activitybar-menu/&quot;&gt;Android Menu&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on February 25, 2015.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Hello World]]></title>
-  <link rel="alternate" type="text/html" href="http://junjunguo.com/blog/hello-world/" />
-  <id>http://junjunguo.com/blog/hello-world</id>
-  <published>2014-08-08T21:39:55+02:00</published>
-  <updated>2014-08-08T21:39:55+02:00</updated>
-  <author>
-    <name>GuoJunjun</name>
-    <uri>http://junjunguo.com</uri>
-    <email>guojunjun@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
-
-&lt;h2 id=&quot;sample-heading&quot;&gt;Sample Heading&lt;/h2&gt;
-
-&lt;h3 id=&quot;sample-heading-2&quot;&gt;Sample Heading 2&lt;/h3&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/blog/hello-world/&quot;&gt;Hello World&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on August 08, 2014.&lt;/p&gt;
   </content>
 </entry>
 
