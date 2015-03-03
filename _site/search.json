@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Android dynamically change actionbar item",
+      "link"			: "http://junjunguo.com/articles/android-dynamically-change-actionbar-item/",
+      "excerpt"		: "Change text dynamically for android actionbar item text"
+    }
+  
+
+  
+    ,{
       "title"			: "Functional and nonfunctional requirement",
       "link"			: "http://junjunguo.com/blog/functional-non-functional-requirement/",
       "excerpt"		: "Different between functional and nonfunctional requirement"
