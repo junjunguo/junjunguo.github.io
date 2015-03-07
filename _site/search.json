@@ -2,8 +2,16 @@
 
   
     {
+      "title"			: "Android Saving Data in SQLite Database",
+      "link"			: "http://junjunguo.com/articles/android-sqlite-database/",
+      "excerpt"		: "How to implement SQLite for Android applications"
+    }
+  
+
+  
+    ,{
       "title"			: "Android Implement a ListView",
-      "link"			: "http://junjunguo.com/articles/android-list_view/",
+      "link"			: "http://junjunguo.com/articles/android-list-view/",
       "excerpt"		: "An Example of Implementing a ListView"
     }
   
