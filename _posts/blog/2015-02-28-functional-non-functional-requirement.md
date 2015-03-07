@@ -4,7 +4,7 @@ title: "Functional and nonfunctional requirement"
 modified:
 categories: blog
 excerpt: "Different between functional and nonfunctional requirement"
-tags: [software, software engineering, requirement]
+tags: [software, Software development, requirement]
 image:
   feature: summer2014abug.jpg
   credit: GuoJunjun

@@ -1,16 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-<title type="text">GuoJunjun's Blog</title>
+<title type="text">GuoJunjun's Tech Blog</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://junjunguo.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://junjunguo.com" />
-<updated>2015-03-03T17:26:57+01:00</updated>
+<updated>2015-03-07T12:02:03+01:00</updated>
 <id>http://junjunguo.com/</id>
 <author>
   <name>GuoJunjun</name>
   <uri>http://junjunguo.com/</uri>
   <email>guojunjun@gmail.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Android Implement a ListView]]></title>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/articles/android-list_view/" />
+  <id>http://junjunguo.com/articles/android-list_view</id>
+  <published>2015-03-06T00:00:00+01:00</published>
+  <updated>2015-03-06T00:00:00+01:00</updated>
+  <author>
+    <name>GuoJunjun</name>
+    <uri>http://junjunguo.com</uri>
+    <email>guojunjun@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;A simple example of how to implement a list view in Android. You can extends a ListActivity instead of ActionBarActivity 
+or Activity, but this example extends ActionBarActivity.&lt;/p&gt;
+
+&lt;p&gt;What’s in the example?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A list of strings: &lt;code&gt;mylist&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;An ArrayAdapter: &lt;code&gt;adapter&lt;/code&gt; used to connect the data and view&lt;/li&gt;
+  &lt;li&gt;Item click listener: used to show an item, when it is clicked.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;the-following-image-shows-how-it-looks-like&quot;&gt;the following image shows how it looks like.&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/junjunguo/android/master/AndroidListView/listview.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;steps&quot;&gt;Steps:&lt;/h5&gt;
+
+&lt;p&gt;In onCreate: &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;create a String list with some items in&lt;/li&gt;
+  &lt;li&gt;create an ArrayAdapter, add your list in, &lt;code&gt;android.R.layout.simple_list_item_1&lt;/code&gt; is Android build in.&lt;/li&gt;
+  &lt;li&gt;setAdapter&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Code:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;setContentView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;activity_list_view&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mylist&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;CNY - Yuan Renminbi - China - Beijing&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;USD - US Dollar - USA - Washington&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;&amp;quot;EUR - Euro - European-Union&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;GBP - Pound Sterling - United-Kingdom - London&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;&amp;quot;INR - Indian Rupee - India - New Delhi&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;AUD - Australian Dollar - Australia - Canberra&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;&amp;quot;CAD - Canadian Dollar - Canada - Ottawa&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;SGD - Singapore Dollar - Singapore - Singapore&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;&amp;quot;CHF - Swiss Franc - Switzerland - Bern&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;MYR - Malaysian Ringgit - Malaysia - Kuala Lumpur&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;&amp;quot;JPY - Japanese Yen - Japan - Tokyo&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;NZD - New Zealand Dollar - New Zealand - Wellington&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;&amp;quot;HKD - Hong Kong Dollar - Hong Kong - Victoria&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;SEK - Swedish Krona - Sweden - Stockholm&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;&amp;quot;NOK - Norwegian Krone - Norway - Oslo&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;DKK - Danish Krone - Denmark - Copenhagen&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;ArrayAdapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;adapter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ArrayAdapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;simple_list_item_1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mylist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;ListView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;listView&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ListView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;findViewById&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;my_listview&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;listView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setAdapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;adapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;addItemClickListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;listView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;addItemClickListener(listView)&lt;/code&gt; method is used to add listener and implement the react action.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;addItemClickListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ListView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;listView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;listView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setOnItemClickListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AdapterView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;OnItemClickListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onItemClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AdapterView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;?&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;itemValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;listView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getItemAtPosition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;Toast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;makeText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getApplicationContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Position: &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;position&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot; item: &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;itemValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;Toast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;LENGTH_SHORT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Add flowing code to layout activity :&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ListView&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;match_parent&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;wrap_content&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@+id/my_listview&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/ListView&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/AndroidMenubar&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-list_view/&quot;&gt;Android Implement a ListView&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 06, 2015.&lt;/p&gt;
+  </content>
+</entry>
 
 
   
@@ -92,7 +180,7 @@ start with 0, every time it is clicked the number will go up.&lt;/p&gt;
 
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/AndroidMenubar&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-dynamically-change-actionbar-item/&quot;&gt;Android dynamically change actionbar item&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on March 03, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-dynamically-change-actionbar-item/&quot;&gt;Android dynamically change actionbar item&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 03, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -185,7 +273,7 @@ start with 0, every time it is clicked the number will go up.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Functional_requirement&quot;&gt;Functional requirement&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/blog/functional-non-functional-requirement/&quot;&gt;Functional and nonfunctional requirement&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on February 28, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/blog/functional-non-functional-requirement/&quot;&gt;Functional and nonfunctional requirement&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on February 28, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -349,7 +437,7 @@ in FXML and write application logic in Java code.
 
 &lt;p&gt;Source code: &lt;a href=&quot;https://github.com/junjunguo/HumanComputerInteraction/tree/master/ExampleCode&quot;&gt;on GitHub&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/javafx-use-css-to-define-color/&quot;&gt;JavaFX use CSS to define color&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on February 27, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/javafx-use-css-to-define-color/&quot;&gt;JavaFX use CSS to define color&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on February 27, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -444,7 +532,7 @@ view in layout file, then you can add more functions in the map Activity.&lt;/p&
 
 &lt;p&gt;Source code: &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/OpenStreetMap&quot;&gt;on GitHub&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/implement-openstreetmap-on-android-1/&quot;&gt;How to implement a simple OpenStreetMap on Android&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on February 26, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/implement-openstreetmap-on-android-1/&quot;&gt;How to implement a simple OpenStreetMap on Android&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on February 26, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -555,7 +643,7 @@ then add the items to action bar when Action created “onCreateOptionsMenu”, 
 
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/AndroidMenubar&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-activitybar-menu/&quot;&gt;Android Menu&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Blog&lt;/a&gt; on February 25, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-activitybar-menu/&quot;&gt;Android Menu&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on February 25, 2015.&lt;/p&gt;
   </content>
 </entry>
 

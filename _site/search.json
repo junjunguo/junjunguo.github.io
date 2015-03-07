@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Android Implement a ListView",
+      "link"			: "http://junjunguo.com/articles/android-list_view/",
+      "excerpt"		: "An Example of Implementing a ListView"
+    }
+  
+
+  
+    ,{
       "title"			: "Android dynamically change actionbar item",
       "link"			: "http://junjunguo.com/articles/android-dynamically-change-actionbar-item/",
       "excerpt"		: "Change text dynamically for android actionbar item text"
