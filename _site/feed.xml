@@ -4,13 +4,155 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://junjunguo.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://junjunguo.com" />
-<updated>2015-03-08T00:06:16+01:00</updated>
+<updated>2015-03-09T00:21:45+01:00</updated>
 <id>http://junjunguo.com/</id>
 <author>
   <name>GuoJunjun</name>
   <uri>http://junjunguo.com/</uri>
   <email>guojunjun@gmail.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Android Send Message to Other Activity]]></title>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/articles/android-send-message-to-other-activity/" />
+  <id>http://junjunguo.com/articles/android-send-message-to-other-activity</id>
+  <published>2015-03-09T00:00:00+01:00</published>
+  <updated>2015-03-09T00:00:00+01:00</updated>
+  <author>
+    <name>GuoJunjun</name>
+    <uri>http://junjunguo.com</uri>
+    <email>guojunjun@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;How to send a message, an object or any other data from one activity to another? When we use Intent to open another 
+activity, 
+we can actually pass our data by use &lt;code&gt;putExtra&lt;/code&gt;, which can add data to Intent. And then use &lt;code&gt;getExtras&lt;/code&gt; to retrieve the data 
+send from other activity. The example code will show how to implement it.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;the example code is built with Android Studio; Minimum Sdk Version: 11; Target Sdk Version 21.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This trick should work on all sdk versions.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-implement-sending-data-to-another-activity&quot;&gt;How to implement sending data to another activity?&lt;/h2&gt;
+&lt;p&gt;We create to Activities: &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;FirstActivity&lt;/code&gt; &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;write a message and send it to &lt;code&gt;SecondActivity&lt;/code&gt; &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;SecondActivity&lt;/code&gt; &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Show the message on screen&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here is how it looks like when it is done: &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/junjunguo/android/master/2015/SendMessagetoOtherActivity/write.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/junjunguo/android/master/2015/SendMessagetoOtherActivity/receive.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;create-firstactivity&quot;&gt;Create &lt;code&gt;FirstActivity&lt;/code&gt;&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EditText&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;setContentView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;activity_first&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EditText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;findViewById&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;edit_text_write_message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;messageBTNOnClicked&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Toast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;makeText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getApplicationContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;your message: &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot; sent !&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;Toast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;LENGTH_SHORT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;Intent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Intent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SecondActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;intent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;putExtra&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;MESSAGE&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;finish&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;startActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;intent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;add following to FirstActivity layout:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;EditText&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;match_parent&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;wrap_content&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@+id/edit_text_write_message&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:hint=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@string/write_message&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_marginRight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;5dp&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_marginLeft=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;5dp&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_marginTop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;8dp&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_marginBottom=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;15dp&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:inputType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;textMultiLine&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:gravity=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;center&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_centerHorizontal=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;Button&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;wrap_content&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;wrap_content&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:onClick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;messageBTNOnClicked&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;200dp&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_centerHorizontal=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:text=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@string/send_button&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_below=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@id/edit_text_write_message&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;create-secondactivity&quot;&gt;Create &lt;code&gt;SecondActivity&lt;/code&gt;&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TextView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;textView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;setContentView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;activity_second&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;textView&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TextView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;findViewById&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;text_view&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;extras&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getIntent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getExtras&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extras&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;textView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;message from first activity: &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;extras&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;MESSAGE&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;viewBTNOnClicked&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Toast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;makeText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getApplicationContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;to second screen&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Toast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;LENGTH_SHORT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;finish&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;startActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Intent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FirstActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;add following to SecondActivity layout:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;TextView&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;match_parent&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;wrap_content&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@+id/text_view&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:gravity=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;center&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_marginRight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;5dp&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_marginLeft=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;5dp&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_marginTop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;8dp&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_marginBottom=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;15dp&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_centerHorizontal=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;Button&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;wrap_content&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;wrap_content&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:onClick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;viewBTNOnClicked&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;200dp&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_centerHorizontal=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:text=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@string/next_screen&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_below=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@id/text_view&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And we have our project implemented.&lt;/p&gt;
+
+&lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/SendMessagetoOtherActivity&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-send-message-to-other-activity/&quot;&gt;Android Send Message to Other Activity&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 09, 2015.&lt;/p&gt;
+  </content>
+</entry>
 
 
   

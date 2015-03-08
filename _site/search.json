@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Android Send Message to Other Activity",
+      "link"			: "http://junjunguo.com/articles/android-send-message-to-other-activity/",
+      "excerpt"		: "Send Message from one Activity to another"
+    }
+  
+
+  
+    ,{
       "title"			: "Android Saving Data in SQLite Database",
       "link"			: "http://junjunguo.com/articles/android-sqlite-database/",
       "excerpt"		: "How to implement SQLite for Android applications"
