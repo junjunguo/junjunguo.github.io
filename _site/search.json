@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Android use AsyncTask or Executor to repeat tasks in background",
+      "link"			: "http://junjunguo.com/articles/android-async-task-and-executor/",
+      "excerpt"		: "How to repeatedly do tasks with AsyncTask or Executor"
+    }
+  
+
+  
+    ,{
       "title"			: "Android Send Message to Other Activity",
       "link"			: "http://junjunguo.com/articles/android-send-message-to-other-activity/",
       "excerpt"		: "Send Message from one Activity to another"
