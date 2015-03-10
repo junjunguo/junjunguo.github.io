@@ -409,5 +409,5 @@ public class MainActivity extends ActionBarActivity {
 
 And we have our project implemented.
 
-Source code [on Github](https://github.com/junjunguo/android/tree/master/2015/SendMessagetoOtherActivity)
+Source code [on Github](https://github.com/junjunguo/android/tree/master/2015/RepeatAsyncTask)
 
