@@ -3,6 +3,14 @@
   
     {
       "title"			: "Android use AsyncTask or Executor to repeat tasks in background",
+      "link"			: "http://junjunguo.com/articles/android-table-layout/",
+      "excerpt"		: "How to repeatedly do tasks with AsyncTask or Executor"
+    }
+  
+
+  
+    ,{
+      "title"			: "Android use AsyncTask or Executor to repeat tasks in background",
       "link"			: "http://junjunguo.com/articles/android-async-task-and-executor/",
       "excerpt"		: "How to repeatedly do tasks with AsyncTask or Executor"
     }

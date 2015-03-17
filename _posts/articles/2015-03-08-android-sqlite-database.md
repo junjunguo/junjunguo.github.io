@@ -7,7 +7,7 @@ tags: [SQLite, Database, Android, code, Java, Mobile, GUI]
 image:
   feature: summer2014-115.jpg
   credit: GuoJunjun
-  creditlink: http://junjunguo.com/main.html
+  creditlink: http://junjunguo.com
 comments: true
 share: true
 ---

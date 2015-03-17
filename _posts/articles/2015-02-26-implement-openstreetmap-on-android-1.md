@@ -7,7 +7,7 @@ tags: [Android, code, Java, Map, Mobile]
 image:
   feature: 100920020.jpg
   credit: GuoJunjun
-  creditlink: http://junjunguo.com/main.html
+  creditlink: http://junjunguo.com
 comments: true
 share: true
 ---
