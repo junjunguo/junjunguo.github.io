@@ -2,9 +2,9 @@
 
   
     {
-      "title"			: "Android use AsyncTask or Executor to repeat tasks in background",
+      "title"			: "Android TableLayout",
       "link"			: "http://junjunguo.com/articles/android-table-layout/",
-      "excerpt"		: "How to repeatedly do tasks with AsyncTask or Executor"
+      "excerpt"		: "Android TableLayout example and colors xml"
     }
   
 

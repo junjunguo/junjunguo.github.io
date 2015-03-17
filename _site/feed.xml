@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://junjunguo.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://junjunguo.com" />
-<updated>2015-03-18T00:32:11+01:00</updated>
+<updated>2015-03-18T00:35:26+01:00</updated>
 <id>http://junjunguo.com/</id>
 <author>
   <name>GuoJunjun</name>
@@ -16,11 +16,11 @@
   
 
 <entry>
-  <title type="html"><![CDATA[Android use AsyncTask or Executor to repeat tasks in background]]></title>
+  <title type="html"><![CDATA[Android TableLayout]]></title>
   <link rel="alternate" type="text/html" href="http://junjunguo.com/articles/android-table-layout/" />
   <id>http://junjunguo.com/articles/android-table-layout</id>
-  <published>2015-03-17T00:00:00+01:00</published>
-  <updated>2015-03-17T00:00:00+01:00</updated>
+  <published>2015-03-18T00:00:00+01:00</published>
+  <updated>2015-03-18T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
     <uri>http://junjunguo.com</uri>
@@ -172,7 +172,7 @@ second there is only one element and it takes 3 portion, the whole row space.&lt
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/MyTableView&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-table-layout/&quot;&gt;Android use AsyncTask or Executor to repeat tasks in background&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 17, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-table-layout/&quot;&gt;Android TableLayout&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 18, 2015.&lt;/p&gt;
   </content>
 </entry>
 

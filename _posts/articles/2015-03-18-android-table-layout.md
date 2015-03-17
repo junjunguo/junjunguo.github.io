@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Android use AsyncTask or Executor to repeat tasks in background
-excerpt: "How to repeatedly do tasks with AsyncTask or Executor"
+title: Android TableLayout
+excerpt: "Android TableLayout example and colors xml"
 categories: articles
 tags: [Android, code, GUI, XML Mobile]
 image:
