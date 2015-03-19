@@ -3,7 +3,7 @@ layout: post
 title: Android TableLayout
 excerpt: "Android TableLayout example and colors xml"
 categories: articles
-tags: [Android, code, GUI, XML Mobile]
+tags: [Android, code, GUI, XML, Mobile]
 image:
   feature: summer2014-118.jpg
   credit: GuoJunjun
@@ -11,8 +11,6 @@ image:
 comments: true
 share: true
 ---
-
-We often need to do some tasks in background periodically, this tutorial describes three methods to do tasks periodically. 
 
 # Contents
 {:.no_toc}
