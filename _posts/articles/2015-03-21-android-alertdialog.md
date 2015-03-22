@@ -3,7 +3,7 @@ layout: post
 title: Android Alert Dialog
 excerpt: "Android display dialog box / popup window"
 categories: articles
-tags: [Android, code, GUI, XML, Mobile]
+tags: [Android, code, GUI, Java, Mobile]
 image:
   feature: summer2014-117.jpg
   credit: GuoJunjun
@@ -32,7 +32,7 @@ Implementation:
 - One xml to define main window
 - another xml to define custom Dialog box layout
 
-Here is how is looks when it is done:
+Here is how it looks when it is done:
 
 ![TableLayout](https://raw.githubusercontent.com/junjunguo/android/master/2015/AlertDialog/window.png)
 
@@ -202,5 +202,5 @@ The blue style colors in `values/colors.xml`:
 {% endhighlight %}
 
 
-Source code [on Github](https://github.com/junjunguo/android/tree/master/2015/MyTableView)
+Source code [on Github](https://github.com/junjunguo/android/tree/master/2015/AlertDialog)
 

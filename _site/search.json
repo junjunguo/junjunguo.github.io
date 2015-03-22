@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Android take photo and save to gallery, choose photo from gallery and show in ListView",
+      "link"			: "http://junjunguo.com/articles/android-take-photo-show-in-list-view/",
+      "excerpt"		: "take photo or choose from gallery and use adapter to fill data from ArrayList to ListView"
+    }
+  
+
+  
+    ,{
       "title"			: "Android Alert Dialog",
       "link"			: "http://junjunguo.com/articles/android-alertdialog/",
       "excerpt"		: "Android display dialog box / popup window"
