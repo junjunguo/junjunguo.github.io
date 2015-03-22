@@ -376,7 +376,7 @@ public class MyImage {
 </LinearLayout>
 {% endhighlight %}
 
-# `CustomsLayout xml`
+# `Custom dialog Layout`
 
 `layout/custom_dialog_box.xml` defines the outlook of Alert Dialog window, which contains:
 
@@ -434,7 +434,7 @@ public class MyImage {
 </RelativeLayout>
 {% endhighlight %}
 
-# Custom item Layout
+# `Custom item Layout`
 
 `item_image.xml` customize item row in ListView.
 
@@ -465,21 +465,20 @@ public class MyImage {
 </LinearLayout>
 {% endhighlight %}
 
-# strings.xml
+# `strings.xml`
 The `strings.xml` in `values`:
 
 {% highlight xml %}
 <resources>
-    <string name="app_name">AlertDialog Builder</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">image adapter to listview</string>
     <string name="action_settings">Settings</string>
-    <string name="alert_dialog">Alert Dialog</string>
-    <string name="show_alert_view">Show Alert View</string>
-    <string name="exit">Exit</string>
+    <string name="add_image">Add Image</string>
+    <string name="title_activity_display_image">DisplayImage</string>
+    <string name="image_information">Image Information</string>
 </resources>
 {% endhighlight %}
 
-# colors.xml
+# `colors.xml`
 The deep purple style colors in `values/colors.xml`:
 
 {% highlight xml %}
