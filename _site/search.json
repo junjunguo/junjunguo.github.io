@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Android ListView Image save data in SQLite Database",
+      "link"			: "http://junjunguo.com/articles/android-sqlite-image-view/",
+      "excerpt"		: "Choose Image from Gallery or Camera, display in a ListView and save information in SQLite"
+    }
+  
+
+  
+    ,{
       "title"			: "Android take photo and save to gallery, choose photo from gallery and show in ListView",
       "link"			: "http://junjunguo.com/articles/android-take-photo-show-in-list-view/",
       "excerpt"		: "take photo or choose from gallery and use adapter to fill data from ArrayList to ListView"
