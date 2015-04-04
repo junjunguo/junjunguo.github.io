@@ -59,9 +59,7 @@ a:hover {
     height: auto;
     width: 1000px;
     margin: 0px auto 0px auto;
-    padding: 10px 10px 10px 10px;
-    background:;
-    padding-bottom: 200px; /* Height of the footer element */
+    padding: 10px 10px 200px 10px;
 }
 
 #quotes {
@@ -128,7 +126,6 @@ a:hover {
     float: left;
     width: 300px;
     height: 200px;
-    background: #;
     margin: 0px;
     padding: 0;
     text-align: center;
@@ -142,7 +139,6 @@ a:hover {
     float: left;
     width: 400px;
     height: 200px;
-    background: ;
     margin: 0px;
     padding: 0px;
     text-align: center;
@@ -165,7 +161,6 @@ a:hover {
     float: right;
     width: 300px;
     height: 200px;
-    background: #;
     margin: 0px;
     padding: 0;
     text-align: center;

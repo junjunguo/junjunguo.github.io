@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Bootstrap Login",
+      "link"			: "http://junjunguo.com/articles/bootstrap-modal-login/",
+      "excerpt"		: "Bootstrap popup window Login and custom validation"
+    }
+  
+
+  
+    ,{
       "title"			: "Android ListView Image save data in SQLite Database",
       "link"			: "http://junjunguo.com/articles/android-sqlite-image-view/",
       "excerpt"		: "Choose Image from Gallery or Camera, display in a ListView and save information in SQLite"

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://junjunguo.com/articles/bootstrap-modal-login/</loc>
+    <lastmod>2015-04-04T00:00:00+02:00</lastmod>
+  </url>
+  <url>
     <loc>http://junjunguo.com/articles/android-sqlite-image-view/</loc>
     <lastmod>2015-03-23T00:00:00+01:00</lastmod>
   </url>
@@ -54,31 +58,31 @@
   </url>
   <url>
     <loc>http://junjunguo.com/articles/</loc>
-    <lastmod>2015-03-24T01:26:54+01:00</lastmod>
+    <lastmod>2015-04-04T14:48:14+02:00</lastmod>
   </url>
   <url>
     <loc>http://junjunguo.com/tags/</loc>
-    <lastmod>2015-03-24T01:26:54+01:00</lastmod>
+    <lastmod>2015-04-04T14:48:14+02:00</lastmod>
   </url>
   <url>
     <loc>http://junjunguo.com/about/</loc>
-    <lastmod>2015-03-24T01:26:54+01:00</lastmod>
+    <lastmod>2015-04-04T14:48:14+02:00</lastmod>
   </url>
   <url>
     <loc>http://junjunguo.com/blog/</loc>
-    <lastmod>2015-03-24T01:26:54+01:00</lastmod>
+    <lastmod>2015-04-04T14:48:14+02:00</lastmod>
   </url>
   <url>
     <loc>http://junjunguo.com/theme-setup/</loc>
-    <lastmod>2015-03-24T01:26:54+01:00</lastmod>
+    <lastmod>2015-04-04T14:48:14+02:00</lastmod>
   </url>
   <url>
     <loc>http://junjunguo.com/main.html</loc>
-    <lastmod>2015-03-24T01:26:54+01:00</lastmod>
+    <lastmod>2015-04-04T14:48:14+02:00</lastmod>
   </url>
   <url>
     <loc>http://junjunguo.com/tech.html</loc>
-    <lastmod>2015-03-24T01:26:54+01:00</lastmod>
+    <lastmod>2015-04-04T14:48:14+02:00</lastmod>
   </url>
   <url>
     <loc>http://junjunguo.com/2014.html</loc>
@@ -90,7 +94,7 @@
   </url>
   <url>
     <loc>http://junjunguo.com/cv.html</loc>
-    <lastmod>2015-01-20T13:24:14+01:00</lastmod>
+    <lastmod>2015-04-02T18:08:16+02:00</lastmod>
   </url>
   <url>
     <loc>http://junjunguo.com/fun.html</loc>
@@ -134,7 +138,7 @@
   </url>
   <url>
     <loc>http://junjunguo.com/index.html</loc>
-    <lastmod>2015-03-12T14:52:03+01:00</lastmod>
+    <lastmod>2015-03-28T14:19:11+01:00</lastmod>
   </url>
   <url>
     <loc>http://junjunguo.com/june2014.html</loc>
