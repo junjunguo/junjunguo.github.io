@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://junjunguo.com/articles/bootstrap-modal-register/</loc>
+    <lastmod>2015-04-05T00:00:00+02:00</lastmod>
+  </url>
+  <url>
     <loc>http://junjunguo.com/articles/bootstrap-modal-login/</loc>
     <lastmod>2015-04-04T00:00:00+02:00</lastmod>
   </url>
@@ -58,31 +62,31 @@
   </url>
   <url>
     <loc>http://junjunguo.com/articles/</loc>
-    <lastmod>2015-04-04T14:48:14+02:00</lastmod>
+    <lastmod>2015-04-05T12:58:15+02:00</lastmod>
   </url>
   <url>
     <loc>http://junjunguo.com/tags/</loc>
-    <lastmod>2015-04-04T14:48:14+02:00</lastmod>
+    <lastmod>2015-04-05T12:58:15+02:00</lastmod>
   </url>
   <url>
     <loc>http://junjunguo.com/about/</loc>
-    <lastmod>2015-04-04T14:48:14+02:00</lastmod>
+    <lastmod>2015-04-05T12:58:15+02:00</lastmod>
   </url>
   <url>
     <loc>http://junjunguo.com/blog/</loc>
-    <lastmod>2015-04-04T14:48:14+02:00</lastmod>
+    <lastmod>2015-04-05T12:58:15+02:00</lastmod>
   </url>
   <url>
     <loc>http://junjunguo.com/theme-setup/</loc>
-    <lastmod>2015-04-04T14:48:14+02:00</lastmod>
+    <lastmod>2015-04-05T12:58:15+02:00</lastmod>
   </url>
   <url>
     <loc>http://junjunguo.com/main.html</loc>
-    <lastmod>2015-04-04T14:48:14+02:00</lastmod>
+    <lastmod>2015-04-05T12:58:15+02:00</lastmod>
   </url>
   <url>
     <loc>http://junjunguo.com/tech.html</loc>
-    <lastmod>2015-04-04T14:48:14+02:00</lastmod>
+    <lastmod>2015-04-05T12:58:15+02:00</lastmod>
   </url>
   <url>
     <loc>http://junjunguo.com/2014.html</loc>

@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Bootstrap Register with Bootstrap Modals",
+      "link"			: "http://junjunguo.com/articles/bootstrap-modal-register/",
+      "excerpt"		: "Bootstrap popup windows for Register and custom validation"
+    }
+  
+
+  
+    ,{
       "title"			: "Bootstrap Login",
       "link"			: "http://junjunguo.com/articles/bootstrap-modal-login/",
       "excerpt"		: "Bootstrap popup window Login and custom validation"
