@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Android Color status bar",
+      "link"			: "http://junjunguo.com/blog/android-color-status-bar/",
+      "excerpt"		: "How to change status bar color to match app for API 19+"
+    }
+  
+
+  
+    ,{
       "title"			: "Bootstrap Register with Bootstrap Modals",
       "link"			: "http://junjunguo.com/blog/bootstrap-modal-register-b/",
       "excerpt"		: "Bootstrap popup windows for Register and custom validation"
