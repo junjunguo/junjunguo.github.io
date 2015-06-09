@@ -2,7 +2,7 @@
 layout: post
 title: JavaFX use CSS to define color
 excerpt: "Example code for using CSS to create JavaFX color theme"
-categories: articles
+categories: blog
 tags: [code, Java, JavaFX, GUI, CSS, FXML]
 image:
   feature: 14771654073_df0ddb828f_o.jpg

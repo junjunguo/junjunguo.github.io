@@ -2,7 +2,7 @@
 layout: post
 title: Android Send Message to Other Activity
 excerpt: "Send Message from one Activity to another"
-categories: articles
+categories: blog
 tags: [Android, code, Java, Mobile]
 image:
   feature: summer2014-119.jpg

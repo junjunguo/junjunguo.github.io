@@ -2,7 +2,7 @@
 layout: post
 title: Android use AsyncTask or Executor to repeat tasks in background
 excerpt: "How to repeatedly do tasks with AsyncTask or Executor"
-categories: articles
+categories: blog
 tags: [Android, code, Java, Thread, Mobile]
 image:
   feature: summer2014-120.jpg

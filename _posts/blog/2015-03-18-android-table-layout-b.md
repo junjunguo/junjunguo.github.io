@@ -2,7 +2,7 @@
 layout: post
 title: Android TableLayout
 excerpt: "Android TableLayout example and colors xml"
-categories: articles
+categories: blog
 tags: [Android, code, GUI, XML, Mobile]
 image:
   feature: summer2014-118.jpg

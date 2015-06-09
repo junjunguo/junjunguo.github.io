@@ -2,7 +2,7 @@
 layout: post
 title: Android Implement a ListView
 excerpt: "An Example of Implementing a ListView"
-categories: articles
+categories: blog
 tags: [Android, code, Java, Mobile, GUI]
 image:
   feature: summer2014-113.jpg

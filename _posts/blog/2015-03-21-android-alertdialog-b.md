@@ -2,7 +2,7 @@
 layout: post
 title: Android Alert Dialog
 excerpt: "Android display dialog box / popup window"
-categories: articles
+categories: blog
 tags: [Android, code, GUI, Java, Mobile]
 image:
   feature: summer2014-117.jpg

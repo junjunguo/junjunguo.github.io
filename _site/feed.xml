@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://junjunguo.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://junjunguo.com" />
-<updated>2015-06-10T00:47:29+02:00</updated>
+<updated>2015-06-10T01:04:20+02:00</updated>
 <id>http://junjunguo.com/</id>
 <author>
   <name>GuoJunjun</name>
@@ -17,8 +17,8 @@
 
 <entry>
   <title type="html"><![CDATA[Bootstrap Register with Bootstrap Modals]]></title>
-  <link rel="alternate" type="text/html" href="http://junjunguo.com/articles/bootstrap-modal-register/" />
-  <id>http://junjunguo.com/articles/bootstrap-modal-register</id>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/blog/bootstrap-modal-register-b/" />
+  <id>http://junjunguo.com/blog/bootstrap-modal-register-b</id>
   <published>2015-04-05T00:00:00+02:00</published>
   <updated>2015-04-05T00:00:00+02:00</updated>
   <author>
@@ -650,7 +650,7 @@ dynamically according to input.&lt;/li&gt;
 &lt;/ul&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/bootstrap-modal-register/&quot;&gt;Bootstrap Register with Bootstrap Modals&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on April 05, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/blog/bootstrap-modal-register-b/&quot;&gt;Bootstrap Register with Bootstrap Modals&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on April 05, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -1301,8 +1301,8 @@ dynamically according to input.&lt;/li&gt;
 
 <entry>
   <title type="html"><![CDATA[Bootstrap Login]]></title>
-  <link rel="alternate" type="text/html" href="http://junjunguo.com/articles/bootstrap-modal-login/" />
-  <id>http://junjunguo.com/articles/bootstrap-modal-login</id>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/blog/bootstrap-modal-login-b/" />
+  <id>http://junjunguo.com/blog/bootstrap-modal-login-b</id>
   <published>2015-04-04T00:00:00+02:00</published>
   <updated>2015-04-04T00:00:00+02:00</updated>
   <author>
@@ -1574,7 +1574,7 @@ dynamically according to input.&lt;/li&gt;
 &lt;/ul&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/bootstrap-modal-login/&quot;&gt;Bootstrap Login&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on April 04, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/blog/bootstrap-modal-login-b/&quot;&gt;Bootstrap Login&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on April 04, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -1865,8 +1865,8 @@ dynamically according to input.&lt;/li&gt;
 
 <entry>
   <title type="html"><![CDATA[Android ListView Image save data in SQLite Database]]></title>
-  <link rel="alternate" type="text/html" href="http://junjunguo.com/articles/android-sqlite-image-view/" />
-  <id>http://junjunguo.com/articles/android-sqlite-image-view</id>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/blog/android-sqlite-image-view-b/" />
+  <id>http://junjunguo.com/blog/android-sqlite-image-view-b</id>
   <published>2015-03-23T00:00:00+01:00</published>
   <updated>2015-03-23T00:00:00+01:00</updated>
   <author>
@@ -2966,7 +2966,7 @@ mandatory to have a camera to run the application.&lt;/p&gt;
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/SqliteImage&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-sqlite-image-view/&quot;&gt;Android ListView Image save data in SQLite Database&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 23, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/blog/android-sqlite-image-view-b/&quot;&gt;Android ListView Image save data in SQLite Database&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 23, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -4085,8 +4085,8 @@ mandatory to have a camera to run the application.&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[Android take photo and save to gallery, choose photo from gallery and show in ListView]]></title>
-  <link rel="alternate" type="text/html" href="http://junjunguo.com/articles/android-take-photo-show-in-list-view/" />
-  <id>http://junjunguo.com/articles/android-take-photo-show-in-list-view</id>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/blog/android-take-photo-show-in-list-view-b/" />
+  <id>http://junjunguo.com/blog/android-take-photo-show-in-list-view-b</id>
   <published>2015-03-22T00:00:00+01:00</published>
   <updated>2015-03-22T00:00:00+01:00</updated>
   <author>
@@ -4609,7 +4609,7 @@ mandatory to have a camera to run the application.&lt;/p&gt;
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/ImageAdaptertoListView&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-take-photo-show-in-list-view/&quot;&gt;Android take photo and save to gallery, choose photo from gallery and show in ListView&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 22, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/blog/android-take-photo-show-in-list-view-b/&quot;&gt;Android take photo and save to gallery, choose photo from gallery and show in ListView&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 22, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -5151,8 +5151,8 @@ mandatory to have a camera to run the application.&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[Android Alert Dialog]]></title>
-  <link rel="alternate" type="text/html" href="http://junjunguo.com/articles/android-alertdialog/" />
-  <id>http://junjunguo.com/articles/android-alertdialog</id>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/blog/android-alertdialog-b/" />
+  <id>http://junjunguo.com/blog/android-alertdialog-b</id>
   <published>2015-03-21T00:00:00+01:00</published>
   <updated>2015-03-21T00:00:00+01:00</updated>
   <author>
@@ -5356,7 +5356,7 @@ mandatory to have a camera to run the application.&lt;/p&gt;
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/AlertDialog&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-alertdialog/&quot;&gt;Android Alert Dialog&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 21, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/blog/android-alertdialog-b/&quot;&gt;Android Alert Dialog&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 21, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -5579,8 +5579,8 @@ mandatory to have a camera to run the application.&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[Android TableLayout]]></title>
-  <link rel="alternate" type="text/html" href="http://junjunguo.com/articles/android-table-layout/" />
-  <id>http://junjunguo.com/articles/android-table-layout</id>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/blog/android-table-layout-b/" />
+  <id>http://junjunguo.com/blog/android-table-layout-b</id>
   <published>2015-03-18T00:00:00+01:00</published>
   <updated>2015-03-18T00:00:00+01:00</updated>
   <author>
@@ -5732,7 +5732,7 @@ second there is only one element and it takes 3 portion, the whole row space.&lt
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/MyTableView&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-table-layout/&quot;&gt;Android TableLayout&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 18, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/blog/android-table-layout-b/&quot;&gt;Android TableLayout&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 18, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -5903,8 +5903,8 @@ second there is only one element and it takes 3 portion, the whole row space.&lt
 
 <entry>
   <title type="html"><![CDATA[Android use AsyncTask or Executor to repeat tasks in background]]></title>
-  <link rel="alternate" type="text/html" href="http://junjunguo.com/articles/android-async-task-and-executor/" />
-  <id>http://junjunguo.com/articles/android-async-task-and-executor</id>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/blog/android-async-task-and-executor-b/" />
+  <id>http://junjunguo.com/blog/android-async-task-and-executor-b</id>
   <published>2015-03-10T00:00:00+01:00</published>
   <updated>2015-03-10T00:00:00+01:00</updated>
   <author>
@@ -6324,7 +6324,7 @@ An asyncTask have to be subclassed to be in used.
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/RepeatAsyncTask&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-async-task-and-executor/&quot;&gt;Android use AsyncTask or Executor to repeat tasks in background&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 10, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/blog/android-async-task-and-executor-b/&quot;&gt;Android use AsyncTask or Executor to repeat tasks in background&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 10, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -6763,8 +6763,8 @@ An asyncTask have to be subclassed to be in used.
 
 <entry>
   <title type="html"><![CDATA[Android Send Message to Other Activity]]></title>
-  <link rel="alternate" type="text/html" href="http://junjunguo.com/articles/android-send-message-to-other-activity/" />
-  <id>http://junjunguo.com/articles/android-send-message-to-other-activity</id>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/blog/android-send-message-to-other-activity-b/" />
+  <id>http://junjunguo.com/blog/android-send-message-to-other-activity-b</id>
   <published>2015-03-09T00:00:00+01:00</published>
   <updated>2015-03-09T00:00:00+01:00</updated>
   <author>
@@ -6896,7 +6896,7 @@ send from other activity. The example code will show how to implement it.&lt;/p&
 
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/SendMessagetoOtherActivity&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-send-message-to-other-activity/&quot;&gt;Android Send Message to Other Activity&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 09, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/blog/android-send-message-to-other-activity-b/&quot;&gt;Android Send Message to Other Activity&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 09, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -7047,8 +7047,8 @@ send from other activity. The example code will show how to implement it.&lt;/p&
 
 <entry>
   <title type="html"><![CDATA[Android Saving Data in SQLite Database]]></title>
-  <link rel="alternate" type="text/html" href="http://junjunguo.com/articles/android-sqlite-database/" />
-  <id>http://junjunguo.com/articles/android-sqlite-database</id>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/blog/android-sqlite-database-b/" />
+  <id>http://junjunguo.com/blog/android-sqlite-database-b</id>
   <published>2015-03-08T00:00:00+01:00</published>
   <updated>2015-03-08T00:00:00+01:00</updated>
   <author>
@@ -7635,7 +7635,7 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
 
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/SQLiteDB&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-sqlite-database/&quot;&gt;Android Saving Data in SQLite Database&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 08, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/blog/android-sqlite-database-b/&quot;&gt;Android Saving Data in SQLite Database&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 08, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -8241,8 +8241,8 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
 
 <entry>
   <title type="html"><![CDATA[Android Implement a ListView]]></title>
-  <link rel="alternate" type="text/html" href="http://junjunguo.com/articles/android-list-view/" />
-  <id>http://junjunguo.com/articles/android-list-view</id>
+  <link rel="alternate" type="text/html" href="http://junjunguo.com/blog/android-list-view-b/" />
+  <id>http://junjunguo.com/blog/android-list-view-b</id>
   <published>2015-03-06T00:00:00+01:00</published>
   <updated>2015-03-06T00:00:00+01:00</updated>
   <author>
@@ -8320,7 +8320,7 @@ or Activity, but this example extends ActionBarActivity.&lt;/p&gt;
 
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/AndroidMenubar&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/articles/android-list-view/&quot;&gt;Android Implement a ListView&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 06, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://junjunguo.com/blog/android-list-view-b/&quot;&gt;Android Implement a ListView&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;http://junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 06, 2015.&lt;/p&gt;
   </content>
 </entry>
 

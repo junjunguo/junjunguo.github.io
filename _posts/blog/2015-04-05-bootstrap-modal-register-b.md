@@ -3,7 +3,7 @@ layout: post
 title: Bootstrap Register with Bootstrap Modals
 excerpt: Bootstrap popup windows for Register and custom validation
 
-categories: articles
+categories: blog
 tags: [web design, code, GUI, HTML5, Bootstrap, JavaScript]
 image:
   feature: 14830590633_2b15ef306b_o.jpg

@@ -2,7 +2,7 @@
 layout: post
 title: Android dynamically change actionbar item
 excerpt: "Change text dynamically for android actionbar item text"
-categories: articles
+categories: blog
 tags: [Android, code, Java, Mobile, GUI]
 image:
   feature: summer2014-114.jpg

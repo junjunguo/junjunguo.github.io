@@ -3,7 +3,7 @@
   
     {
       "title"			: "Bootstrap Register with Bootstrap Modals",
-      "link"			: "http://junjunguo.com/articles/bootstrap-modal-register/",
+      "link"			: "http://junjunguo.com/blog/bootstrap-modal-register-b/",
       "excerpt"		: "Bootstrap popup windows for Register and custom validation"
     }
   
@@ -19,7 +19,7 @@
   
     ,{
       "title"			: "Bootstrap Login",
-      "link"			: "http://junjunguo.com/articles/bootstrap-modal-login/",
+      "link"			: "http://junjunguo.com/blog/bootstrap-modal-login-b/",
       "excerpt"		: "Bootstrap popup window Login and custom validation"
     }
   
@@ -35,7 +35,7 @@
   
     ,{
       "title"			: "Android ListView Image save data in SQLite Database",
-      "link"			: "http://junjunguo.com/articles/android-sqlite-image-view/",
+      "link"			: "http://junjunguo.com/blog/android-sqlite-image-view-b/",
       "excerpt"		: "Choose Image from Gallery or Camera, display in a ListView and save information in SQLite"
     }
   
@@ -51,7 +51,7 @@
   
     ,{
       "title"			: "Android take photo and save to gallery, choose photo from gallery and show in ListView",
-      "link"			: "http://junjunguo.com/articles/android-take-photo-show-in-list-view/",
+      "link"			: "http://junjunguo.com/blog/android-take-photo-show-in-list-view-b/",
       "excerpt"		: "take photo or choose from gallery and use adapter to fill data from ArrayList to ListView"
     }
   
@@ -67,7 +67,7 @@
   
     ,{
       "title"			: "Android Alert Dialog",
-      "link"			: "http://junjunguo.com/articles/android-alertdialog/",
+      "link"			: "http://junjunguo.com/blog/android-alertdialog-b/",
       "excerpt"		: "Android display dialog box / popup window"
     }
   
@@ -83,7 +83,7 @@
   
     ,{
       "title"			: "Android TableLayout",
-      "link"			: "http://junjunguo.com/articles/android-table-layout/",
+      "link"			: "http://junjunguo.com/blog/android-table-layout-b/",
       "excerpt"		: "Android TableLayout example and colors xml"
     }
   
@@ -99,7 +99,7 @@
   
     ,{
       "title"			: "Android use AsyncTask or Executor to repeat tasks in background",
-      "link"			: "http://junjunguo.com/articles/android-async-task-and-executor/",
+      "link"			: "http://junjunguo.com/blog/android-async-task-and-executor-b/",
       "excerpt"		: "How to repeatedly do tasks with AsyncTask or Executor"
     }
   
@@ -115,7 +115,7 @@
   
     ,{
       "title"			: "Android Send Message to Other Activity",
-      "link"			: "http://junjunguo.com/articles/android-send-message-to-other-activity/",
+      "link"			: "http://junjunguo.com/blog/android-send-message-to-other-activity-b/",
       "excerpt"		: "Send Message from one Activity to another"
     }
   
@@ -131,7 +131,7 @@
   
     ,{
       "title"			: "Android Saving Data in SQLite Database",
-      "link"			: "http://junjunguo.com/articles/android-sqlite-database/",
+      "link"			: "http://junjunguo.com/blog/android-sqlite-database-b/",
       "excerpt"		: "How to implement SQLite for Android applications"
     }
   
@@ -147,7 +147,7 @@
   
     ,{
       "title"			: "Android Implement a ListView",
-      "link"			: "http://junjunguo.com/articles/android-list-view/",
+      "link"			: "http://junjunguo.com/blog/android-list-view-b/",
       "excerpt"		: "An Example of Implementing a ListView"
     }
   
@@ -163,7 +163,7 @@
   
     ,{
       "title"			: "Android dynamically change actionbar item",
-      "link"			: "http://junjunguo.com/articles/android-dynamically-change-actionbar-item/",
+      "link"			: "http://junjunguo.com/blog/android-dynamically-change-actionbar-item-b/",
       "excerpt"		: "Change text dynamically for android actionbar item text"
     }
   
@@ -187,7 +187,7 @@
   
     ,{
       "title"			: "JavaFX use CSS to define color",
-      "link"			: "http://junjunguo.com/articles/javafx-use-css-to-define-color/",
+      "link"			: "http://junjunguo.com/blog/javafx-use-css-to-define-color-b/",
       "excerpt"		: "Example code for using CSS to create JavaFX color theme"
     }
   
@@ -203,7 +203,7 @@
   
     ,{
       "title"			: "How to implement a simple OpenStreetMap on Android",
-      "link"			: "http://junjunguo.com/articles/implement-openstreetmap-on-android-1/",
+      "link"			: "http://junjunguo.com/blog/implement-openstreetmap-on-android-b/",
       "excerpt"		: "Example code for implementing a simple OSM on Android."
     }
   
@@ -219,7 +219,7 @@
   
     ,{
       "title"			: "Android Menu",
-      "link"			: "http://junjunguo.com/articles/android-activitybar-menu/",
+      "link"			: "http://junjunguo.com/blog/android-activitybar-menu-b/",
       "excerpt"		: "Example code for implementing Android action overflow menu"
     }
   

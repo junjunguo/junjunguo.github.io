@@ -2,7 +2,7 @@
 layout: post
 title: Android take photo and save to gallery, choose photo from gallery and show in ListView
 excerpt: take photo or choose from gallery and use adapter to fill data from ArrayList to ListView
-categories: articles
+categories: blog
 tags: [Android, code, GUI, Java, Mobile]
 image:
   feature: summer2014-112.jpg

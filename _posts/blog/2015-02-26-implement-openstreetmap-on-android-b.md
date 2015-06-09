@@ -2,7 +2,7 @@
 layout: post
 title: How to implement a simple OpenStreetMap on Android 
 excerpt: "Example code for implementing a simple OSM on Android."
-categories: articles
+categories: blog
 tags: [Android, code, Java, Map, Mobile]
 image:
   feature: 100920020.jpg

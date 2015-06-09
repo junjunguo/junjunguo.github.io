@@ -3,7 +3,7 @@ layout: post
 title: Bootstrap Login
 excerpt: Bootstrap popup window Login and custom validation
 
-categories: articles
+categories: blog
 tags: [web design, code, GUI, HTML5, Bootstrap, JavaScript, CSS]
 image:
   feature: 14684795513_3605513909_o.jpg

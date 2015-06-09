@@ -2,7 +2,7 @@
 layout: post
 title: Android Saving Data in SQLite Database
 excerpt: "How to implement SQLite for Android applications"
-categories: articles
+categories: blog
 tags: [SQLite, Database, Android, code, Java, Mobile, GUI]
 image:
   feature: summer2014-115.jpg

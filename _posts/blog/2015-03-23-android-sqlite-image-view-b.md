@@ -3,7 +3,7 @@ layout: post
 title: Android ListView Image save data in SQLite Database
 excerpt: Choose Image from Gallery or Camera, display in a ListView and save information in SQLite
 
-categories: articles
+categories: blog
 tags: [Android, code, GUI, Java, Mobile, SQLite, Database, XML, image]
 image:
   feature: 14786764996_9633596f4e_o.jpg
