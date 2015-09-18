@@ -89,6 +89,7 @@ var imglist = [
     '苦逼的程序员！.jpg',
     '这技术，屌爆了！.gif',
     '这车是用来卖萌的吗？.gif',
+    '孙悟空和苍井空的相似之处.jpg',
     '马拉个币的，只能走路回家了.gif' ]
 
 var jtextFile = './image/fun/joke.txt';

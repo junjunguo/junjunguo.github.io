@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Android Resumable Download",
+      "link"			: "http://junjunguo.com/blog/android-resumable-download/",
+      "excerpt"		: "How to implement pause/resume for http file download with Java"
+    }
+  
+
+  
+    ,{
       "title"			: "Android Color status bar",
       "link"			: "http://junjunguo.com/blog/android-color-status-bar/",
       "excerpt"		: "How to change status bar color to match app for API 19+"
