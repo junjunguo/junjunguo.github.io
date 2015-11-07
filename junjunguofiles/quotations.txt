@@ -1,6 +1,4 @@
-Socrates	#	If you don't get what you want, you suffer; if you get what you don't want, you suffer; even when you get exactly what you want, you still suffer because you can't hold on to it forever. Your mind is your predicament. It wants to be free of change. Free of pain, free of the obligations of life and death. But change is law and no amount of pretending will alter that reality.
 Socrates	#	The only true wisdom is in knowing you know nothing.
-Socrates	#	The unexamined life is not worth living.
 Socrates	#	There is only one good, knowledge, and one evil, ignorance.
 Socrates	#	I cannot teach anybody anything. I can only make them think.
 Socrates	#	Wonder is the beginning of wisdom.
@@ -12,9 +10,7 @@ Plato	#	Be kind, for everyone you meet is fighting a harder battle.
 Plato	#	Every heart sings a song, incomplete, until another heart whispers back. Those who wish to sing always find a song. At the touch of a lover, everyone becomes a poet.
 Plato	#	Wise men speak because they have something to say;fools because they have to say something.
 Plato	#	Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything.
-Plato	#	We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light.
 Plato	#	Only the dead have seen the end of war.
-Plato	#	The price good men pay for indifference to public affairs is to be ruled by evil men.
 Plato	#	Do not train a child to learn by force or harshness;but direct them to it by what amuses their minds, so that you may be better able to discover with accuracy the peculiar bent of the genius of each.
 Plato	#	You can discover more about a person in an hour of play than in a year of conversation.
 Plato	#	Love is a serious mental disease.
@@ -40,7 +36,6 @@ Aristotle	#	Educating the mind without educating the heart is no education at al
 Aristotle	#	Anybody can become angry -- that is easy, but to be angry with the right person and to the right degree and at the right time and for the right purpose, and in the right way -- that is not within everybody's power and is not easy.
 Aristotle	#	Excellence is never an accident. It is always the result of high intention, sincere effort, and intelligent execution; it represents the wise choice of many alternatives - choice, not chance, determines your destiny.
 Aristotle	#	To avoid criticism say nothing, do nothing, be nothing.
-Aristotle	#	To perceive is to suffer.
 Aristotle	#	A friend to all is a friend to none.
 Aristotle	#	Patience is bitter, but its fruit is sweet.
 Aristotle	#	The educated differ from the uneducated as much as the living differ from the dead.
@@ -61,7 +56,6 @@ Immanuel Kant	#	Two things fill my mind with ever-increasing wonder and awe, the
 Immanuel Kant	#	Experience without theory is blind, but theory without experience is mere intellectual play.
 David Hume	#	Beauty is no quality in things themselves: It exists merely in the mind which contemplates them; and each mind perceives a different beauty.
 David Hume	#	Beauty in things exists in the mind which contemplates them.
-Karl Raimund Popper	#	The so-called 'paradox of freedom' is the argument that freedom in the sense of absence of any constraining control must lead to very great restraint, since it makes the bully free to enslave the meek. The idea is, in a slightly different form, and with very different tendency, clearly expressed in [author:Plato|879].<br/><br/>Less well known is the 'paradox of tolerance': <b>Unlimited tolerance must lead to the disappearance of tolerance. If we extend unlimited tolerance even to those who are intolerant, if we are not prepared to defend a tolerant society against the onslaught of the intolerant, then the tolerant will be destroyed, and tolerance with them</b>. -- In this formulation, I do not imply, for instance, that we should always suppress the utterance of intolerant philosophies; as long as we can counter them by rational argument and keep them in check by public opinion, suppression would certainly be unwise. But we should claim the 'right' to suppress them if necessary even by force	 for it may easily turn out that they are not prepared to meet us on the level of rational argument, but begin by denouncing all argument	 they may forbid their followers to listen to rational argument, because it is deceptive, and teach them to answer arguments by the use of their fists or pistols. <b>We should therefore claim, in the name of tolerance, the right not to tolerate the intolerant. We should claim that any movement preaching intolerance places itself outside the law, and we should consider incitement to intolerance and persecution as criminal, in the same way as we should consider incitement to murder, or to kidnapping, or to the revival of the slave trade, as criminal</b>.
 Karl Popper	#	Science may be described as the art of systematic oversimplification.
 Karl Popper	#	All life is problem solving.
 Karl R. Popper	#	True ignorance is not the absence of knowledge, but the refusal to acquire it.
@@ -72,6 +66,8 @@ Immanuel Kant	#	Jeg skal alltid handle slik at den regelen jeg handler etter kun
 Albert Einstein	#	Any fool can know. The point is to understand.
 Albert Einstein	#	It is not that I'm so smart. But I stay with the questions much longer.
 Albert Einstein	#	I have no special talents. I am only passionately curious.
+Albert Einstein	#	There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.
+Albert Einstein	#	If you can't explain it to a six year old, you don't understand it yourself.
 Audrey Hepburn  #   Nothing is impossible, the word itself says 'I'm possible'!
 Benjamin Franklin	#	Tell me and I forget, teach me and I may remember, involve me and I learn.
 Benjamin Franklin	#	Diligence is the mother of good luck.
@@ -90,30 +86,30 @@ Carl Sagan  #   Biology is more like history than it is like physics: <b>you hav
 Dr. Seuss	#	You know you're in love when you can't fall asleep because reality is finally better than your dreams.
 Dr. Seuss 	#	Don't cry because it's over, smile because it happened.
 Dr. Seuss 	#	Sometimes the questions are complicated and the answers are simple.
-Dr. Seuss 	#	You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You're on your own. And you know what you know. And YOU are the one who'll decide where to go... <br>(Oh, The Places You'll Go!)
+Dr. Seuss 	#	You have brains in your head. <br>You have feet in your shoes. <br>You can steer yourself any direction you choose. <br>You're on your own. <br>And you know what you know. <br><b>And YOU are the one who'll decide where to go...</b> <br>(Oh, The Places You'll Go!)
 Dr. Seuss	#	The more that you read, the more things you will know. The more that you learn, the more places you'll go.
 Dr. Seuss   #   <b>How did it get so late so soon?</b> <br>Its night before its afternoon. <br>December is here before its June. <br>My goodness how the time has flown. <br>How did it get so late so soon?
 Dr. Seuss   #   Today you are You, that is truer than true. There is no one alive who is Youer than You. (Happy Birthday to You!)
 Dr. Seuss   #   Why fit in when you were born to stand out?
 Dr. Seuss   #   “You're off to Great Places! <br>Today is your day! <br>Your mountain is waiting, <br>So... get on your way!” <br>(Oh, The Places You'll Go!)
+Donovan Bailey	#	Follow your passion, be prepared to work hard and sacrifice, and, above all, don't let anyone limit your dreams.
+Eleanor Roosevelt   #   Nobody can make you feel inferior without your consent. <br>It is your choice whether to allow other people to make you feel bad at what you do.
 Elbert Hubbard	#	A friend is someone who knows all about you and still loves you.
 Frank Zappa	#	So many books, so little time.
+Georg Wilhelm Friedrich Hegel	#	Nothing great in the world was accomplished without passion.
+George Eliot    #   It is never too late to be what you might have been.
 Herbert Simon	#	It is not my aim to surprise or shock you — but the simplest way I can summarize is to say that there are now in the world machines that can think, that can learn and that can create. Moreover, their ability to do these things is going to increase rapidly until — in a visible future - the range of problems they can handle will be coextensive with the range to which the human mind has been applied.
+Harriet Tubman	#	Every great dream begins with a dreamer. Always remember, you have within you the strength, the patience, and the passion to reach for the stars to change the world.
+Henry Ford  #   Whether you think you can, or you think you can't, you're right.
+Jess C. Scott, The Intern	#	When someone loves you, the way they talk about you is different. You feel safe and comfortable.
+John Lennon	#	There are two basic motivating forces: fear and love. When we are afraid, we pull back from life. When we are in love, we open to all that life has to offer with passion, excitement, and acceptance. We need to learn to love ourselves first, in all our glory and our imperfections. If we cannot love ourselves, we cannot fully open to our ability to love others or our potential to create. Evolution and all hopes for a better world rest in the fearlessness and open-hearted vision of people who embrace life.
+Maya Angelou    #   I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.
 Marilyn Monroe	#	If you can make a woman laugh, you can make her do anything.
 Marilyn Monroe	#	I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.
 Mahatma Gandhi	#	Live as if you were to die tomorrow. Learn as if you were to live forever.
 Mae West	#	You only live once, but if you do it right, once is enough.
 Mahatma Gandhi	#	Be the change that you wish to see in the world.
 Mark Twain  #   The man who does not read has no advantage over the man who cannot read.
-Oscar Wilde	#	Be yourself; everyone else is already taken.
-Robert Frost    #   The best way out is always through. <br> 找到出口的最好方式就是一路走到底.
-Sivananda Saraswati    #   Put your heart, mind, intellect, and soul even to your smallest acts. This is the secret of success.
-William Shakespeare #   The fool doth think he is wise, but the wise man knows himself to be a fool.
-Winston S. Churchill	#	A pessimist sees the difficulty in every opportunity; an optimist sees the opportunity in every difficulty.
-王小波	#	人的一切痛苦，本质上都是对自己无能的愤怒。
-村上春树	#	活着就意味着必须要做点什么 请好好努力。
-张德芬	#	<b>你处理情绪的速度，就是你迈向成功的速度</b><br>真正的问题是在于你的“情绪”。一件事情发生了，你不喜欢的事情发生了，而真正为你带来的困难，真正阻碍你的能量流动，真正让你不能够每天开怀自在有那种解脱自在的感受是什么？是你的“情绪”。所以有位大师曾经说过：“你处理情绪的速度，就是你迈向成功的速度。”
-网络	#	真正能让你倒下的，不是对手，而是你绝望的内心。
 Norsk Ordtak	#	Det er bedre med en fugl i hånda, enn ti på taket.
 Norsk Ordtak	#	En ulykke kommer sjeldent alene.
 Norsk Ordtak	#	Alle netter er ikke like svarte.
@@ -130,8 +126,13 @@ Norsk Ordspråk	#	Den som kjenner sin dårskap, er på vei mot visdom.
 Norsk Ordspråk	#	En blir ikke skikkelig klok før en har vært tre ganger gal.
 Norsk Ordspråk	#	En dåre kan spørre mer enn ti vise menn kan svare.
 Norsk Ordspråk	#	Jo mer man vet, dess mer vet man at man ikke vet.
-Harriet Tubman	#	Every great dream begins with a dreamer. Always remember, you have within you the strength, the patience, and the passion to reach for the stars to change the world.
-Donovan Bailey	#	Follow your passion, be prepared to work hard and sacrifice, and, above all, don't let anyone limit your dreams.
-Jess C. Scott, The Intern	#	When someone loves you, the way they talk about you is different. You feel safe and comfortable.
-John Lennon	#	There are two basic motivating forces: fear and love. When we are afraid, we pull back from life. When we are in love, we open to all that life has to offer with passion, excitement, and acceptance. We need to learn to love ourselves first, in all our glory and our imperfections. If we cannot love ourselves, we cannot fully open to our ability to love others or our potential to create. Evolution and all hopes for a better world rest in the fearlessness and open-hearted vision of people who embrace life.
-Georg Wilhelm Friedrich Hegel	#	Nothing great in the world was accomplished without passion.
+Oscar Wilde #	Be yourself; everyone else is already taken.
+Robert Frost    #   The best way out is always through. <br> 找到出口的最好方式就是一路走到底.
+Sivananda Saraswati    #   Put your heart, mind, intellect, and soul even to your smallest acts. This is the secret of success.
+Steve Martin    #   A day without sunshine is like, you know, night.
+William Shakespeare #   The fool doth think he is wise, but the wise man knows himself to be a fool.
+Winston S. Churchill	#	A pessimist sees the difficulty in every opportunity; an optimist sees the opportunity in every difficulty.
+王小波	#	人的一切痛苦，本质上都是对自己无能的愤怒。
+村上春树	#	活着就意味着必须要做点什么 请好好努力。
+张德芬	#	<b>你处理情绪的速度，就是你迈向成功的速度</b><br>真正的问题是在于你的“情绪”。一件事情发生了，你不喜欢的事情发生了，而真正为你带来的困难，真正阻碍你的能量流动，真正让你不能够每天开怀自在有那种解脱自在的感受是什么？是你的“情绪”。所以有位大师曾经说过：“你处理情绪的速度，就是你迈向成功的速度。”
+网络	#	真正能让你倒下的，不是对手，而是你绝望的内心。
