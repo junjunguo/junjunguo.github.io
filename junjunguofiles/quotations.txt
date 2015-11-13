@@ -69,10 +69,12 @@ Albert Einstein	#	I have no special talents. I am only passionately curious.
 Albert Einstein	#	There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.
 Albert Einstein	#	If you can't explain it to a six year old, you don't understand it yourself.
 Audrey Hepburn  #   Nothing is impossible, the word itself says 'I'm possible'!
+Arthur C. Clarke    #   Any sufficiently advanced technology is indistinguishable from magic.
 Benjamin Franklin	#	Tell me and I forget, teach me and I may remember, involve me and I learn.
 Benjamin Franklin	#	Diligence is the mother of good luck.
 Bram Stoker	#	We learn from failure, not from success!
 Bil Keane   #   Yesterday is history, tomorrow is a mystery, today is a gift of God, which is why we call it the present.
+Bill Gates  #   Software is a great combination between artistry and engineering.
 Bernard M. Baruch	#	Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.
 Beverly Sills	#	There are no shortcuts to any place worth going. <br> 任何值得去的地方，都没有捷径。
 Charles Chaplin	#	You'll never find a rainbow if you're looking down.
@@ -94,6 +96,7 @@ Dr. Seuss   #   Why fit in when you were born to stand out?
 Dr. Seuss   #   “You're off to Great Places! <br>Today is your day! <br>Your mountain is waiting, <br>So... get on your way!” <br>(Oh, The Places You'll Go!)
 Donovan Bailey	#	Follow your passion, be prepared to work hard and sacrifice, and, above all, don't let anyone limit your dreams.
 Eleanor Roosevelt   #   Nobody can make you feel inferior without your consent. <br>It is your choice whether to allow other people to make you feel bad at what you do.
+Eleanor Roosevelt   #   Great minds discuss ideas; average minds discuss events; small minds discuss people.
 Elbert Hubbard	#	A friend is someone who knows all about you and still loves you.
 Frank Zappa	#	So many books, so little time.
 Georg Wilhelm Friedrich Hegel	#	Nothing great in the world was accomplished without passion.
@@ -110,6 +113,7 @@ Mahatma Gandhi	#	Live as if you were to die tomorrow. Learn as if you were to li
 Mae West	#	You only live once, but if you do it right, once is enough.
 Mahatma Gandhi	#	Be the change that you wish to see in the world.
 Mark Twain  #   The man who does not read has no advantage over the man who cannot read.
+Margaret Heffernan  #   For good ideas and true innovation, you need human interaction, conflict, argument, debate.
 Norsk Ordtak	#	Det er bedre med en fugl i hånda, enn ti på taket.
 Norsk Ordtak	#	En ulykke kommer sjeldent alene.
 Norsk Ordtak	#	Alle netter er ikke like svarte.
@@ -128,6 +132,7 @@ Norsk Ordspråk	#	En dåre kan spørre mer enn ti vise menn kan svare.
 Norsk Ordspråk	#	Jo mer man vet, dess mer vet man at man ikke vet.
 Oscar Wilde #	Be yourself; everyone else is already taken.
 Robert Frost    #   The best way out is always through. <br> 找到出口的最好方式就是一路走到底.
+Robin Williams  #   No matter what people tell you, words and ideas can change the world.
 Sivananda Saraswati    #   Put your heart, mind, intellect, and soul even to your smallest acts. This is the secret of success.
 Steve Martin    #   A day without sunshine is like, you know, night.
 William Shakespeare #   The fool doth think he is wise, but the wise man knows himself to be a fool.
