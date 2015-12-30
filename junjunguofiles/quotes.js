@@ -35,18 +35,24 @@ function generateQuotes() {
         //console.log(jokes[i]);
         var theQuotation = quotesArray[i].split("#");
         //console.log(theQuotation.length);
-        var newElementL = document.createElement("li");
-        var newElementP = document.createElement("p");
-        var newElementH = document.createElement("h5");
+        var element_li = document.createElement("li");
+        var element_blockquote = document.createElement("blockquote");
+        //element_blockquote.className = element_blockquote.className + " blockquote-reverse";
+        var element_p = document.createElement("p");
+        var element_footer = document.createElement("footer");
+        var element_cite = document.createElement("cite");
         //var quotationText = document.createTextNode(theQuotation[1]);
-        var quotationAuthor = document.createTextNode(" - " + theQuotation[0]);
+        var quotationAuthor = document.createTextNode(theQuotation[0]);
         // use innerHTML
         //newElementP.appendChild(quotationText);
-        newElementP.innerHTML = theQuotation[1];
-        newElementH.appendChild(quotationAuthor);
-        newElementL.appendChild(newElementP);
-        newElementL.appendChild(newElementH);
-        document.getElementById("quotes").appendChild(newElementL);
+        element_p.innerHTML = theQuotation[1];
+        element_cite.appendChild(quotationAuthor);
+        element_footer.appendChild(element_cite);
+        //element_footer.appendChild(quotationAuthor);
+        element_blockquote.appendChild(element_p);
+        element_blockquote.appendChild(element_footer);
+        element_li.appendChild(element_blockquote);
+        document.getElementById("quotes").appendChild(element_li);
     }
 }
 loadFile();
