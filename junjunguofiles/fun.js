@@ -94,11 +94,11 @@ var imglist = [
     '孙悟空和苍井空的相似之处.jpg',
     'beauty.gif',
     '难怪我那么喜欢蹭别人家的.jpg',
-    '马拉个币的，只能走路回家了.gif' ]
+    '马拉个币的，只能走路回家了.gif']
 
 var textFile = 'image/fun/joke.txt';
 
-var jokes = [];
+var jokes  = [];
 var reader = new XMLHttpRequest() || new ActiveXObject('MSXML2.XMLHTTP');
 
 function loadFile() {
@@ -114,13 +114,19 @@ function displayContents() {
         generateImages();
         restJokes();
     } else {
-        jokes = '"Wife: "How would you describe me?"<br>Husband: "ABCDEFGHIJK."<br>Wife: "What does that mean?"<br>Husband: "Adorable, beautiful, cute, delightful, elegant, fashionable, gorgeous, and hot."<br>Wife: "Aw, thank you, but what about IJK?"<br>Husband: "I m just kidding!"';
+        jokes =
+            '"Wife: "How would you describe me?"<br>' +
+            'Husband: "ABCDEFGHIJK."<br>' +
+            'Wife: "What does that mean?"<br>' +
+            'Husband: "Adorable, beautiful, cute, delightful, elegant, fashionable, gorgeous, and hot."<br>' +
+            'Wife: "Aw, thank you, but what about IJK?"<br>' +
+            'Husband: "I m just kidding!"';
     }
 }
 
 function generateImages() {
     while (imglist.length != 0) {
-        var index = Math.floor((Math.random() * (imglist.length)));
+        var index  = Math.floor((Math.random() * (imglist.length)));
         var theImg = imglist.splice(index, 1);
         addImage(theImg[0]);
         generateaJoke();
@@ -128,14 +134,16 @@ function generateImages() {
 }
 
 function addImage(theImg) {
-    var str = theImg.split(".");
-    var title = str[0];
-    var fileType = str[1];
-    var liTag = document.createElement("li");
-    var imgTag = document.createElement("img");
-    var h4Tag = document.createElement("h4");
+    var str        = theImg.split(".");
+    var title      = str[0];
+    var fileType   = str[1];
+    var liTag      = document.createElement("li");
+    var imgTag     = document.createElement("img");
+    imgTag.className += " img-responsive wow bounceIn";
+    var h4Tag      = document.createElement("h4");
+    h4Tag.className += " wow rotateIn";
     var imageTitle = document.createTextNode(title);
-    imgTag.src = "image/fun/" + theImg;
+    imgTag.src     = "image/fun/" + theImg;
     h4Tag.appendChild(imageTitle);
     liTag.appendChild(imgTag);
     liTag.appendChild(h4Tag);
@@ -143,7 +151,7 @@ function addImage(theImg) {
 }
 
 function generateaJoke() {
-//    console.log("jokes: "+jokes.length)
+    //    console.log("jokes: "+jokes.length)
     if (Math.floor((Math.random() * 10) % 2) == 0) { // 50% generate possibility
         var index = Math.floor((Math.random() * (jokes.length)));
         var ajoke = jokes.splice(index, 1);
@@ -159,14 +167,15 @@ function restJokes() {
 }
 function addJoke(joke) {
     if (joke[0].length > 2) {
-        var litag = document.createElement("li");
-        var htag = document.createElement("h6");
+        var litag      = document.createElement("li");
+        var htag       = document.createElement("h6");
+        htag.className += "wow fadeInDown";
         htag.innerHTML = text2html(joke[0]);
         litag.appendChild(htag);
         document.getElementById("quotes").appendChild(litag);
     }
-    else{
-//        console.log("enmpty: ["+joke[0] +"]")
+    else {
+        //        console.log("enmpty: ["+joke[0] +"]")
     }
 }
 function text2html(str) {
@@ -174,9 +183,26 @@ function text2html(str) {
         str = str.substr(1, str.length);
     }
     var find = '\n';
-    var re = new RegExp(find, 'g');
-    str = str.replace(re, '<br>');
+    var re   = new RegExp(find, 'g');
+    str      = str.replace(re, '<br>');
     return str;
 }
 
 loadFile();
+
+// load js/wow.min.js
+var wow = new WOW(
+    {
+        boxClass:        'wow',      // animated element css class (default is wow)
+        animateClass:    'animated', // animation css class (default is animated)
+        offset:          0,          // distance to the element when triggering the animation (default is 0)
+        mobile:          true,       // trigger animations on mobile devices (default is true)
+        live:            true,       // act on asynchronously loaded content (default is true)
+        callback:        function (box) {
+            // the callback is fired every time an animation is started
+            // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null // optional scroll container selector, otherwise use window
+    }
+);
+wow.init();

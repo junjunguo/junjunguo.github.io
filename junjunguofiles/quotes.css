@@ -28,7 +28,6 @@ a:link, a:visited {
 a:hover {
     color           : #555555;
     text-decoration : none;
-    /*background-color : #739E30;*/
     }
 
 .my-header {
@@ -40,6 +39,8 @@ a:hover {
 
 #quotes {
     list-style-type : none;
+    padding-left    : 0;
+    margin-left     : 0;
     }
 
 #quotes li {
@@ -54,11 +55,25 @@ a:hover {
     line-height : 25px;
     }
 
+#quotes h4 {
+    line-height : 5px;
+    text-align  : center;
+    padding     : 20px;
+    line-height : 40px;
+    }
+
+#quotes h6 {
+    line-height : 50px;
+    text-align  : left;
+    padding     : 80px 20px 100px 20px;
+    font-size   : 110%;
+    }
+
 #quotes img {
     display      : block;
     margin-left  : auto;
     margin-right : auto;
-    padding      : 20px;
+    padding-top  : 20px;
     }
 
 .my-footer {

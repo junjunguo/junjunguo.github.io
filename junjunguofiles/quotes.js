@@ -41,7 +41,6 @@ function generateQuotes() {
         var element_p                = document.createElement("p");
         var element_footer           = document.createElement("footer");
         var element_cite             = document.createElement("cite");
-        //var quotationText = document.createTextNode(theQuotation[1]);
         var quotationAuthor = document.createTextNode(theQuotation[0]);
         // use innerHTML
         //newElementP.appendChild(quotationText);

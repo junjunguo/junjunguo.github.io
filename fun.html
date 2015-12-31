@@ -2,71 +2,89 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
           content="A joke is a very serious thing."/>
     <meta name="keywords"
           content="joke, jest, drollery, fun, amuse, flirt, laugh, images, GuoJunjun, Guo Junjun, Junjun Guo, JunjunGuo, GuoJunjun's Personal Web"/>
-    <meta name="msvalidate.01" content="5CBE5B96A4448FF4606A09686D87D9D5" />
+    <meta name="msvalidate.01" content="5CBE5B96A4448FF4606A09686D87D9D5"/>
     <title>A joke is a very serious thing</title>
 
+    <link rel="stylesheet" type="text/css" href="2016/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="2016/css/bootstrap.css">-->
+    <link rel="stylesheet" type="text/css" href="2016/css/animate.css">
     <link rel="stylesheet" type="text/css" href="./junjunguofiles/quotes.css">
-    <script src="./junjunguofiles/fun.js"></script>
-    <script src="2015/js/GuoJunjun.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 
-<div id="wrapper">
-
-    <div id="header">
-        <h1>A joke is a very serious thing</h1>
-
-        <p>From there to here, and here to there, funny things are everywhere</p>
-    </div>
-    <!-- #header -->
-
-    <div id="content">
-        <ul id="quotes">
-            <li>
-                <img src="image/fun/很想知道人为什么不能从水里跳这么高.gif" alt="junjunguo.com">
-                <h4>Everything is funny, as long as it's happening to somebody else</h4>
-            </li>
-        </ul>
-
-
-    </div>
-    <!-- #content -->
-
-    <div id="footer">
-        <div id="container">
-            <dev id="sideLeft">
-                <p>Through humor, you can soften some of the worst blows that life delivers. And once you find laughter,
-                   no matter how painful your situation might be, you can survive it</p>
-            </dev>
-            <dev id="middle">
-                <table>
-                    <tr>
-                        <td class="lpage">
-                            <a href="http://junjunguo.com/" title="GuoJunjun">HOME</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="lpage">
-                            <a href="http://junjunguo.com/photo.html" title="GuoJunjun's photo gallery">photogallery</a>
-                        </td>
-                    </tr>
-                </table>
-            </dev>
-            <dev id="sideRight">
-                <p>Website created and maintained by <a href="http://junjunguo.com/" title="GuoJunjun">GuoJunjun</a></p>
-            </dev>
-        </div>
-
-    </div>
-    <!-- #footer -->
-
+<div class="container-fluid my-header text-center my-extra-padding">
+    <h1 class="wow bounceOutRight">A joke is a very serious thing</h1>
+    <p class="wow bounceInLeft">From there to here, and here to there, funny things are everywhere</p>
+    <button type="button" class="btn btn-default pull-right wow rollIn" aria-label="right Align"><a href="index.html">
+        <span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+    </button>
 </div>
-<!-- #wrapper -->
+<!-- #header -->
 
+<div class="container-fluid my-max-width">
+    <ul id="quotes" class="text-center ">
+        <li>
+            <img class="img-responsive wow bounceInLeft" src="image/fun/很想知道人为什么不能从水里跳这么高.gif" alt="junjunguo.com">
+            <!--<h4 class="wow fadeInLeftBig">Everything is funny, as long as it's happening to somebody else</h4>-->
+            <h4 class="wow rotateIn">Everything is funny, as long as it's happening to somebody else</h4>
+        </li>
+    </ul>
+</div>
+<!-- #content -->
+
+<footer class="my-footer ">
+    <div class="container-fluid my-max-width my-extra-padding">
+
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row center-block">
+
+            <div class=" col-md-4 text-center my-foot-div">
+                <p class="my-extra-padding text-centers wow rotateInUpLeft">
+                    Through humor, you can soften some of the worst blows that life delivers. And once you find
+                    laughter,
+                    no matter how painful your situation might be, you can survive it
+                </p>
+            </div>
+
+            <div class=" col-md-4 text-center my-foot-div">
+                <p class="my-extra-padding wow rotateIn">
+                    <a href="http://junjunguo.com/" title="GuoJunjun">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true">
+                        </span> HOME</a>
+                </p>
+                <p class="my-extra-padding wow rotateOut">
+                    <a href="http://junjunguo.com/photo.html" title="GuoJunjun's photo gallery">photo gallery</a>
+                </p>
+            </div>
+
+            <div class=" col-md-4 text-center my-foot-div">
+                <p class="my-extra-padding wow rotateInDownRight">
+                    Website created and maintained by
+                    <a href="http://junjunguo.com/" title="GuoJunjun">GuoJunjun</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- #footer -->
+
+
+<script src="2016/js/wow.min.js"></script>
+<script src="2015/js/GuoJunjun.js"></script>
+<script src="./junjunguofiles/fun.js"></script>
 
 </body>
 </html>
