@@ -9,64 +9,79 @@
     <meta name="msvalidate.01" content="5CBE5B96A4448FF4606A09686D87D9D5"/>
     <title>Inspirational Quotes</title>
     <link rel="stylesheet" type="text/css" href="2016/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="2016/css/bootstrap.css">-->
+    <link rel="stylesheet" type="text/css" href="2016/css/animate.css">
     <link rel="stylesheet" type="text/css" href="./junjunguofiles/quotes.css">
 
 </head>
 <body>
 
-<div id="wrapper">
+<!--<div id="wrapper">-->
 
-    <div id="header">
-        <h1>Inspirational Quotes</h1>
-        <p>The power of words never fails to inspire</p>
-    </div>
-    <!-- #header -->
-
-    <div id="content">
-        <ul id="quotes">
-            <li>
-                <!--<p>We are what we repeatedly do. Excelence, then, is not an act, but a habit.</p>-->
-                <!--<h5>- Aristotle</h5>-->
-                <blockquote class="blockquote-reverse">
-                    <p>We are what we repeatedly do. Excelence, then, is not an act, but a habit.</p>
-                    <footer>
-                        <cite>Aristotle</cite>
-                    </footer>
-                </blockquote>
-            </li>
-        </ul>
-
-
-    </div>
-    <!-- #content -->
-
-    <div id="footer">
-        <div id="container">
-            <dev id="sideLeft">
-                <p>Inspirational Quotations</p>
-            </dev>
-            <dev id="middle">
-                <table>
-                    <tr>
-                        <td class="lpage"><a href="http://junjunguo.com/" title="GuoJunjun">HOME</a></td>
-                    </tr>
-                    <tr>
-                        <td class="lpage"><a href="http://junjunguo.com/photo.html" title="GuoJunjun's photo gallery">photo
-                                                                                                                      gallery</a>
-                        </td>
-                    </tr>
-                </table>
-            </dev>
-            <dev id="sideRight">
-                <p>Website created and maintained by <a href="http://junjunguo.com/" title="GuoJunjun">GuoJunjun</a></p>
-            </dev>
-        </div>
-
-    </div>
-    <!-- #footer -->
-    <script src="./junjunguofiles/quotes.js"></script>
-    <script src="2015/js/GuoJunjun.js"></script>
+<div class="my-header text-center my-extra-padding">
+    <h1 class="wow bounceOutRight">Inspirational Quotes</h1>
+    <p class="wow bounceInLeft">The power of words never fails to inspire</p>
+    <button type="button" class="btn btn-default pull-right wow rollIn" aria-label="right Align"><a href="index.html">
+        <span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+    </button>
 </div>
+<!-- #header -->
+
+<div class="container-fluid my-max-width">
+    <ul id="quotes">
+        <li>
+            <!--<p>We are what we repeatedly do. Excelence, then, is not an act, but a habit.</p>-->
+            <!--<h5>- Aristotle</h5>-->
+            <blockquote class="blockquote-reverse wow bounceInLeft">
+                <p>We are what we repeatedly do. Excelence, then, is not an act, but a habit.</p>
+                <footer>
+                    <cite>Aristotle</cite>
+                </footer>
+            </blockquote>
+        </li>
+    </ul>
+
+
+</div>
+<!-- #content -->
+
+<footer class="my-footer ">
+    <div class="container-fluid my-max-width my-extra-padding">
+
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row center-block">
+
+            <div class=" col-md-4 text-center my-foot-div">
+                <p class="my-extra-padding text-centers wow rotateInUpLeft">
+                    Inspirational Quotations
+                </p>
+            </div>
+
+            <div class=" col-md-4 text-center my-foot-div">
+                <p class="my-extra-padding wow rotateIn">
+                    <a href="http://junjunguo.com/" title="GuoJunjun">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true">
+                        </span> HOME</a>
+                </p>
+                <p class="my-extra-padding wow rotateOut">
+                    <a href="http://junjunguo.com/photo.html" title="GuoJunjun's photo gallery">photo gallery</a>
+                </p>
+            </div>
+
+            <div class=" col-md-4 text-center my-foot-div">
+                <p class="my-extra-padding wow rotateInDownRight">
+                    Website created and maintained by
+                    <a href="http://junjunguo.com/" title="GuoJunjun">GuoJunjun</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- #footer -->
+<script src="2016/js/wow.min.js"></script>
+<script src="2015/js/GuoJunjun.js"></script>
+<script src="./junjunguofiles/quotes.js"></script>
+<!--</div>-->
 <!-- #wrapper -->
 
 
