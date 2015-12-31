@@ -37,7 +37,7 @@ function generateQuotes() {
         //console.log(theQuotation.length);
         var element_li               = document.createElement("li");
         var element_blockquote       = document.createElement("blockquote");
-        element_blockquote.className = element_blockquote.className + " wow slideInRight";
+        element_blockquote.className = element_blockquote.className + " wow fadeInUp";
         var element_p                = document.createElement("p");
         var element_footer           = document.createElement("footer");
         var element_cite             = document.createElement("cite");
