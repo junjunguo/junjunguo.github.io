@@ -1,0 +1,33 @@
+body {
+    margin           : 0px;
+    text-align       : center;
+    background-color : #CCFF99;
+    }
+
+.nav {
+    padding : 60px;
+    color   : #33FF33;
+    }
+
+.content {
+    padding          : 1px;
+    background-color : #FFFFFF;
+    color            : #000000;
+    }
+
+.cite1 {
+    margin           : 10px;
+    padding          : 10px;
+    background-color : #9999FF;
+    }
+
+.cite2 {
+    margin           : 10px;
+    padding          : 10px;
+    background-color : #9999FF;
+    }
+
+.footer {
+    padding : 60px;
+    color   : #33FF00;
+    }
