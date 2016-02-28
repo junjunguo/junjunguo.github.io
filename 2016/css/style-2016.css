@@ -1,3 +1,127 @@
+
+body, input, textarea, select {
+    font-size      : 18pt;
+    line-height    : 1.75em;
+    font-weight    : 300;
+    letter-spacing : 1px;
+    color          : #3A3939;
+    text-shadow    : 0 0 0.5px rgba(58, 57, 57, 0.25);
+    /*-webkit-text-stroke : 0.25px;*/
+    }
+
+a {
+    color               : #32CD32;
+    text-shadow         : 0 0 0.5px rgba(50, 205, 50, 0.3);
+    -moz-transition     : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -webkit-transition  : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -o-transition       : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -ms-transition      : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    transition          : border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    text-decoration     : none;
+    border-bottom-color : rgba(255, 255, 255, 0.5);
+    }
+
+a:hover {
+    border-bottom-color : rgba(255, 255, 255, 0);
+    }
+
+header {
+    /*background-color : rgba(0, 255, 0, 0.25);*/
+    margin-bottom : 7em;
+    position      : relative;
+    }
+
+footer {
+    position : absolute;
+    bottom   : 2em;
+    margin   : 0;
+    width    : 100%;
+    /*background-color : rgba(0, 0, 255, 0.25);*/
+    }
+
+footer h1, h2, h3, h4, h5, p, a {
+    font-family : 'Oswald', sans-serif;
+    }
+
+footer a {
+    margin : 0 20px 0 20px;
+    }
+
+/* first page */
+#first-page {
+    position                : relative;
+    background-size         : cover, cover;
+    -moz-background-size    : cover;
+    -webkit-background-size : cover;
+    -o-background-size      : cover;
+    /*CSS fadeIN  property duration timing-function delay*/
+    -webkit-transition      : background 600ms ease-in 500ms;
+    -moz-transition         : background 600ms ease-in 500ms;
+    -o-transition           : background 600ms ease-in 500ms;
+    transition              : background 600ms ease-in 500ms;
+    }
+
+#first-page header {
+    display : inline-block;
+    padding : 0 0 1em 0;
+    }
+
+.bcg {
+    /*background-color    : rgba(0, 255, 0, 0.25);*/
+    background-position : center;
+    height              : 100%;
+    width               : 100%;
+    cursor              : default;
+    text-shadow         : 0 0 0.5px rgba(255, 255, 255, 0.25);
+    text-align          : center;
+    margin              : 0;
+    color               : #FFFFFF;
+    }
+
+.bcg header h5 {
+    font-family    : 'Architects Daughter', cursive;
+    text-shadow    : 0 0 3px #000000;
+    line-height    : 5em;
+    font-size      : 0.8em;
+    letter-spacing : 8px;
+    cursor         : default;
+    }
+
+.bcg p {
+    cursor      : default;
+    font-family : 'Architects Daughter', cursive;
+    text-shadow : 0 0 6px #000000;
+    }
+
+#logo {
+    cursor                      : pointer;
+    width                       : 64px;
+    height                      : 48px;
+    display                     : inline-block;
+    background                  : url(../../junjunguofiles/GuoJunJun.png) top center no-repeat;
+    padding                     : 0;
+    margin                      : 0 auto 2em auto;
+    border                      : none;
+    -webkit-transition-duration : 0.5s;
+    -moz-transition-duration    : 0.5s;
+    -o-transition-duration      : 0.5s;
+    transition-duration         : 0.5s;
+
+    -webkit-transition-property : -webkit-transform;
+    -moz-transition-property    : -moz-transform;
+    -o-transition-property      : -o-transform;
+    transition-property         : transform;
+    overflow                    : hidden;
+    }
+
+#logo:hover {
+    -webkit-transform : rotate(360deg);
+    -moz-transform    : rotate(360deg);
+    -o-transform      : rotate(360deg);
+    }
+
+
+
 .navbar-header {
     float : none;
     }
