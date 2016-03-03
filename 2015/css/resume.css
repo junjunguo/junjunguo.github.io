@@ -1,5 +1,6 @@
 /**
  * Created by GuoJunjun on 27.12.14. JunjunGuo.com
+ * updated by GuoJunjun on 03.03.16. JunjunGuo.com
  */
 #resume {
     overflow-y       : scroll;
@@ -23,7 +24,7 @@
     color           : #606060;
     }
 
-#resume h1, h2, h3, {
+#resume h1, h2, h3 {
     font-family    : 'Montserrat', sans-serif, Arial;
     padding-bottom : 5px;
     color          : #373432;
@@ -32,7 +33,7 @@
     }
 
 #resume h1 a, h2 a, h3 a {
-    color : #111;
+    color : #111111;
     }
 
 #resume p {
@@ -66,16 +67,19 @@
 #resume .profile img {
     height : 220px;
     width  : 220px;
+    float  : left;
     }
 
-#resume .profileRighttd {
-    width      : 70%;
-    text-align : center;
+.vcenter {
+    display     : flex;
+    align-items : center;
     }
 
 #resume .profileTable {
-    float       : right;
-    line-height : 30px;
+    float         : left;
+    line-height   : 30px;
+    margin-top    : auto;
+    margin-bottom : auto;
     }
 
 #resume .tdvariable {
@@ -97,6 +101,7 @@
     background        : url('images/line.svg') repeat-y scroll 109px 0 transparent;
     background-repeat : repeat-y;
     margin            : 80px 0 80px 50px;
+    /*background-color  : #1B6D85;*/
     }
 
 #resume .item {
@@ -106,7 +111,7 @@
     }
 
 #resume .chapterHead {
-    background    : none repeat scroll 0 0 #2f3238;
+    background    : none repeat scroll 0 0 #2F3238;
     border-radius : 136px 136px 136px 136px;
     color         : #FFFFFF;
     cursor        : pointer;
@@ -256,7 +261,6 @@
 ------------------------------------------------ */
 #resume .skills {
     margin : 80px auto 200px auto;
-    /*background-color: #000;*/
     }
 
 #resume .skillTitle {
@@ -282,15 +286,10 @@
     font-weight : 600;
     }
 
-#footer .social-media {
-    margin-left : 85px;
-    float       : left;
-    }
-
-#footer .ison {
+#footer .icon {
     background    : none repeat scroll 0 0 #909090;
     border-radius : 136px 136px 136px 136px;
-    color         : #fff;
+    color         : #FFFFFF;
     cursor        : pointer;
     font-size     : 38px;
     height        : 55px;
@@ -300,7 +299,7 @@
     }
 
 #footer .isoff {
-    background    : none repeat scroll 0 0 #dedede;
+    background    : none repeat scroll 0 0 #DEDEDE;
     border-radius : 136px 136px 136px 136px;
     color         : #909090;
     cursor        : pointer;
@@ -316,12 +315,8 @@
     margin          : 0 20px 0 20px;
     }
 
-#footer .footerContent {
-    width : 75%;
-    }
-
 #footer .copyright {
-    float      : right;
+    float      : left;
     margin-top : 20px;
     position   : relative;
     }
@@ -333,4 +328,66 @@
 
 #footer .copyright a:hover {
     color : #505050;
+    }
+
+/* Extra small devices (767px and down) */
+@media (max-width : 767px) {
+    #resume .col-sm-8 {
+        padding-right : 0;
+        padding-left  : 0;
+        }
+
+    .row.vcenter {
+        display : block; /* turn off the flexible box layout */
+        }
+
+    #resume .resumeTitle {
+        margin : 50px auto 0px 0px;
+        }
+
+    #resume .chapter {
+        margin : 80px 0 80px 0px;
+        }
+
+    #resume .itemContent {
+        margin-left : 0px;
+        padding     : 10px 0px;
+        width       : 100%;
+        }
+
+    #resume .headContent {
+        margin-left : 0px;
+        padding     : 10px 0px;
+        width       : 100%;
+        }
+
+    .item td {
+        padding-top    : 5px;
+        padding-bottom : 5px;
+        }
+
+    #resume .itemArrow i {
+        border-left       : 0px;
+        border-top        : 0px;
+        /*height            : 10px;*/
+        /*left              : 104px;*/
+        /*top               : 66px;*/
+        transform         : rotate(45deg);
+        -webkit-transform : rotate(45deg);
+        -moz-transform    : rotate(45deg);
+        -ms-transform     : rotate(45deg);
+        -o-transform      : rotate(45deg);
+        }
+
+    #footer {
+        margin : 20px auto 80px auto;
+        }
+
+    #footer .social-media a {
+        margin : 0 auto 0 auto;
+        }
+
+    #footer .copyright {
+        float : right;
+        }
     }
