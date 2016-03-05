@@ -7,14 +7,14 @@
 /**
  * check if client from China
  */
-    //function clientlocationplugin() {
-    //    return jQuery.getScript('http://www.geoplugin.net/javascript.gp', function () {
-    //        var country = geoplugin_countryName();
-    //        var zone = geoplugin_region();
-    //        var district = geoplugin_city();
-    //        console.log("Your location is: " + country + ", " + zone + ", " + district);
-    //    })();
-    //}
+//function clientlocationplugin() {
+//    return jQuery.getScript('http://www.geoplugin.net/javascript.gp', function () {
+//        var country = geoplugin_countryName();
+//        var zone = geoplugin_region();
+//        var district = geoplugin_city();
+//        console.log("Your location is: " + country + ", " + zone + ", " + district);
+//    })();
+//}
 //console.log("Your location: " + geoplugin_countryName());
 /**
  *  * shuffle the list and return a photo addressed list
@@ -25,7 +25,7 @@ function shuffleList(list) { // shuffle nrlist and return a list with objects re
     var copy = [], n = list.length, index;
     var bgimgaddress;
     if (geoplugin_countryName() == "China") {
-        bgimgaddress = '../../2015/images/bg/';
+        bgimgaddress = './2015/images/bg/';
     } else {
         bgimgaddress = 'http://static.panoramio.com/photos/large/';
     }
@@ -76,24 +76,56 @@ function slideShow() {
 
     // add click events to prev &amp; next buttons
     $('.nextslide').on('click', function () {
-        document.getElementById('header').scrollIntoView()
+        document.getElementById('first-page').scrollIntoView();
         counter++;
         showImage();
     });
     $('.prevslide').on('click', function () {
-        document.getElementById('header').scrollIntoView()
+        document.getElementById('first-page').scrollIntoView();
         counter--;
         showImage();
     });
     // logo click
     $('#logo').on('click', function () {
-        document.getElementById('header').scrollIntoView()
+        document.getElementById('first-page').scrollIntoView();
         counter = Math.floor(Math.random() * slides.length);
         showImage();
+        console.log("logo clicked");
     });
 
-
     showImage();
+}
+
+//
+var listf = [			//  Images id numbers for footer
+    106397977,
+    101153731,
+    77835780,
+    100920022,
+    42462727,
+    55717739,
+    77835786,
+    100920020
+];
+function changeBCP() {
+
+    var bcgslides = shuffleList(listf); // a collection of all of the bcgslides
+
+    var changepic = function () {
+
+        var theimg = bcgslides[Math.floor(Math.random() * bcgslides.length)];
+
+        document.getElementById("footer").style.backgroundImage =
+            "url('./2015/css/images/overlay-black.svg'), url('" + theimg + "')";
+    };
+
+    // add click events to prev &amp; next buttons
+    $('#changebcp').on('click', function () {
+        document.getElementById('footer').scrollIntoView()
+        changepic();
+    });
+
+    changepic();
 }
 
 
@@ -110,10 +142,16 @@ $(document).ready(function () {
         //                     'thirdPage',
         //                     'fourthPage',
         //                     'lastPage'],
-        navigation:         false,
+        navigation:         true,
         navigationPosition: 'right',
-        navigationTooltips: ['firstSlide',
-                             'secondSlide'],
+        navigationTooltips: ['main',
+                             'individual work',
+                             'teamwork',
+                             'humor',
+                             'quotes',
+                             'panoramio',
+                             'flickr',
+                             'contact'],
         showActiveTooltip:  false,
         slidesNavigation:   true,
         slidesNavPosition:  'bottom',
@@ -121,7 +159,7 @@ $(document).ready(function () {
         //Scrolling
         css3:                              true,
         scrollingSpeed:                    700,
-        autoScrolling:                     true,
+        autoScrolling:                     false,
         fitToSection:                      true,
         fitToSectionDelay:                 1000,
         scrollBar:                         false,
@@ -132,7 +170,7 @@ $(document).ready(function () {
         loopHorizontal:                    true,
         continuousVertical:                false,
         normalScrollElements:              '#element1, .element2',
-        scrollOverflow:                    false,
+        scrollOverflow:                    true,
         touchSensitivity:                  15,
         normalScrollElementTouchThreshold: 5,
 
@@ -147,8 +185,8 @@ $(document).ready(function () {
         resize:           false,
         //sectionsColor:    ['#ccc',
         //                   '#fff'],
-        paddingTop:       '3em',
-        paddingBottom:    '10px',
+        paddingTop:       '0em',
+        paddingBottom:    '0px',
         fixedElements:    '#header, .footer',
         responsiveWidth:  0,
         responsiveHeight: 0,
@@ -172,3 +210,4 @@ $(document).ready(function () {
 
 //run slide show
 slideShow();
+changeBCP();
