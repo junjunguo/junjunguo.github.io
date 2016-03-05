@@ -25,14 +25,13 @@ a:hover {
     }
 
 header {
-    margin-bottom : 7em;
+    margin-bottom : 3em;
     position      : relative;
     }
 
 footer {
     position : absolute;
     bottom   : 2em;
-    margin   : 0;
     width    : 100%;
     }
 
@@ -64,6 +63,7 @@ footer a {
     margin              : 0;
     color               : #FFFFFF;
     padding-top         : 4em;
+    display             : block;
     }
 
 .bcg header h5 {
@@ -83,7 +83,18 @@ footer a {
 
 /* Icons    ------------------------------------------ */
 .icon {
-    text-decoration : none;
+    text-decoration    : none;
+    cursor             : pointer;
+    -moz-appearance    : none;
+    -webkit-appearance : none;
+    -o-appearance      : none;
+    -ms-appearance     : none;
+    appearance         : none;
+    -moz-transition    : all 0.2s ease-in-out;
+    -webkit-transition : all 0.2s ease-in-out;
+    -o-transition      : all 0.2s ease-in-out;
+    -ms-transition     : all 0.2s ease-in-out;
+    transition         : all 0.2s ease-in-out;
     }
 
 .icon:before {
@@ -106,7 +117,12 @@ footer a {
     padding : 0;
     }
 
-/* first page */
+.my-padding-r-f {
+    padding-right : 30px;
+    padding-left  : 30px;
+    }
+
+/*------ first page -------*/
 #first-page {
     position                : relative;
     background-size         : cover, cover;
@@ -262,21 +278,6 @@ footer a {
 
 /* Controls Bar : arrow  ----------------*/
 
-.arrow-left, .arrow-right, .arrow-down, .anewquote {
-    cursor             : pointer;
-    -moz-appearance    : none;
-    -webkit-appearance : none;
-    -o-appearance      : none;
-    -ms-appearance     : none;
-    appearance         : none;
-    -moz-transition    : all 0.2s ease-in-out;
-    -webkit-transition : all 0.2s ease-in-out;
-    -o-transition      : all 0.2s ease-in-out;
-    -ms-transition     : all 0.2s ease-in-out;
-    transition         : all 0.2s ease-in-out;
-
-    }
-
 .arrow-left, .arrow-right {
     position          : absolute;
     display           : inline-block;
@@ -312,7 +313,8 @@ footer a {
     background            : url("../../2015/images/bg/77233663.jpg");
     background-repeat     : no-repeat;
     background-attachment : fixed;
-    background-size       : cover;    }
+    background-size       : cover;
+    }
 
 /*------------------ page 3: team ---------------------*/
 #page-3 {
@@ -320,10 +322,48 @@ footer a {
     background            : url("../../2015/images/bg/77233663.jpg");
     background-repeat     : no-repeat;
     background-attachment : fixed;
-    background-size       : cover;    }
+    background-size       : cover;
+    }
 
-/*------------------ page 4: humor ---------------------*/
+/*------------------ page 4: quotes ---------------------*/
 #page-4 {
+    position              : relative;
+    background            : url('../../2015/images/bg/100026342.jpg');
+    background-repeat     : no-repeat;
+    background-attachment : fixed;
+    background-size       : cover;
+    }
+
+#anewquote {
+    min-height  : 18em;
+    padding-top : 10px;
+    }
+
+/* page  4, 5*/
+.section-topic .icon {
+    color : rgba(255, 255, 255, .4);
+    }
+
+.section-topic .icon:hover {
+    color : rgba(255, 255, 255, .9);
+    }
+
+.section-topic h4 {
+    font-family : 'Oswald', sans-serif;
+    font-size   : 0.8em;
+    color       : #E6E6E6;
+    cursor      : default;
+    }
+
+.section-topic p {
+    color       : #E2E2E2;
+    font-size   : 0.6em;
+    font-family : 'Oswald', sans-serif;
+    cursor      : default;
+    }
+
+/*------------------ page 5: humor ---------------------*/
+#page-5 {
     position              : relative;
     background            : url('../../2015/css/images/overlay.svg'), url('../../2015/images/bg/101153737.jpg');
     background-repeat     : repeat, no-repeat;
@@ -331,13 +371,13 @@ footer a {
     background-size       : auto, cover;
     }
 
-/*------------------ page 5: quotes ---------------------*/
-#page-5 {
-    position              : relative;
-    background            : url('../../2015/images/bg/100026342.jpg');
-    background-repeat     : no-repeat;
-    background-attachment : fixed;
-    background-size       : cover;
+#funny img {
+    margin : 0 auto 0 auto;
+    }
+
+#funny h3 {
+    font-family : 'Architects Daughter', cursive;
+    text-shadow : 0 0 6px #000000;
     }
 
 /*------------------ page 6: panoramio ---------------------*/
@@ -355,7 +395,8 @@ footer a {
     background            : url("../../2015/images/bg/77233663.jpg");
     background-repeat     : no-repeat;
     background-attachment : fixed;
-    background-size       : cover;    }
+    background-size       : cover;
+    }
 
 /* footer */
 #footer {
@@ -548,8 +589,25 @@ footer a {
     }
 
 @media (max-width : 768px) {
+    .my-mobile-hide {
+        display : none;
+        }
+
     .bcg {
-        padding-top : 0em;
+        padding-top : 0.2em;
+        }
+
+    .section-topic h4, #funny h3 {
+        font-size : 0.7em;
+        }
+
+    #anewquote p, #funny p {
+        font-size : 0.8em;
+        }
+
+    .my-padding-r-f {
+        padding-right : 5px;
+        padding-left  : 5px;
         }
 
     /* first page */
