@@ -21,7 +21,7 @@ function displayQContents() {
         quotesArray = shuffleList(quotesArray);
         generateQuotes(qconter);
     } else {
-        quotesArray = "Wonder is the beginning of wisdom.    <br>Socrates";
+        // error occurred
     }
 }
 
@@ -32,7 +32,7 @@ function displayQContents() {
 function generateQuotes(n) {
     var theQuotation                               = quotesArray[n].split("#");
     document.getElementById("anewquote").innerHTML =
-        "<p>" + theQuotation[1] + "</p><h5> - " + theQuotation[0] + "</h5>";
+        "<p>" + theQuotation[1] + "</p><h5>-" + theQuotation[0] + "</h5>";
 }
 
 /**
@@ -108,8 +108,7 @@ function displayJContents() {
         initialload();
         jgenerator(jconter);
     } else {
-        jokelist =
-            '"Wife: "How would you describe me?"<br>Husband: "ABCDEFGHIJK."<br>Wife: "What does that mean?"<br>Husband: "Adorable, beautiful, cute, delightful, elegant, fashionable, gorgeous, and hot."<br>Wife: "Aw, thank you, but what about IJK?"<br>Husband: "I m just kidding!"';
+        // error occurred
     }
 }
 
@@ -173,12 +172,12 @@ function text2html(str) {
 loadJfile(jtextFile);
 
 document.getElementById("njl").onclick = function () {
-    document.getElementById('page-5').scrollIntoView();
+    document.getElementById('page-humor').scrollIntoView();
     jconter--;
     jgenerator(Math.abs(jconter % htmllist.length));
 };
 document.getElementById("njr").onclick = function () {
-    document.getElementById('page-5').scrollIntoView();
+    document.getElementById('page-humor').scrollIntoView();
     jconter++;
     jgenerator(Math.abs(jconter % htmllist.length));
 };
@@ -188,13 +187,13 @@ document.getElementById("njr").onclick = function () {
 loadQfile(qtextfil);
 
 document.getElementById("nql").onclick = function () {
-    document.getElementById('page-4').scrollIntoView();
+    document.getElementById('page-quote').scrollIntoView();
     qconter--;
     generateQuotes(Math.abs(qconter % quotesArray.length));
 };
 
 document.getElementById("nqr").onclick = function () {
-    document.getElementById('page-4').scrollIntoView();
+    document.getElementById('page-quote').scrollIntoView();
     qconter++;
     generateQuotes(Math.abs(qconter % quotesArray.length));
 };

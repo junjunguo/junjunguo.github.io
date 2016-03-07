@@ -43,7 +43,7 @@ function shuffleList(list) { // shuffle nrlist and return a list with objects re
  * @param theImg
  */
 function addImage(theImg) {
-    document.getElementById("first-page").style.backgroundImage = "url('" + theImg + "')";
+    document.getElementById("page-home").style.backgroundImage = "url('" + theImg + "')";
 }
 var listh = [			//  Images id numbers for header
     77233663,
@@ -76,18 +76,18 @@ function slideShow() {
 
     // add click events to prev &amp; next buttons
     $('.nextslide').on('click', function () {
-        document.getElementById('first-page').scrollIntoView();
+        document.getElementById('page-home').scrollIntoView();
         counter++;
         showImage();
     });
     $('.prevslide').on('click', function () {
-        document.getElementById('first-page').scrollIntoView();
+        document.getElementById('page-home').scrollIntoView();
         counter--;
         showImage();
     });
     // logo click
     $('#logo').on('click', function () {
-        document.getElementById('first-page').scrollIntoView();
+        document.getElementById('page-home').scrollIntoView();
         counter = Math.floor(Math.random() * slides.length);
         showImage();
         console.log("logo clicked");
@@ -144,13 +144,13 @@ $(document).ready(function () {
         //                     'lastPage'],
         navigation:         true,
         navigationPosition: 'right',
-        navigationTooltips: ['main',
-                             'individual work',
-                             'teamwork',
+        navigationTooltips: ['home',
                              'quotes',
                              'humor',
                              'panoramio',
                              'flickr',
+                             'individual work',
+                             'teamwork',
                              'contact'],
         showActiveTooltip:  false,
         slidesNavigation:   true,
@@ -158,7 +158,7 @@ $(document).ready(function () {
 
         //Scrolling
         css3:                              true,
-        scrollingSpeed:                    700,
+        scrollingSpeed:                    800,
         autoScrolling:                     false,
         fitToSection:                      true,
         fitToSectionDelay:                 1000,
