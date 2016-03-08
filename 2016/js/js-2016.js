@@ -75,12 +75,12 @@ function slideShow() {
     };
 
     // add click events to prev &amp; next buttons
-    $('.nextslide').on('click', function () {
+    $('.next-slide').on('click', function () {
         document.getElementById('page-home').scrollIntoView();
         counter++;
         showImage();
     });
-    $('.prevslide').on('click', function () {
+    $('.prev-slide').on('click', function () {
         document.getElementById('page-home').scrollIntoView();
         counter--;
         showImage();
@@ -92,12 +92,11 @@ function slideShow() {
         showImage();
         console.log("logo clicked");
     });
-
     showImage();
 }
 
 //
-var listf = [			//  Images id numbers for footer
+var listf = [			//  Images id numbers for page-foot
     106397977,
     101153731,
     77835780,
@@ -115,13 +114,13 @@ function changeBCP() {
 
         var theimg = bcgslides[Math.floor(Math.random() * bcgslides.length)];
 
-        document.getElementById("footer").style.backgroundImage =
+        document.getElementById("page-foot").style.backgroundImage =
             "url('./2015/css/images/overlay-black.svg'), url('" + theimg + "')";
     };
 
     // add click events to prev &amp; next buttons
     $('#changebcp').on('click', function () {
-        document.getElementById('footer').scrollIntoView()
+        document.getElementById('page-foot').scrollIntoView()
         changepic();
     });
 
@@ -205,6 +204,16 @@ $(document).ready(function () {
 });
 
 
+$(document).on('click', '.down-slide', function () {
+    $.fn.fullpage.moveSectionDown();
+});
+
+$(document).on('click', '.up-slide', function () {
+    $.fn.fullpage.moveSectionUp();
+});
+$(document).on('click', '.up-top-slide', function () {
+    $.fn.fullpage.moveTo(1);
+});
 //run the script:
 
 //run slide show

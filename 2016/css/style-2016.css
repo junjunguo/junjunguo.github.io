@@ -24,27 +24,8 @@ a {
     }
 
 a:hover {
-    border-bottom-color : rgba(255, 255, 255, 0);
+    border-bottom-color : rgba(255, 255, 255, 0.2);
     text-decoration     : none;
-    }
-
-header {
-    position       : relative;
-    padding-bottom : 70px;
-    }
-
-footer {
-    position : absolute;
-    bottom   : 2em;
-    width    : 100%;
-    }
-
-footer h1, h2, h3, h4, h5, p, a {
-    font-family : 'Oswald', sans-serif;
-    }
-
-footer a {
-    margin : 0 0px 0 0px;
     }
 
 /* bootstrap */
@@ -59,15 +40,27 @@ footer a {
 
 .bcg {
     background-position : center;
-    height              : 100%;
-    width               : 100%;
     cursor              : default;
     text-shadow         : 0 0 0.5px rgba(255, 255, 255, 0.25);
-    text-align          : center;
-    margin              : 0;
     color               : #FFFFFF;
-    padding-top         : 4em;
-    display             : block;
+    width               : 100%;
+    height              : 100%;
+    display             : table;
+    }
+
+.my-table-cell {
+    display        : table-cell;
+    vertical-align : middle;
+    text-align     : center;
+    }
+
+#page-quote header, #page-humor header {
+    /*background-color : #8A6D3B;*/
+    margin-bottom    : 200px;
+    }
+
+#page-foot header {
+    margin-bottom : 100px;
     }
 
 .bcg header h5 {
@@ -117,13 +110,113 @@ footer a {
     display : none;
     }
 
-.socialicons {
+.social-icons {
     padding : 0;
     }
 
 .my-padding-r-f {
     padding-right : 50px;
     padding-left  : 50px;
+    }
+
+/* Controls Bar : arrow  ----------------*/
+.my-arrow-icon {
+    -moz-animation              : nav-icons 0.3s ease-in-out forwards;
+    -webkit-animation           : nav-icons 0.3s ease-in-out forwards;
+    -o-animation                : nav-icons 0.3s ease-in-out forwards;
+    -ms-animation               : nav-icons 0.3s ease-in-out forwards;
+    animation                   : nav-icons 0.3s ease-in-out forwards;
+    -moz-backface-visibility    : hidden;
+    -webkit-backface-visibility : hidden;
+    -o-backface-visibility      : hidden;
+    -ms-backface-visibility     : hidden;
+    backface-visibility         : hidden;
+    -moz-transform              : translate3d(0, 0, 0);
+    -webkit-transform           : translate3d(0, 0, 0);
+    -o-transform                : translate3d(0, 0, 0);
+    -ms-transform               : translate3d(0, 0, 0);
+    transform                   : translate3d(0, 0, 0);
+    display                     : inline-block;
+    height                      : 2.0em;
+    width                       : 2.0em;
+    line-height                 : 4.5em;
+    position                    : relative;
+    /*background-color            : #00AA00;*/
+    }
+
+.my-arrow-icon i {
+    -webkit-tap-highlight-color : transparent;
+    -webkit-touch-callout       : none;
+    border                      : 0;
+    display                     : inline-block;
+    color                       : rgba(255, 255, 255, 0.7);
+    /*background-color            : #1D9EEA;*/
+    padding                     : 0px;
+    }
+
+.my-arrow-icon i:hover {
+    color     : rgba(255, 255, 255, .9);
+    font-size : 1.1em;
+    }
+
+.my-arrow-icon i:before {
+    -moz-transition    : all 0.3s ease-in-out;
+    -webkit-transition : all 0.3s ease-in-out;
+    -o-transition      : all 0.3s ease-in-out;
+    -ms-transition     : all 0.3s ease-in-out;
+    transition         : all 0.3s ease-in-out;
+    display            : block;
+    font-size          : 1.5em;
+    height             : 1.0em;
+    width              : 1.0em;
+    line-height        : 1.0em;
+    position           : relative;
+    text-align         : center;
+    }
+
+.my-slide-arrow {
+    position          : absolute;
+    display           : block;
+    bottom            : 10%;
+    right             : 10%;
+    background-repeat : no-repeat;
+    overflow          : hidden;
+    text-decoration   : none;
+    list-style        : none;
+    z-index           : 1;
+    /*background-color  : #1B6D85;*/
+    padding           : 0;
+    }
+
+.my-slide-arrow i {
+    color : rgba(255, 255, 255, 0.3);
+    }
+
+.my-slide-arrow i:hover .label {
+    width              : 100%;
+    height             : 100%;
+    position           : absolute;
+    font-size          : medium;
+    top                : 5px;
+    left               : 0;
+    display            : inline-block;
+    -webkit-box-sizing : border-box;
+    -moz-box-sizing    : border-box;
+    box-sizing         : border-box;
+    }
+
+footer {
+    position : absolute;
+    bottom   : 2em;
+    width    : 100%;
+    }
+
+footer h1, h2, h3, h4, h5, p, a {
+    font-family : 'Oswald', sans-serif;
+    }
+
+footer a {
+    margin : 0 0px 0 0px;
     }
 
 /*------ first page -------*/
@@ -141,15 +234,6 @@ footer a {
     -moz-transition         : background 600ms ease-in 500ms;
     -o-transition           : background 600ms ease-in 500ms;
     transition              : background 600ms ease-in 500ms;
-    }
-
-#page-home .my-upper {
-    top : 30%;
-    }
-
-#page-home header {
-    display : inline-block;
-    padding : 0 0 1em 0;
     }
 
 #page-home header p {
@@ -170,12 +254,17 @@ footer a {
     line-height    : 1.1em;
     }
 
+.my-element {
+    padding-top    : 50px;
+    padding-bottom : 50px;
+    text-align     : center;
+    }
+
 #page-home nav {
-    margin  : 1.5em 0px 0 0px;
     padding : 0;
     }
 
-#page-home nav li {
+#page-home ul li {
     -moz-animation              : nav-icons 0.5s ease-in-out forwards;
     -webkit-animation           : nav-icons 0.5s ease-in-out forwards;
     -o-animation                : nav-icons 0.5s ease-in-out forwards;
@@ -196,7 +285,6 @@ footer a {
     width                       : 3.5em;
     line-height                 : 4.885em;
     position                    : relative;
-    top                         : 50px;
     }
 
 #page-home nav a {
@@ -222,7 +310,6 @@ footer a {
     line-height        : 2em;
     position           : relative;
     text-align         : center;
-    top                : 0;
     }
 
 #page-home nav a:hover {
@@ -234,16 +321,16 @@ footer a {
     color            : white;
     }
 
-#page-home ul.socialicons .label {
+#page-home ul.social-icons .label {
     opacity : 0;
     }
 
-#page-home ul.socialicons a:hover .label {
+#page-home ul.social-icons a:hover .label {
     width              : 100%;
     height             : 100%;
     position           : absolute;
     font-size          : medium;
-    top                : -30px;
+    top                : -20px;
     left               : 0;
     display            : inline-block;
     -webkit-box-sizing : border-box;
@@ -259,13 +346,11 @@ footer a {
     display                     : inline-block;
     background                  : url(../../junjunguofiles/GuoJunJun.png) top center no-repeat;
     padding                     : 0;
-    margin                      : 0 auto 1em auto;
     border                      : none;
     -webkit-transition-duration : 0.5s;
     -moz-transition-duration    : 0.5s;
     -o-transition-duration      : 0.5s;
     transition-duration         : 0.5s;
-
     -webkit-transition-property : -webkit-transform;
     -moz-transition-property    : -moz-transform;
     -o-transition-property      : -o-transform;
@@ -279,37 +364,6 @@ footer a {
     -o-transform      : rotate(360deg);
     }
 
-/* Controls Bar : arrow  ----------------*/
-
-.arrow-left, .arrow-right {
-    position          : absolute;
-    display           : inline-block;
-    top               : 50%;
-    margin-top        : -21px;
-    line-height       : 2em;
-    background-repeat : no-repeat;
-    overflow          : hidden;
-    color             : rgba(255, 255, 255, .4);
-    }
-
-.arrow-left {
-    left : 45px;
-    }
-
-.arrow-right {
-    right : 45px;
-    }
-
-.arrow-left:hover {
-    color     : rgba(255, 255, 255, .9);
-    font-size : 1.1em;
-    }
-
-.arrow-right:hover {
-    color     : rgba(255, 255, 255, .9);
-    font-size : 1.1em;
-    }
-
 /*------------------ page 2: quotes ---------------------*/
 #page-quote {
     position              : relative;
@@ -320,7 +374,6 @@ footer a {
     }
 
 #anewquote h5 {
-    /*margin-top  : 1.5em;*/
     line-height : 1.5em;
     }
 
@@ -347,25 +400,6 @@ footer a {
     cursor      : default;
     }
 
-#page-quote .bcg, #page-humor .bcg {
-    padding-top : 0;
-    }
-
-/* content center */
-#page-humor header, #page-quote header {
-    padding-bottom      : 100px;
-    height              : 100%;
-    display             : -ms-flexbox;
-    display             : -webkit-flex;
-    display             : flex;
-    -webkit-flex-align  : center;
-    -ms-flex-align      : center;
-    -webkit-align-items : center;
-    align-items         : center;
-    justify-content     : center;
-    overflow            : visible;
-    }
-
 /*------------------ page 3: humor ---------------------*/
 #page-humor {
     position              : relative;
@@ -373,9 +407,6 @@ footer a {
     background-repeat     : repeat, no-repeat;
     background-attachment : fixed;
     background-size       : auto, cover;
-    }
-
-#page-humor {
     }
 
 #funny img {
@@ -619,7 +650,7 @@ footer a {
     }
 
 /* footer */
-#footer {
+#page-foot {
     position              : relative;
     text-shadow           : 0 0 0.5px rgba(255, 255, 255, 0.25);
     text-align            : center;
@@ -638,7 +669,7 @@ footer a {
 
     }
 
-#footer:after {
+#page-foot:after {
     content  : '';
     display  : block;
     position : absolute;
@@ -647,24 +678,24 @@ footer a {
     height   : 4.5em;
     }
 
-#footer a {
+#page-foot a {
     color               : #FFFFFF;
     text-shadow         : 0 0 0.5px rgba(255, 255, 255, 0.25);
     border-bottom-color : rgba(255, 255, 255, 0.5);
     margin              : 0 3% 0 3%;
     }
 
-#footer a:hover {
+#page-foot a:hover {
     color               : #32CD32;
     text-shadow         : 0 0 5px rgba(50, 205, 50, 0.4);
     border-bottom-color : rgba(50, 205, 50, 0.6);
     }
 
-#footer .socialicons {
+#page-foot .social-icons {
     padding : 0;
     }
 
-#footer .socialicons li {
+#page-foot .social-icons li {
     -moz-animation    : nav-icons 0.5s ease-in-out forwards;
     -webkit-animation : nav-icons 0.5s ease-in-out forwards;
     -o-animation      : nav-icons 0.5s ease-in-out forwards;
@@ -684,7 +715,7 @@ footer a {
     margin            : 15px 0 15px 0;
     }
 
-#footer .socialicons a {
+#page-foot .social-icons a {
     -webkit-tap-highlight-color : transparent;
     -webkit-touch-callout       : none;
     border                      : 0;
@@ -692,7 +723,7 @@ footer a {
     color                       : rgba(255, 255, 255, 0.5);
     }
 
-#footer .socialicons a:before {
+#page-foot .social-icons a:before {
     -moz-transition    : all 0.4s ease-in-out;
     -webkit-transition : all 0.4s ease-in-out;
     -o-transition      : all 0.4s ease-in-out;
@@ -710,7 +741,7 @@ footer a {
     top                : 0;
     }
 
-#footer ul.socialicons a:hover {
+#page-foot ul.social-icons a:hover {
     font-size : 1.2em;
     color     : rgba(50, 205, 50, 1);
     }
@@ -721,26 +752,26 @@ footer a {
     font-size      : 18px;
     }
 
-#footer .f-left {
+#page-foot .f-left {
     display : flex;
     float   : left;
     }
 
-#footer .f-center {
+#page-foot .f-center {
     /*display : flex;*/
     }
 
-#footer .f-right {
+#page-foot .f-right {
     display : flex;
     float   : right;
     }
 
-#footer footer {
+#page-foot footer {
     /*margin-bottom: 2em;*/
     bottom : 5em;
     }
 
-#footer .copyright {
+#page-foot .copyright {
     position         : absolute;
     width            : 100%;
     background-color : rgba(0, 0, 0, 0.6);
@@ -749,18 +780,18 @@ footer a {
     margin-bottom    : 0;
     }
 
-#footer .copyright P {
+#page-foot .copyright P {
     font-family : "Open Sans", sans-serif;
     font-weight : 100;
     font-size   : 12px;
     }
 
-#footer .copyright a {
+#page-foot .copyright a {
     font-weight : 100;
     font-size   : 12px;
     }
 
-#footer .copyright img {
+#page-foot .copyright img {
     cursor             : crosshair;
     height             : 30px;
     width              : auto;
@@ -773,13 +804,13 @@ footer a {
     transition         : all 1s ease;
     }
 
-#footer .copyright img:hover {
+#page-foot .copyright img:hover {
     -webkit-transform : rotate(360deg);
     -moz-transform    : rotate(360deg);
     -o-transform      : rotate(360deg);
     }
 
-#footer ul.socialicons a:hover .label {
+#page-foot ul.social-icons a:hover .label {
     width              : 100%;
     height             : 100%;
     position           : absolute;
@@ -813,7 +844,20 @@ footer a {
         }
 
     .bcg {
-        padding-top : 0.2em;
+        /*padding-top : 0.2em;*/
+        }
+
+    .my-slide-arrow {
+        bottom : 0px;
+        right  : 0px;
+        }
+
+    #page-quote header, #page-humor header {
+        margin-bottom : 100px;
+        }
+
+    #page-foot header {
+        margin-bottom : 80px;
         }
 
     .section-topic h4, #funny h3, #anewquote h5 {
@@ -822,6 +866,11 @@ footer a {
 
     header p {
         line-height : 1.5em;
+        }
+
+    .my-element {
+        padding-top    : 0px;
+        padding-bottom : 0px;
         }
 
     #anewquote p, #funny p {
@@ -864,13 +913,9 @@ footer a {
         font-size : 1.05em;
         }
 
-    #page-home ul.socialicons a:hover .label {
-        }
-
-    #logo {
-        margin : 2em auto 1em auto;
-        }
-
+    /*#logo {*/
+    /*margin : 2em auto 1em auto;*/
+    /*}*/
     #page-portfolio ul li {
         text-align : center;
         padding    : 0px 0 0px 0;
@@ -914,17 +959,17 @@ footer a {
         font-size : 12px;
         }
 
-    #footer .f-left {
+    #page-foot .f-left {
         display : block;
         float   : none;
         }
 
-    #footer .f-center {
+    #page-foot .f-center {
         display : block;
         float   : none;
         }
 
-    #footer .f-right {
+    #page-foot .f-right {
         display : block; /* turn off the flexible box layout */
         float   : none;
         }
