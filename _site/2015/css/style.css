@@ -151,7 +151,7 @@ footer a {
 
 /* Controls Bar : arrow  ----------------*/
 
-.prevslide, .nextslide, .anewquote {
+.arrow-left, .arrow-right, .anewquote {
     cursor             : pointer;
     -moz-appearance    : none;
     -webkit-appearance : none;
@@ -166,7 +166,7 @@ footer a {
 
     }
 
-.prevslide, .nextslide {
+.arrow-left, .arrow-right {
     position          : absolute;
     display           : inline-block;
     height            : 36px;
@@ -178,12 +178,12 @@ footer a {
     overflow          : hidden;
     }
 
-.prevslide {
+.arrow-left {
     left             : 535px;
     background-image : url('images/navleftr.svg');
     }
 
-.nextslide {
+.arrow-right {
     right            : 535px;
     background-image : url('images/navrightl.svg');
     }
@@ -192,12 +192,12 @@ footer a {
 /*background-image : url('images/navRLactive.svg');*/
 /*}*/
 
-.prevslide:hover {
+.arrow-left:hover {
     background-image : url('images/navleft.svg');
 
     }
 
-.nextslide:hover {
+.arrow-right:hover {
     background-image : url('images/navright.svg');
 
     }

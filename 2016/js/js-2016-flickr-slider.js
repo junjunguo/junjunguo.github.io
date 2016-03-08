@@ -2,12 +2,6 @@
  * Created by GuoJunjun on 07/03/16. <junjunguo.com>
  *
  */
-
-var flickrURL = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=54f8af3fd039bb7376cf5f26eef23522&photoset_id=72157646082323705&user_id=125412181%40N03&format=json&nojsoncallback=1&auth_token=72157665498906476-54d9a084cb5ad53e&api_sig=ad4abc6185cd1771d61e4d399a24c625";
-
-var flickrTextfilRaw = './2016/img/myflickrrawphotos.txt';
-var flickrTextfil    = './2016/img/myflickrphotos.txt';
-
 var freader = new XMLHttpRequest() || new ActiveXObject('MSXML2.XMLHTTP');
 var photoList;
 var fcount  = 0; // slider fcount
@@ -26,8 +20,13 @@ function loadMyFile(textFile) {
  */
 function toJSONobject() {
     if (freader.readyState == 4) {
-        photoList = JSON.parse(freader.responseText).photoset.photo;
-        loadJSON();
+        if (rawData) {
+            photoList = JSON.parse(freader.responseText).photoset.photo;
+            loadJSON();
+        } else {
+            furlList = shuffleFList(JSON.parse(freader.responseText).photos);
+            loadFimgs();
+        }
     } else {
         // error occurred
     }
@@ -51,10 +50,11 @@ function loadJSON() {
     }
     jsonString = jsonString.slice(0, -1);
     jsonString += ']}';
-    //console.log("\n" + jsonString);
+    console.log("\n" + jsonString);
     furlList = shuffleFList(JSON.parse(jsonString).photos);
     loadFimgs();
 }
+
 
 /**
  * Load images to htmllist
@@ -89,8 +89,6 @@ function loadFimgs() {
             '   </div>' +
             '</div>';
     }
-    $("#my-carousel").carousel("pause").removeData();
-    document.getElementById("my-flickr-slides").innerHTML = "";
     document.getElementById("my-flickr-slides").innerHTML = fhtml;
     fcount++;
     document.getElementById("flickr-next").addEventListener("click", loadFimgs);
@@ -111,5 +109,11 @@ function shuffleFList(list) {
     }
     return copy;
 }
-
-loadMyFile(flickrURL);
+// --------- use handled json  ---------
+var flickrTextfil = './2016/img/myflickrphotos.txt';
+// --------- use raw data from flickr
+var flickrURL = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=54f8af3fd039bb7376cf5f26eef23522&photoset_id=72157646082323705&user_id=125412181%40N03&format=json&nojsoncallback=1&auth_token=72157665498906476-54d9a084cb5ad53e&api_sig=ad4abc6185cd1771d61e4d399a24c625";
+// --------- use downloaded raw data
+var flickrTextfilRaw = './2016/img/myflickrrawphotos.txt';
+var rawData          = false;
+loadMyFile(flickrTextfil);

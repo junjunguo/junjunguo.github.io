@@ -88,7 +88,7 @@ img {
     display : block;
     }
 
-#supersized li.prevslide {
+#supersized li.arrow-left {
     z-index : -20;
     }
 
@@ -106,6 +106,6 @@ img {
     visibility : hidden;
     }
 
-#supersized li.prevslide img, #supersized li.activeslide img {
+#supersized li.arrow-left img, #supersized li.activeslide img {
     display : inline;
     }

@@ -87,7 +87,7 @@ img {
 	height: 100%;
 	display: block;
 }
-#supersized li.prevslide {
+#supersized li.arrow-left {
 	z-index: -20;
 }
 #supersized li.activeslide {
@@ -101,7 +101,7 @@ img {
 #supersized li.image-loading img {
 	visibility: hidden;
 }
-#supersized li.prevslide img, #supersized li.activeslide img {
+#supersized li.arrow-left img, #supersized li.activeslide img {
 	display: inline;
 }
 	/* Controls Bar

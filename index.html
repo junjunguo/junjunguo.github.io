@@ -1,7 +1,11 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
     <meta name="description" content="GuoJunjun's Personal Web"/>
     <meta name="keywords"
           content="GuoJunjun's Personal Web, My favourite quotes, My humor collection, photography, portfolio, GuoJunjun, Guo Junjun, Junjun Guo, GuoJunjun's photo gallery"/>
@@ -10,307 +14,545 @@
     <title>GuoJunjun</title>
     <link rel="shortcut icon" href="./junjunguofiles/favicon.ico" type="image/x-icon"/>
 
-    <!--[if lte IE 8]>
-    <script src="2015/css/ie/html5shiv.js"></script><![endif]-->
-    <script src="2015/js/jquery.min.js"></script>
-    <script src="2015/js/jquery.scrolly.min.js"></script>
-    <script src="2015/js/skel.min.js"></script>
-    <script src="2015/js/init.js"></script>
-    <script src="2015/js/jquery.magnific-popup.js"></script>
-    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
-    <!--<link rel="stylesheet" href="2015/css/skel.css"/>-->
-    <link rel="stylesheet" href="2015/css/style.css"/>
-    <link rel="stylesheet" href="2015/css/magnific-popup.css"/>
-    <link rel="stylesheet" href="2015/css/font-awesome.css"/>
+    <!-- css -->
+    <link href="2016/css/bootstrap.css" rel="stylesheet">
+    <link href="2016/css/jquery.fullPage.css" rel="stylesheet">
+    <link href="2016/css/font-awesome.min.css" rel="stylesheet">
+    <link href="2016/css/style-2016.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>-->
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="2015/css/ie/v8.css"/><![endif]-->
-    <script src="2015/js/GuoJunjun.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 
-<!-- section 1 ------------------------------------------------------------->
-<section id="header">
-    <div class="bcg">
-        <header>
-            <div class="b0">
-                <a id="logo"></a>
+<div id="fullpage" class="container-fluid">
+    <!-- first page -->
+    <div class="section" id="page-home">
+        <div class="bcg">
+            <header>
+                <div class="my-upper ">
+                    <a id="logo"></a>
 
-                <h1>Hi, I'm Junjun Guo</h1>
+                    <h1>Hi, I'm Junjun Guo</h1>
 
-                <p>Computer Science Student at
-                   Norwegian University of Science and Technology</p>
-            </div>
-            <nav>
-                <ul class="socialicons">
-                    <li class="b1"><a href="https://github.com/junjunguo" class="icon fa-github"><span
-                            class="label">Github</span></a></li>
-                    <li class="b2"><a href="https://www.linkedin.com/in/guojunjun" class="icon fa-linkedin"><span
-                            class="label">LinkedIn</span></a></li>
-                    <li class="b3"><a href="cv.html" class="icon fa-file-text"><span class="label">Resume
+                    <p>Computer Science Student at
+                       Norwegian University of Science and Technology</p>
+                </div>
+                <nav>
+                    <ul class="socialicons my-lower">
+                        <li class=""><a href="https://github.com/junjunguo" class="icon fa-github"><span
+                                class="label">Github</span></a></li>
+                        <li class=""><a href="https://www.linkedin.com/in/guojunjun" class="icon fa-linkedin"><span
+                                class="label">LinkedIn</span></a></li>
+                        <li class=""><a href="cv.html" class="icon fa-file-text"><span class="label">Resume
                         </span></a></li>
-                    <li class="b4"><a href="blog.html" class="icon fa-pencil-square-o"><span
-                            class="label">Blog</span></a></li>
-                </ul>
-            </nav>
-        </header>
-        <!--Arrow Navigation-->
-        <a class="prevslide"></a>
-        <a class="nextslide"></a>
-        <footer>
-            <a href="#myQuotes" class="button down style2 scrolly scrolly-centered"></a>
-        </footer>
+                        <li class=""><a href="blog.html" class="icon fa-pencil-square-o"><span
+                                class="label">Blog</span></a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!--Arrow Navigation-->
+            <a class="arrow-left prevslide icon fa-chevron-circle-left"></a>
+            <a class="arrow-right nextslide icon fa-chevron-circle-right"></a>
+        </div>
+
     </div>
-</section>
 
+    <!-- my favourite quotes -->
+    <div class="section" id="page-quote">
+        <div class="bcg">
+            <header>
+                <div class="">
+                    <div id="anewquote" class="my-padding-r-f container"></div>
+                </div>
+            </header>
 
-<!-- section 2 ------------------------------------------------------------>
-<section id="myQuotes">
-    <div class="bcg">
-        <header>
-            <div id="anewquote"></div>
-        </header>
+            <footer>
+                <div class="section-topic">
+                    <h4><i id="nql" class="icon fa-chevron-circle-left"></i>
+                        My favourite quotes
+                        <i id="nqr" class="icon fa-chevron-circle-right"></i></h4>
 
-        <footer>
-            <div id="sectiontopic">
-                <!--<h4><i id="nql" class="fa fa-chevron-left"></i>-->
-                <!--My favourite quotes-->
-                <!--<i id="nqr" class="fa fa-chevron-right""></i></h4>-->
-
-                <h4><a id="nql"></a>
-                    My favourite quotes
-                    <a id="nqr"></a></h4>
-
-                <p>words of wisdom about love, life, happiness, truth, friendship, achieving goals, overcoming fears,
-                   everything
-                   that inspires me!</p>
-            </div>
-            <a href="#header" class="button up style2 scrolly scrolly-centered"></a>
-            <a href="#myHumor" class="button down style2 scrolly scrolly-centered"></a>
-        </footer>
+                    <p class="my-mobile-hide">
+                        words of wisdom about love, life, happiness, truth, friendship, achieving
+                        goals, overcoming fears, everything that inspires me!</p>
+                </div>
+            </footer>
+        </div>
     </div>
-</section>
+    <!-- my humor collection-->
+    <div class="section" id="page-humor">
+        <div class="bcg">
+            <header>
+                <div id="funny" class="my-padding-r-f">
+                    <h1>Everything is funny, as long as it's happening to somebody else</h1>
+                </div>
+            </header>
+            <footer>
+                <div class="section-topic">
+                    <h4><i id="njl" class="icon fa-chevron-circle-left"></i>
+                        My humor collection
+                        <i id="njr" class="icon fa-chevron-circle-right"></i></h4>
 
-<!-- section 3 ------------------------------------------------------------>
-<section id="myHumor">
-    <div class="bcg">
-        <header>
-            <div id="funny">
-                <h1>Everything is funny, as long as it's happening to somebody else</h1>
-            </div>
-        </header>
-        <footer>
-            <div class="topicDescription">
-                <h4><i id="njl" class="fa fa-chevron-left"></i>
-                    My humor collection
-                    <i id="njr" class="fa fa-chevron-right"></i></h4>
-
-                <p>From there to here, and here to there, funny things are everywhere !</p>
-            </div>
-            <a href="#myQuotes" class="button up style2 scrolly scrolly-centered"></a>
-            <a href="#photography" class="button down style2 scrolly scrolly-centered"></a>
-        </footer>
+                    <p class="my-mobile-hide">From there to here, and here to there, funny things are everywhere !</p>
+                </div>
+            </footer>
+        </div>
     </div>
-</section>
 
-<!-- section 4  ------------------------------------------------------------>
-<section id="photography">
-    <div class="bcg">
-        <header>
-            <figure id="panoramio">
-                <iframe frameborder="0" height="600" marginheight="0" marginwidth="0" scrolling="no"
-                        src="http://www.panoramio.com/wapi/template/slideshow.html?user=2481456&amp;tag=best&amp;width=1000&amp;height=600&amp;order=date_desc&amp;delay=8"
-                        width="1000">
-                </iframe>
-            </figure>
-        </header>
-        <footer>
-            <div class="topicDescription">
-                <!--<h4>My Photo collection</h4>-->
+    <!-- my panoramio -->
+    <div class="section" id="page-panoramio">
+        <div class="bcg">
+            <header>
+                <div id="my-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#my-carousel" data-slide-to="1"></li>
+                        <li data-target="#my-carousel" data-slide-to="2"></li>
+                        <li data-target="#my-carousel" data-slide-to="3"></li>
+                        <li data-target="#my-carousel" data-slide-to="4"></li>
+                        <li data-target="#my-carousel" data-slide-to="5"></li>
+                    </ol>
 
-                <p>Slide show fra panoramio !</p>
-            </div>
-            <a href="#myHumor" class="button up style2 scrolly scrolly-centered"></a>
-            <a href="#portfolio" class="button down style2 scrolly scrolly-centered"></a>
-        </footer>
-    </div>
-</section>
-
-<!-- section 5  ------------------------------------------------------------>
-<section id="portfolio">
-    <div class="bcg">
-        <header>
-            <div id="myportfolio" class="links">
-                <ul id="inline-popups">
-                    <!-- Images -->
-                    <li class="portfolioImgSizeA"><a href="#calculator-popup" data-effect="mfp-3d-unfold"><img
-                            src="./data/calculator/calculator.png"></a></li>
-
-                    <li class="portfolioImgSizeA"><a href="#currencyConverter-popup" data-effect="mfp-3d-unfold">
-                        <img src="./data/currencyConverter/currencyconverter1.png"></a></li>
-
-                    <li class="portfolioImgSizeA"><a href="#timer-popup" data-effect="mfp-3d-unfold"><img
-                            src="./data/timer/timer.png"></a></li>
-
-                    <li class="portfolioImgSizeB"><a href="#greenAppointment-popup"
-                                                     data-effect="mfp-3d-unfold"><img
-                            src="./data/greenAppointment/GreenAppointment6.png"></a></li>
-                    <li class="portfolioImgSizeIcon"><a href="#PongGame-popup"
-                                                        data-effect="mfp-3d-unfold">
-                        <img alt="Android Pong Game" src="./data/pong/pong.png"></a></li>
-
-                    <li class="portfolioImgSizeIcon"><a href="#pocketMaps-popup"
-                                                        data-effect="mfp-3d-unfold">
-                        <img alt="Android Pong Game"
-                             src="http://junjunguo.com/PocketMaps/images/icon_pocketmaps_dark_512.png"></a></li>
-
-                    <!-- Popups -->
-                    <div id="calculator-popup" class="white-popup mfp-with-anim mfp-hide portfolio-popup">
-                        <ul>
-                            <li><a href="./data/calculator/calculator.jar">Download Application</a></li>
-                            <li>
-                                <a href="https://github.com/junjunguo/HumanComputerInteraction/tree/master/Calculator">
-                                    see source code </a>
-                            </li>
-                            <li><img src="./data/calculator/calculator2.png"></li>
-                            <li><img src="./data/calculator/calculator3.png"></li>
-                        </ul>
-                    </div>
-                    <div id="currencyConverter-popup" class="white-popup mfp-with-anim mfp-hide portfolio-popup">
-                        <ul>
-                            <li><a href="./data/currencyConverter/currencyconverter.jar">Download Application</a></li>
-                            <li>
-                                <a href="https://github.com/junjunguo/HumanComputerInteraction/tree/master/currencyConverter">
-                                    see source code </a>
-                            </li>
-                            <li><img src="./data/currencyConverter/currencyconverter2.png"></li>
-                            <li><img src="./data/currencyConverter/currencyconverter3.png"></li>
-                            <li><img src="./data/currencyConverter/currencyconverter4.png"></li>
-                        </ul>
-                    </div>
-                    <div id="timer-popup" class="white-popup mfp-with-anim mfp-hide portfolio-popup">
-                        <ul>
-                            <li><a href="./data/timer/timer.jar">Download Application</a></li>
-                            <li>
-                                <a href="https://github.com/junjunguo/HumanComputerInteraction/tree/master/timer">
-                                    see source code </a>
-                            </li>
-                            <li><img src="./data/timer/timer2.png"></li>
-                        </ul>
-                    </div>
-                    <div id="greenAppointment-popup" class="white-popup mfp-with-anim mfp-hide portfolio-popup">
-                        <ul>
-                            <li><a href="./data/greenAppointment/GreenAppointment.jar">Download Application</a></li>
-                            <li>
-                                <a href="https://github.com/junjunguo/HumanComputerInteraction/tree/master/GreenAppointment">
-                                    see source code </a>
-                            </li>
-                            <li><img src="./data/greenAppointment/GreenAppointment.png"></li>
-                            <li><img src="./data/greenAppointment/GreenAppointment2.png"></li>
-                            <li><img src="./data/greenAppointment/GreenAppointment4.png"></li>
-                            <li><img src="./data/greenAppointment/GreenAppointment5.png"></li>
-                            <li><img src="./data/greenAppointment/GreenAppointment7.png"></li>
-                        </ul>
-                    </div>
-                    <div id="PongGame-popup" class="white-popup mfp-with-anim mfp-hide portfolio-popup">
-                        <ul>
-                            <li>
-                                <a href="https://play.google.com/store/apps/details?id=com.junjunguo.ponggame">
-                                    Get PONG at Google Play store</a></li>
-                            <li>
-                                <a href="https://github.com/junjunguo/softwareArchitecture/tree/master/PongGame">
-                                    see source code </a>
-                            </li>
-                            <li><img src="./data/pong/pong.png"></li>
-                        </ul>
+                    <!-- Wrapper for slides -->
+                    <div id="my-slides" class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img class="img-responsive" src="http://static.panoramio.com/photos/large/106419102.jpg"
+                                 alt="junjunguo.com">
+                            <div class="carousel-caption">
+                                <p>Beautiful Telemark</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="http://static.panoramio.com/photos/large/78491832.jpg"
+                                 alt="junjunguo.com">
+                            <div class="carousel-caption">
+                                <p>beyond the misty mountains</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="http://static.panoramio.com/photos/large/77835786.jpg"
+                                 alt="junjunguo.com">
+                            <div class="carousel-caption">
+                                <p>Hordaland</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="http://static.panoramio.com/photos/large/58246420.jpg"
+                                 alt="junjunguo.com">
+                            <div class="carousel-caption">
+                                <p>Gloriette in Schönbrunn Palace Garden, Vienna, Austria</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="http://static.panoramio.com/photos/large/55717739.jpg"
+                                 alt="junjunguo.com">
+                            <div class="carousel-caption">
+                                <p>Oslofjorden</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="http://static.panoramio.com/photos/large/48219098.jpg"
+                                 alt="junjunguo.com">
+                            <div class="carousel-caption">
+                                <div>
+                                    <h4><a href="http://www.panoramio.com/user/2481456" class="icon fa-picture-o">
+                                        View my photo gallery at Panoramio</a></h4>
+                                    <h2><a id="panoramio-next" class="icon fa-forward"> Next slider</a></h2>
+                                </div>
+                                <p>Santa Maria del Mar, Barcelona</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div id="pocketMaps-popup" class="white-popup mfp-with-anim mfp-hide portfolio-popup">
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#my-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#my-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!--<div>-->
+                <!--<button id="my-btn-more-photos" type="button" class="btn btn-info center-block">more photos-->
+                <!--</button>-->
+                <!--</div>-->
+            </header>
+            <!--<footer>-->
+            <!--<div class="topicDescription">-->
+            <!--&lt;!&ndash;<h4>My Photo collection</h4>&ndash;&gt;-->
+            <!--<p>Slide show from panoramio !</p>-->
+            <!--</div>-->
+            <!--</footer>-->
+        </div>
+    </div>
+    <!-- my flickr -->
+    <div class="section" id="page-flickr">
+        <div class="bcg">
+            <header>
+                <div id="my-carousel-flickr" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#my-carousel-flickr" data-slide-to="0" class="active"></li>
+                        <li data-target="#my-carousel-flickr" data-slide-to="1"></li>
+                        <li data-target="#my-carousel-flickr" data-slide-to="2"></li>
+                        <li data-target="#my-carousel-flickr" data-slide-to="3"></li>
+                        <li data-target="#my-carousel-flickr" data-slide-to="4"></li>
+                        <li data-target="#my-carousel-flickr" data-slide-to="5"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div id="my-flickr-slides" class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img class="img-responsive" src="http://static.panoramio.com/photos/large/106419102.jpg"
+                                 alt="junjunguo.com">
+                            <div class="carousel-caption">
+                                <p>Beautiful Telemark</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="http://static.panoramio.com/photos/large/78491832.jpg"
+                                 alt="junjunguo.com">
+                            <div class="carousel-caption">
+                                <p>beyond the misty mountains</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="http://static.panoramio.com/photos/large/77835786.jpg"
+                                 alt="junjunguo.com">
+                            <div class="carousel-caption">
+                                <p>Hordaland</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="http://static.panoramio.com/photos/large/58246420.jpg"
+                                 alt="junjunguo.com">
+                            <div class="carousel-caption">
+                                <p>Gloriette in Schönbrunn Palace Garden, Vienna, Austria</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="http://static.panoramio.com/photos/large/55717739.jpg"
+                                 alt="junjunguo.com">
+                            <div class="carousel-caption">
+                                <p>Oslofjorden</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="http://static.panoramio.com/photos/large/48219098.jpg"
+                                 alt="junjunguo.com">
+                            <div class="carousel-caption">
+                                <div>
+                                    <h4><a href="https://www.flickr.com/photos/guojunjun/albums/72157646082323705"
+                                           class="icon fa-flickr">
+                                        View my photo gallery at Flickr</a></h4>
+                                    <h2><a id="flickr-next" class="icon fa-forward"> Next slider</a></h2>
+                                </div>
+                                <p>Santa Maria del Mar, Barcelona</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#my-carousel-flickr" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#my-carousel-flickr" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!--<div>-->
+                <!--<button id="my-btn-more-photos" type="button" class="btn btn-info center-block">more photos-->
+                <!--</button>-->
+                <!--</div>-->
+            </header>
+            <!--<footer>-->
+            <!--<div class="topicDescription">-->
+            <!--&lt;!&ndash;<h4>My Photo collection</h4>&ndash;&gt;-->
+            <!--<p>Slide show from flickr !</p>-->
+            <!--</div>-->
+            <!--</footer>-->
+        </div>
+    </div>
+
+    <!-- My Portfolio-->
+    <div class="section" id="page-portfolio">
+        <!-- slide 1-->
+        <div class="slide" id="portfolio-slide-pocketmaps">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
                         <ul>
-                            <li>
-                                <a href="https://play.google.com/store/apps/details?id=com.junjunguo.pocketmaps">
-                                    Get Pocket Maps at Google Play store</a></li>
-                            <li>
-                                <a href="http://junjunguo.com/PocketMaps/">Pocket Maps Website: <br>Free offline maps
-                                                                           with routing functions for Android</a>
+                            <li><h1 class=" wow bounceIn"><b>Pocket Maps</b></h1></li>
+                            <li><h4 class=" wow bounceOut">Free offline maps with routing functions and more ...</h4>
                             </li>
-                            <li><img src="http://junjunguo.com/PocketMaps/images/icon_pocketmaps_dark_512.png"></li>
+                            <li><img class="my-app-icon"
+                                     src="https://raw.githubusercontent.com/junjunguo/PocketMaps/master/documentation/icon_pocketmaps_dark_512.png">
+                            </li>
                         </ul>
                     </div>
-                </ul>
+                    <div class="col-sm-6">
+                        <ul>
+                            <li><a href="http://junjunguo.com/PocketMaps/" class="icon fa-map"> Home page</a></li>
+                            <li><a class="on-play"
+                                   href="https://play.google.com/store/apps/details?id=com.junjunguo.pocketmaps&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1">
+                                <img class="my-google-play"
+                                     alt="Get it on Google Play"
+                                     src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png"/></a>
+                            </li>
+                            <li><a class="icon fa-github-alt" href="https://github.com/junjunguo/PocketMaps"> Source
+                                                                                                              Code</a>
+                            </li>
+                            <li>
+                                <div class="portfolio-project-info">
+                                    <p><span>My Android App</span></p>
+                                    <h1>Pocket Maps is an offline Android Map Application, I designed and
+                                        implemented during summer 2015. Which can be used for navigation, sport
+                                        tracking, data analysing and more. Pocket Maps is open source project, app
+                                        available in F-Droid and Google Play store.
+                                        <a href="http://junjunguo.com/PocketMaps/"> more about Pocket Maps ...</a></h1>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </header>
-        <footer>
-            <div class="topicDescription">
-                <h4>My Portfolio</h4>
-
-                <p>Some of my works</p>
+        </div>
+        <!-- slide 2-->
+        <div class="slide" id="portfolio-slide-b">
+            <div class="container">
+                <div class="row my-v-center">
+                    <div class="col-sm-4 project-a">
+                        <ul>
+                            <li><img class="my-app-icon" src="http://junjunguo.com/data/pong/pong.png"></li>
+                            <li>
+                                <a href="https://play.google.com/store/apps/details?id=com.junjunguo.ponggame&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                                    <img class="my-google-play" alt="Get it on Google Play"
+                                         src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"/></a>
+                            </li>
+                            <li><a class="icon fa-github-alt"
+                                   href="https://github.com/junjunguo/softwareArchitecture/tree/master/PongGame">
+                                Source Code</a>
+                            </li>
+                            <li>
+                                <div class="portfolio-project-info">
+                                    <p><span>My Android App</span></p>
+                                    <h1>Pong Game is the first Android game app I made.</h1>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 project-b">
+                        <ul>
+                            <li><img class=" my-app-icon"
+                                     src="http://junjunguo.com/data/calculator/calculator2.png"></li>
+                            <li><a class="icon fa-github-alt"
+                                   href="https://github.com/junjunguo/HumanComputerInteraction/tree/master/Calculator">
+                                Source Code</a>
+                            </li>
+                            <li>
+                                <div class="portfolio-project-info">
+                                    <p><span>My Java App</span></p>
+                                    <h1>A Java Calculator app I made with JavaFX, FXML & and CSS.</h1>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 project-c">
+                        <ul>
+                            <li><img class=" my-app-icon"
+                                     src="http://junjunguo.com/data/timer/timer2.png"></li>
+                            <li><a class="icon fa-github-alt"
+                                   href="https://github.com/junjunguo/HumanComputerInteraction/tree/master/timer">
+                                Source Code</a>
+                            </li>
+                            <li>
+                                <div class="portfolio-project-info">
+                                    <p><span>My Java App</span></p>
+                                    <h1>A Java Timer app I made with JavaFX, FXML, CSS and JavaFX Scene
+                                        Builder.</h1>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <a href="#photography" class="button up style2 scrolly scrolly-centered"></a>
-            <a href="#footer" class="button down style2 scrolly scrolly-centered"></a>
-        </footer>
+        </div>
+        <!-- slide 3-->
+        <div class="slide" id="portfolio-slide-c">
+            <div class="container">
+                <div class="row my-v-center">
+                    <div class="col-sm-4 project-a">
+                        <ul>
+                            <li><img class=" my-app-icon"
+                                     src="http://junjunguo.com/data/greenAppointment/GreenAppointment5.png"></li>
+                            <li><a class="icon fa-github-alt"
+                                   href="https://github.com/junjunguo/HumanComputerInteraction/tree/master/GreenAppointment">
+                                Source Code</a>
+                            </li>
+                            <li>
+                                <div class="portfolio-project-info">
+                                    <p><span>My Java App</span></p>
+                                    <h1>A Java Appointment app I made with JavaFX, FXML, CSS and JavaFX Scene
+                                        Builder.</h1>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 project-b">
+                        <ul>
+                            <li><img class=" my-app-icon"
+                                     src="https://raw.githubusercontent.com/junjunguo/HumanComputerInteraction/master/CalendarProgram/login.png">
+                            </li>
+                            <li><a class="icon fa-github-alt"
+                                   href="https://github.com/junjunguo/HumanComputerInteraction/tree/master/CalendarProgram">
+                                Source Code</a>
+                            </li>
+                            <li>
+                                <div class="portfolio-project-info">
+                                    <p><span>My Java App</span></p>
+                                    <h1>A Java Calendar app I made with JavaFX, FXML, CSS and JavaFX Scene Builder.</h1>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 project-c">
+                        <ul>
+                            <li><img class=" my-app-icon"
+                                     src="http://junjunguo.com/data/currencyConverter/currencyconverter2.png"></li>
+                            <li><a class="icon fa-github-alt"
+                                   href="https://github.com/junjunguo/HumanComputerInteraction/tree/master/currencyConverter">
+                                Source Code</a>
+                            </li>
+                            <li>
+                                <div class="portfolio-project-info">
+                                    <p><span>My Java App</span></p>
+                                    <h1>A Java Currency Converter app I made, which uses online exchange rate.
+                                        There are more than two hundred countries in the list.</h1>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
-<!-- Footer ------------------------------------------------------------------------------>
-<section id="footer">
-    <div class="bcg">
-        <header>
-            <div id="sitemap">
-                <table>
-                    <tr>
-                        <td class="sitemapl"><a href="./2014.html">2014</a></td>
-                        <td><a href="./cv.html">CV</a></td>
-                    </tr>
-                    <tr>
-                        <td class="sitemapl"><a href="./fun.html">jokes</a></td>
-                        <td><a href="./quotes.html">quotations</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="./photo.html">photos</a></td>
-                        <td><a href="./blog.html">Blog</a></td>
-                    </tr>
-                </table>
-            </div>
-            <ul class="socialicons">
-                <li><a href="" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="https://www.facebook.com/guojunjun" class="icon fa-facebook"><span
-                        class="label">Facebook</span></a>
-                </li>
-                <li><a href="https://plus.google.com/+JunjunGuo" class="icon fa-google-plus"><span
-                        class="label">Google+</span></a></li>
-                <li><a href="./blog.html" class="icon fa-pencil-square-o"><span class="label">Blog</span></a></li>
-                <li><a href="https://www.flickr.com/photos/guojunjun" class="icon fa-flickr"><span
-                        class="label">Flickr</span></a></li>
-                <li><a href="http://www.panoramio.com/user/guojunjun" class="icon fa-camera"><span
-                        class="label">Panoramio</span></a></li>
-                <li><a href="https://www.linkedin.com/in/guojunjun"
-                       class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                <li><a href="https://github.com/junjunguo" class="icon fa-github"><span class="label">GitHub</span></a>
-                </li>
-                <li><a href="mailto:guojunjun@gmail.com"
-                       class="icon fa-envelope-o"><span class="label">Email me</span></a></li>
-            </ul>
-        </header>
-        <footer>
-            <ul class="menu">
-                <li><a href="#header" class="style2 scrolly scrolly-centered">Top</a></li>
-                <li><a href="#myQuotes" class="style2 scrolly scrolly-centered">Quotation</a></li>
-                <li><a href="#myHumor" class="style2 scrolly scrolly-centered">Humor</a></li>
-                <li><a href="#photography" class="style2 scrolly scrolly-centered">Photography</a></li>
-                <li><a href="#portfolio" class="style2 scrolly scrolly-centered">Portfolio</a></li>
-            </ul>
 
-            <div class="copyright">
-                <p><a href="index.html">Junjun Guo</a>2015
-                    <img id="changebcp" src="junjunguofiles/GuoJunJun.png"></p>
-            </div>
-        </footer>
-    </div>
-</section>
-<script src="2015/js/slideshow.js"></script>
-<script src="2015/js/generators.js"></script>
+    <!-- footer-->
+    <div class="section" id="footer">
+        <div class="bcg ">
+            <header>
+                <div id="sitemap">
+                    <div class="row">
+                        <div class="col-xs-4 ">
+                            <a class="f-right" href="./2014.html">2014</a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="./2015.html">2015</a>
+                        </div>
+                        <div class="col-xs-4 ">
+                            <a class="f-left" href="./index.html">2016</a>
+                        </div>
+                    </div>
 
+                    <div class="row">
+                        <div class="col-xs-4 ">
+                            <a class="f-right" href="./cv.html">CV</a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="./quotes.html">quotations</a>
+                        </div>
+                        <div class="col-xs-4 ">
+                            <a class="f-left" href="./fun.html">jokes</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-4 ">
+                            <a class="f-right" href="./photo.html">photos</a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="./pocketmaps.html">Pocket Maps</a>
+                        </div>
+                        <div class="col-xs-4 ">
+                            <a class="f-left" href="./blog.html">Blog</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class=" col-xs-4">
+                        <ul class="socialicons f-right">
+                            <li><a href="" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://www.facebook.com/guojunjun" class="icon fa-facebook"><span
+                                    class="label">Facebook</span></a></li>
+                            <li><a href="https://plus.google.com/+JunjunGuo" class="icon fa-google-plus"><span
+                                    class="label">Google+</span></a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-xs-4">
+                        <ul class="socialicons f-center">
+                            <li><a href="./blog.html" class="icon fa-pencil-square-o"><span
+                                    class="label">Blog</span></a></li>
+                            <li><a href="https://www.flickr.com/photos/guojunjun" class="icon fa-flickr"><span
+                                    class="label">Flickr</span></a></li>
+                            <li><a href="http://www.panoramio.com/user/guojunjun" class="icon fa-camera"><span
+                                    class="label">Panoramio</span></a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-xs-4">
+                        <ul class="socialicons f-left">
+                            <li><a href="https://www.linkedin.com/in/guojunjun"
+                                   class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="https://github.com/junjunguo" class="icon fa-github"><span
+                                    class="label">GitHub</span></a></li>
+                            <li><a href="mailto:guojunjun@gmail.com"
+                                   class="icon fa-envelope-o"><span class="label">Email me</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </header>
+            <footer>
+                <div class="row copyright">
+                    <div class="col-sm-6">
+                        <img id="changebcp" src="junjunguofiles/GuoJunJun.png">
+                    </div>
+                    <div class="col-sm-6">
+                        <p>
+                            <a href="index.html">Junjun Guo</a>2016
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>     <!-- footer end-->
+</div>
+
+
+<!--js-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+<script type="text/javascript" src="2016/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="2016/js/jquery.fullPage.min.js"></script>
+<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="2016/js/jquery.slimscroll.min.js"></script>
+<!--<script src="https://cdnjs.com/libraries/fullPage.js"></script>-->
+<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+<script type="text/javascript" src="2016/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="2016/js/js-2016.js"></script>
+<script type="text/javascript" src="2016/js/js-2016-quote-fun.js"></script>
+<script type="text/javascript" src="2016/js/js-2016-img-slider.js"></script>
+<script type="text/javascript" src="2016/js/js-2016-flickr-slider.js"></script>
+<script type="text/javascript" src="2015/js/GuoJunjun.js"></script>
 </body>
 </html>

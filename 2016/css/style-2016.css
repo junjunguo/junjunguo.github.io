@@ -29,8 +29,8 @@ a:hover {
     }
 
 header {
-    margin-bottom : 2em;
-    position      : relative;
+    position       : relative;
+    padding-bottom : 70px;
     }
 
 footer {
@@ -310,24 +310,6 @@ footer a {
     font-size : 1.1em;
     }
 
-/*------------------ page 2: individual ---------------------*/
-#page-2 {
-    position              : relative;
-    background            : url("../../2015/images/bg/77233663.jpg");
-    background-repeat     : no-repeat;
-    background-attachment : fixed;
-    background-size       : cover;
-    }
-
-/*------------------ page 3: team ---------------------*/
-#page-3 {
-    position              : relative;
-    background            : url("../../2015/images/bg/77233663.jpg");
-    background-repeat     : no-repeat;
-    background-attachment : fixed;
-    background-size       : cover;
-    }
-
 /*------------------ page 2: quotes ---------------------*/
 #page-quote {
     position              : relative;
@@ -337,13 +319,8 @@ footer a {
     background-size       : cover;
     }
 
-#anewquote {
-    min-height : 18em;
-    top        : 30%;
-    }
-
 #anewquote h5 {
-    margin-top  : 1.5em;
+    /*margin-top  : 1.5em;*/
     line-height : 1.5em;
     }
 
@@ -370,6 +347,25 @@ footer a {
     cursor      : default;
     }
 
+#page-quote .bcg, #page-humor .bcg {
+    padding-top : 0;
+    }
+
+/* content center */
+#page-humor header, #page-quote header {
+    padding-bottom      : 100px;
+    height              : 100%;
+    display             : -ms-flexbox;
+    display             : -webkit-flex;
+    display             : flex;
+    -webkit-flex-align  : center;
+    -ms-flex-align      : center;
+    -webkit-align-items : center;
+    align-items         : center;
+    justify-content     : center;
+    overflow            : visible;
+    }
+
 /*------------------ page 3: humor ---------------------*/
 #page-humor {
     position              : relative;
@@ -379,8 +375,7 @@ footer a {
     background-size       : auto, cover;
     }
 
-#page-humor header {
-    margin-bottom : 7em;
+#page-humor {
     }
 
 #funny img {
@@ -395,7 +390,7 @@ footer a {
 /*------------------ page 6: panoramio ---------------------*/
 #page-panoramio {
     position              : relative;
-    background            : url("../../2015/images/bg/77233663.jpg");
+    background            : url("../../2015/images/bg/109646016.jpg");
     background-repeat     : no-repeat;
     background-attachment : fixed;
     background-size       : cover;
@@ -449,9 +444,180 @@ footer a {
     background-attachment : fixed;
     background-size       : cover;
     }
+
 #page-flickr .bcg {
     padding : 0;
     }
+
+/*------------------ page 2: individual ---------------------*/
+#page-portfolio {
+    position              : relative;
+    background            : url("../../2015/images/bg/100026342.jpg");
+    background-repeat     : no-repeat;
+    background-attachment : fixed;
+    background-size       : cover;
+    }
+
+#page-portfolio ul {
+    list-style-type : none;
+    }
+
+#page-portfolio ul li {
+    text-align : center;
+    padding    : 10px 0 10px 0;
+    }
+
+.my-google-play {
+    width : 200px;
+    }
+
+.my-v-center {
+    display     : flex;
+    align-items : center;
+    }
+
+.portfolio-project-info {
+    padding          : 0;
+    vertical-align   : baseline;
+    position         : relative;
+    display          : inline-block;
+    border           : 1px solid #FFFFFF;
+    margin           : 15px auto 15px auto;
+    color            : rgba(255, 255, 255, 0.7);
+    font             : 12px 'PT Sans', sans-serif;
+    text-align       : center;
+    background-color : rgba(255, 255, 255, 0.7);
+    }
+
+.portfolio-project-info h1 {
+    line-height   : 36px;
+    font-weight   : normal;
+    font-family   : "Oswald", sans-serif;
+    font-size     : 16px;
+    padding       : 0 20px 10px 20px;
+    margin-bottom : 0;
+    border        : 0 none;
+
+    }
+
+.portfolio-project-info p {
+    padding        : 0 10px;
+    position       : absolute;
+    top            : -10px;
+    right          : 0;
+    left           : 0;
+    letter-spacing : 1px;
+    text-transform : uppercase;
+    border         : 0 none;
+    }
+
+.portfolio-project-info p span {
+    padding          : 0 10px;
+    background-color : rgba(255, 255, 255, 0.7);
+    }
+
+#page-portfolio .slide {
+    position              : relative;
+    background-repeat     : no-repeat;
+    background-attachment : fixed;
+    background-size       : cover;
+    }
+
+#portfolio-slide-pocketmaps h1, #portfolio-slide-pocketmaps h4, #portfolio-slide-pocketmaps p, #portfolio-slide-pocketmaps a {
+    color       : #009688;
+    text-shadow : 0 0 0.5px #B2DFDB;
+    }
+
+#portfolio-slide-pocketmaps ul li a:hover {
+    color       : #B2DFDB;
+    text-shadow : 0 0 0.5px #009688;
+    }
+
+#portfolio-slide-pocketmaps .my-app-icon {
+    width : 200px;
+    }
+
+#portfolio-slide-pocketmaps {
+    background : url("http://junjunguo.com/PocketMaps/images/pocketmapsfind.jpg");
+    }
+
+#portfolio-slide-b .project-a h1, #portfolio-slide-b .project-a p, #portfolio-slide-b .project-a a {
+    color       : #157515;
+    text-shadow : 0 0 0.5px rgba(255, 255, 255, 0.25);
+    }
+
+#portfolio-slide-b .project-a ul li a:hover {
+    color               : #32CD32;
+    text-shadow         : 0 0 5px rgba(50, 205, 50, 0.4);
+    border-bottom-color : rgba(50, 205, 50, 0.6);
+    }
+
+#portfolio-slide-b .project-a .my-app-icon {
+    height : 80px;
+    }
+
+#portfolio-slide-b .project-b .my-app-icon {
+    max-height : 300px;
+    }
+
+#portfolio-slide-b .project-b h1, #portfolio-slide-b .project-b p, #portfolio-slide-b .project-b a {
+    color       : #E87014;
+    text-shadow : 0 0 0.5px rgba(255, 255, 255, 0.25);
+    }
+
+#portfolio-slide-b .project-b ul li a:hover {
+    color       : #F5B88A;
+    text-shadow : 0 0 5px #E87014;
+    }
+
+#portfolio-slide-b .project-c .my-app-icon {
+    max-height : 300px;
+    }
+
+#portfolio-slide-b .project-c h1, #portfolio-slide-b .project-c p, #portfolio-slide-b .project-c a {
+    color       : #4C525E;
+    text-shadow : 0 0 0.5px #4E6495;
+    }
+
+#portfolio-slide-b .project-c ul li a:hover {
+    color       : #4E6495;
+    text-shadow : 0 0 5px #4C525E;
+    }
+
+#portfolio-slide-c .my-app-icon {
+    max-width : 320px;
+    }
+
+#portfolio-slide-c .project-a h1, #portfolio-slide-c .project-a p, #portfolio-slide-c .project-a a {
+    color       : #204A03;
+    text-shadow : 0 0 0.5px #82C25C;
+    }
+
+#portfolio-slide-c .project-a ul li a:hover {
+    color       : #82C25C;
+    text-shadow : 0 0 5px #204A03;
+    }
+
+#portfolio-slide-c .project-b h1, #portfolio-slide-c .project-b p, #portfolio-slide-c .project-b a {
+    color       : #1D9EEA;
+    text-shadow : 0 0 0.5px #9DD5F1;
+    }
+
+#portfolio-slide-c .project-b ul li a:hover {
+    color       : #9DD5F1;
+    text-shadow : 0 0 5px #1D9EEA;
+    }
+
+#portfolio-slide-c .project-c h1, #portfolio-slide-c .project-c p, #portfolio-slide-c .project-c a {
+    color       : #90642C;
+    text-shadow : 0 0 0.5px #BC9E80;
+    }
+
+#portfolio-slide-c .project-c ul li a:hover {
+    color       : #BC9E80;
+    text-shadow : 0 0 5px #90642C;
+    }
+
 /* footer */
 #footer {
     position              : relative;
@@ -626,6 +792,21 @@ footer a {
     box-sizing         : border-box;
     }
 
+/* Medium devices (desktops, 992px and up) */
+@media (min-width : 992px) {
+    }
+
+/* Medium devices (desktops, 992px and down) */
+@media (max-width : 992px) {
+    #portfolio-slide-c .my-app-icon {
+        max-width : 250px;
+        }
+
+    .portfolio-project-info h1 {
+        line-height : 30px;
+        }
+    }
+
 @media (max-width : 768px) {
     .my-mobile-hide {
         display : none;
@@ -688,6 +869,44 @@ footer a {
 
     #logo {
         margin : 2em auto 1em auto;
+        }
+
+    #page-portfolio ul li {
+        text-align : center;
+        padding    : 0px 0 0px 0;
+        }
+
+    .portfolio-project-info h1 {
+        line-height : 26px;
+        font-size   : 14px;
+        }
+
+    #portfolio-slide-pocketmaps .my-app-icon {
+        max-width : 100px;
+        }
+
+    .my-google-play {
+        max-width : 160px;
+        }
+
+    #portfolio-slide-b .project-a .my-app-icon {
+        height : 60px;
+        }
+
+    #portfolio-slide-b .project-b .my-app-icon {
+        height : 220px;
+        }
+
+    #portfolio-slide-b .project-c .my-app-icon {
+        height : 220px;
+        }
+
+    #portfolio-slide-c .my-app-icon {
+        max-width : 220px;
+        }
+
+    .row.my-v-center {
+        display : block; /* turn off the flexible box layout */
         }
 
     /* footer */
