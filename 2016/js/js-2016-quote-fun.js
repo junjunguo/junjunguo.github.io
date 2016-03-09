@@ -32,7 +32,8 @@ function displayQContents() {
 function generateQuotes(n) {
     var theQuotation                               = quotesArray[n].split("#");
     document.getElementById("anewquote").innerHTML =
-        "<p>" + theQuotation[1] + "</p><h5>-" + theQuotation[0] + "</h5>";
+        "<p class='animated fadeInLeft'>" + theQuotation[1] + "</p><h5 class='animated lightSpeedIn'>-" +
+        theQuotation[0] + "</h5>";
 }
 
 /**
@@ -111,7 +112,13 @@ function displayJContents() {
         // error occurred
     }
 }
-
+/**random animate
+ *
+ * @returns {string}
+ */
+function animate() {
+    return animateList[Math.floor(Math.random() * (animateList.length))];
+}
 /**
  * Load images to htmllist
  */
@@ -121,7 +128,9 @@ function loadimages() {
         var title = str[0];
         //        var fileType = str[1];
         htmllist.push(
-            "<img class='img-responsive' src='image/fun/" + imglist[i] + "'" + "alt='junjunguo.com'>" + "\n" + "<h3>" +
+            "<img class='img-responsive animated " + animate() + "' src='image/fun/" + imglist[i] + "'" +
+            "alt='junjunguo.com'>" +
+            "\n" + "<h3 class='animated " + animate() + "'>" +
             title + "</h3>");
     }
 }
@@ -139,7 +148,7 @@ function initialload() {
  */
 function loadjokes() {
     for (i = 0; i < jokelist.length; i++) {
-        htmllist.push("<p>" + text2html(jokelist[i]) + "</p>");
+        htmllist.push("<p class='animated " + animate() + "'>" + text2html(jokelist[i]) + "</p>");
     }
 }
 
@@ -165,6 +174,83 @@ function text2html(str) {
     return str;
 }
 
+var animateList = [
+    "bounce",
+    "flash",
+    "pulse",
+    "rubberBand",
+    "shake",
+    "headShake",
+    "swing",
+    "tada",
+    "wobble",
+    "jello",
+    "bounceIn",
+    "bounceInDown",
+    "bounceInLeft",
+    "bounceInRight",
+    "bounceInUp",
+    //"bounceOut",
+    //"bounceOutDown",
+    //"bounceOutLeft",
+    //"bounceOutRight",
+    //"bounceOutUp",
+    "fadeIn",
+    "fadeInDown",
+    "fadeInDownBig",
+    "fadeInLeft",
+    "fadeInLeftBig",
+    "fadeInRight",
+    "fadeInRightBig",
+    "fadeInUp",
+    "fadeInUpBig",
+    //"fadeOut",
+    //"fadeOutDown",
+    //"fadeOutDownBig",
+    //"fadeOutLeft",
+    //"fadeOutLeftBig",
+    //"fadeOutRight",
+    //"fadeOutRightBig",
+    //"fadeOutUp",
+    //"fadeOutUpBig",
+    "flipInX",
+    "flipInY",
+    //"flipOutX",
+    //"flipOutY",
+    "lightSpeedIn",
+    //"lightSpeedOut",
+    "rotateIn",
+    "rotateInDownLeft",
+    "rotateInDownRight",
+    "rotateInUpLeft",
+    "rotateInUpRight",
+    //"rotateOut",
+    //"rotateOutDownLeft",
+    //"rotateOutDownRight",
+    //"rotateOutUpLeft",
+    //"rotateOutUpRight",
+    //"hinge",
+    "rollIn",
+    //"rollOut",
+    "zoomIn",
+    "zoomInDown",
+    "zoomInLeft",
+    "zoomInRight",
+    "zoomInUp",
+    //"zoomOut",
+    //"zoomOutDown",
+    //"zoomOutLeft",
+    //"zoomOutRight",
+    //"zoomOutUp",
+    "slideInDown",
+    "slideInLeft",
+    "slideInRight",
+    "slideInUp"
+    //"slideOutDown",
+    //"slideOutLeft",
+    //"slideOutRight",
+    //"slideOutUp"
+];
 
 // load functions:   --------------------->
 

@@ -65,7 +65,7 @@ function loadFimgs() {
         var j = (fcount * 6 + i) % (furlList.length);
         if (i == 0) {
             fhtml +=
-                '<div class="item active">';
+                '<div class="item active animated ' + animate() + '">';
         } else {
             fhtml +=
                 '<div class="item">';
@@ -78,14 +78,14 @@ function loadFimgs() {
         if (i == 5) {
             fhtml +=
                 '<div>' +
-                '   <h4><a href="https://www.flickr.com/photos/guojunjun/albums/72157646082323705" class="icon fa-flickr">' +
+                '   <h4 class="animated fadeInDownBig"><a href="https://www.flickr.com/photos/guojunjun/albums/72157646082323705" class="icon fa-flickr">' +
                 '       View my photo gallery at Flickr</a></h4>' +
-                '   <h2><a id="flickr-next" class="icon fa-forward"> Next slider</a></h2>' +
+                '   <h2 class="animated flip"><a id="flickr-next" class="icon fa-forward"> Next slider</a></h2>' +
                 '</div>';
         }
 
         fhtml +=
-            '       <p>' + furlList[j].title + '</p>' +
+            '       <p class="animated ' + animate() + '">' + furlList[j].title + '</p>' +
             '   </div>' +
             '</div>';
     }

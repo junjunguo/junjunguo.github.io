@@ -203,7 +203,6 @@ $(document).ready(function () {
     });
 });
 
-
 $(document).on('click', '.down-slide', function () {
     $.fn.fullpage.moveSectionDown();
 });
@@ -211,6 +210,7 @@ $(document).on('click', '.down-slide', function () {
 $(document).on('click', '.up-slide', function () {
     $.fn.fullpage.moveSectionUp();
 });
+
 $(document).on('click', '.up-top-slide', function () {
     $.fn.fullpage.moveTo(1);
 });

@@ -44,7 +44,7 @@ function loadPimgs() {
         var j = (pcount * 6 + i) % (pimgList.length);
         if (i == 0) {
             slideHtml +=
-                '<div class="item active">';
+                '<div class="item active animated ' + animate() + '">';
         } else {
             slideHtml +=
                 '<div class="item">';
@@ -57,14 +57,14 @@ function loadPimgs() {
         if (i == 5) {
             slideHtml +=
                 '<div>' +
-                '   <h4><a href="http://www.panoramio.com/user/2481456" class="icon fa-picture-o">' +
+                '   <h4 class="animated shake"><a href="http://www.panoramio.com/user/2481456" class="icon fa-picture-o">' +
                 '       View my photo gallery at Panoramio</a></h4>' +
-                '   <h2><a id="panoramio-next" class="icon fa-forward"> Next slider</a></h2>' +
+                '   <h2 class="animated flip"><a id="panoramio-next" class="icon fa-forward"> Next slider</a></h2>' +
                 '</div>';
         }
 
         slideHtml +=
-            '       <p>' + pimgList[j].title + '</p>' +
+            '       <p class="animated ' + animate() + '">' + pimgList[j].title + '</p>' +
             '   </div>' +
             '</div>';
     }
