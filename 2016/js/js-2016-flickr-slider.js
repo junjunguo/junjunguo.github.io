@@ -60,6 +60,7 @@ function loadJSON() {
  * Load images to htmllist
  */
 function loadFimgs() {
+    $("#my-carousel-flickr").carousel(0);
     var fhtml = '';
     for (var i = 0; i < 6; i++) {
         var j = (fcount * 6 + i) % (furlList.length);

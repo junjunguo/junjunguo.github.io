@@ -39,6 +39,7 @@ function getJSONobject() {
  * Load images to htmllist
  */
 function loadPimgs() {
+    $("#my-carousel").carousel(0);
     var slideHtml = '';
     for (i = 0; i < 6; i++) {
         var j = (pcount * 6 + i) % (pimgList.length);
@@ -68,7 +69,6 @@ function loadPimgs() {
             '   </div>' +
             '</div>';
     }
-    $("#my-carousel").carousel("pause").removeData();
     document.getElementById("my-slides").innerHTML = "";
     document.getElementById("my-slides").innerHTML = slideHtml;
     pcount++;
