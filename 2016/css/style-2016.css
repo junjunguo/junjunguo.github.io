@@ -639,6 +639,39 @@ footer a {
     text-shadow : 0 0 5px #90642C;
     }
 
+#portfolio-slide-d .my-app-icon {
+    max-width : 320px;
+    }
+
+#portfolio-slide-d .project-a h1, #portfolio-slide-d .project-a p, #portfolio-slide-d .project-a a {
+    color       : #374138;
+    text-shadow : 0 0 0.5px #C0C0B4;
+    }
+
+#portfolio-slide-d .project-a ul li a:hover {
+    color       : #C0C0B4;
+    text-shadow : 0 0 5px #374138;
+    }
+
+#portfolio-slide-d .project-b h1, #portfolio-slide-d .project-b p, #portfolio-slide-d .project-b a {
+    color       : #686868;
+    text-shadow : 0 0 0.5px #CECECE;
+    }
+
+#portfolio-slide-d .project-b ul li a:hover {
+    color       : #CECECE;
+    text-shadow : 0 0 5px #686868;
+    }
+
+#portfolio-slide-d .project-c h1, #portfolio-slide-d .project-c p, #portfolio-slide-d .project-c a {
+    color       : #90642C;
+    text-shadow : 0 0 0.5px #BC9E80;
+    }
+
+#portfolio-slide-d .project-c ul li a:hover {
+    color       : #BC9E80;
+    text-shadow : 0 0 5px #90642C;
+    }
 /* footer */
 #page-foot {
     position              : relative;

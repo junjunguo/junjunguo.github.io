@@ -17,8 +17,13 @@ body {
     line-height : 125%;
     }
 
-a {
-    text-decoration : none;
+a, .my-header .btn {
+    text-decoration    : none;
+    -webkit-transition : 0.5s;
+    -moz-transition    : 0.5s;
+    -ms-transition     : 0.5s;
+    -o-transition      : 0.5s;
+    transition         : 0.5s;
     }
 
 a:link, a:visited {
@@ -26,8 +31,9 @@ a:link, a:visited {
     }
 
 a:hover {
-    color           : #555555;
+    color           : #204A03;
     text-decoration : none;
+    text-shadow     : 0 0 0.5px #739E30;
     }
 
 .my-header {

@@ -2,6 +2,34 @@
  * Created by GuoJunjun on 27.12.14. JunjunGuo.com
  * updated by GuoJunjun on 03.03.16. JunjunGuo.com
  */
+
+#resume a, #footer a {
+    text-decoration    : none;
+    outline            : none;
+    font-weight        : 500;
+    color              : #C0C0C0;
+    text-shadow        : 0 0 0.5px rgba(0, 0, 0, 0.3);
+
+    -webkit-transition : 0.5s;
+    -moz-transition    : 0.5s;
+    -ms-transition     : 0.5s;
+    -o-transition      : 0.5s;
+    transition         : 0.5s;
+    }
+
+#resume a:hover, #footer a:hover {
+    text-decoration : none;
+    color           : #606060;
+    }
+
+#resume .profileTable a, #footer .copyright a {
+    color : #909090;
+    }
+
+#resume .profileTable a:hover, #footer .copyright a:hover {
+    color : #505050;
+    }
+
 #resume {
     overflow-y       : scroll;
     overflow-x       : hidden;
@@ -12,19 +40,7 @@
     font-weight      : 300;
     }
 
-#resume a {
-    text-decoration : none;
-    outline         : none;
-    color           : #C0C0C0;
-    font-weight     : 500;
-    }
-
-#resume a:hover {
-    text-decoration : none;
-    color           : #606060;
-    }
-
-#resume h1, h2, h3 {
+#resume h1, #resume h2, #resume h3 {
     font-family    : 'Montserrat', sans-serif, Arial;
     padding-bottom : 5px;
     color          : #373432;
@@ -32,7 +48,7 @@
     font-weight    : normal;
     }
 
-#resume h1 a, h2 a, h3 a {
+#resume h1 a, #resume h2 a, #resume h3 a {
     color : #111111;
     }
 
@@ -48,13 +64,8 @@
     line-height : 12px;
     }
 
-/*#resume .row [class^="col-"]:last-child .work_process:before {*/
-/*display : none;*/
-/*}*/
-
 /*Section Title
 ----------------------------------------*/
-
 #resume .resumeTitle {
     margin     : 50px auto 0px 50px;
     text-align : center;
@@ -70,7 +81,7 @@
     float  : left;
     }
 
-.vcenter {
+#resume .vcenter {
     display     : flex;
     align-items : center;
     }
@@ -287,15 +298,20 @@
     }
 
 #footer .icon {
-    background    : none repeat scroll 0 0 #909090;
-    border-radius : 136px 136px 136px 136px;
-    color         : #FFFFFF;
-    cursor        : pointer;
-    font-size     : 38px;
-    height        : 55px;
-    line-height   : 55px;
-    text-align    : center;
-    width         : 55px;
+    background         : none repeat scroll 0 0 #909090;
+    border-radius      : 136px 136px 136px 136px;
+    color              : #FFFFFF;
+    cursor             : pointer;
+    font-size          : 38px;
+    height             : 55px;
+    line-height        : 55px;
+    text-align         : center;
+    width              : 55px;
+    -moz-transition    : all 0.6s ease-in-out;
+    -webkit-transition : all 0.6s ease-in-out;
+    -o-transition      : all 0.6s ease-in-out;
+    -ms-transition     : all 0.6s ease-in-out;
+    transition         : all 0.6s ease-in-out;
     }
 
 #footer .isoff {
@@ -308,6 +324,11 @@
     line-height   : 55px;
     text-align    : center;
     width         : 55px;
+    /*-moz-transition    : all 0.4s ease-in-out;*/
+    /*-webkit-transition : all 0.4s ease-in-out;*/
+    /*-o-transition      : all 0.4s ease-in-out;*/
+    /*-ms-transition     : all 0.4s ease-in-out;*/
+    /*transition         : all 0.4s ease-in-out;*/
     }
 
 #footer .social-media a {
@@ -321,15 +342,6 @@
     position   : relative;
     }
 
-#footer .copyright a {
-    text-decoration : none;
-    color           : #909090;
-    }
-
-#footer .copyright a:hover {
-    color : #505050;
-    }
-
 /* Extra small devices (767px and down) */
 @media (max-width : 767px) {
     #resume .col-sm-8 {
@@ -337,7 +349,7 @@
         padding-left  : 0;
         }
 
-    .row.vcenter {
+    #resume .row.vcenter {
         display : block; /* turn off the flexible box layout */
         }
 
@@ -361,7 +373,7 @@
         width       : 100%;
         }
 
-    .item td {
+    #resume .item td {
         padding-top    : 5px;
         padding-bottom : 5px;
         }
@@ -369,9 +381,6 @@
     #resume .itemArrow i {
         border-left       : 0px;
         border-top        : 0px;
-        /*height            : 10px;*/
-        /*left              : 104px;*/
-        /*top               : 66px;*/
         transform         : rotate(45deg);
         -webkit-transform : rotate(45deg);
         -moz-transform    : rotate(45deg);
