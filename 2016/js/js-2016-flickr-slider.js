@@ -20,12 +20,20 @@ function loadMyFile(textFile) {
  */
 function toJSONobject() {
     if (freader.readyState == 4) {
-        if (rawData) {
+        if (rawData) { // testing only: rawData
             photoList = JSON.parse(freader.responseText).photoset.photo;
             loadJSON();
         } else {
-            furlList = shuffleFList(JSON.parse(freader.responseText).photos);
-            loadFimgs();
+            var image     = new Image();
+            furlList      = shuffleFList(JSON.parse(freader.responseText).photos);
+            image.src     = furlList[0].url;
+            image.onload  = function () {
+                //console.info("Image loaded !");
+                loadFimgs();
+            };
+            image.onerror = function () {
+                //console.error("Cannot load image");
+            }
         }
     } else {
         // error occurred
@@ -73,7 +81,7 @@ function loadFimgs() {
         }
         fhtml +=
             '   <img src="' + furlList[j].url +
-            '" alt="junjunguo.com">' +
+            '" alt="photo: ' + furlList[j].title + '">' +
             '   <div class="carousel-caption">';
 
         if (i == 5) {
@@ -117,4 +125,5 @@ var flickrURL = "https://api.flickr.com/services/rest/?method=flickr.photosets.g
 // --------- use downloaded raw data
 var flickrTextfilRaw = './2016/img/myflickrrawphotos.txt';
 var rawData          = false;
+
 loadMyFile(flickrTextfil);

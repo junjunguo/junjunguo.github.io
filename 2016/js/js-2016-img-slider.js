@@ -25,11 +25,17 @@ function loadJSONfile(textFile) {
 function getJSONobject() {
     if (readerp.readyState == 4) {
         pimgList = shufflePList(JSON.parse(readerp.responseText).photos);
-        loadPimgs();
-        //console.log("list size: " + pimgList.length);
-        //$('#panoramio-next').on('click', function () {
-        //    loadPimgs();
-        //});
+
+        var image     = new Image();
+        image.src     = "http://static.panoramio.com/photos/large/" + pimgList[0].id + ".jpg";
+        image.onload  = function () {
+            //console.info("Image loaded !");
+            loadPimgs();
+        };
+        image.onerror = function () {
+            //console.error("Cannot load image");
+        }
+
     } else {
         // error occurred
     }
@@ -52,8 +58,8 @@ function loadPimgs() {
         }
         slideHtml +=
             '   <img src="http://static.panoramio.com/photos/large/' + pimgList[j].id +
-            '.jpg" alt="junjunguo.com">' +
-            '   <div class="carousel-caption">';
+            '.jpg" alt="photo: ' + pimgList[j].title + '">' +
+            '            <div class="carousel-caption">';
 
         if (i == 5) {
             slideHtml +=
