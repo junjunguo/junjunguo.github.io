@@ -231,6 +231,10 @@ footer a {
     transition              : background 600ms ease-in 500ms;
     }
 
+#header header {
+    display : inline-block;
+    }
+
 #page-home header p {
     font-family : 'Oswald', sans-serif;
     color       : rgba(255, 255, 255, 0.8);
@@ -256,33 +260,40 @@ footer a {
     }
 
 /*.social-icons {*/
-/*background-color : #8A6D3B;*/
-/*}*/
+    /*background-color : #8A6D3B;*/
+    /*!*min-height: 90px;*!*/
+    /*}*/
 
 /*.social-icons li {*/
-/*background-color : #1B6D85;*/
-/*}*/
+    /*background-color : #1B6D85;*/
+    /*}*/
 
 /*.social-icons a {*/
-/*background-color : #00AA00;*/
-/*}*/
+    /*background-color : #00AA00;*/
+    /*}*/
 
 #page-home .social-icons li {
-    -moz-animation    : nav-icons 0.5s ease-in-out forwards;
-    -webkit-animation : nav-icons 0.5s ease-in-out forwards;
-    -o-animation      : nav-icons 0.5s ease-in-out forwards;
-    -ms-animation     : nav-icons 0.5s ease-in-out forwards;
-    animation         : nav-icons 0.5s ease-in-out forwards;
-    -moz-transform    : translate3d(0, 0, 0);
-    -webkit-transform : translate3d(0, 0, 0);
-    -o-transform      : translate3d(0, 0, 0);
-    -ms-transform     : translate3d(0, 0, 0);
-    transform         : translate3d(0, 0, 0);
-    display           : inline-block;
-    height            : 3.5em;
-    width             : 3.5em;
-    line-height       : 4em;
-    position          : relative;
+    -moz-animation              : nav-icons 0.5s ease-in-out forwards;
+    -webkit-animation           : nav-icons 0.5s ease-in-out forwards;
+    -o-animation                : nav-icons 0.5s ease-in-out forwards;
+    -ms-animation               : nav-icons 0.5s ease-in-out forwards;
+    animation                   : nav-icons 0.5s ease-in-out forwards;
+    -moz-backface-visibility    : hidden;
+    -webkit-backface-visibility : hidden;
+    -o-backface-visibility      : hidden;
+    -ms-backface-visibility     : hidden;
+    backface-visibility         : hidden;
+    -moz-transform              : translate3d(0, 0, 0);
+    -webkit-transform           : translate3d(0, 0, 0);
+    -o-transform                : translate3d(0, 0, 0);
+    -ms-transform               : translate3d(0, 0, 0);
+    transform                   : translate3d(0, 0, 0);
+    display                     : inline-block;
+    height                      : 3.5em;
+    width                       : 3.5em;
+    line-height                 : 4em;
+    position                    : relative;
+    /*margin            : 15px 0 15px 0;*/
     }
 
 #page-home .social-icons a {
@@ -312,8 +323,13 @@ footer a {
     }
 
 #page-home ul.social-icons a:hover {
-    font-size : 1.1em;
     color     : white;
+    font-size : 1.1em;
+    }
+
+#page-home ul.social-icons a .label {
+    top      : -40px;
+    position : absolute;
     }
 
 #page-home ul.social-icons a:hover .label {
@@ -321,7 +337,6 @@ footer a {
     height             : 100%;
     position           : absolute;
     font-size          : medium;
-    top                : -40px;
     left               : 0;
     display            : inline-block;
     -webkit-box-sizing : border-box;
@@ -672,6 +687,7 @@ footer a {
     color       : #BC9E80;
     text-shadow : 0 0 5px #90642C;
     }
+
 /* footer */
 #page-foot {
     position              : relative;
@@ -912,13 +928,13 @@ footer a {
         }
 
     #page-home .social-icons {
-        margin : 0 0px 0 0px;
+        margin : 30px 0px 0 0px;
         }
 
     #page-home .social-icons li {
-        height      : 2.5em;
-        width       : 2.5em;
-        line-height : 3em;
+        height           : 2.9em;
+        width            : 2.9em;
+        line-height      : 3.2em;
         }
 
     #page-home .social-icons a:before {
@@ -930,6 +946,10 @@ footer a {
 
     #page-home .social-icons a:hover {
         font-size : 1.05em;
+        }
+
+    #page-home ul.social-icons a:hover .label {
+        top : -25px;
         }
 
     /*#logo {*/
