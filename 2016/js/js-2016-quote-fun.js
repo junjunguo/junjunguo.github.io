@@ -90,7 +90,9 @@ var imglist = [
     '这技术，屌爆了！.gif',
     '这车是用来卖萌的吗？.gif',
     '孙悟空和苍井空的相似之处.jpg',
-    '马拉个币的，只能走路回家了.gif']
+    '富贵人家的小姐.jpg',
+    '汪星人尿尿需要这么风骚吗.gif',
+    '马拉个币的，只能走路回家了.gif'];
 
 var jtextFile = './image/fun/joke.txt';
 //var images = imglist;

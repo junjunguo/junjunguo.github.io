@@ -377,7 +377,10 @@ footer a {
     background-attachment : fixed;
     background-size       : cover;
     }
-
+#anewquote b {
+    font-size: 1.2em;
+    text-shadow : 0 0 3px #000000;
+    }
 #anewquote h5 {
     line-height : 1.5em;
     }
