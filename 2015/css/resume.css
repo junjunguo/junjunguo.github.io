@@ -363,7 +363,7 @@
 
     #resume .itemContent {
         margin-left : 0px;
-        padding     : 10px 0px;
+        padding     : 10px 5px;
         width       : 100%;
         }
 
@@ -390,6 +390,8 @@
 
     #footer {
         margin : 20px auto 80px auto;
+        padding-left: 5px;
+        padding-right: 5px;
         }
 
     #footer .social-media a {
