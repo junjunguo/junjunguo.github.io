@@ -150,4 +150,4 @@ fitness #   <b>Sweat<br>Smile</b><br>and<br><b>Repeat</b>.
 fitness #   <b>When nothing goes right go <strike>left</strike> lift.</b>
 fitness #   <b>Sore the most satisfying pain</b>. <br> Sore Today Strong Tomorrow.
 Abraham Lincoln #   <b>The best way to predict your future is to create it.</b>
-<What Makes Muscles Grow>#The body responds to the demands you place on it. If you tear your muscles up, eat right, rest and repeat, you’ll create the conditions to make your muscles as big and strong as possible. It is with muscles as it is with life: <b>Meaningful growth requires challenge and stress.</b>
+<What Makes Muscles Grow>   #   The body responds to the demands you place on it. If you tear your muscles up, eat right, rest and repeat, you’ll create the conditions to make your muscles as big and strong as possible. It is with muscles as it is with life: <b>Meaningful growth requires challenge and stress.</b>
