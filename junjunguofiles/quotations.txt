@@ -19,13 +19,11 @@ Plato	#	Never discourage anyone...who continually makes progress, no matter how 
 Plato	#	good people do not need laws to tell them to act responsibly, while bad people will find a way around the laws.
 Plato	#	There is truth in wine and children.
 Plato	#	Ignorance, the root and stem of every evil.
-Plato	#	I'm trying to think, don't confuse me with facts.
 Plato	#	I am the wisest man alive, for I know one thing, and that is that I know nothing.
 Plato	#	The measure of a man is what he does with power.
 Plato	#	There are three classes of men; lovers of wisdom, lovers of honor, and lovers of gain.
 Plato	#	Education is teaching our children to desire the right things.
 Aristotle	#	Knowing yourself is the beginning of all wisdom.
-Aristotle	#	What is a friend? A single soul dwelling in two bodies.
 Aristotle	#	It is the mark of an educated mind to be able to entertain a thought without accepting it.
 Aristotle	#	Hope is a waking dream.
 Aristotle 	#	Happiness depends upon ourselves.
@@ -70,6 +68,7 @@ Albert Einstein	#	There are only two ways to live your life. One is as though no
 Albert Einstein	#	If you can't explain it to a six year old, you don't understand it yourself.
 Audrey Hepburn  #   Nothing is impossible, the word itself says 'I'm possible'!
 Arthur C. Clarke    #   Any sufficiently advanced technology is indistinguishable from magic.
+Alan Kay (American computer scientist)  #   The best way to predict the future is to invent it.
 Benjamin Franklin	#	Tell me and I forget, teach me and I may remember, involve me and I learn.
 Benjamin Franklin	#	Diligence is the mother of good luck.
 Bram Stoker	#	We learn from failure, not from success!
