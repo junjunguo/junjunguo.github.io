@@ -93,11 +93,13 @@ Dr. Seuss   #   <b>How did it get so late so soon?</b> <br>Its night before its 
 Dr. Seuss   #   Today you are You, that is truer than true. There is no one alive who is Youer than You. (Happy Birthday to You!)
 Dr. Seuss   #   Why fit in when you were born to stand out?
 Dr. Seuss   #   “You're off to Great Places! <br>Today is your day! <br>Your mountain is waiting, <br>So... get on your way!” <br>(Oh, The Places You'll Go!)
+Dennis Ritchie	#	UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity.
 Donovan Bailey	#	Follow your passion, be prepared to work hard and sacrifice, and, above all, don't let anyone limit your dreams.
 Dwight D. Eisenhower    #   In preparing for battle I have always found that plans are useless, but planning is indispensable.
 Eleanor Roosevelt   #   <b>Nobody can make you feel inferior without your consent.</b> <br>It is your choice whether to allow other people to make you feel bad at what you do.
 Eleanor Roosevelt   #   Great minds discuss ideas; average minds discuss events; small minds discuss people.
 Elbert Hubbard	#	A friend is someone who knows all about you and still loves you.
+Edsger Dijkstra	#	If debugging is the process of removing bugs, then programming must be the process of putting them in.
 Frank Zappa	#	So many books, so little time.
 Georg Wilhelm Friedrich Hegel	#	Nothing great in the world was accomplished without passion.
 George Eliot    #   It is never too late to be what you might have been.
@@ -115,6 +117,7 @@ Mae West	#	You only live once, but if you do it right, once is enough.
 Mahatma Gandhi	#	Be the change that you wish to see in the world.
 Mark Twain  #   The man who does not read has no advantage over the man who cannot read.
 Margaret Heffernan  #   For good ideas and true innovation, you need human interaction, conflict, argument, debate.
+Martin Fowler	#	Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
 Norsk Ordtak	#	Det er bedre med en fugl i hånda, enn ti på taket.
 Norsk Ordtak	#	En ulykke kommer sjeldent alene.
 Norsk Ordtak	#	Alle netter er ikke like svarte.
@@ -134,6 +137,7 @@ Norsk Ordspråk	#	Jo mer man vet, dess mer vet man at man ikke vet.
 Oscar Wilde #	Be yourself; everyone else is already taken.
 Robert Frost    #   The best way out is always through. <br> 找到出口的最好方式就是一路走到底.
 Robin Williams  #   No matter what people tell you, words and ideas can change the world.
+Rich Cook	#	Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the universe trying to produce bigger and better idiots. So far, the universe is winning.
 Sivananda Saraswati    #   Put your heart, mind, intellect, and soul even to your smallest acts. This is the secret of success.
 Steve Martin    #   A day without sunshine is like, you know, night.
 William Shakespeare #   The fool doth think he is wise, but the wise man knows himself to be a fool.
