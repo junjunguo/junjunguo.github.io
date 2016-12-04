@@ -8,14 +8,14 @@ Socrates	#	By all means marry; if you get a good wife, you’ll become happy; if
 Socrates	#	Be slow to fall into friendship, but when you are in, continue firm and constant.
 Plato	#	Be kind, for everyone you meet is fighting a harder battle.
 Plato	#	Every heart sings a song, incomplete, until another heart whispers back. Those who wish to sing always find a song. At the touch of a lover, everyone becomes a poet.
-Plato	#	Wise men speak because they have something to say;fools because they have to say something.
+Plato	#	Wise men speak because they have something to say; fools because they have to say something.
 Plato	#	Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything.
 Plato	#	Only the dead have seen the end of war.
-Plato	#	Do not train a child to learn by force or harshness;but direct them to it by what amuses their minds, so that you may be better able to discover with accuracy the peculiar bent of the genius of each.
+Plato	#	Do not train a child to learn by force or harshness; but direct them to it by what amuses their minds, so that you may be better able to discover with accuracy the peculiar bent of the genius of each.
 Plato	#	You can discover more about a person in an hour of play than in a year of conversation.
 Plato	#	Love is a serious mental disease.
 Plato	#	One of the penalties of refusing to participate in politics is that you end up being governed by your inferiors.
-Plato	#	Never discourage anyone...who continually makes progress, no matter how slow.
+Plato	#	Never discourage anyone... who continually makes progress, no matter how slow.
 Plato	#	good people do not need laws to tell them to act responsibly, while bad people will find a way around the laws.
 Plato	#	There is truth in wine and children.
 Plato	#	Ignorance, the root and stem of every evil.
@@ -50,8 +50,9 @@ Immanuel Kant	#	Science is organized knowledge. Wisdom is organized life.
 Immanuel Kant	#	Look closely. The beautiful may be small.
 Immanuel Kant	#	Dare to think!
 Immanuel Kant	#	I had to deny knowledge in order to make room for faith.
-Immanuel Kant	#	Two things fill my mind with ever-increasing wonder and awe, the more often and the more intensely the reflection dwells on them: the starry heavens above me and the moral law within me.
 Immanuel Kant	#	Experience without theory is blind, but theory without experience is mere intellectual play.
+Immanuel Kant	#	But, though all our knowledge begins with experience, it by no means follows that all arises out of experience.
+Immanuel Kant	#	Jeg skal alltid handle slik at den regelen jeg handler etter kunne gjelde som allmenn lov.
 David Hume	#	Beauty is no quality in things themselves: It exists merely in the mind which contemplates them; and each mind perceives a different beauty.
 David Hume	#	Beauty in things exists in the mind which contemplates them.
 Karl Popper	#	Science may be described as the art of systematic oversimplification.
@@ -59,8 +60,6 @@ Karl Popper	#	All life is problem solving.
 Karl R. Popper	#	True ignorance is not the absence of knowledge, but the refusal to acquire it.
 Karl Popper	#	Our knowledge can only be finite, while our ignorance must necessarily be infinite.
 Karl Popper	#	No rational argument will have a rational effect on a man who does not want to adopt a rational attitude.
-Immanuel Kant	#	But, though all our knowledge begins with experience, it by no means follows that all arises out of experience.
-Immanuel Kant	#	Jeg skal alltid handle slik at den regelen jeg handler etter kunne gjelde som allmenn lov.
 Albert Einstein	#	Any fool can know. The point is to understand.
 Albert Einstein	#	It is not that I'm so smart. But I stay with the questions much longer.
 Albert Einstein	#	I have no special talents. I am only passionately curious.
@@ -84,6 +83,7 @@ Confucius	#	Choose a job you love, and you will never have to work a day in your
 Confucius	#	<b>You Can Learn From Everyone.</b> <br>三人行，必有我师焉；择其善者而从之，其不善者而改之.<br>In a group of three people, there is always something I can learn from. Choose to follow the strengths of others, use the shortcomings to reflect upon ourselves.
 Confucius	#	You cannot open a book without learning something.
 Carl Sagan  #   Biology is more like history than it is like physics: <b>you have to know the past to understand the present.</b> There’s no predictive theory of biology just as there’s no predictive theory of history. The reason is the same: both subjects are still too complicated for us. But we can understand ourselves much better by understanding other cases.
+C.A.R. Hoare	#	<b>There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult.</b> It demands the same skill, devotion, insight, and even inspiration as the discovery of the simple physical laws which underlie the complex phenomena of nature.
 Dr. Seuss	#	You know you're in love when you can't fall asleep because reality is finally better than your dreams.
 Dr. Seuss 	#	Don't cry because it's over, smile because it happened.
 Dr. Seuss 	#	Sometimes the questions are complicated and the answers are simple.
@@ -109,6 +109,7 @@ Henry Ford  #   Whether you think you can, or you think you can't, you're right.
 Jess C. Scott, The Intern	#	When someone loves you, the way they talk about you is different. You feel safe and comfortable.
 John Lennon	#	There are two basic motivating forces: fear and love. When we are afraid, we pull back from life. When we are in love, we open to all that life has to offer with passion, excitement, and acceptance. We need to learn to love ourselves first, in all our glory and our imperfections. If we cannot love ourselves, we cannot fully open to our ability to love others or our potential to create. Evolution and all hopes for a better world rest in the fearlessness and open-hearted vision of people who embrace life.
 John Steinbeck	#	Ideas are like rabbits. You get a couple and learn how to handle them, and pretty soon you have a dozen.
+John Woods	#	Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.
 Maya Angelou    #   I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.
 Marilyn Monroe	#	If you can make a woman laugh, you can make her do anything.
 Marilyn Monroe	#	I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.
@@ -152,5 +153,6 @@ fitness #   <b>fit</b> is not a destination it is a way of <b>life</b>.
 fitness #   <b>Sweat<br>Smile</b><br>and<br><b>Repeat</b>.
 fitness #   <b>When nothing goes right go <strike>left</strike> lift.</b>
 fitness #   <b>Sore the most satisfying pain</b>. <br> Sore Today Strong Tomorrow.
+fitness	#	The <b>pain</b><br>you feel <b>today</b><br>is the <b>strength</b><br>you feel <b>tomorrow</b>.
 Abraham Lincoln #   <b>The best way to predict your future is to create it.</b>
 <What Makes Muscles Grow>   #   The body responds to the demands you place on it. If you tear your muscles up, eat right, rest and repeat, you’ll create the conditions to make your muscles as big and strong as possible. It is with muscles as it is with life: <b>Meaningful growth requires challenge and stress.</b>
