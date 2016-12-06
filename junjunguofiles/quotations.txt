@@ -65,6 +65,7 @@ Albert Einstein	#	It is not that I'm so smart. But I stay with the questions muc
 Albert Einstein	#	I have no special talents. I am only passionately curious.
 Albert Einstein	#	There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.
 Albert Einstein	#	If you can't explain it to a six year old, you don't understand it yourself.
+Albert Einstein	#	A clever person solves a problem. <br>A wise person avoids it.
 Audrey Hepburn  #   Nothing is impossible, the word itself says 'I'm possible'!
 Arthur C. Clarke    #   Any sufficiently advanced technology is indistinguishable from magic.
 Alan Kay (American computer scientist)  #   The best way to predict the future is to invent it.
@@ -75,6 +76,7 @@ Bil Keane   #   Yesterday is history, tomorrow is a mystery, today is a gift of 
 Bill Gates  #   Software is a great combination between artistry and engineering.
 Bernard M. Baruch	#	Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.
 Beverly Sills	#	There are no shortcuts to any place worth going. <br> 任何值得去的地方，都没有捷径。
+Butler Lampson <fundamental theorem of software engineering (FTSE)>	#	We can solve any problem by introducing an extra level of indirection.
 Charles Chaplin	#	You'll never find a rainbow if you're looking down.
 Confucius	#	Study the past if you would define the future.
 Confucius	#	Wherever you go, go with all your heart.<br>既来之则安之.
@@ -100,8 +102,10 @@ Eleanor Roosevelt   #   <b>Nobody can make you feel inferior without your consen
 Eleanor Roosevelt   #   Great minds discuss ideas; average minds discuss events; small minds discuss people.
 Elbert Hubbard	#	A friend is someone who knows all about you and still loves you.
 Edsger Dijkstra	#	If debugging is the process of removing bugs, then programming must be the process of putting them in.
+Edsger W. Dijkstra	#	Simplicity is prerequisite for reliability.
 Frank Zappa	#	So many books, so little time.
 Georg Wilhelm Friedrich Hegel	#	Nothing great in the world was accomplished without passion.
+Gerald Weinberg (Software Development: Experience vs. Performance)	#	Experience doesn't necessarily teach anything.
 George Eliot    #   It is never too late to be what you might have been.
 Herbert Simon	#	It is not my aim to surprise or shock you — but the simplest way I can summarize is to say that there are now in the world machines that can think, that can learn and that can create. Moreover, their ability to do these things is going to increase rapidly until — in a visible future - the range of problems they can handle will be coextensive with the range to which the human mind has been applied.
 Harriet Tubman	#	Every great dream begins with a dreamer. Always remember, you have within you the strength, the patience, and the passion to reach for the stars to change the world.
@@ -139,6 +143,7 @@ Oscar Wilde #	Be yourself; everyone else is already taken.
 Robert Frost    #   The best way out is always through. <br> 找到出口的最好方式就是一路走到底.
 Robin Williams  #   No matter what people tell you, words and ideas can change the world.
 Rich Cook	#	Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the universe trying to produce bigger and better idiots. So far, the universe is winning.
+Ralph Johnson	#	Before software can be reusable it first has to be usable.
 Sivananda Saraswati    #   Put your heart, mind, intellect, and soul even to your smallest acts. This is the secret of success.
 Steve Martin    #   A day without sunshine is like, you know, night.
 William Shakespeare #   The fool doth think he is wise, but the wise man knows himself to be a fool.
