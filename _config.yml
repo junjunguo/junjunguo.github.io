@@ -1,11 +1,14 @@
 # Site wide configuration
 
+url: https://www.junjunguo.com   # with the https protocol
+enforce_ssl: www.junjunguo.com   # without any protocol
+
+
 title: GuoJunjun's Tech Blog
 locale: en_US
 description: We are what we repeatedly do. Excellence, therefore, is not an act, but a habit.
 logo: site-logo.png
 search: true
-url: http://junjunguo.com
 #url: http://localhost:4000
 
 # Jekyll configuration
