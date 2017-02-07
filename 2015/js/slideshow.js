@@ -14,7 +14,7 @@
 //        console.log("Your location is: " + country + ", " + zone + ", " + district);
 //    })();
 //}
-console.log("Your location: " + geoplugin_countryName());
+// console.log("Your location: " + geoplugin_countryName());
 /**
  *  * shuffle the list and return a photo addressed list
  * @param list
@@ -24,7 +24,8 @@ function shuffleList(list) { // shuffle nrlist and return a list with objects re
     var copy = [], n = list.length, index;
     var bgimgaddress;
     // if (geoplugin_countryName() == "China") {
-        bgimgaddress = './2015/images/bg/';
+        bgimgaddress = "./2015/images/bg/";
+        ///Users/Junjun/Repository/myWeb/junjunguo.github.io/2015/images/bg/109100961.jpg
     // } else {
         // bgimgaddress = 'http://static.panoramio.com/photos/large/';
         // bgimgaddress = 'http://static.panoramio.com/photos/large/';
