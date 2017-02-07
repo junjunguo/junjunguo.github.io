@@ -28,6 +28,7 @@ function getJSONobject() {
 
         var image     = new Image();
         image.src     = "http://static.panoramio.com/photos/large/" + pimgList[0].id + ".jpg";
+        // image.src     = "../images/bg/" + pimgList[0].id + ".jpg";
         image.onload  = function () {
             //console.info("Image loaded !");
             loadPimgs();
