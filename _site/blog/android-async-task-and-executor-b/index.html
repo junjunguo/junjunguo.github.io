@@ -1,0 +1,651 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Android use AsyncTask or Executor to repeat tasks in background &#8211; GuoJunjun's Tech Blog</title>
+<meta name="description" content="How to repeatedly do tasks with AsyncTask or Executor">
+<meta name="keywords" content="Android, code, Java, Thread, Mobile">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Android use AsyncTask or Executor to repeat tasks in background">
+<meta name="twitter:description" content="How to repeatedly do tasks with AsyncTask or Executor">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.junjunguo.com/images/summer2014-120.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android use AsyncTask or Executor to repeat tasks in background">
+<meta property="og:description" content="How to repeatedly do tasks with AsyncTask or Executor">
+<meta property="og:url" content="https://www.junjunguo.com/blog/android-async-task-and-executor-b/">
+<meta property="og:site_name" content="GuoJunjun's Tech Blog">
+
+
+<meta name="msvalidate.01" content="5CBE5B96A4448FF4606A09686D87D9D5">
+
+
+<link rel="canonical" href="https://www.junjunguo.com/blog/android-async-task-and-executor-b/">
+<link href="https://www.junjunguo.com/feed.xml" type="application/atom+xml" rel="alternate" title="GuoJunjun's Tech Blog Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://www.junjunguo.com/assets/css/main.css">
+<!-- Webfonts -->
+<script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="https://www.junjunguo.com/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="https://www.junjunguo.com/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="https://www.junjunguo.com/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://www.junjunguo.com/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="https://www.junjunguo.com/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="https://www.junjunguo.com/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.junjunguo.com/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.junjunguo.com/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.junjunguo.com/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="https://www.junjunguo.com/tech.html" >Latest</a></li>
+		  
+		    
+		    <li><a href="https://www.junjunguo.com/blog/" >Blog</a></li>
+		  
+		    
+		    <li><a href="https://www.junjunguo.com/tags/" >Tags</a></li>
+		  
+		    
+		    <li><a href="https://www.junjunguo.com/search/" >Search</a></li>
+		  
+		    
+		    <li><a href="https://www.junjunguo.com/index.html" >About</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	
+		<div class="wrap">
+			<a href="https://www.junjunguo.com/" class="site-logo" rel="home" title="GuoJunjun's Tech Blog"><img src="https://www.junjunguo.com/images/site-logo.png" width="200" height="200" alt="GuoJunjun's Tech Blog logo" class="animated bounceInDown"></a>
+		</div>
+	
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+<div id="main" role="main">
+  <article class="hentry">
+    <img src="https://www.junjunguo.com/images/summer2014-120.jpg" class="entry-feature-image" alt="Android use AsyncTask or Executor to repeat tasks in background" ><p class="image-credit">Photo Credit: <a href="https://junjunguo.github.io">GuoJunjun</a>
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="https://www.junjunguo.com/tags/#Android" title="Pages tagged Android">Android</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#code" title="Pages tagged code">code</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#Java" title="Pages tagged Java">Java</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#Thread" title="Pages tagged Thread">Thread</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#Mobile" title="Pages tagged Mobile">Mobile</a></span>
+        
+          <h1 class="entry-title">Android use AsyncTask or Executor to repeat tasks in background</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="https://www.junjunguo.com/images/bio-photo.jpg" class="bio-photo" alt="GuoJunjun bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">GuoJunjun</span></span>
+        <span class="entry-date date published"><time datetime="2015-03-10T00:00:00+01:00"><i class="fa fa-calendar-o"></i> March 10, 2015</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=Android,code,Java,Thread,Mobile&amp;text=Android%20use%20AsyncTask%20or%20Executor%20to%20repeat%20tasks%20in%20background&amp;url=https://www.junjunguo.com/blog/android-async-task-and-executor-b/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.junjunguo.com/blog/android-async-task-and-executor-b/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=https://www.junjunguo.com/blog/android-async-task-and-executor-b/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <p>We often need to do some tasks in background periodically, this tutorial describes three methods to do tasks periodically.</p>
+
+<h1 class="no_toc" id="contents">Contents</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#run-tasks-repeatedly" id="markdown-toc-run-tasks-repeatedly">Run tasks repeatedly</a>    <ul>
+      <li><a href="#runonuithread" id="markdown-toc-runonuithread"><code>runOnUiThread</code></a></li>
+    </ul>
+  </li>
+  <li><a href="#executor" id="markdown-toc-executor"><code>Executor</code></a>    <ul>
+      <li><a href="#implements-executor" id="markdown-toc-implements-executor">Implements <code>Executor</code></a></li>
+      <li><a href="#execute-task-with-executor" id="markdown-toc-execute-task-with-executor">Execute task with <code>Executor</code></a></li>
+      <li><a href="#stop-the-task" id="markdown-toc-stop-the-task">Stop the task</a></li>
+    </ul>
+  </li>
+  <li><a href="#asynctask" id="markdown-toc-asynctask"><code>AsyncTask</code></a>    <ul>
+      <li><a href="#extends-asynctask" id="markdown-toc-extends-asynctask">extends <code>AsyncTask</code></a></li>
+      <li><a href="#run-asynctask" id="markdown-toc-run-asynctask">Run <code>AsyncTask</code></a></li>
+    </ul>
+  </li>
+  <li><a href="#the-layout" id="markdown-toc-the-layout">The layout</a></li>
+  <li><a href="#the-mainactivity-class" id="markdown-toc-the-mainactivity-class">The MainActivity Class</a></li>
+</ul>
+
+<h1 id="run-tasks-repeatedly">Run tasks repeatedly</h1>
+
+<p>There are many ways to run tasks repeatedly in Android, here we use Timer and TimerTask to repeat our tasks. And to execute the tasks, the following tutorial will show three methods:</p>
+
+<ul>
+  <li>Use <code>runOnUiThread</code> to run the tasks</li>
+  <li>Extends <code>AsyncTask</code> and run the tasks in an extended Class</li>
+  <li>Implements <code>Executor</code> and write constraints in the implemented Class</li>
+</ul>
+
+<p>This is how it looks when it is done:</p>
+
+<p><img src="https://raw.githubusercontent.com/junjunguo/android/master/2015/RepeatAsyncTask/asyn.png" alt="screenshot" /></p>
+
+<p><img src="https://raw.githubusercontent.com/junjunguo/android/master/2015/RepeatAsyncTask/executor.png" alt="screenshot" /></p>
+
+<p>and the Log.i view:</p>
+
+<blockquote>
+  <p>03-10 11:11:03.046  I/Executor Perform﹕ &lt;~~~~~~~~~ Text from Background Perform</p>
+
+  <p>03-10 11:11:05.046  I/Background Perform﹕ ——-&gt; Text from Background Perform</p>
+</blockquote>
+
+<blockquote>
+  <p>the example code is built with Android Studio; Minimum Sdk Version: 11; Target Sdk Version 21.</p>
+</blockquote>
+
+<h2 id="runonuithread"><code>runOnUiThread</code></h2>
+
+<p>Use <code>runOnUiThread</code> can allow use manipulate the UI. The following code change the <code>TextView</code> and <code>EditText</code> ‘s color and contents, run the <code>timerTaskAsync</code> every 4 seconds (4000 ms) without any delay (0 ms).</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="n">timerAsync</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Timer</span><span class="o">();</span>
+<span class="n">timerTaskAsync</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TimerTask</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">runOnUiThread</span><span class="o">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+                <span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="s">&quot;Background Perform&quot;</span><span class="o">,</span>
+                        <span class="s">&quot;-------&gt; Text from Background Perform&quot;</span><span class="o">);</span>
+                <span class="n">textView</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="s">&quot;Text from Background Perform&quot;</span><span class="o">);</span>
+                <span class="n">textView</span><span class="o">.</span><span class="na">setBackgroundColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">YELLOW</span><span class="o">);</span>
+                <span class="n">editText</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="s">&quot;Text from Background Perform&quot;</span><span class="o">);</span>
+                <span class="n">editText</span><span class="o">.</span><span class="na">setBackgroundColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">CYAN</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+    <span class="o">}</span>
+<span class="o">};</span>
+<span class="n">timerAsync</span><span class="o">.</span><span class="na">schedule</span><span class="o">(</span><span class="n">timerTaskAsync</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">4000</span><span class="o">);</span></code></pre></figure>
+
+<p>This is how the method simply execute our task periodically.</p>
+
+<h1 id="executor"><code>Executor</code></h1>
+<p>The second method implements Executor to execute the task.</p>
+
+<h2 id="implements-executor">Implements <code>Executor</code></h2>
+<p>Create a class and implements <code>Executor</code>. The following code will execute the task only if there is internet available.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">BackgroundPerformExecutor</span> <span class="kd">implements</span> <span class="n">Executor</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">Context</span> <span class="n">context</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">BackgroundPerformExecutor</span><span class="o">(</span><span class="n">Context</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">context</span> <span class="o">=</span> <span class="n">context</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">execute</span><span class="o">(</span><span class="n">Runnable</span> <span class="n">command</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">isOnline</span><span class="o">())</span> <span class="o">{</span>
+            <span class="n">command</span><span class="o">.</span><span class="na">run</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isOnline</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">ConnectivityManager</span> <span class="n">cm</span> <span class="o">=</span> <span class="o">(</span><span class="n">ConnectivityManager</span><span class="o">)</span> <span class="n">context</span>
+                <span class="o">.</span><span class="na">getSystemService</span><span class="o">(</span><span class="n">Context</span><span class="o">.</span><span class="na">CONNECTIVITY_SERVICE</span><span class="o">);</span>
+        <span class="n">NetworkInfo</span> <span class="n">netInfo</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="na">getActiveNetworkInfo</span><span class="o">();</span>
+        <span class="k">return</span> <span class="n">netInfo</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">netInfo</span><span class="o">.</span><span class="na">isConnectedOrConnecting</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>We pass Context from the calling Activity then we can check if the internet is available, and we need to add network access permission in <code>AndroidManifest</code>:</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">&quot;android.permission.ACCESS_NETWORK_STATE&quot;</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h2 id="execute-task-with-executor">Execute task with <code>Executor</code></h2>
+<p>With <code>Executor</code> we can easily manipulate the UI, the following code will change the <code>TextView</code> and <code>EditText</code> ‘s color and content every 4 seconds (4000 ms) and with 2 seconds delay (2000 ms). In Use <code>runOnUiThread</code> method, we change the text color and contents every 4 seconds without delay, so the text color and contents will change every 2 seconds after the method is implemented.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="kd">private</span> <span class="n">Timer</span> <span class="n">timerExecutor</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Timer</span><span class="o">();</span>
+<span class="kd">private</span> <span class="n">TimerTask</span> <span class="n">doAsynchronousTaskExecutor</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">startBackgroundPerformExecutor</span><span class="o">()</span> <span class="o">{</span>
+    <span class="kd">final</span> <span class="n">Handler</span> <span class="n">handler</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Handler</span><span class="o">();</span>
+    <span class="n">doAsynchronousTaskExecutor</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TimerTask</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+            <span class="n">handler</span><span class="o">.</span><span class="na">post</span><span class="o">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="o">()</span> <span class="o">{</span>
+                <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+                    <span class="k">try</span> <span class="o">{</span>
+                        <span class="n">BackgroundPerformExecutor</span> <span class="n">performBackgroundTask</span> <span class="o">=</span>
+                                <span class="k">new</span> <span class="n">BackgroundPerformExecutor</span><span class="o">(</span>
+                                        <span class="n">getApplicationContext</span><span class="o">());</span>
+                        <span class="n">performBackgroundTask</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="o">()</span> <span class="o">{</span>
+                            <span class="nd">@Override</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+                                <span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="s">&quot;Executor Perform&quot;</span><span class="o">,</span>
+                                        <span class="s">&quot;&lt;~~~~~~~~~ Text from Background &quot;</span> <span class="o">+</span>
+                                                <span class="s">&quot;Perform&quot;</span><span class="o">);</span>
+                                <span class="n">textView</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span>
+                                        <span class="s">&quot;Text from Background Perform &quot;</span> <span class="o">+</span>
+                                                <span class="s">&quot;Executor&quot;</span><span class="o">);</span>
+                                <span class="n">textView</span><span class="o">.</span><span class="na">setBackgroundColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">RED</span><span class="o">);</span>
+                                <span class="n">editText</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span>
+                                        <span class="s">&quot;Text from Background Perform &quot;</span> <span class="o">+</span>
+                                                <span class="s">&quot;Executor&quot;</span><span class="o">);</span>
+                                <span class="n">editText</span><span class="o">.</span><span class="na">setBackgroundColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">MAGENTA</span><span class="o">);</span>
+                                <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="n">getApplicationContext</span><span class="o">(),</span>
+                                        <span class="s">&quot;Text from Background Perform &quot;</span> <span class="o">+</span>
+                                                <span class="s">&quot;Executor&quot;</span><span class="o">,</span>
+                                        <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
+                            <span class="o">}</span>
+                        <span class="o">});</span>
+                    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+                        <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+                    <span class="o">}</span>
+                <span class="o">}</span>
+            <span class="o">});</span>
+        <span class="o">}</span>
+    <span class="o">};</span>
+    <span class="n">timerExecutor</span><span class="o">.</span><span class="na">schedule</span><span class="o">(</span><span class="n">doAsynchronousTaskExecutor</span><span class="o">,</span> <span class="mi">2000</span><span class="o">,</span> <span class="mi">4000</span><span class="o">);</span>
+<span class="o">}</span></code></pre></figure>
+
+<h2 id="stop-the-task">Stop the task</h2>
+<p>The task will not stop, even on <code>onDestroy</code>, the task will still run in the background. We can call <code>cancel</code> to stop the task. The following code show how to stop it by a button.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">stopExecutorClicked</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="s">&quot;stop Executor clicked !&quot;</span><span class="o">,</span> <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
+    <span class="n">doAsynchronousTaskExecutor</span><span class="o">.</span><span class="na">cancel</span><span class="o">();</span>
+    <span class="n">timerExecutor</span><span class="o">.</span><span class="na">cancel</span><span class="o">();</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>If you need the tasks stop when <code>onDestroy</code> is called override the <code>onDestroy</code>:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span>    <span class="nd">@Override</span> <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onDestroy</span><span class="o">()</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onDestroy</span><span class="o">();</span>
+        <span class="n">doAsynchronousTaskExecutor</span><span class="o">.</span><span class="na">cancel</span><span class="o">();</span>
+        <span class="n">timerExecutor</span><span class="o">.</span><span class="na">cancel</span><span class="o">();</span>
+    <span class="o">}</span></code></pre></figure>
+
+<h1 id="asynctask"><code>AsyncTask</code></h1>
+<blockquote>
+  <p>AsyncTask is ideally used for short operations (a few seconds at the most).</p>
+</blockquote>
+
+<p>If the threads need to keep running for a long periods of time <code>Executor</code> would be better for the purpose. 
+An asyncTask have to be subclassed to be in used.</p>
+<h2 id="extends-asynctask">extends <code>AsyncTask</code></h2>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span> <span class="kd">public</span> <span class="kd">class</span> <span class="nc">BackgroundPerformAsyncTask</span> <span class="kd">extends</span> <span class="n">AsyncTask</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">Context</span> <span class="n">context</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">BackgroundPerformAsyncTask</span><span class="o">(</span><span class="n">Context</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">context</span> <span class="o">=</span> <span class="n">context</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span> <span class="kd">protected</span> <span class="n">Object</span> <span class="nf">doInBackground</span><span class="o">(</span><span class="n">Object</span><span class="o">[]</span> <span class="n">params</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">//run tasks her ...</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">isOnline</span><span class="o">())</span> <span class="o">{</span>
+            <span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="s">&quot;Async&quot;</span><span class="o">,</span> <span class="s">&quot;-------&gt; Text from BackgroundPerformAsyncTask&quot;</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * @return true if internet available</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isOnline</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">ConnectivityManager</span> <span class="n">cm</span> <span class="o">=</span> <span class="o">(</span><span class="n">ConnectivityManager</span><span class="o">)</span> <span class="n">context</span>
+                <span class="o">.</span><span class="na">getSystemService</span><span class="o">(</span><span class="n">Context</span><span class="o">.</span><span class="na">CONNECTIVITY_SERVICE</span><span class="o">);</span>
+        <span class="n">NetworkInfo</span> <span class="n">netInfo</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="na">getActiveNetworkInfo</span><span class="o">();</span>
+        <span class="k">return</span> <span class="n">netInfo</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">netInfo</span><span class="o">.</span><span class="na">isConnectedOrConnecting</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<h2 id="run-asynctask">Run <code>AsyncTask</code></h2>
+<p>The following method shows how to periodically run an AsyncTask:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span>    <span class="kd">private</span> <span class="n">Timer</span> <span class="n">timerAsync</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">TimerTask</span> <span class="n">timerTaskAsync</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">startBackgroundPerform</span><span class="o">()</span> <span class="o">{</span>
+        <span class="kd">final</span> <span class="n">Handler</span> <span class="n">handler</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Handler</span><span class="o">();</span>
+        <span class="n">timerAsync</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Timer</span><span class="o">();</span>
+        <span class="n">timerTaskAsync</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TimerTask</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+                <span class="n">handler</span><span class="o">.</span><span class="na">post</span><span class="o">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="o">()</span> <span class="o">{</span>
+                    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+                        <span class="k">try</span> <span class="o">{</span>
+                            <span class="n">BackgroundPerformAsyncTask</span> <span class="n">performBackgroundTask</span> <span class="o">=</span>
+                                    <span class="k">new</span> <span class="n">BackgroundPerformAsyncTask</span><span class="o">(</span>
+                                            <span class="n">getApplicationContext</span><span class="o">());</span>
+                            <span class="n">performBackgroundTask</span><span class="o">.</span><span class="na">execute</span><span class="o">();</span>
+                        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+                            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+                        <span class="o">}</span>
+                    <span class="o">}</span>
+                                <span class="o">});</span>
+            <span class="o">}</span>
+        <span class="o">};</span>
+        <span class="n">timerAsync</span><span class="o">.</span><span class="na">schedule</span><span class="o">(</span><span class="n">timerTaskAsync</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">4000</span><span class="o">);</span>
+    <span class="o">}</span></code></pre></figure>
+
+<p>Stop AsyncTask is the same as stop Executor, call <code>cancle</code> in Timer and TimerTask.</p>
+
+<h1 id="the-layout">The layout</h1>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="nt">&lt;RelativeLayout</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+                <span class="na">xmlns:tools=</span><span class="s">&quot;http://schemas.android.com/tools&quot;</span>
+                <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+                <span class="na">android:layout_height=</span><span class="s">&quot;match_parent&quot;</span>
+                <span class="na">android:paddingLeft=</span><span class="s">&quot;@dimen/activity_horizontal_margin&quot;</span>
+                <span class="na">android:paddingRight=</span><span class="s">&quot;@dimen/activity_horizontal_margin&quot;</span>
+                <span class="na">android:paddingTop=</span><span class="s">&quot;@dimen/activity_vertical_margin&quot;</span>
+                <span class="na">android:paddingBottom=</span><span class="s">&quot;@dimen/activity_vertical_margin&quot;</span>
+                <span class="na">tools:context=</span><span class="s">&quot;.MainActivity&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;TextView</span>
+        <span class="na">android:text=</span><span class="s">&quot;@string/hello_world&quot;</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/text_view&quot;</span>
+        <span class="na">android:layout_centerHorizontal=</span><span class="s">&quot;true&quot;</span>
+        <span class="na">android:gravity=</span><span class="s">&quot;center&quot;</span>
+        <span class="na">android:padding=</span><span class="s">&quot;5dp&quot;</span>
+        <span class="na">android:layout_marginBottom=</span><span class="s">&quot;5dp&quot;</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;EditText</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+        <span class="na">android:layout_below=</span><span class="s">&quot;@+id/text_view&quot;</span>
+        <span class="na">android:gravity=</span><span class="s">&quot;center&quot;</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/edit_text&quot;</span>
+        <span class="na">android:layout_centerHorizontal=</span><span class="s">&quot;true&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;Button</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/executor_stop_btn&quot;</span>
+        <span class="na">android:layout_below=</span><span class="s">&quot;@+id/edit_text&quot;</span>
+        <span class="na">android:layout_marginTop=</span><span class="s">&quot;30dp&quot;</span>
+        <span class="na">android:width=</span><span class="s">&quot;200dp&quot;</span>
+        <span class="na">android:text=</span><span class="s">&quot;stop Executor&quot;</span>
+        <span class="na">android:onClick=</span><span class="s">&quot;stopExecutorClicked&quot;</span>
+        <span class="na">android:layout_centerHorizontal=</span><span class="s">&quot;true&quot;</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;Button</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/asyntask_stop_btn&quot;</span>
+        <span class="na">android:layout_below=</span><span class="s">&quot;@+id/executor_stop_btn&quot;</span>
+        <span class="na">android:layout_marginTop=</span><span class="s">&quot;30dp&quot;</span>
+        <span class="na">android:width=</span><span class="s">&quot;200dp&quot;</span>
+        <span class="na">android:text=</span><span class="s">&quot;stop Asyntask&quot;</span>
+        <span class="na">android:onClick=</span><span class="s">&quot;stopAsyntaskClicked&quot;</span>
+        <span class="na">android:layout_centerHorizontal=</span><span class="s">&quot;true&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/RelativeLayout&gt;</span></code></pre></figure>
+
+<h1 id="the-mainactivity-class">The MainActivity Class</h1>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">ActionBarActivity</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">TextView</span> <span class="n">textView</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">EditText</span> <span class="n">editText</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+        <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
+        <span class="n">textView</span> <span class="o">=</span> <span class="o">(</span><span class="n">TextView</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">text_view</span><span class="o">);</span>
+        <span class="n">editText</span> <span class="o">=</span> <span class="o">(</span><span class="n">EditText</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">edit_text</span><span class="o">);</span>
+        <span class="n">startBackgroundPerform</span><span class="o">();</span>
+        <span class="n">startBackgroundPerformExecutor</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="n">Timer</span> <span class="n">timerExecutor</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Timer</span><span class="o">();</span>
+    <span class="kd">private</span> <span class="n">TimerTask</span> <span class="n">doAsynchronousTaskExecutor</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">startBackgroundPerformExecutor</span><span class="o">()</span> <span class="o">{</span>
+        <span class="kd">final</span> <span class="n">Handler</span> <span class="n">handler</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Handler</span><span class="o">();</span>
+        <span class="n">doAsynchronousTaskExecutor</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TimerTask</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+                <span class="n">handler</span><span class="o">.</span><span class="na">post</span><span class="o">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="o">()</span> <span class="o">{</span>
+                    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+                        <span class="k">try</span> <span class="o">{</span>
+                            <span class="n">BackgroundPerformExecutor</span> <span class="n">performBackgroundTask</span> <span class="o">=</span>
+                                    <span class="k">new</span> <span class="n">BackgroundPerformExecutor</span><span class="o">(</span>
+                                            <span class="n">getApplicationContext</span><span class="o">());</span>
+                            <span class="n">performBackgroundTask</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="o">()</span> <span class="o">{</span>
+                                <span class="nd">@Override</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+                                    <span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="s">&quot;Executor Perform&quot;</span><span class="o">,</span>
+                                            <span class="s">&quot;&lt;~~~~~~~~~ Text from Background &quot;</span> <span class="o">+</span>
+                                                    <span class="s">&quot;Perform&quot;</span><span class="o">);</span>
+                                    <span class="n">textView</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span>
+                                            <span class="s">&quot;Text from Background Perform &quot;</span> <span class="o">+</span>
+                                                    <span class="s">&quot;Executor&quot;</span><span class="o">);</span>
+                                    <span class="n">textView</span><span class="o">.</span><span class="na">setBackgroundColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">RED</span><span class="o">);</span>
+                                    <span class="n">editText</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span>
+                                            <span class="s">&quot;Text from Background Perform &quot;</span> <span class="o">+</span>
+                                                    <span class="s">&quot;Executor&quot;</span><span class="o">);</span>
+                                    <span class="n">editText</span><span class="o">.</span><span class="na">setBackgroundColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">MAGENTA</span><span class="o">);</span>
+                                    <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="n">getApplicationContext</span><span class="o">(),</span>
+                                            <span class="s">&quot;Text from Background Perform &quot;</span> <span class="o">+</span>
+                                                    <span class="s">&quot;Executor&quot;</span><span class="o">,</span>
+                                            <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
+                                <span class="o">}</span>
+                            <span class="o">});</span>
+                        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+                            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+                        <span class="o">}</span>
+                    <span class="o">}</span>
+                <span class="o">});</span>
+            <span class="o">}</span>
+        <span class="o">};</span>
+        <span class="n">timerExecutor</span><span class="o">.</span><span class="na">schedule</span><span class="o">(</span><span class="n">doAsynchronousTaskExecutor</span><span class="o">,</span> <span class="mi">2000</span><span class="o">,</span> <span class="mi">4000</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">stopExecutorClicked</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="s">&quot;stop Executor clicked !&quot;</span><span class="o">,</span> <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">show</span><span class="o">();</span>
+        <span class="n">doAsynchronousTaskExecutor</span><span class="o">.</span><span class="na">cancel</span><span class="o">();</span>
+        <span class="n">timerExecutor</span><span class="o">.</span><span class="na">cancel</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="n">Timer</span> <span class="n">timerAsync</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">TimerTask</span> <span class="n">timerTaskAsync</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">startBackgroundPerform</span><span class="o">()</span> <span class="o">{</span>
+        <span class="kd">final</span> <span class="n">Handler</span> <span class="n">handler</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Handler</span><span class="o">();</span>
+        <span class="n">timerAsync</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Timer</span><span class="o">();</span>
+        <span class="n">timerTaskAsync</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TimerTask</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+                <span class="n">runOnUiThread</span><span class="o">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="o">()</span> <span class="o">{</span>
+                    <span class="nd">@Override</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+                        <span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="s">&quot;Background Perform&quot;</span><span class="o">,</span>
+                                <span class="s">&quot;-------&gt; Text from Background Perform&quot;</span><span class="o">);</span>
+                        <span class="n">textView</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="s">&quot;Text from Background Perform&quot;</span><span class="o">);</span>
+                        <span class="n">textView</span><span class="o">.</span><span class="na">setBackgroundColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">YELLOW</span><span class="o">);</span>
+                        <span class="n">editText</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="s">&quot;Text from Background Perform&quot;</span><span class="o">);</span>
+                        <span class="n">editText</span><span class="o">.</span><span class="na">setBackgroundColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">CYAN</span><span class="o">);</span>
+                    <span class="o">}</span>
+                <span class="o">});</span>
+                <span class="c1">//                handler.post(new Runnable() {</span>
+                <span class="c1">//                    public void run() {</span>
+                <span class="c1">//                        try {</span>
+                <span class="c1">//                            BackgroundPerformAsyncTask</span>
+                <span class="c1">// performBackgroundTask =</span>
+                <span class="c1">//                                    new</span>
+                <span class="c1">// BackgroundPerformAsyncTask(</span>
+                <span class="c1">//</span>
+                <span class="c1">// getApplicationContext());</span>
+                <span class="c1">//                            performBackgroundTask.execute();</span>
+                <span class="c1">//                        } catch (Exception e) {</span>
+                <span class="c1">//                            e.printStackTrace();</span>
+                <span class="c1">//                        }</span>
+                <span class="c1">//                    }</span>
+                <span class="c1">//                                });</span>
+            <span class="o">}</span>
+        <span class="o">};</span>
+        <span class="n">timerAsync</span><span class="o">.</span><span class="na">schedule</span><span class="o">(</span><span class="n">timerTaskAsync</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">4000</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">stopAsyntaskClicked</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="s">&quot;stop asyn task clicked !&quot;</span><span class="o">,</span> <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">show</span><span class="o">();</span>
+        <span class="n">timerAsync</span><span class="o">.</span><span class="na">cancel</span><span class="o">();</span>
+        <span class="n">timerTaskAsync</span><span class="o">.</span><span class="na">cancel</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span> <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onDestroy</span><span class="o">()</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onDestroy</span><span class="o">();</span>
+        <span class="n">doAsynchronousTaskExecutor</span><span class="o">.</span><span class="na">cancel</span><span class="o">();</span>
+        <span class="n">timerExecutor</span><span class="o">.</span><span class="na">cancel</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>And we have our project implemented.</p>
+
+<p>Source code <a href="https://github.com/junjunguo/android/tree/master/2015/RepeatAsyncTask">on Github</a></p>
+
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'guojunjunsblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="https://www.junjunguo.com/articles/android-async-task-and-executor/" class="btn" title="Android use AsyncTask or Executor to repeat tasks in background">Previous</a>
+      
+      
+        <a href="https://www.junjunguo.com/articles/android-table-layout/" class="btn" title="Android TableLayout">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2017 <a href="https://junjunguo.github.io" rel="nofollow">  GuoJunjun</a></span>
+<div class="social-icons">
+    
+    
+    <a href="http://plus.google.com/+GuoJunjun"
+                                      title="GuoJunjun on Google+" target="_blank"><i
+        class="fa fa-google-plus-square fa-2x"></i></a>
+    <a href="http://linkedin.com/in/guojunjun"
+                                   title="GuoJunjun on LinkedIn" target="_blank"><i
+        class="fa fa-linkedin-square fa-2x"></i></a>
+    
+    
+    <a href="http://www.flickr.com/photos/guojunjun"
+                                 title="GuoJunjun on Flickr" target="_blank"><i
+        class="fa fa-flickr fa-2x"></i></a>
+    <a href="http://github.com/junjunguo" title="GuoJunjun on Github"
+                                 target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+    
+    <a href="https://www.junjunguo.com/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'https://www.junjunguo.com';
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://www.junjunguo.com/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="https://www.junjunguo.com/assets/js/scripts.min.js"></script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-49981756-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+	        
+
+</body>
+</html>

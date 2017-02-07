@@ -1,0 +1,753 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Android take photo and save to gallery, choose photo from gallery and show in ListView &#8211; GuoJunjun's Tech Blog</title>
+<meta name="description" content="take photo or choose from gallery and use adapter to fill data from ArrayList to ListView">
+<meta name="keywords" content="Android, code, GUI, Java, Mobile">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Android take photo and save to gallery, choose photo from gallery and show in ListView">
+<meta name="twitter:description" content="take photo or choose from gallery and use adapter to fill data from ArrayList to ListView">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.junjunguo.com/images/summer2014-112.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android take photo and save to gallery, choose photo from gallery and show in ListView">
+<meta property="og:description" content="take photo or choose from gallery and use adapter to fill data from ArrayList to ListView">
+<meta property="og:url" content="https://www.junjunguo.com/blog/android-take-photo-show-in-list-view-b/">
+<meta property="og:site_name" content="GuoJunjun's Tech Blog">
+
+
+<meta name="msvalidate.01" content="5CBE5B96A4448FF4606A09686D87D9D5">
+
+
+<link rel="canonical" href="https://www.junjunguo.com/blog/android-take-photo-show-in-list-view-b/">
+<link href="https://www.junjunguo.com/feed.xml" type="application/atom+xml" rel="alternate" title="GuoJunjun's Tech Blog Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://www.junjunguo.com/assets/css/main.css">
+<!-- Webfonts -->
+<script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="https://www.junjunguo.com/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="https://www.junjunguo.com/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="https://www.junjunguo.com/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://www.junjunguo.com/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="https://www.junjunguo.com/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="https://www.junjunguo.com/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.junjunguo.com/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.junjunguo.com/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.junjunguo.com/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="https://www.junjunguo.com/tech.html" >Latest</a></li>
+		  
+		    
+		    <li><a href="https://www.junjunguo.com/blog/" >Blog</a></li>
+		  
+		    
+		    <li><a href="https://www.junjunguo.com/tags/" >Tags</a></li>
+		  
+		    
+		    <li><a href="https://www.junjunguo.com/search/" >Search</a></li>
+		  
+		    
+		    <li><a href="https://www.junjunguo.com/index.html" >About</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	
+		<div class="wrap">
+			<a href="https://www.junjunguo.com/" class="site-logo" rel="home" title="GuoJunjun's Tech Blog"><img src="https://www.junjunguo.com/images/site-logo.png" width="200" height="200" alt="GuoJunjun's Tech Blog logo" class="animated bounceInDown"></a>
+		</div>
+	
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+<div id="main" role="main">
+  <article class="hentry">
+    <img src="https://www.junjunguo.com/images/summer2014-112.jpg" class="entry-feature-image" alt="Android take photo and save to gallery, choose photo from gallery and show in ListView" ><p class="image-credit">Photo Credit: <a href="https://junjunguo.github.io">GuoJunjun</a>
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="https://www.junjunguo.com/tags/#Android" title="Pages tagged Android">Android</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#code" title="Pages tagged code">code</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#GUI" title="Pages tagged GUI">GUI</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#Java" title="Pages tagged Java">Java</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#Mobile" title="Pages tagged Mobile">Mobile</a></span>
+        
+          <h1 class="entry-title">Android take photo and save to gallery, choose photo from gallery and show in ListView</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="https://www.junjunguo.com/images/bio-photo.jpg" class="bio-photo" alt="GuoJunjun bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">GuoJunjun</span></span>
+        <span class="entry-date date published"><time datetime="2015-03-22T00:00:00+01:00"><i class="fa fa-calendar-o"></i> March 22, 2015</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=Android,code,GUI,Java,Mobile&amp;text=Android%20take%20photo%20and%20save%20to%20gallery,%20choose%20photo%20from%20gallery%20and%20show%20in%20ListView&amp;url=https://www.junjunguo.com/blog/android-take-photo-show-in-list-view-b/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.junjunguo.com/blog/android-take-photo-show-in-list-view-b/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=https://www.junjunguo.com/blog/android-take-photo-show-in-list-view-b/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <h1 class="no_toc" id="contents">Contents</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#about" id="markdown-toc-about">About</a>    <ul>
+      <li><a href="#screen-capture" id="markdown-toc-screen-capture">screen capture</a></li>
+    </ul>
+  </li>
+  <li><a href="#main-activity" id="markdown-toc-main-activity">Main Activity</a></li>
+  <li><a href="#imageadapter" id="markdown-toc-imageadapter">ImageAdapter</a></li>
+  <li><a href="#myimage" id="markdown-toc-myimage">MyImage</a></li>
+  <li><a href="#mainactivity-xml" id="markdown-toc-mainactivity-xml"><code>MainActivity xml</code></a></li>
+  <li><a href="#custom-dialog-layout" id="markdown-toc-custom-dialog-layout"><code>Custom dialog Layout</code></a></li>
+  <li><a href="#custom-item-layout" id="markdown-toc-custom-item-layout"><code>Custom item Layout</code></a></li>
+  <li><a href="#stringsxml" id="markdown-toc-stringsxml"><code>strings.xml</code></a></li>
+  <li><a href="#colorsxml" id="markdown-toc-colorsxml"><code>colors.xml</code></a></li>
+  <li><a href="#references" id="markdown-toc-references">References:</a></li>
+</ul>
+
+<h1 id="about">About</h1>
+
+<p>The following will be implemented in this tutorial:</p>
+
+<ul>
+  <li>ListView in main window which include:
+    <ul>
+      <li><code>ImageAdapter</code> extends from an ArrayAdapter: which is used to populating data from ArrayList to ListView.
+        <ul>
+          <li>A ViewHolder pattern is used to speed up ListView, smoother and faster item loading.</li>
+          <li><code>ThumbnailUtils</code> is used to build a Thumbnail for list view.</li>
+        </ul>
+      </li>
+      <li>custom <code>item_image.xml</code> to create a custom item view for ListView: Thumbnail at left side and description at the
+  right side.</li>
+    </ul>
+  </li>
+  <li>Use Dialog to build a Dialog box (popup window):
+    <ul>
+      <li>user can choose take a photo (will be saved in gallery folder, and add Thumbnail, image information and image path
+   to ListView).</li>
+      <li>user can choose existing photo from gallery to ListView.</li>
+    </ul>
+  </li>
+  <li>A MyImage class to hold image information</li>
+</ul>
+
+<h2 id="screen-capture">screen capture</h2>
+<p>Here is how it looks when it is done:</p>
+
+<p><img src="https://raw.githubusercontent.com/junjunguo/android/master/2015/ImageAdaptertoListView/main.png" alt="TableLayout" /></p>
+
+<p><img src="https://raw.githubusercontent.com/junjunguo/android/master/2015/ImageAdaptertoListView/dialog.png" alt="TableLayout" /></p>
+
+<p><img src="https://raw.githubusercontent.com/junjunguo/android/master/2015/ImageAdaptertoListView/gallery.png" alt="TableLayout" /></p>
+
+<p><img src="https://raw.githubusercontent.com/junjunguo/android/master/2015/ImageAdaptertoListView/image.png" alt="TableLayout" /></p>
+
+<p><img src="https://raw.githubusercontent.com/junjunguo/android/master/2015/ImageAdaptertoListView/listview.png" alt="TableLayout" /></p>
+
+<h1 id="main-activity">Main Activity</h1>
+
+<ul>
+  <li>create MyImage and fill with data</li>
+  <li>add MyImage to ArrayList</li>
+  <li>A ListView is used to show a vertical list of scrollable items</li>
+  <li>ArrayAdapter is used to converts an ArrayList of objects into view items loaded into the ListView container.</li>
+  <li>Use Dialog to build a popup window:
+    <ul>
+      <li>active take a photo:
+        <ul>
+          <li>deals with: taking pictures with camera in android.</li>
+          <li>will move to take photo view (photo be saved in gallery folder, and add Thumbnail, image information and
+  image path to ListView).</li>
+        </ul>
+      </li>
+      <li>active from gallery:
+        <ul>
+          <li>deals with: How to pick an image from gallery for app to use?</li>
+          <li>choose existing photo from android image gallery and show thumbnail and image path + image information to
+  ListView.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">ActionBarActivity</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">MyImage</span><span class="o">&gt;</span> <span class="n">images</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">ImageAdapter</span> <span class="n">imageAdapter</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">ListView</span> <span class="n">listView</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">Uri</span> <span class="n">mCapturedImageURI</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">RESULT_LOAD_IMAGE</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">REQUEST_IMAGE_CAPTURE</span> <span class="o">=</span> <span class="mi">2</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+        <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
+
+        <span class="c1">// Construct the data source</span>
+        <span class="n">images</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">();</span>
+        <span class="c1">// Create the adapter to convert the array to views</span>
+        <span class="n">imageAdapter</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ImageAdapter</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">images</span><span class="o">);</span>
+        <span class="c1">// Attach the adapter to a ListView</span>
+        <span class="n">listView</span> <span class="o">=</span> <span class="o">(</span><span class="n">ListView</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">main_list_view</span><span class="o">);</span>
+        <span class="n">listView</span><span class="o">.</span><span class="na">setAdapter</span><span class="o">(</span><span class="n">imageAdapter</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">btnAddOnClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">final</span> <span class="n">Dialog</span> <span class="n">dialog</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dialog</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+        <span class="n">dialog</span><span class="o">.</span><span class="na">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">custom_dialog_box</span><span class="o">);</span>
+        <span class="n">dialog</span><span class="o">.</span><span class="na">setTitle</span><span class="o">(</span><span class="s">&quot;Alert Dialog View&quot;</span><span class="o">);</span>
+        <span class="n">Button</span> <span class="n">btnExit</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">dialog</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">btnExit</span><span class="o">);</span>
+        <span class="n">btnExit</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">dialog</span><span class="o">.</span><span class="na">dismiss</span><span class="o">();</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+        <span class="n">dialog</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">btnChoosePath</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+                    <span class="nd">@Override</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+                        <span class="n">activeGallery</span><span class="o">();</span>
+                    <span class="o">}</span>
+                <span class="o">});</span>
+        <span class="n">dialog</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">btnTakePhoto</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+                    <span class="nd">@Override</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+                        <span class="n">activeTakePhoto</span><span class="o">();</span>
+                    <span class="o">}</span>
+                <span class="o">});</span>
+
+        <span class="c1">// show dialog on screen</span>
+        <span class="n">dialog</span><span class="o">.</span><span class="na">show</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * take a photo</span>
+<span class="cm">     */</span>
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">activeTakePhoto</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">Intent</span> <span class="n">takePictureIntent</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Intent</span><span class="o">(</span><span class="n">MediaStore</span><span class="o">.</span><span class="na">ACTION_IMAGE_CAPTURE</span><span class="o">);</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">takePictureIntent</span><span class="o">.</span><span class="na">resolveActivity</span><span class="o">(</span><span class="n">getPackageManager</span><span class="o">())</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">String</span> <span class="n">fileName</span> <span class="o">=</span> <span class="s">&quot;temp.jpg&quot;</span><span class="o">;</span>
+            <span class="n">ContentValues</span> <span class="n">values</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ContentValues</span><span class="o">();</span>
+            <span class="n">values</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">MediaStore</span><span class="o">.</span><span class="na">Images</span><span class="o">.</span><span class="na">Media</span><span class="o">.</span><span class="na">TITLE</span><span class="o">,</span> <span class="n">fileName</span><span class="o">);</span>
+            <span class="n">mCapturedImageURI</span> <span class="o">=</span> <span class="n">getContentResolver</span><span class="o">()</span>
+                    <span class="o">.</span><span class="na">insert</span><span class="o">(</span><span class="n">MediaStore</span><span class="o">.</span><span class="na">Images</span><span class="o">.</span><span class="na">Media</span><span class="o">.</span><span class="na">EXTERNAL_CONTENT_URI</span><span class="o">,</span>
+                            <span class="n">values</span><span class="o">);</span>
+            <span class="n">takePictureIntent</span>
+                    <span class="o">.</span><span class="na">putExtra</span><span class="o">(</span><span class="n">MediaStore</span><span class="o">.</span><span class="na">EXTRA_OUTPUT</span><span class="o">,</span> <span class="n">mCapturedImageURI</span><span class="o">);</span>
+            <span class="n">startActivityForResult</span><span class="o">(</span><span class="n">takePictureIntent</span><span class="o">,</span> <span class="n">REQUEST_IMAGE_CAPTURE</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * to gallery</span>
+<span class="cm">     */</span>
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">activeGallery</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">Intent</span> <span class="n">intent</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Intent</span><span class="o">(</span><span class="n">Intent</span><span class="o">.</span><span class="na">ACTION_PICK</span><span class="o">,</span>
+                <span class="n">android</span><span class="o">.</span><span class="na">provider</span><span class="o">.</span><span class="na">MediaStore</span><span class="o">.</span><span class="na">Images</span><span class="o">.</span><span class="na">Media</span><span class="o">.</span><span class="na">EXTERNAL_CONTENT_URI</span><span class="o">);</span>
+        <span class="n">startActivityForResult</span><span class="o">(</span><span class="n">intent</span><span class="o">,</span> <span class="n">RESULT_LOAD_IMAGE</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span> <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onActivityResult</span><span class="o">(</span><span class="kt">int</span> <span class="n">requestCode</span><span class="o">,</span> <span class="kt">int</span> <span class="n">resultCode</span><span class="o">,</span>
+            <span class="n">Intent</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onActivityResult</span><span class="o">(</span><span class="n">requestCode</span><span class="o">,</span> <span class="n">resultCode</span><span class="o">,</span> <span class="n">data</span><span class="o">);</span>
+        <span class="k">switch</span> <span class="o">(</span><span class="n">requestCode</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">case</span> <span class="n">RESULT_LOAD_IMAGE</span><span class="o">:</span>
+                <span class="k">if</span> <span class="o">(</span><span class="n">requestCode</span> <span class="o">==</span> <span class="n">RESULT_LOAD_IMAGE</span> <span class="o">&amp;&amp;</span>
+                        <span class="n">resultCode</span> <span class="o">==</span> <span class="n">RESULT_OK</span> <span class="o">&amp;&amp;</span> <span class="kc">null</span> <span class="o">!=</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="n">Uri</span> <span class="n">selectedImage</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="na">getData</span><span class="o">();</span>
+                    <span class="n">String</span><span class="o">[]</span> <span class="n">filePathColumn</span> <span class="o">=</span> <span class="o">{</span><span class="n">MediaStore</span><span class="o">.</span><span class="na">Images</span><span class="o">.</span><span class="na">Media</span><span class="o">.</span><span class="na">DATA</span><span class="o">};</span>
+                    <span class="n">Cursor</span> <span class="n">cursor</span> <span class="o">=</span> <span class="n">getContentResolver</span><span class="o">()</span>
+                            <span class="o">.</span><span class="na">query</span><span class="o">(</span><span class="n">selectedImage</span><span class="o">,</span> <span class="n">filePathColumn</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span>
+                                    <span class="kc">null</span><span class="o">);</span>
+                    <span class="n">cursor</span><span class="o">.</span><span class="na">moveToFirst</span><span class="o">();</span>
+                    <span class="kt">int</span> <span class="n">columnIndex</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="na">getColumnIndex</span><span class="o">(</span><span class="n">filePathColumn</span><span class="o">[</span><span class="mi">0</span><span class="o">]);</span>
+                    <span class="n">String</span> <span class="n">picturePath</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="n">columnIndex</span><span class="o">);</span>
+                    <span class="n">cursor</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+                    <span class="n">MyImage</span> <span class="n">image</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyImage</span><span class="o">();</span>
+                    <span class="n">image</span><span class="o">.</span><span class="na">setTitle</span><span class="o">(</span><span class="s">&quot;Test&quot;</span><span class="o">);</span>
+                    <span class="n">image</span><span class="o">.</span><span class="na">setDescription</span><span class="o">(</span>
+                            <span class="s">&quot;test choose a photo from gallery and add it to &quot;</span> <span class="o">+</span>
+                                    <span class="s">&quot;list view&quot;</span><span class="o">);</span>
+                    <span class="n">image</span><span class="o">.</span><span class="na">setDatetime</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">());</span>
+                    <span class="n">image</span><span class="o">.</span><span class="na">setPath</span><span class="o">(</span><span class="n">picturePath</span><span class="o">);</span>
+                    <span class="n">images</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">image</span><span class="o">);</span>
+                <span class="o">}</span>
+            <span class="k">case</span> <span class="n">REQUEST_IMAGE_CAPTURE</span><span class="o">:</span>
+                <span class="k">if</span> <span class="o">(</span><span class="n">requestCode</span> <span class="o">==</span> <span class="n">REQUEST_IMAGE_CAPTURE</span> <span class="o">&amp;&amp;</span>
+                        <span class="n">resultCode</span> <span class="o">==</span> <span class="n">RESULT_OK</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="n">String</span><span class="o">[]</span> <span class="n">projection</span> <span class="o">=</span> <span class="o">{</span><span class="n">MediaStore</span><span class="o">.</span><span class="na">Images</span><span class="o">.</span><span class="na">Media</span><span class="o">.</span><span class="na">DATA</span><span class="o">};</span>
+                    <span class="n">Cursor</span> <span class="n">cursor</span> <span class="o">=</span>
+                            <span class="n">managedQuery</span><span class="o">(</span><span class="n">mCapturedImageURI</span><span class="o">,</span> <span class="n">projection</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span>
+                                    <span class="kc">null</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+                    <span class="kt">int</span> <span class="n">column_index_data</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="na">getColumnIndexOrThrow</span><span class="o">(</span>
+                            <span class="n">MediaStore</span><span class="o">.</span><span class="na">Images</span><span class="o">.</span><span class="na">Media</span><span class="o">.</span><span class="na">DATA</span><span class="o">);</span>
+                    <span class="n">cursor</span><span class="o">.</span><span class="na">moveToFirst</span><span class="o">();</span>
+                    <span class="n">String</span> <span class="n">picturePath</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="n">column_index_data</span><span class="o">);</span>
+                    <span class="n">MyImage</span> <span class="n">image</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyImage</span><span class="o">();</span>
+                    <span class="n">image</span><span class="o">.</span><span class="na">setTitle</span><span class="o">(</span><span class="s">&quot;Test&quot;</span><span class="o">);</span>
+                    <span class="n">image</span><span class="o">.</span><span class="na">setDescription</span><span class="o">(</span>
+                            <span class="s">&quot;test take a photo and add it to list view&quot;</span><span class="o">);</span>
+                    <span class="n">image</span><span class="o">.</span><span class="na">setDatetime</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">());</span>
+                    <span class="n">image</span><span class="o">.</span><span class="na">setPath</span><span class="o">(</span><span class="n">picturePath</span><span class="o">);</span>
+                    <span class="n">images</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">image</span><span class="o">);</span>
+                <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<h1 id="imageadapter">ImageAdapter</h1>
+
+<ul>
+  <li>A ViewHolder pattern is used to speed up ListView, smoother and faster item loading.</li>
+  <li><code>ThumbnailUtils</code> is used to build a Thumbnail for list view.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ImageAdapter</span> <span class="kd">extends</span> <span class="n">ArrayAdapter</span><span class="o">&lt;</span><span class="n">MyImage</span><span class="o">&gt;</span> <span class="o">{</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * applying ViewHolder pattern to speed up ListView, smoother and faster</span>
+<span class="cm">     * item loading by caching view in A ViewHolder object</span>
+<span class="cm">     */</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">ViewHolder</span> <span class="o">{</span>
+        <span class="n">ImageView</span> <span class="n">imgIcon</span><span class="o">;</span>
+        <span class="n">TextView</span> <span class="n">description</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="nf">ImageAdapter</span><span class="o">(</span><span class="n">Context</span> <span class="n">context</span><span class="o">,</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">MyImage</span><span class="o">&gt;</span> <span class="n">images</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">(</span><span class="n">context</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">images</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span> <span class="kd">public</span> <span class="n">View</span> <span class="nf">getView</span><span class="o">(</span><span class="kt">int</span> <span class="n">position</span><span class="o">,</span> <span class="n">View</span> <span class="n">convertView</span><span class="o">,</span>
+            <span class="n">ViewGroup</span> <span class="n">parent</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// view lookup cache stored in tag</span>
+        <span class="n">ViewHolder</span> <span class="n">viewHolder</span><span class="o">;</span>
+        <span class="c1">// Check if an existing view is being reused, otherwise inflate the</span>
+        <span class="c1">// item view</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">convertView</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">viewHolder</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ViewHolder</span><span class="o">();</span>
+            <span class="n">convertView</span> <span class="o">=</span> <span class="n">LayoutInflater</span><span class="o">.</span><span class="na">from</span><span class="o">(</span><span class="n">getContext</span><span class="o">())</span>
+                    <span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">item_image</span><span class="o">,</span> <span class="n">parent</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+            <span class="n">viewHolder</span><span class="o">.</span><span class="na">description</span> <span class="o">=</span>
+                    <span class="o">(</span><span class="n">TextView</span><span class="o">)</span> <span class="n">convertView</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">item_img_infor</span><span class="o">);</span>
+            <span class="n">viewHolder</span><span class="o">.</span><span class="na">imgIcon</span> <span class="o">=</span>
+                    <span class="o">(</span><span class="n">ImageView</span><span class="o">)</span> <span class="n">convertView</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">item_img_icon</span><span class="o">);</span>
+            <span class="n">convertView</span><span class="o">.</span><span class="na">setTag</span><span class="o">(</span><span class="n">viewHolder</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="n">viewHolder</span> <span class="o">=</span> <span class="o">(</span><span class="n">ViewHolder</span><span class="o">)</span> <span class="n">convertView</span><span class="o">.</span><span class="na">getTag</span><span class="o">();</span>
+        <span class="o">}</span>
+        <span class="c1">// Get the data item for this position</span>
+        <span class="n">MyImage</span> <span class="n">image</span> <span class="o">=</span> <span class="n">getItem</span><span class="o">(</span><span class="n">position</span><span class="o">);</span>
+        <span class="c1">// set description text</span>
+        <span class="n">viewHolder</span><span class="o">.</span><span class="na">description</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="n">image</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+        <span class="c1">// set image icon</span>
+        <span class="kd">final</span> <span class="kt">int</span> <span class="n">THUMBSIZE</span> <span class="o">=</span> <span class="mi">96</span><span class="o">;</span>
+        <span class="c1">//        viewHolder.imgIcon.setImageURI(Uri.fromFile(new File(image</span>
+        <span class="c1">// .getPath())));</span>
+        <span class="n">viewHolder</span><span class="o">.</span><span class="na">imgIcon</span><span class="o">.</span><span class="na">setImageBitmap</span><span class="o">(</span><span class="n">ThumbnailUtils</span>
+                <span class="o">.</span><span class="na">extractThumbnail</span><span class="o">(</span><span class="n">BitmapFactory</span><span class="o">.</span><span class="na">decodeFile</span><span class="o">(</span><span class="n">image</span><span class="o">.</span><span class="na">getPath</span><span class="o">()),</span>
+                        <span class="n">THUMBSIZE</span><span class="o">,</span> <span class="n">THUMBSIZE</span><span class="o">));</span>
+
+        <span class="c1">// Return the completed view to render on screen</span>
+        <span class="k">return</span> <span class="n">convertView</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<h1 id="myimage">MyImage</h1>
+
+<p>holder image’s information.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyImage</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">title</span><span class="o">,</span> <span class="n">description</span><span class="o">,</span> <span class="n">path</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">Calendar</span> <span class="n">datetime</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">long</span> <span class="n">datetimeLong</span><span class="o">;</span>
+    <span class="kd">protected</span> <span class="n">SimpleDateFormat</span> <span class="n">df</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SimpleDateFormat</span><span class="o">(</span><span class="s">&quot;MMMM d, yy  h:mm&quot;</span><span class="o">);</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * Gets title.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @return Value of title.</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getTitle</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> <span class="n">title</span><span class="o">;</span> <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * Gets datetime.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @return Value of datetime.</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="n">Calendar</span> <span class="nf">getDatetime</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> <span class="n">datetime</span><span class="o">;</span> <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * Sets new datetimeLong.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @param datetimeLong New value of datetimeLong.</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setDatetime</span><span class="o">(</span><span class="kt">long</span> <span class="n">datetimeLong</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">datetimeLong</span> <span class="o">=</span> <span class="n">datetimeLong</span><span class="o">;</span>
+        <span class="n">Calendar</span> <span class="n">cal</span> <span class="o">=</span> <span class="n">Calendar</span><span class="o">.</span><span class="na">getInstance</span><span class="o">();</span>
+        <span class="n">cal</span><span class="o">.</span><span class="na">setTimeInMillis</span><span class="o">(</span><span class="n">datetimeLong</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">datetime</span> <span class="o">=</span> <span class="n">cal</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * Sets new datetime.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @param datetime New value of datetime.</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setDatetime</span><span class="o">(</span><span class="n">Calendar</span> <span class="n">datetime</span><span class="o">)</span> <span class="o">{</span> <span class="k">this</span><span class="o">.</span><span class="na">datetime</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">;</span> <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * Gets description.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @return Value of description.</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getDescription</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> <span class="n">description</span><span class="o">;</span> <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * Sets new title.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @param title New value of title.</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setTitle</span><span class="o">(</span><span class="n">String</span> <span class="n">title</span><span class="o">)</span> <span class="o">{</span> <span class="k">this</span><span class="o">.</span><span class="na">title</span> <span class="o">=</span> <span class="n">title</span><span class="o">;</span> <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * Gets datetimeLong.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @return Value of datetimeLong.</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">long</span> <span class="nf">getDatetimeLong</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> <span class="n">datetimeLong</span><span class="o">;</span> <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * Sets new description.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @param description New value of description.</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setDescription</span><span class="o">(</span><span class="n">String</span> <span class="n">description</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">description</span> <span class="o">=</span> <span class="n">description</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * Sets new path.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @param path New value of path.</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setPath</span><span class="o">(</span><span class="n">String</span> <span class="n">path</span><span class="o">)</span> <span class="o">{</span> <span class="k">this</span><span class="o">.</span><span class="na">path</span> <span class="o">=</span> <span class="n">path</span><span class="o">;</span> <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * Gets path.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @return Value of path.</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getPath</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> <span class="n">path</span><span class="o">;</span> <span class="o">}</span>
+
+    <span class="nd">@Override</span> <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="s">&quot;Title:&quot;</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s">&quot;   &quot;</span> <span class="o">+</span> <span class="n">df</span><span class="o">.</span><span class="na">format</span><span class="o">(</span><span class="n">datetime</span><span class="o">.</span><span class="na">getTime</span><span class="o">())</span> <span class="o">+</span>
+                <span class="s">&quot;\nDescription:&quot;</span> <span class="o">+</span> <span class="n">description</span> <span class="o">+</span> <span class="s">&quot;\nPath:&quot;</span> <span class="o">+</span> <span class="n">path</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<h1 id="mainactivity-xml"><code>MainActivity xml</code></h1>
+
+<p><code>layout/activity_main.xml</code> has a TextView and a Button to active Alert Dialog window:</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="nt">&lt;LinearLayout</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+              <span class="na">xmlns:tools=</span><span class="s">&quot;http://schemas.android.com/tools&quot;</span>
+              <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+              <span class="na">android:layout_height=</span><span class="s">&quot;match_parent&quot;</span>
+              <span class="na">android:orientation=</span><span class="s">&quot;vertical&quot;</span>
+              <span class="na">tools:context=</span><span class="s">&quot;.MainActivity&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;Button</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;50dp&quot;</span>
+        <span class="na">android:background=</span><span class="s">&quot;@color/deepPurple4&quot;</span>
+        <span class="na">android:textColor=</span><span class="s">&quot;@color/white&quot;</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/btnAdd&quot;</span>
+        <span class="na">android:onClick=</span><span class="s">&quot;btnAddOnClick&quot;</span>
+        <span class="na">android:text=</span><span class="s">&quot;@string/add_image&quot;</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;ListView</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;match_parent&quot;</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/main_list_view&quot;</span>
+        <span class="na">android:cacheColorHint=</span><span class="s">&quot;@color/deepPurple1&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/ListView&gt;</span>
+
+<span class="nt">&lt;/LinearLayout&gt;</span></code></pre></figure>
+
+<h1 id="custom-dialog-layout"><code>Custom dialog Layout</code></h1>
+
+<p><code>layout/custom_dialog_box.xml</code> defines the outlook of Alert Dialog window, which contains:</p>
+
+<ul>
+  <li>take photo button</li>
+  <li>choose image from gallery button</li>
+  <li>and an exit button</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="nt">&lt;RelativeLayout</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+                <span class="na">android:layout_width=</span><span class="s">&quot;fill_parent&quot;</span>
+                <span class="na">android:background=</span><span class="s">&quot;@color/deepPurple5&quot;</span>
+                <span class="na">android:paddingLeft=</span><span class="s">&quot;@dimen/activity_horizontal_margin&quot;</span>
+                <span class="na">android:paddingRight=</span><span class="s">&quot;@dimen/activity_horizontal_margin&quot;</span>
+                <span class="na">android:paddingTop=</span><span class="s">&quot;@dimen/activity_vertical_margin&quot;</span>
+                <span class="na">android:paddingBottom=</span><span class="s">&quot;@dimen/activity_vertical_margin&quot;</span>
+                <span class="na">android:layout_height=</span><span class="s">&quot;fill_parent&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;Button</span>
+        <span class="na">android:onClick=</span><span class="s">&quot;btnChoosePathClicked&quot;</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/btnChoosePath&quot;</span>
+        <span class="na">android:background=</span><span class="s">&quot;@color/deepPurple1&quot;</span>
+        <span class="na">android:textColor=</span><span class="s">&quot;@color/deepPurple5&quot;</span>
+        <span class="na">android:layout_centerHorizontal=</span><span class="s">&quot;true&quot;</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:layout_marginBottom=</span><span class="s">&quot;20dp&quot;</span>
+        <span class="na">android:width=</span><span class="s">&quot;200dp&quot;</span>
+        <span class="na">android:text=</span><span class="s">&quot;From Gallery&quot;</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;Button</span>
+        <span class="na">android:onClick=</span><span class="s">&quot;btnTakePhotoClicked&quot;</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/btnTakePhoto&quot;</span>
+        <span class="na">android:background=</span><span class="s">&quot;@color/deepPurple2&quot;</span>
+        <span class="na">android:textColor=</span><span class="s">&quot;@color/deepPurple5&quot;</span>
+        <span class="na">android:layout_centerHorizontal=</span><span class="s">&quot;true&quot;</span>
+        <span class="na">android:layout_below=</span><span class="s">&quot;@id/btnChoosePath&quot;</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:layout_marginBottom=</span><span class="s">&quot;20dp&quot;</span>
+        <span class="na">android:width=</span><span class="s">&quot;200dp&quot;</span>
+        <span class="na">android:text=</span><span class="s">&quot;Take Photo&quot;</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;Button</span>
+        <span class="na">android:onClick=</span><span class="s">&quot;btnExitClicked&quot;</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/btnExit&quot;</span>
+        <span class="na">android:background=</span><span class="s">&quot;@color/deepPurple4&quot;</span>
+        <span class="na">android:textColor=</span><span class="s">&quot;@color/black&quot;</span>
+        <span class="na">android:layout_centerHorizontal=</span><span class="s">&quot;true&quot;</span>
+        <span class="na">android:layout_below=</span><span class="s">&quot;@id/btnTakePhoto&quot;</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:width=</span><span class="s">&quot;200dp&quot;</span>
+        <span class="na">android:text=</span><span class="s">&quot;Exit&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/RelativeLayout&gt;</span></code></pre></figure>
+
+<h1 id="custom-item-layout"><code>Custom item Layout</code></h1>
+
+<p><code>item_image.xml</code> customize item row in ListView.</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="nt">&lt;LinearLayout</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+              <span class="na">android:orientation=</span><span class="s">&quot;horizontal&quot;</span>
+              <span class="na">android:background=</span><span class="s">&quot;@color/deepPurple5&quot;</span>
+              <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+              <span class="na">android:layout_height=</span><span class="s">&quot;match_parent&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;ImageView</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/item_img_icon&quot;</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:src=</span><span class="s">&quot;@drawable/ic_launcher&quot;</span>
+        <span class="na">android:padding=</span><span class="s">&quot;5dp&quot;</span>
+        <span class="na">android:layout_marginRight=</span><span class="s">&quot;10dp&quot;</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;TextView</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/item_img_infor&quot;</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:text=</span><span class="s">&quot;@string/image_information&quot;</span>
+        <span class="na">android:textColor=</span><span class="s">&quot;@color/deepPurple1&quot;</span>
+        <span class="na">android:padding=</span><span class="s">&quot;5dp&quot;</span>
+        <span class="na">android:layout_marginLeft=</span><span class="s">&quot;10dp&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/LinearLayout&gt;</span></code></pre></figure>
+
+<h1 id="stringsxml"><code>strings.xml</code></h1>
+<p>The <code>strings.xml</code> in <code>values</code>:</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="nt">&lt;resources&gt;</span>
+    <span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&quot;app_name&quot;</span><span class="nt">&gt;</span>image adapter to listview<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&quot;action_settings&quot;</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&quot;add_image&quot;</span><span class="nt">&gt;</span>Add Image<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&quot;title_activity_display_image&quot;</span><span class="nt">&gt;</span>DisplayImage<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&quot;image_information&quot;</span><span class="nt">&gt;</span>Image Information<span class="nt">&lt;/string&gt;</span>
+<span class="nt">&lt;/resources&gt;</span></code></pre></figure>
+
+<h1 id="colorsxml"><code>colors.xml</code></h1>
+<p>The deep purple style colors in <code>values/colors.xml</code>:</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="nt">&lt;resources&gt;</span>
+    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">&quot;deepPurple1&quot;</span><span class="nt">&gt;</span>#311B92<span class="nt">&lt;/color&gt;</span>
+    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">&quot;deepPurple2&quot;</span><span class="nt">&gt;</span>#512DA8<span class="nt">&lt;/color&gt;</span>
+    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">&quot;deepPurple3&quot;</span><span class="nt">&gt;</span>#673AB7<span class="nt">&lt;/color&gt;</span>
+    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">&quot;deepPurple4&quot;</span><span class="nt">&gt;</span>#9575CD<span class="nt">&lt;/color&gt;</span>
+    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">&quot;deepPurple5&quot;</span><span class="nt">&gt;</span>#D1C4E9<span class="nt">&lt;/color&gt;</span>
+    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">&quot;black&quot;</span><span class="nt">&gt;</span>#000<span class="nt">&lt;/color&gt;</span>
+    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">&quot;white&quot;</span><span class="nt">&gt;</span>#fff<span class="nt">&lt;/color&gt;</span>
+<span class="nt">&lt;/resources&gt;</span></code></pre></figure>
+
+<h1 id="references">References:</h1>
+
+<ul>
+  <li>http://developer.android.com/reference/android/widget/ArrayAdapter.html</li>
+  <li>http://developer.android.com/training/improving-layouts/smooth-scrolling.html</li>
+  <li>https://github.com/codepath/android_guides/wiki/Using-an-ArrayAdapter-with-ListView</li>
+  <li>http://developer.android.com/training/camera/photobasics.html</li>
+  <li>http://developer.android.com/reference/android/media/ThumbnailUtils.html</li>
+</ul>
+
+<p>Source code <a href="https://github.com/junjunguo/android/tree/master/2015/ImageAdaptertoListView">on Github</a></p>
+
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'guojunjunsblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="https://www.junjunguo.com/articles/android-take-photo-show-in-list-view/" class="btn" title="Android take photo and save to gallery, choose photo from gallery and show in ListView">Previous</a>
+      
+      
+        <a href="https://www.junjunguo.com/articles/android-sqlite-image-view/" class="btn" title="Android ListView Image save data in SQLite Database">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2017 <a href="https://junjunguo.github.io" rel="nofollow">  GuoJunjun</a></span>
+<div class="social-icons">
+    
+    
+    <a href="http://plus.google.com/+GuoJunjun"
+                                      title="GuoJunjun on Google+" target="_blank"><i
+        class="fa fa-google-plus-square fa-2x"></i></a>
+    <a href="http://linkedin.com/in/guojunjun"
+                                   title="GuoJunjun on LinkedIn" target="_blank"><i
+        class="fa fa-linkedin-square fa-2x"></i></a>
+    
+    
+    <a href="http://www.flickr.com/photos/guojunjun"
+                                 title="GuoJunjun on Flickr" target="_blank"><i
+        class="fa fa-flickr fa-2x"></i></a>
+    <a href="http://github.com/junjunguo" title="GuoJunjun on Github"
+                                 target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+    
+    <a href="https://www.junjunguo.com/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'https://www.junjunguo.com';
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://www.junjunguo.com/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="https://www.junjunguo.com/assets/js/scripts.min.js"></script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-49981756-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+	        
+
+</body>
+</html>

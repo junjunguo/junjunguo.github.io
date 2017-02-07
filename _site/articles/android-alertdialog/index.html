@@ -1,0 +1,434 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Android Alert Dialog &#8211; GuoJunjun's Tech Blog</title>
+<meta name="description" content="Android display dialog box / popup window">
+<meta name="keywords" content="Android, code, GUI, Java, Mobile">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Android Alert Dialog">
+<meta name="twitter:description" content="Android display dialog box / popup window">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.junjunguo.com/images/summer2014-117.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android Alert Dialog">
+<meta property="og:description" content="Android display dialog box / popup window">
+<meta property="og:url" content="https://www.junjunguo.com/articles/android-alertdialog/">
+<meta property="og:site_name" content="GuoJunjun's Tech Blog">
+
+
+<meta name="msvalidate.01" content="5CBE5B96A4448FF4606A09686D87D9D5">
+
+
+<link rel="canonical" href="https://www.junjunguo.com/articles/android-alertdialog/">
+<link href="https://www.junjunguo.com/feed.xml" type="application/atom+xml" rel="alternate" title="GuoJunjun's Tech Blog Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://www.junjunguo.com/assets/css/main.css">
+<!-- Webfonts -->
+<script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="https://www.junjunguo.com/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="https://www.junjunguo.com/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="https://www.junjunguo.com/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://www.junjunguo.com/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="https://www.junjunguo.com/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="https://www.junjunguo.com/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.junjunguo.com/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.junjunguo.com/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.junjunguo.com/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="https://www.junjunguo.com/tech.html" >Latest</a></li>
+		  
+		    
+		    <li><a href="https://www.junjunguo.com/blog/" >Blog</a></li>
+		  
+		    
+		    <li><a href="https://www.junjunguo.com/tags/" >Tags</a></li>
+		  
+		    
+		    <li><a href="https://www.junjunguo.com/search/" >Search</a></li>
+		  
+		    
+		    <li><a href="https://www.junjunguo.com/index.html" >About</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	
+		<div class="wrap">
+			<a href="https://www.junjunguo.com/" class="site-logo" rel="home" title="GuoJunjun's Tech Blog"><img src="https://www.junjunguo.com/images/site-logo.png" width="200" height="200" alt="GuoJunjun's Tech Blog logo" class="animated bounceInDown"></a>
+		</div>
+	
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+<div id="main" role="main">
+  <article class="hentry">
+    <img src="https://www.junjunguo.com/images/summer2014-117.jpg" class="entry-feature-image" alt="Android Alert Dialog" ><p class="image-credit">Photo Credit: <a href="https://junjunguo.github.io">GuoJunjun</a>
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="https://www.junjunguo.com/tags/#Android" title="Pages tagged Android">Android</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#code" title="Pages tagged code">code</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#GUI" title="Pages tagged GUI">GUI</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#Java" title="Pages tagged Java">Java</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#Mobile" title="Pages tagged Mobile">Mobile</a></span>
+        
+          <h1 class="entry-title">Android Alert Dialog</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="https://www.junjunguo.com/images/bio-photo.jpg" class="bio-photo" alt="GuoJunjun bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">GuoJunjun</span></span>
+        <span class="entry-date date published"><time datetime="2015-03-21T00:00:00+01:00"><i class="fa fa-calendar-o"></i> March 21, 2015</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=Android,code,GUI,Java,Mobile&amp;text=Android%20Alert%20Dialog&amp;url=https://www.junjunguo.com/articles/android-alertdialog/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.junjunguo.com/articles/android-alertdialog/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=https://www.junjunguo.com/articles/android-alertdialog/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <h1 class="no_toc" id="contents">Contents</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#alert-dialog-box" id="markdown-toc-alert-dialog-box">Alert Dialog box</a></li>
+  <li><a href="#main-activity-class" id="markdown-toc-main-activity-class">Main Activity class</a></li>
+  <li><a href="#layoutmainactivity" id="markdown-toc-layoutmainactivity"><code>layout/MainActivity</code></a></li>
+  <li><a href="#layoutcustom_layoutxml" id="markdown-toc-layoutcustom_layoutxml"><code>layout/custom_layout.xml</code></a></li>
+  <li><a href="#stringsxml" id="markdown-toc-stringsxml">strings.xml</a></li>
+  <li><a href="#colorsxml" id="markdown-toc-colorsxml">colors.xml</a></li>
+</ul>
+
+<h1 id="alert-dialog-box">Alert Dialog box</h1>
+<p>An Alert Dialog box or popup window is useful when it is needed to ask the user to make a decision, like a yes or no,
+ or response to some particular action etc, in the same screen.</p>
+
+<blockquote>
+  <p>A dialog is a small window that prompts the user to make a decision or enter additional information. A dialog does not fill the screen and is normally used for modal events that require users to take an action before they can proceed.</p>
+</blockquote>
+
+<blockquote>
+  <p>Dialogs prompt the user for decisions or additional information required by the app to continue a task. Such requests can range from simple Cancel/OK decisions to more complex layouts asking the user to adjust settings or enter text.</p>
+</blockquote>
+
+<p>Implementation:</p>
+
+<ul>
+  <li>Use Dialog to build a Dialog box (popup window)</li>
+  <li>One xml to define main window</li>
+  <li>another xml to define custom Dialog box layout</li>
+</ul>
+
+<p>Here is how it looks when it is done:</p>
+
+<p><img src="https://raw.githubusercontent.com/junjunguo/android/master/2015/AlertDialog/window.png" alt="TableLayout" /></p>
+
+<p><img src="https://raw.githubusercontent.com/junjunguo/android/master/2015/AlertDialog/dialog.png" alt="TableLayout" /></p>
+
+<h1 id="main-activity-class">Main Activity class</h1>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="kn">package</span> <span class="nn">com.junjunguo.alertdialogbuilder</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">android.app.Dialog</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.support.v7.app.ActionBarActivity</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.Menu</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.MenuItem</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.View</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.widget.Button</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.widget.TextView</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">ActionBarActivity</span> <span class="o">{</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+        <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">btnAlertDialogClicked</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">final</span> <span class="n">Dialog</span> <span class="n">dialog</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dialog</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+        <span class="n">dialog</span><span class="o">.</span><span class="na">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">custom_layout</span><span class="o">);</span>
+        <span class="n">dialog</span><span class="o">.</span><span class="na">setTitle</span><span class="o">(</span><span class="s">&quot;Alert Dialog View&quot;</span><span class="o">);</span>
+
+        <span class="n">TextView</span> <span class="n">textView</span> <span class="o">=</span> <span class="o">(</span><span class="n">TextView</span><span class="o">)</span> <span class="n">dialog</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">custom_text_view</span><span class="o">);</span>
+        <span class="n">textView</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="s">&quot;Alert Dialog view : imageView+textView+Button&quot;</span><span class="o">);</span>
+
+        <span class="n">Button</span> <span class="n">btnExit</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">dialog</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">btnExit</span><span class="o">);</span>
+        <span class="n">btnExit</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">dialog</span><span class="o">.</span><span class="na">dismiss</span><span class="o">();</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+        <span class="c1">// show dialog on screen</span>
+        <span class="n">dialog</span><span class="o">.</span><span class="na">show</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<h1 id="layoutmainactivity"><code>layout/MainActivity</code></h1>
+
+<p><code>layout/MainActivity</code> has a TextView and a Button to active Alert Dialog window:</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="nt">&lt;RelativeLayout</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+                <span class="na">xmlns:tools=</span><span class="s">&quot;http://schemas.android.com/tools&quot;</span>
+                <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+                <span class="na">android:layout_height=</span><span class="s">&quot;match_parent&quot;</span>
+                <span class="na">android:paddingLeft=</span><span class="s">&quot;@dimen/activity_horizontal_margin&quot;</span>
+                <span class="na">android:paddingRight=</span><span class="s">&quot;@dimen/activity_horizontal_margin&quot;</span>
+                <span class="na">android:paddingTop=</span><span class="s">&quot;@dimen/activity_vertical_margin&quot;</span>
+                <span class="na">android:paddingBottom=</span><span class="s">&quot;@dimen/activity_vertical_margin&quot;</span>
+                <span class="na">tools:context=</span><span class="s">&quot;.MainActivity&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;TextView</span>
+        <span class="na">android:text=</span><span class="s">&quot;@string/alert_dialog&quot;</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/custom_text_view&quot;</span>
+        <span class="na">android:textSize=</span><span class="s">&quot;24dp&quot;</span>
+        <span class="na">android:layout_marginBottom=</span><span class="s">&quot;30dp&quot;</span>
+        <span class="na">android:textColor=</span><span class="s">&quot;@color/red1&quot;</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:layout_centerInParent=</span><span class="s">&quot;true&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;Button</span>
+        <span class="na">android:onClick=</span><span class="s">&quot;btnAlertDialogClicked&quot;</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/btnShowAlert&quot;</span>
+        <span class="na">android:background=</span><span class="s">&quot;@color/red2&quot;</span>
+        <span class="na">android:textColor=</span><span class="s">&quot;@color/white&quot;</span>
+        <span class="na">android:layout_centerHorizontal=</span><span class="s">&quot;true&quot;</span>
+        <span class="na">android:padding=</span><span class="s">&quot;20dp&quot;</span>
+        <span class="na">android:layout_below=</span><span class="s">&quot;@id/custom_text_view&quot;</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:text=</span><span class="s">&quot;@string/show_alert_view&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/RelativeLayout&gt;</span></code></pre></figure>
+
+<h1 id="layoutcustom_layoutxml"><code>layout/custom_layout.xml</code></h1>
+
+<p><code>layout/custom_layout.xml</code> defines the outlook of Alert Dialog window, which contains:</p>
+
+<ul>
+  <li>An ImageView shows an image</li>
+  <li>a TextView to display text</li>
+  <li>and an exit button</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="nt">&lt;RelativeLayout</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+                <span class="na">android:layout_width=</span><span class="s">&quot;fill_parent&quot;</span>
+                <span class="na">android:background=</span><span class="s">&quot;@color/red5&quot;</span>
+                <span class="na">android:paddingLeft=</span><span class="s">&quot;@dimen/activity_horizontal_margin&quot;</span>
+                <span class="na">android:paddingRight=</span><span class="s">&quot;@dimen/activity_horizontal_margin&quot;</span>
+                <span class="na">android:paddingTop=</span><span class="s">&quot;@dimen/activity_vertical_margin&quot;</span>
+                <span class="na">android:paddingBottom=</span><span class="s">&quot;@dimen/activity_vertical_margin&quot;</span>
+                <span class="na">android:layout_height=</span><span class="s">&quot;fill_parent&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;ImageView</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/img_icon&quot;</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:src=</span><span class="s">&quot;@drawable/ic_launcher&quot;</span>
+        <span class="na">android:layout_centerHorizontal=</span><span class="s">&quot;true&quot;</span>
+        <span class="na">android:padding=</span><span class="s">&quot;5dp&quot;</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;TextView</span>
+        <span class="na">android:text=</span><span class="s">&quot;@string/alert_dialog&quot;</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/custom_text_view&quot;</span>
+        <span class="na">android:textSize=</span><span class="s">&quot;20dp&quot;</span>
+        <span class="na">android:layout_below=</span><span class="s">&quot;@id/img_icon&quot;</span>
+        <span class="na">android:layout_centerHorizontal=</span><span class="s">&quot;true&quot;</span>
+        <span class="na">android:layout_marginBottom=</span><span class="s">&quot;20dp&quot;</span>
+        <span class="na">android:layout_marginTop=</span><span class="s">&quot;20dp&quot;</span>
+        <span class="na">android:textColor=</span><span class="s">&quot;@color/red1&quot;</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;Button</span>
+        <span class="na">android:onClick=</span><span class="s">&quot;btnExitClicked&quot;</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/btnExit&quot;</span>
+        <span class="na">android:background=</span><span class="s">&quot;@color/red1&quot;</span>
+        <span class="na">android:textColor=</span><span class="s">&quot;@color/red5&quot;</span>
+        <span class="na">android:layout_centerHorizontal=</span><span class="s">&quot;true&quot;</span>
+        <span class="na">android:layout_below=</span><span class="s">&quot;@id/custom_text_view&quot;</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:text=</span><span class="s">&quot;@string/exit&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/RelativeLayout&gt;</span></code></pre></figure>
+
+<h1 id="stringsxml">strings.xml</h1>
+<p>The <code>strings.xml</code> in <code>values</code></p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="nt">&lt;resources&gt;</span>
+    <span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&quot;app_name&quot;</span><span class="nt">&gt;</span>AlertDialog Builder<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&quot;hello_world&quot;</span><span class="nt">&gt;</span>Hello world!<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&quot;action_settings&quot;</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&quot;alert_dialog&quot;</span><span class="nt">&gt;</span>Alert Dialog<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&quot;show_alert_view&quot;</span><span class="nt">&gt;</span>Show Alert View<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&quot;exit&quot;</span><span class="nt">&gt;</span>Exit<span class="nt">&lt;/string&gt;</span>
+<span class="nt">&lt;/resources&gt;</span></code></pre></figure>
+
+<h1 id="colorsxml">colors.xml</h1>
+<p>The blue style colors in <code>values/colors.xml</code>:</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="nt">&lt;resources&gt;</span>
+    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">&quot;red1&quot;</span><span class="nt">&gt;</span>#D50000<span class="nt">&lt;/color&gt;</span>
+    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">&quot;red2&quot;</span><span class="nt">&gt;</span>#FF1744<span class="nt">&lt;/color&gt;</span>
+    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">&quot;red3&quot;</span><span class="nt">&gt;</span>#FF5252<span class="nt">&lt;/color&gt;</span>
+    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">&quot;red4&quot;</span><span class="nt">&gt;</span>#FF8A80<span class="nt">&lt;/color&gt;</span>
+    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">&quot;red5&quot;</span><span class="nt">&gt;</span>#FFCDD2<span class="nt">&lt;/color&gt;</span>
+    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">&quot;black&quot;</span><span class="nt">&gt;</span>#000<span class="nt">&lt;/color&gt;</span>
+    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">&quot;white&quot;</span><span class="nt">&gt;</span>#fff<span class="nt">&lt;/color&gt;</span>
+<span class="nt">&lt;/resources&gt;</span></code></pre></figure>
+
+<p>Source code <a href="https://github.com/junjunguo/android/tree/master/2015/AlertDialog">on Github</a></p>
+
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'guojunjunsblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="https://www.junjunguo.com/blog/android-table-layout-b/" class="btn" title="Android TableLayout">Previous</a>
+      
+      
+        <a href="https://www.junjunguo.com/blog/android-alertdialog-b/" class="btn" title="Android Alert Dialog">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2017 <a href="https://junjunguo.github.io" rel="nofollow">  GuoJunjun</a></span>
+<div class="social-icons">
+    
+    
+    <a href="http://plus.google.com/+GuoJunjun"
+                                      title="GuoJunjun on Google+" target="_blank"><i
+        class="fa fa-google-plus-square fa-2x"></i></a>
+    <a href="http://linkedin.com/in/guojunjun"
+                                   title="GuoJunjun on LinkedIn" target="_blank"><i
+        class="fa fa-linkedin-square fa-2x"></i></a>
+    
+    
+    <a href="http://www.flickr.com/photos/guojunjun"
+                                 title="GuoJunjun on Flickr" target="_blank"><i
+        class="fa fa-flickr fa-2x"></i></a>
+    <a href="http://github.com/junjunguo" title="GuoJunjun on Github"
+                                 target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+    
+    <a href="https://www.junjunguo.com/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'https://www.junjunguo.com';
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://www.junjunguo.com/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="https://www.junjunguo.com/assets/js/scripts.min.js"></script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-49981756-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+	        
+
+</body>
+</html>

@@ -1,0 +1,502 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Bootstrap Login &#8211; GuoJunjun's Tech Blog</title>
+<meta name="description" content="Bootstrap popup window Login and custom validation">
+<meta name="keywords" content="web design, code, GUI, HTML5, Bootstrap, JavaScript, CSS">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Bootstrap Login">
+<meta name="twitter:description" content="Bootstrap popup window Login and custom validation">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.junjunguo.com/images/14684795513_3605513909_o.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Bootstrap Login">
+<meta property="og:description" content="Bootstrap popup window Login and custom validation">
+<meta property="og:url" content="https://www.junjunguo.com/blog/bootstrap-modal-login-b/">
+<meta property="og:site_name" content="GuoJunjun's Tech Blog">
+
+
+<meta name="msvalidate.01" content="5CBE5B96A4448FF4606A09686D87D9D5">
+
+
+<link rel="canonical" href="https://www.junjunguo.com/blog/bootstrap-modal-login-b/">
+<link href="https://www.junjunguo.com/feed.xml" type="application/atom+xml" rel="alternate" title="GuoJunjun's Tech Blog Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://www.junjunguo.com/assets/css/main.css">
+<!-- Webfonts -->
+<script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="https://www.junjunguo.com/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="https://www.junjunguo.com/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="https://www.junjunguo.com/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://www.junjunguo.com/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="https://www.junjunguo.com/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="https://www.junjunguo.com/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.junjunguo.com/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.junjunguo.com/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.junjunguo.com/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="https://www.junjunguo.com/tech.html" >Latest</a></li>
+		  
+		    
+		    <li><a href="https://www.junjunguo.com/blog/" >Blog</a></li>
+		  
+		    
+		    <li><a href="https://www.junjunguo.com/tags/" >Tags</a></li>
+		  
+		    
+		    <li><a href="https://www.junjunguo.com/search/" >Search</a></li>
+		  
+		    
+		    <li><a href="https://www.junjunguo.com/index.html" >About</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	
+		<div class="wrap">
+			<a href="https://www.junjunguo.com/" class="site-logo" rel="home" title="GuoJunjun's Tech Blog"><img src="https://www.junjunguo.com/images/site-logo.png" width="200" height="200" alt="GuoJunjun's Tech Blog logo" class="animated bounceInDown"></a>
+		</div>
+	
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+<div id="main" role="main">
+  <article class="hentry">
+    <img src="https://www.junjunguo.com/images/14684795513_3605513909_o.jpg" class="entry-feature-image" alt="Bootstrap Login" ><p class="image-credit">Photo Credit: <a href="https://junjunguo.github.io">GuoJunjun</a>
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="https://www.junjunguo.com/tags/#web design" title="Pages tagged web design">web design</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#code" title="Pages tagged code">code</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#GUI" title="Pages tagged GUI">GUI</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#HTML5" title="Pages tagged HTML5">HTML5</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#Bootstrap" title="Pages tagged Bootstrap">Bootstrap</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#JavaScript" title="Pages tagged JavaScript">JavaScript</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#CSS" title="Pages tagged CSS">CSS</a></span>
+        
+          <h1 class="entry-title">Bootstrap Login</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="https://www.junjunguo.com/images/bio-photo.jpg" class="bio-photo" alt="GuoJunjun bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">GuoJunjun</span></span>
+        <span class="entry-date date published"><time datetime="2015-04-04T00:00:00+02:00"><i class="fa fa-calendar-o"></i> April 04, 2015</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=webdesign,code,GUI,HTML5,Bootstrap,JavaScript,CSS&amp;text=Bootstrap%20Login&amp;url=https://www.junjunguo.com/blog/bootstrap-modal-login-b/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.junjunguo.com/blog/bootstrap-modal-login-b/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=https://www.junjunguo.com/blog/bootstrap-modal-login-b/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <h1 class="no_toc" id="contents">Contents</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#about" id="markdown-toc-about">About</a>    <ul>
+      <li><a href="#screen-captures" id="markdown-toc-screen-captures">screen captures</a></li>
+    </ul>
+  </li>
+  <li><a href="#demonstration" id="markdown-toc-demonstration">Demonstration</a></li>
+  <li><a href="#head" id="markdown-toc-head">head</a></li>
+  <li><a href="#css" id="markdown-toc-css">css</a></li>
+  <li><a href="#body" id="markdown-toc-body">body</a>    <ul>
+      <li><a href="#start-button" id="markdown-toc-start-button">start button</a></li>
+      <li><a href="#login-modal" id="markdown-toc-login-modal">login modal</a></li>
+      <li><a href="#welcome-back-modal" id="markdown-toc-welcome-back-modal">welcome back modal</a></li>
+    </ul>
+  </li>
+  <li><a href="#javascript" id="markdown-toc-javascript">Javascript</a></li>
+  <li><a href="#references" id="markdown-toc-references">References:</a></li>
+</ul>
+
+<h1 id="about">About</h1>
+<p>This example use Bootstrap framework to build a responsive Login.</p>
+
+<ul>
+  <li>use Bootstraps modal to build a dialog window (popup window for login).</li>
+  <li>use html5 <code>required</code> to show error message</li>
+  <li>use JavaScript to custom input icon(Bootstrap: forms-control-validation).</li>
+</ul>
+
+<h2 id="screen-captures">screen captures</h2>
+
+<p><img src="https://raw.githubusercontent.com/junjunguo/webDevelopment/master/responsiveDesign/images/bootstraplogin1.png" alt="screen captures" />
+<img src="https://raw.githubusercontent
+.com/junjunguo/webDevelopment/master/responsiveDesign/images/bootstraplogin2.png" alt="screen captures" />
+<img src="https://raw.githubusercontent
+.com/junjunguo/webDevelopment/master/responsiveDesign/images/bootstraplogin3.png" alt="screen captures" />
+<img src="https://raw.githubusercontent
+.com/junjunguo/webDevelopment/master/responsiveDesign/images/bootstraplogin4.png" alt="screen captures" />
+<img src="https://raw.githubusercontent
+.com/junjunguo/webDevelopment/master/responsiveDesign/images/bootstraplogin5.png" alt="screen captures" />
+<img src="https://raw.githubusercontent
+.com/junjunguo/webDevelopment/master/responsiveDesign/images/bootstraplogin6.png" alt="screen captures" /></p>
+
+<h1 id="demonstration">Demonstration</h1>
+<p><a href="https://junjunguo.github.io/webDevelopment/bootstrapslogin.html">Demonstration</a></p>
+
+<ul>
+  <li>will open in a new window.</li>
+</ul>
+
+<h1 id="head">head</h1>
+<p>import bootstrap css and js
+import jquery js</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span></span><span class="c">&lt;!-- stylesheet --&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/bootstrap.min.css&quot;</span><span class="p">&gt;</span>
+
+<span class="c">&lt;!-- scripts--&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/jquery-1.11.2.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/bootstrap.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></figure>
+
+<h1 id="css">css</h1>
+<p>define css</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span></span><span class="o">&lt;</span><span class="nt">style</span><span class="o">&gt;</span>
+    <span class="p">.</span><span class="nc">form-signin</span> <span class="p">{</span>
+        <span class="k">max-width</span> <span class="p">:</span> <span class="mi">330</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">padding</span>   <span class="p">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">margin</span>    <span class="p">:</span> <span class="mi">0</span> <span class="kc">auto</span><span class="p">;</span>
+        <span class="p">}</span>
+
+    <span class="p">.</span><span class="nc">form-signin</span><span class="o">,</span> <span class="p">.</span><span class="nc">form-signin</span> <span class="p">{</span>
+        <span class="k">margin-bottom</span> <span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+        <span class="p">}</span>
+
+    <span class="p">#</span><span class="nn">inputPassword</span><span class="o">,</span> <span class="p">#</span><span class="nn">inputEmail</span><span class="o">,</span> <span class="p">#</span><span class="nn">loginSubmit</span> <span class="p">{</span>
+        <span class="k">margin</span> <span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">}</span>
+<span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span></code></pre></figure>
+
+<h1 id="body">body</h1>
+
+<h2 id="start-button">start button</h2>
+<p>to start the loginModal</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span></span><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;text-center&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">&quot;modal&quot;</span>
+            <span class="na">data-target</span><span class="o">=</span><span class="s">&quot;#loginModal&quot;</span><span class="p">&gt;</span>Login
+    <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre></figure>
+
+<h2 id="login-modal">login modal</h2>
+<p>login window layout:</p>
+
+<ul>
+  <li><code>required</code> to validate input.
+    <ul>
+      <li><code>oninvalid="this.setCustomValidity('Please fill out your Email')"</code> to 
+customize invalid information.</li>
+      <li><code>oninput="setCustomValidity('')"</code> clear the previous information.</li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;loginModal&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal fade&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal-dialog&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal-content&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal-header&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;close&quot;</span> <span class="na">data-dismiss</span><span class="o">=</span><span class="s">&quot;modal&quot;</span>
+                        <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="ni">&amp;times;</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h4</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal-title form-signin-heading&quot;</span><span class="p">&gt;</span>Please Login<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal-body&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">form</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;loginForm&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-signin&quot;</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">&quot;validator&quot;</span>
+                      <span class="na">role</span><span class="o">=</span><span class="s">&quot;form&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;form-group-email&quot;</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;inputEmail&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;sr-only&quot;</span><span class="p">&gt;</span>Email
+                                                                address<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;inputEmail&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span>
+                               <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Email address&quot;</span> <span class="na">required</span>
+                               <span class="na">oninvalid</span><span class="o">=</span><span class="s">&quot;this.setCustomValidity(&#39;Please fill out your Email&#39;)&quot;</span>
+                               <span class="na">oninput</span><span class="o">=</span><span class="s">&quot;setCustomValidity(&#39;&#39;)&quot;</span>
+                               <span class="na">autofocus</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;form-span-email&quot;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;form-group-password&quot;</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;inputPassword&quot;</span>
+                               <span class="na">class</span><span class="o">=</span><span class="s">&quot;sr-only&quot;</span><span class="p">&gt;</span>Password<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;inputPassword&quot;</span>
+                               <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Password&quot;</span>
+                               <span class="na">required</span>
+                               <span class="na">oninvalid</span><span class="o">=</span><span class="s">&quot;this.setCustomValidity(&#39;Please fill out your Password&#39;)&quot;</span>
+                               <span class="na">oninput</span><span class="o">=</span><span class="s">&quot;setCustomValidity(&#39;&#39;)&quot;</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;form-span-password&quot;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;loginSubmit&quot;</span>
+                            <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-lg btn-primary btn-block&quot;</span>
+                            <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span><span class="p">&gt;</span>Login
+                    <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal-footer&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-default btn-lg&quot;</span>
+                        <span class="na">data-dismiss</span><span class="o">=</span><span class="s">&quot;modal&quot;</span><span class="p">&gt;</span>Close
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></figure>
+
+<h2 id="welcome-back-modal">welcome back modal</h2>
+<p>Show welcome back information on top of login modal</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal fade&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;welcome-back&quot;</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&quot;-1&quot;</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;dialog&quot;</span>
+     <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal-dialog&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal-content&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal-header&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">a</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;close hide-t-c&quot;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span>×<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h4</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal-title&quot;</span><span class="p">&gt;</span>Welcome Back<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal-body&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Welcome back<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h4</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;welcome-back-user&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal-footer&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-default btn-lg&quot;</span>
+                        <span class="na">data-dismiss</span><span class="o">=</span><span class="s">&quot;modal&quot;</span><span class="p">&gt;</span>Close
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></figure>
+
+<h1 id="javascript">Javascript</h1>
+<ul>
+  <li>assume that <code>a@a.com</code> and password <code>00</code> is the valid user
+    <ul>
+      <li>in practice this will be replaced by check to a server or database if 
+  the email and password is correct.</li>
+    </ul>
+  </li>
+  <li>use <code>event.preventDefault()</code> to keep a Modal Window open after form submission</li>
+  <li>change <code>has-feedback</code>, <code>has-success</code>, <code>has-error</code> and add responsive icon 
+dynamically according to input.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span></span><span class="kd">var</span> <span class="nx">form</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;form&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">email</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;inputEmail&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">password</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;inputPassword&#39;</span><span class="p">);</span>
+
+
+<span class="nx">email</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;keyup&quot;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">email</span><span class="p">.</span><span class="nx">validity</span><span class="p">.</span><span class="nx">valid</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">inputEmail</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;input#inputEmail&quot;</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
+        <span class="c1">//check server if the email exist</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">inputEmail</span> <span class="o">==</span> <span class="s2">&quot;a@a.com&quot;</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;form-group-email&#39;</span><span class="p">).</span><span class="nx">className</span> <span class="o">=</span>
+                    <span class="s2">&quot;form-group has-success has-feedback&quot;</span><span class="p">;</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;form-span-email&#39;</span><span class="p">).</span><span class="nx">className</span> <span class="o">=</span>
+                    <span class="s2">&quot;glyphicon glyphicon-ok form-control-feedback&quot;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;form-group-email&#39;</span><span class="p">).</span><span class="nx">className</span> <span class="o">=</span>
+                    <span class="s2">&quot;form-group has-error has-feedback&quot;</span><span class="p">;</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;form-span-email&#39;</span><span class="p">).</span><span class="nx">className</span> <span class="o">=</span>
+                    <span class="s2">&quot;glyphicon glyphicon-remove form-control-feedback&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">},</span> <span class="kc">false</span><span class="p">);</span>
+
+<span class="nx">password</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;keyup&quot;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//init</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;form-group-password&#39;</span><span class="p">).</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;form-span-password&#39;</span><span class="p">).</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">password</span><span class="p">.</span><span class="nx">validity</span><span class="p">.</span><span class="nx">valid</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">inputPassword</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;input#inputPassword&quot;</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
+        <span class="c1">//check server if password correct</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">inputPassword</span> <span class="o">==</span> <span class="s2">&quot;00&quot;</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;form-group-password&#39;</span><span class="p">).</span><span class="nx">className</span> <span class="o">=</span>
+                    <span class="s2">&quot;form-group has-success has-feedback&quot;</span><span class="p">;</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;form-span-password&#39;</span><span class="p">).</span><span class="nx">className</span> <span class="o">=</span>
+                    <span class="s2">&quot;glyphicon glyphicon-ok form-control-feedback&quot;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;form-group-password&#39;</span><span class="p">).</span><span class="nx">className</span> <span class="o">=</span>
+                    <span class="s2">&quot;form-group has-error has-feedback&quot;</span><span class="p">;</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;form-span-password&#39;</span><span class="p">).</span><span class="nx">className</span> <span class="o">=</span>
+                    <span class="s2">&quot;glyphicon glyphicon-remove form-control-feedback&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">},</span> <span class="kc">false</span><span class="p">);</span>
+
+
+<span class="nx">form</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;submit&quot;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span> <span class="c1">// keep modal window open</span>
+    <span class="kd">var</span> <span class="nx">inputPassword</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;input#inputPassword&quot;</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
+    <span class="kd">var</span> <span class="nx">inputEmail</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;input#inputEmail&quot;</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">inputEmail</span> <span class="o">==</span> <span class="s2">&quot;a@a.com&quot;</span> <span class="o">&amp;</span> <span class="nx">inputPassword</span> <span class="o">==</span> <span class="s2">&quot;00&quot;</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//login succeed:</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#welcome-back&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">);</span>
+        <span class="c1">//                welcome info</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;welcome-back-user&quot;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span>
+                <span class="s2">&quot;get user name from server and shows here&quot;</span><span class="p">;</span>
+        <span class="p">;</span>
+        <span class="nx">setTimeout</span><span class="p">(</span>
+                <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+                    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#welcome-back&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">&#39;hide&#39;</span><span class="p">);</span>
+                    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#loginModal&#39;</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">&#39;hide&#39;</span><span class="p">);</span>
+                <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">},</span> <span class="kc">false</span><span class="p">);</span></code></pre></figure>
+
+<h1 id="references">References:</h1>
+
+<ul>
+  <li>http://getbootstrap.com/javascript/#modals</li>
+  <li>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form</li>
+  <li>http://getbootstrap.com/css/#forms</li>
+  <li>http://getbootstrap.com/css/#forms-control-validation</li>
+  <li>https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validation</li>
+</ul>
+
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'guojunjunsblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="https://www.junjunguo.com/articles/bootstrap-modal-login/" class="btn" title="Bootstrap Login">Previous</a>
+      
+      
+        <a href="https://www.junjunguo.com/articles/bootstrap-modal-register/" class="btn" title="Bootstrap Register with Bootstrap Modals">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2017 <a href="https://junjunguo.github.io" rel="nofollow">  GuoJunjun</a></span>
+<div class="social-icons">
+    
+    
+    <a href="http://plus.google.com/+GuoJunjun"
+                                      title="GuoJunjun on Google+" target="_blank"><i
+        class="fa fa-google-plus-square fa-2x"></i></a>
+    <a href="http://linkedin.com/in/guojunjun"
+                                   title="GuoJunjun on LinkedIn" target="_blank"><i
+        class="fa fa-linkedin-square fa-2x"></i></a>
+    
+    
+    <a href="http://www.flickr.com/photos/guojunjun"
+                                 title="GuoJunjun on Flickr" target="_blank"><i
+        class="fa fa-flickr fa-2x"></i></a>
+    <a href="http://github.com/junjunguo" title="GuoJunjun on Github"
+                                 target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+    
+    <a href="https://www.junjunguo.com/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'https://www.junjunguo.com';
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://www.junjunguo.com/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="https://www.junjunguo.com/assets/js/scripts.min.js"></script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-49981756-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+	        
+
+</body>
+</html>
