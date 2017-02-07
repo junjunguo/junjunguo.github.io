@@ -7,7 +7,7 @@ tags: [Android, Java, code, HTTP, Mobile]
 image:
   feature: summer2014-119.jpg
   credit: GuoJunjun
-  creditlink: http://junjunguo.com
+  creditlink: https://junjunguo.github.io
 comments: true
 share: true
 ---

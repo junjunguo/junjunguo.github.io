@@ -7,12 +7,12 @@ tags: [SQLite, Database, Android, code, Java, Mobile, GUI]
 image:
   feature: summer2014-115.jpg
   credit: GuoJunjun
-  creditlink: http://junjunguo.com
+  creditlink: https://junjunguo.github.io
 comments: true
 share: true
 ---
 
-This tutorial describes how to use SQLite database in Android applications. The example code creates a [ListView](http://junjunguo.com/articles/android-list_view/) in the main Activity to show the data entries, and also creates another window activity for write new data entries. 
+This tutorial describes how to use SQLite database in Android applications. The example code creates a [ListView](https://junjunguo.github.io/articles/android-list_view/) in the main Activity to show the data entries, and also creates another window activity for write new data entries. 
 
 # Contents
 {:.no_toc}

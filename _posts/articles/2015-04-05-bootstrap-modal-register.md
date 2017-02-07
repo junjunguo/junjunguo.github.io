@@ -8,7 +8,7 @@ tags: [web design, code, GUI, HTML5, Bootstrap, JavaScript]
 image:
   feature: 14830590633_2b15ef306b_o.jpg
   credit: GuoJunjun
-  creditlink: http://junjunguo.com
+  creditlink: https://junjunguo.github.io
 comments: true
 share: true
 ---
@@ -177,7 +177,7 @@ setTimeout(
 {% endhighlight %}    
 
 # Demonstration
-[Demonstration](http://junjunguo.com/webDevelopment/bootstrapregister) 
+[Demonstration](https://junjunguo.github.io/webDevelopment/bootstrapregister) 
 
 - will open in a new window.
 

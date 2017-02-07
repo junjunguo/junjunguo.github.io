@@ -7,7 +7,7 @@ tags: [Android, code, Java, Mobile, GUI]
 image:
   feature: 14788493716_b68010de78_k.jpg
   credit: GuoJunjun
-  creditlink: http://junjunguo.com
+  creditlink: https://junjunguo.github.io
 comments: true
 share: true
 ---

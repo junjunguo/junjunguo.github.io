@@ -7,7 +7,7 @@ tags: [code, Java, JavaFX, GUI, CSS, FXML]
 image:
   feature: 14771654073_df0ddb828f_o.jpg
   credit: GuoJunjun
-  creditlink: http://junjunguo.com
+  creditlink: https://junjunguo.github.io
 comments: true
 share: true
 ---

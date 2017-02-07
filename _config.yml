@@ -1,7 +1,7 @@
 # Site wide configuration
 
-url: https://www.junjunguo.com   # with the https protocol
-enforce_ssl: www.junjunguo.com   # without any protocol
+url: https://junjunguo.github.io   # with the https protocol
+#enforce_ssl: www.junjunguo.com   # without any protocol
 
 
 title: GuoJunjun's Tech Blog
@@ -45,7 +45,7 @@ owner:
   twitter: #username
   facebook: #username
   github: junjunguo
-  stackexchange: #http://stackoverflow.com/users/123456/username
+#  stackexchange: #http://stackoverflow.com/users/123456/username
   linkedin: guojunjun
   instagram: #username
   flickr: guojunjun

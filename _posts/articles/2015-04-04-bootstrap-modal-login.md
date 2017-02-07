@@ -8,7 +8,7 @@ tags: [web design, code, GUI, HTML5, Bootstrap, JavaScript, CSS]
 image:
   feature: 14684795513_3605513909_o.jpg
   credit: GuoJunjun
-  creditlink: http://junjunguo.com
+  creditlink: https://junjunguo.github.io
 comments: true
 share: true
 ---
@@ -41,7 +41,7 @@ This example use Bootstrap framework to build a responsive Login.
 .com/junjunguo/webDevelopment/master/responsiveDesign/images/bootstraplogin6.png)
 
 # Demonstration
-[Demonstration](http://junjunguo.com/webDevelopment/bootstrapslogin.html) 
+[Demonstration](https://junjunguo.github.io/webDevelopment/bootstrapslogin.html) 
 
 - will open in a new window.
 

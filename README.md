@@ -5,7 +5,7 @@ Using Github to host my Website and my Blog:
 --
 [My Domain][1] :            
 
-> http://junjunguo.com
+> https://junjunguo.github.io
 
 [My GitHub Domain][2] :     
 
@@ -40,5 +40,5 @@ Photo:
 
 
 
-[1]: http://junjunguo.com/
+[1]: https://junjunguo.github.io/
 [2]: http://junjunguo.github.io

@@ -7,7 +7,7 @@ tags: [Android, code, Java, Mobile, GUI]
 image:
   feature: summer2014-113.jpg
   credit: GuoJunjun
-  creditlink: http://junjunguo.com
+  creditlink: https://junjunguo.github.io
 comments: true
 share: true
 ---

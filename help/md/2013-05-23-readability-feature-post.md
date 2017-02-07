@@ -8,7 +8,7 @@ modified: 2013-06-30
 image:
   feature: so-simple-sample-image-3.jpg
   credit: photographer
-  creditlink: http://junjunguo.com
+  creditlink: https://junjunguo.github.io
 comments: true
 share: true
 ---

@@ -7,7 +7,7 @@ tags: [Android, code, Java, Mobile, GUI]
 image:
   feature: summer2014-114.jpg
   credit: GuoJunjun
-  creditlink: http://junjunguo.com
+  creditlink: https://junjunguo.github.io
 comments: true
 share: true
 ---
@@ -15,7 +15,7 @@ share: true
 
 Android Action Bar are used in many applications, it is easy to implement and for consistency in UI design it offers user a familiar interface across applications.
 
-Previous post: [Implement the overflow menu](http://junjunguo.com/articles/android-activitybar-menu/)
+Previous post: [Implement the overflow menu](https://junjunguo.github.io/articles/android-activitybar-menu/)
 
 This post give a simple example of how to dynamically change actionbar item text. 
 

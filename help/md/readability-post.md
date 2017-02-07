@@ -7,7 +7,7 @@ tags: [sample-post, readability, test, intro]
 image:
   feature: so-simple-sample-image-2.jpg
   credit: photographer 
-  creditlink: http://junjunguo.com
+  creditlink: https://junjunguo.github.io
 comments: true
 share: true
 ---

@@ -8,7 +8,7 @@ tags: [Android, code, GUI, Java, Mobile, SQLite, Database, XML, image]
 image:
   feature: 14786764996_9633596f4e_o.jpg
   credit: GuoJunjun
-  creditlink: http://junjunguo.com
+  creditlink: https://junjunguo.github.io
 comments: true
 share: true
 ---

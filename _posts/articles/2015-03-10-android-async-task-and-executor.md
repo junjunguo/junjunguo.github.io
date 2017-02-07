@@ -7,7 +7,7 @@ tags: [Android, code, Java, Thread, Mobile]
 image:
   feature: summer2014-120.jpg
   credit: GuoJunjun
-  creditlink: http://junjunguo.com
+  creditlink: https://junjunguo.github.io
 comments: true
 share: true
 ---

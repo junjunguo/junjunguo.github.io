@@ -7,7 +7,7 @@ tags: [Android, code, GUI, XML, Mobile]
 image:
   feature: summer2014-118.jpg
   credit: GuoJunjun
-  creditlink: http://junjunguo.com
+  creditlink: https://junjunguo.github.io
 comments: true
 share: true
 ---

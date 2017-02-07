@@ -10,7 +10,6 @@
 <meta name="keywords" content="SQLite, Database, Android, code, Java, Mobile, GUI">
 
 
-
 <!-- Twitter Cards -->
 <meta name="twitter:title" content="Android Saving Data in SQLite Database">
 <meta name="twitter:description" content="How to implement SQLite for Android applications">
@@ -18,22 +17,22 @@
 
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://junjunguo.com/images/summer2014-115.jpg">
+<meta name="twitter:image" content="https://junjunguo.github.io/images/summer2014-115.jpg">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android Saving Data in SQLite Database">
 <meta property="og:description" content="How to implement SQLite for Android applications">
-<meta property="og:url" content="http://junjunguo.com/articles/android-sqlite-database/">
+<meta property="og:url" content="https://junjunguo.github.io/articles/android-sqlite-database/">
 <meta property="og:site_name" content="GuoJunjun's Tech Blog">
 
 
 <meta name="msvalidate.01" content="5CBE5B96A4448FF4606A09686D87D9D5">
 
 
-<link rel="canonical" href="http://junjunguo.com/articles/android-sqlite-database/">
-<link href="http://junjunguo.com/feed.xml" type="application/atom+xml" rel="alternate" title="GuoJunjun's Tech Blog Feed">
+<link rel="canonical" href="https://junjunguo.github.io/articles/android-sqlite-database/">
+<link href="https://junjunguo.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="GuoJunjun's Tech Blog Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -41,7 +40,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://junjunguo.com/assets/css/main.css">
+<link rel="stylesheet" href="https://junjunguo.github.io/assets/css/main.css">
 <!-- Webfonts -->
 <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
 
@@ -49,26 +48,26 @@
 
 <!-- HTML5 Shiv and Media Query Support -->
 <!--[if lt IE 9]>
-  <script src="http://junjunguo.com/assets/js/vendor/html5shiv.min.js"></script>
-  <script src="http://junjunguo.com/assets/js/vendor/respond.min.js"></script>
+  <script src="https://junjunguo.github.io/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="https://junjunguo.github.io/assets/js/vendor/respond.min.js"></script>
 <![endif]-->
 
 <!-- Modernizr -->
-<script src="http://junjunguo.com/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+<script src="https://junjunguo.github.io/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
 
 <!-- Icons -->
 <!-- 16x16 -->
-<link rel="shortcut icon" href="http://junjunguo.com/favicon.ico">
+<link rel="shortcut icon" href="https://junjunguo.github.io/favicon.ico">
 <!-- 32x32 -->
-<link rel="shortcut icon" href="http://junjunguo.com/favicon.png">
+<link rel="shortcut icon" href="https://junjunguo.github.io/favicon.png">
 <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="http://junjunguo.com/images/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="https://junjunguo.github.io/images/apple-touch-icon-precomposed.png">
 <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://junjunguo.com/images/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://junjunguo.github.io/images/apple-touch-icon-72x72-precomposed.png">
 <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://junjunguo.com/images/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://junjunguo.github.io/images/apple-touch-icon-114x114-precomposed.png">
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://junjunguo.com/images/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://junjunguo.github.io/images/apple-touch-icon-144x144-precomposed.png">
 
 </head>
 
@@ -79,29 +78,19 @@
 	    <ul>
       
 		    
-		        
-		    
-		    <li><a href="http://junjunguo.com/tech.html" >Latest</a></li>
+		    <li><a href="https://junjunguo.github.io/tech.html" >Latest</a></li>
 		  
 		    
-		        
-		    
-		    <li><a href="http://junjunguo.com/blog/" >Blog</a></li>
+		    <li><a href="https://junjunguo.github.io/blog/" >Blog</a></li>
 		  
 		    
-		        
-		    
-		    <li><a href="http://junjunguo.com/tags/" >Tags</a></li>
+		    <li><a href="https://junjunguo.github.io/tags/" >Tags</a></li>
 		  
 		    
-		        
-		    
-		    <li><a href="http://junjunguo.com/search/" >Search</a></li>
+		    <li><a href="https://junjunguo.github.io/search/" >Search</a></li>
 		  
 		    
-		        
-		    
-		    <li><a href="http://junjunguo.com/index.html" >About</a></li>
+		    <li><a href="https://junjunguo.github.io/index.html" >About</a></li>
 		  
 	    </ul>
 	</nav>
@@ -112,7 +101,7 @@
 <header class="masthead">
 	
 		<div class="wrap">
-			<a href="http://junjunguo.com/" class="site-logo" rel="home" title="GuoJunjun's Tech Blog"><img src="http://junjunguo.com/images/site-logo.png" width="200" height="200" alt="GuoJunjun's Tech Blog logo" class="animated bounceInDown"></a>
+			<a href="https://junjunguo.github.io/" class="site-logo" rel="home" title="GuoJunjun's Tech Blog"><img src="https://junjunguo.github.io/images/site-logo.png" width="200" height="200" alt="GuoJunjun's Tech Blog logo" class="animated bounceInDown"></a>
 		</div>
 	
 </header><!-- /.masthead -->
@@ -122,10 +111,10 @@
 
 <div id="main" role="main">
   <article class="hentry">
-    <img src="http://junjunguo.com/images/summer2014-115.jpg" class="entry-feature-image" alt="Android Saving Data in SQLite Database" ><p class="image-credit">Photo Credit: <a href="http://junjunguo.com">GuoJunjun</a>
+    <img src="https://junjunguo.github.io/images/summer2014-115.jpg" class="entry-feature-image" alt="Android Saving Data in SQLite Database" ><p class="image-credit">Photo Credit: <a href="https://junjunguo.github.io">GuoJunjun</a>
     <div class="entry-wrapper">
       <header class="entry-header">
-        <span class="entry-tags"><a href="http://junjunguo.com/tags/#SQLite" title="Pages tagged SQLite">SQLite</a>&nbsp;&bull;&nbsp;<a href="http://junjunguo.com/tags/#Database" title="Pages tagged Database">Database</a>&nbsp;&bull;&nbsp;<a href="http://junjunguo.com/tags/#Android" title="Pages tagged Android">Android</a>&nbsp;&bull;&nbsp;<a href="http://junjunguo.com/tags/#code" title="Pages tagged code">code</a>&nbsp;&bull;&nbsp;<a href="http://junjunguo.com/tags/#Java" title="Pages tagged Java">Java</a>&nbsp;&bull;&nbsp;<a href="http://junjunguo.com/tags/#Mobile" title="Pages tagged Mobile">Mobile</a>&nbsp;&bull;&nbsp;<a href="http://junjunguo.com/tags/#GUI" title="Pages tagged GUI">GUI</a></span>
+        <span class="entry-tags"><a href="https://junjunguo.github.io/tags/#SQLite" title="Pages tagged SQLite">SQLite</a>&nbsp;&bull;&nbsp;<a href="https://junjunguo.github.io/tags/#Database" title="Pages tagged Database">Database</a>&nbsp;&bull;&nbsp;<a href="https://junjunguo.github.io/tags/#Android" title="Pages tagged Android">Android</a>&nbsp;&bull;&nbsp;<a href="https://junjunguo.github.io/tags/#code" title="Pages tagged code">code</a>&nbsp;&bull;&nbsp;<a href="https://junjunguo.github.io/tags/#Java" title="Pages tagged Java">Java</a>&nbsp;&bull;&nbsp;<a href="https://junjunguo.github.io/tags/#Mobile" title="Pages tagged Mobile">Mobile</a>&nbsp;&bull;&nbsp;<a href="https://junjunguo.github.io/tags/#GUI" title="Pages tagged GUI">GUI</a></span>
         
           <h1 class="entry-title">Android Saving Data in SQLite Database</h1>
         
@@ -133,27 +122,26 @@
       <footer class="entry-meta">
         
         
-        
-          <img src="http://junjunguo.com/images/bio-photo.jpg" class="bio-photo" alt="GuoJunjun bio photo"></a>
+          <img src="https://junjunguo.github.io/images/bio-photo.jpg" class="bio-photo" alt="GuoJunjun bio photo"></a>
         
         <span class="author vcard">By <span class="fn">GuoJunjun</span></span>
         <span class="entry-date date published"><time datetime="2015-03-08T00:00:00+01:00"><i class="fa fa-calendar-o"></i> March 08, 2015</time></span>
         
         <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
         <span class="social-share-twitter">
-  <a href="https://twitter.com/intent/tweet?hashtags=SQLite,Database,Android,code,Java,Mobile,GUI&amp;text=Android%20Saving%20Data%20in%20SQLite%20Database&amp;url=http://junjunguo.com/articles/android-sqlite-database/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+  <a href="https://twitter.com/intent/tweet?hashtags=SQLite,Database,Android,code,Java,Mobile,GUI&amp;text=Android%20Saving%20Data%20in%20SQLite%20Database&amp;url=https://junjunguo.github.io/articles/android-sqlite-database/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
 </span>
 <span class="social-share-facebook">
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://junjunguo.com/articles/android-sqlite-database/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://junjunguo.github.io/articles/android-sqlite-database/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
 </span>
 <span class="social-share-googleplus">
-  <a href="https://plus.google.com/share?url=http://junjunguo.com/articles/android-sqlite-database/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+  <a href="https://plus.google.com/share?url=https://junjunguo.github.io/articles/android-sqlite-database/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
 </span>
 <!-- /.social-share -->
         
       </footer>
       <div class="entry-content">
-        <p>This tutorial describes how to use SQLite database in Android applications. The example code creates a <a href="http://junjunguo.com/articles/android-list_view/">ListView</a> in the main Activity to show the data entries, and also creates another window activity for write new data entries. </p>
+        <p>This tutorial describes how to use SQLite database in Android applications. The example code creates a <a href="https://junjunguo.github.io/articles/android-list_view/">ListView</a> in the main Activity to show the data entries, and also creates another window activity for write new data entries. </p>
 
 <h1 class="no_toc" id="contents">Contents</h1>
 
@@ -215,7 +203,7 @@
 <p>create a class for holding all our table names and column names, which will make us easier to organize, 
 maintain tables and columns, specially when we have a lot of tables. We organize each table as a inner class.</p>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DBtables</span> <span class="o">{</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DBtables</span> <span class="o">{</span>
     <span class="c1">// To prevent someone from accidentally instantiating the contract class, give it an empty constructor.</span>
     <span class="kd">public</span> <span class="nf">DBtables</span><span class="o">()</span> <span class="o">{}</span>
 
@@ -233,12 +221,12 @@ maintain tables and columns, specially when we have a lot of tables. We organize
         <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span><span class="o">[]</span> <span class="n">ALL_COLUMNS</span> <span class="o">=</span>
                 <span class="o">{</span><span class="n">COLUMN_NUSER_ID</span><span class="o">,</span> <span class="n">COLUMN_REPORT</span><span class="o">,</span> <span class="n">COLUMN_ISREPOETED</span><span class="o">,</span> <span class="n">COLUMN_DATETIME</span><span class="o">,</span> <span class="n">COLUMN_LATITUDE</span><span class="o">,</span> <span class="n">COLUMN_LONGITUDE</span><span class="o">};</span>
     <span class="o">}</span>
-<span class="o">}</span></code></pre></div>
+<span class="o">}</span></code></pre></figure>
 
 <h2 id="use-sqliteopenhelper">Use SQLiteOpenHelper</h2>
 <p>Use SQLiteOpenHelper to help us create database:</p>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DBhelper</span> <span class="kd">extends</span> <span class="n">SQLiteOpenHelper</span> <span class="o">{</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DBhelper</span> <span class="kd">extends</span> <span class="n">SQLiteOpenHelper</span> <span class="o">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">DB_NAME</span> <span class="o">=</span> <span class="s">&quot;mydatabase.db&quot;</span><span class="o">;</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">DB_VERSION</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
 
@@ -271,13 +259,13 @@ maintain tables and columns, specially when we have a lot of tables. We organize
         <span class="n">db</span><span class="o">.</span><span class="na">execSQL</span><span class="o">(</span><span class="n">CREATE_TEXTREPORT_TABLE</span><span class="o">);</span>
         <span class="n">onCreate</span><span class="o">(</span><span class="n">db</span><span class="o">);</span>
     <span class="o">}</span>
-<span class="o">}</span></code></pre></div>
+<span class="o">}</span></code></pre></figure>
 
 <h2 id="create-data-access-object">Create Data Access Object</h2>
 
 <p>We implement a Data Access Object (DAO) to manage the query.</p>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DAOtextReport</span> <span class="o">{</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DAOtextReport</span> <span class="o">{</span>
     <span class="kd">private</span> <span class="n">SQLiteDatabase</span> <span class="n">database</span><span class="o">;</span>
     <span class="kd">private</span> <span class="n">DBhelper</span> <span class="n">dbHelper</span><span class="o">;</span>
 
@@ -382,7 +370,7 @@ maintain tables and columns, specially when we have a lot of tables. We organize
         <span class="n">tr</span><span class="o">.</span><span class="na">setIsreported</span><span class="o">(</span><span class="n">cursor</span><span class="o">.</span><span class="na">getInt</span><span class="o">(</span><span class="n">cursor</span><span class="o">.</span><span class="na">getColumnIndex</span><span class="o">(</span><span class="n">DBtables</span><span class="o">.</span><span class="na">TextReport</span><span class="o">.</span><span class="na">COLUMN_ISREPOETED</span><span class="o">))</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">);</span>
         <span class="k">return</span> <span class="n">tr</span><span class="o">;</span>
     <span class="o">}</span>
-<span class="o">}</span></code></pre></div>
+<span class="o">}</span></code></pre></figure>
 
 <ul>
   <li>
@@ -402,7 +390,7 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
 <h2 id="create-a-textreport-class">Create a TextReport class</h2>
 <p>This class is the model and it contains all the data we need to save, retrieve from database and show them in our ListView.</p>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TextReport</span> <span class="o">{</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TextReport</span> <span class="o">{</span>
     <span class="kd">private</span> <span class="n">String</span> <span class="n">userid</span><span class="o">,</span> <span class="n">report</span><span class="o">;</span>
     <span class="kd">private</span> <span class="kt">boolean</span> <span class="n">isreported</span><span class="o">;</span>
     <span class="kd">private</span> <span class="n">Calendar</span> <span class="n">datetime</span><span class="o">;</span>
@@ -534,12 +522,12 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
     <span class="o">}</span>
 
     <span class="kd">public</span> <span class="n">SimpleDateFormat</span> <span class="n">df</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">SimpleDateFormat</span><span class="o">(</span><span class="s">&quot;EEEE, MMMM d, yyyy &#39;at&#39; h:mm a&quot;</span><span class="o">);</span>
-<span class="o">}</span></code></pre></div>
+<span class="o">}</span></code></pre></figure>
 
 <h2 id="implement-listview-to-show-data-entries">Implement ListView to show data entries</h2>
 <p>This class implements a ListView, and show all data entries from database in ListView. A Toast to show clicked item, and a popup actionbar menu to choose write message window is also implemented.</p>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">ActionBarActivity</span> <span class="o">{</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">ActionBarActivity</span> <span class="o">{</span>
     <span class="kd">private</span> <span class="n">DAOtextReport</span> <span class="n">daOtextReport</span><span class="o">;</span>
 
     <span class="nd">@Override</span>
@@ -608,11 +596,11 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
                 <span class="k">return</span> <span class="kd">super</span><span class="o">.</span><span class="na">onOptionsItemSelected</span><span class="o">(</span><span class="n">item</span><span class="o">);</span>
         <span class="o">}</span>
     <span class="o">}</span>
-<span class="o">}</span></code></pre></div>
+<span class="o">}</span></code></pre></figure>
 
 <p>And here is layout for main activity:</p>
 
-<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;RelativeLayout</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;RelativeLayout</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
                 <span class="na">xmlns:tools=</span><span class="s">&quot;http://schemas.android.com/tools&quot;</span>
                 <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
                 <span class="na">android:layout_height=</span><span class="s">&quot;match_parent&quot;</span>
@@ -627,12 +615,12 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
         <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
         <span class="na">android:id=</span><span class="s">&quot;@+id/my_listview&quot;</span><span class="nt">&gt;&lt;/ListView&gt;</span>
 
-<span class="nt">&lt;/RelativeLayout&gt;</span></code></pre></div>
+<span class="nt">&lt;/RelativeLayout&gt;</span></code></pre></figure>
 
 <h2 id="implement-write-text-window">Implement write text window</h2>
 <p>A simple EditText is used to write text, and a send button to save text to database.</p>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ReportActivity</span> <span class="kd">extends</span> <span class="n">ActionBarActivity</span> <span class="o">{</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ReportActivity</span> <span class="kd">extends</span> <span class="n">ActionBarActivity</span> <span class="o">{</span>
     <span class="kd">private</span> <span class="n">EditText</span> <span class="n">textReport</span><span class="o">;</span>
     <span class="kd">private</span> <span class="n">DAOtextReport</span> <span class="n">daOtextReport</span><span class="o">;</span>
 
@@ -684,11 +672,11 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
                 <span class="k">return</span> <span class="kd">super</span><span class="o">.</span><span class="na">onOptionsItemSelected</span><span class="o">(</span><span class="n">item</span><span class="o">);</span>
         <span class="o">}</span>
     <span class="o">}</span>
-<span class="o">}</span></code></pre></div>
+<span class="o">}</span></code></pre></figure>
 
 <p>And layout for <code>ReportActivity</code> insert following:</p>
 
-<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;EditText</span>
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;EditText</span>
     <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
     <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
     <span class="na">android:id=</span><span class="s">&quot;@+id/report_edit_text&quot;</span>
@@ -707,25 +695,25 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
     <span class="na">android:width=</span><span class="s">&quot;200dp&quot;</span>
     <span class="na">android:layout_centerHorizontal=</span><span class="s">&quot;true&quot;</span>
     <span class="na">android:text=</span><span class="s">&quot;@string/send&quot;</span>
-    <span class="na">android:layout_below=</span><span class="s">&quot;@id/report_edit_text&quot;</span><span class="nt">/&gt;</span></code></pre></div>
+    <span class="na">android:layout_below=</span><span class="s">&quot;@id/report_edit_text&quot;</span><span class="nt">/&gt;</span></code></pre></figure>
 
 <h2 id="actionbar-menu">ActionBar menu</h2>
 
 <p>Add a menu item to the ListView activity menu so we can switch to write window</p>
 
-<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;item</span>
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;item</span>
     <span class="na">android:id=</span><span class="s">&quot;@+id/menu_write&quot;</span>
     <span class="na">android:title=</span><span class="s">&quot;@string/write_report&quot;</span>
     <span class="na">android:orderInCategory=</span><span class="s">&quot;100&quot;</span>
-    <span class="na">app:showAsAction=</span><span class="s">&quot;never&quot;</span><span class="nt">/&gt;</span></code></pre></div>
+    <span class="na">app:showAsAction=</span><span class="s">&quot;never&quot;</span><span class="nt">/&gt;</span></code></pre></figure>
 
 <p>and add menu item to write activity menu so we can switch back</p>
 
-<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;item</span>
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;item</span>
     <span class="na">android:id=</span><span class="s">&quot;@+id/menu_view&quot;</span>
     <span class="na">android:title=</span><span class="s">&quot;@string/view_report&quot;</span>
     <span class="na">android:orderInCategory=</span><span class="s">&quot;100&quot;</span>
-    <span class="na">app:showAsAction=</span><span class="s">&quot;never&quot;</span><span class="nt">/&gt;</span></code></pre></div>
+    <span class="na">app:showAsAction=</span><span class="s">&quot;never&quot;</span><span class="nt">/&gt;</span></code></pre></figure>
 
 <p>And we have our project implemented.</p>
 
@@ -762,10 +750,10 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       
-        <a href="http://junjunguo.com/blog/android-list-view-b/" class="btn" title="Android Implement a ListView">Previous</a>
+        <a href="https://junjunguo.github.io/blog/android-list-view-b/" class="btn" title="Android Implement a ListView">Previous</a>
       
       
-        <a href="http://junjunguo.com/blog/android-sqlite-database-b/" class="btn" title="Android Saving Data in SQLite Database">Next</a>
+        <a href="https://junjunguo.github.io/blog/android-sqlite-database-b/" class="btn" title="Android Saving Data in SQLite Database">Next</a>
       
     </nav><!-- /.pagination -->
   </article>
@@ -775,7 +763,7 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
   <footer role="contentinfo" class="entry-wrapper">
     
 
-<span>&copy; 2015 <a href="http://junjunguo.com" rel="nofollow">  GuoJunjun</a></span>
+<span>&copy; 2017 <a href="https://junjunguo.github.io" rel="nofollow">  GuoJunjun</a></span>
 <div class="social-icons">
     
     
@@ -793,18 +781,18 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
     <a href="http://github.com/junjunguo" title="GuoJunjun on Github"
                                  target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
     
-    <a href="http://junjunguo.com/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+    <a href="https://junjunguo.github.io/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
 </div><!-- /.social-icons -->
   </footer>
 </div><!-- /.footer-wrapper -->
 
 <script type="text/javascript">
-  var BASE_URL = 'http://junjunguo.com';
+  var BASE_URL = 'https://junjunguo.github.io';
 </script>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="http://junjunguo.com/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="http://junjunguo.com/assets/js/scripts.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://junjunguo.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="https://junjunguo.github.io/assets/js/scripts.min.js"></script>
 
 
 <!-- Asynchronous Google Analytics snippet -->
