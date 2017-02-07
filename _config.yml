@@ -1,6 +1,6 @@
 # Site wide configuration
 
-url: junjunguo.com   # with the https protocol
+url: https://www.junjunguo.com   # with the https protocol
 #url: https://junjunguo.github.io   # with the https protocol
 #enforce_ssl: www.junjunguo.com   # without any protocol
 
@@ -28,7 +28,7 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..2
-  use_coderay: false
+  enable_coderay: false
 
 include: [".htaccess"]
 exclude: ["help/md/", "lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less",

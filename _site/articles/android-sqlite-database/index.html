@@ -17,22 +17,22 @@
 
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="junjunguo.com/images/summer2014-115.jpg">
+<meta name="twitter:image" content="https://www.junjunguo.com/images/summer2014-115.jpg">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android Saving Data in SQLite Database">
 <meta property="og:description" content="How to implement SQLite for Android applications">
-<meta property="og:url" content="junjunguo.com/articles/android-sqlite-database/">
+<meta property="og:url" content="https://www.junjunguo.com/articles/android-sqlite-database/">
 <meta property="og:site_name" content="GuoJunjun's Tech Blog">
 
 
 <meta name="msvalidate.01" content="5CBE5B96A4448FF4606A09686D87D9D5">
 
 
-<link rel="canonical" href="junjunguo.com/articles/android-sqlite-database/">
-<link href="junjunguo.com/feed.xml" type="application/atom+xml" rel="alternate" title="GuoJunjun's Tech Blog Feed">
+<link rel="canonical" href="https://www.junjunguo.com/articles/android-sqlite-database/">
+<link href="https://www.junjunguo.com/feed.xml" type="application/atom+xml" rel="alternate" title="GuoJunjun's Tech Blog Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -40,7 +40,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="junjunguo.com/assets/css/main.css">
+<link rel="stylesheet" href="https://www.junjunguo.com/assets/css/main.css">
 <!-- Webfonts -->
 <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
 
@@ -48,26 +48,26 @@
 
 <!-- HTML5 Shiv and Media Query Support -->
 <!--[if lt IE 9]>
-  <script src="junjunguo.com/assets/js/vendor/html5shiv.min.js"></script>
-  <script src="junjunguo.com/assets/js/vendor/respond.min.js"></script>
+  <script src="https://www.junjunguo.com/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="https://www.junjunguo.com/assets/js/vendor/respond.min.js"></script>
 <![endif]-->
 
 <!-- Modernizr -->
-<script src="junjunguo.com/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+<script src="https://www.junjunguo.com/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
 
 <!-- Icons -->
 <!-- 16x16 -->
-<link rel="shortcut icon" href="junjunguo.com/favicon.ico">
+<link rel="shortcut icon" href="https://www.junjunguo.com/favicon.ico">
 <!-- 32x32 -->
-<link rel="shortcut icon" href="junjunguo.com/favicon.png">
+<link rel="shortcut icon" href="https://www.junjunguo.com/favicon.png">
 <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="junjunguo.com/images/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="https://www.junjunguo.com/images/apple-touch-icon-precomposed.png">
 <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="junjunguo.com/images/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.junjunguo.com/images/apple-touch-icon-72x72-precomposed.png">
 <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="junjunguo.com/images/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.junjunguo.com/images/apple-touch-icon-114x114-precomposed.png">
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="junjunguo.com/images/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.junjunguo.com/images/apple-touch-icon-144x144-precomposed.png">
 
 </head>
 
@@ -78,19 +78,19 @@
 	    <ul>
       
 		    
-		    <li><a href="junjunguo.com/tech.html" >Latest</a></li>
+		    <li><a href="https://www.junjunguo.com/tech.html" >Latest</a></li>
 		  
 		    
-		    <li><a href="junjunguo.com/blog/" >Blog</a></li>
+		    <li><a href="https://www.junjunguo.com/blog/" >Blog</a></li>
 		  
 		    
-		    <li><a href="junjunguo.com/tags/" >Tags</a></li>
+		    <li><a href="https://www.junjunguo.com/tags/" >Tags</a></li>
 		  
 		    
-		    <li><a href="junjunguo.com/search/" >Search</a></li>
+		    <li><a href="https://www.junjunguo.com/search/" >Search</a></li>
 		  
 		    
-		    <li><a href="junjunguo.com/index.html" >About</a></li>
+		    <li><a href="https://www.junjunguo.com/index.html" >About</a></li>
 		  
 	    </ul>
 	</nav>
@@ -101,7 +101,7 @@
 <header class="masthead">
 	
 		<div class="wrap">
-			<a href="junjunguo.com/" class="site-logo" rel="home" title="GuoJunjun's Tech Blog"><img src="junjunguo.com/images/site-logo.png" width="200" height="200" alt="GuoJunjun's Tech Blog logo" class="animated bounceInDown"></a>
+			<a href="https://www.junjunguo.com/" class="site-logo" rel="home" title="GuoJunjun's Tech Blog"><img src="https://www.junjunguo.com/images/site-logo.png" width="200" height="200" alt="GuoJunjun's Tech Blog logo" class="animated bounceInDown"></a>
 		</div>
 	
 </header><!-- /.masthead -->
@@ -111,10 +111,10 @@
 
 <div id="main" role="main">
   <article class="hentry">
-    <img src="junjunguo.com/images/summer2014-115.jpg" class="entry-feature-image" alt="Android Saving Data in SQLite Database" ><p class="image-credit">Photo Credit: <a href="https://junjunguo.github.io">GuoJunjun</a>
+    <img src="https://www.junjunguo.com/images/summer2014-115.jpg" class="entry-feature-image" alt="Android Saving Data in SQLite Database" ><p class="image-credit">Photo Credit: <a href="https://junjunguo.github.io">GuoJunjun</a>
     <div class="entry-wrapper">
       <header class="entry-header">
-        <span class="entry-tags"><a href="junjunguo.com/tags/#SQLite" title="Pages tagged SQLite">SQLite</a>&nbsp;&bull;&nbsp;<a href="junjunguo.com/tags/#Database" title="Pages tagged Database">Database</a>&nbsp;&bull;&nbsp;<a href="junjunguo.com/tags/#Android" title="Pages tagged Android">Android</a>&nbsp;&bull;&nbsp;<a href="junjunguo.com/tags/#code" title="Pages tagged code">code</a>&nbsp;&bull;&nbsp;<a href="junjunguo.com/tags/#Java" title="Pages tagged Java">Java</a>&nbsp;&bull;&nbsp;<a href="junjunguo.com/tags/#Mobile" title="Pages tagged Mobile">Mobile</a>&nbsp;&bull;&nbsp;<a href="junjunguo.com/tags/#GUI" title="Pages tagged GUI">GUI</a></span>
+        <span class="entry-tags"><a href="https://www.junjunguo.com/tags/#SQLite" title="Pages tagged SQLite">SQLite</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#Database" title="Pages tagged Database">Database</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#Android" title="Pages tagged Android">Android</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#code" title="Pages tagged code">code</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#Java" title="Pages tagged Java">Java</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#Mobile" title="Pages tagged Mobile">Mobile</a>&nbsp;&bull;&nbsp;<a href="https://www.junjunguo.com/tags/#GUI" title="Pages tagged GUI">GUI</a></span>
         
           <h1 class="entry-title">Android Saving Data in SQLite Database</h1>
         
@@ -122,45 +122,45 @@
       <footer class="entry-meta">
         
         
-          <img src="junjunguo.com/images/bio-photo.jpg" class="bio-photo" alt="GuoJunjun bio photo"></a>
+          <img src="https://www.junjunguo.com/images/bio-photo.jpg" class="bio-photo" alt="GuoJunjun bio photo"></a>
         
         <span class="author vcard">By <span class="fn">GuoJunjun</span></span>
         <span class="entry-date date published"><time datetime="2015-03-08T00:00:00+01:00"><i class="fa fa-calendar-o"></i> March 08, 2015</time></span>
         
         <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
         <span class="social-share-twitter">
-  <a href="https://twitter.com/intent/tweet?hashtags=SQLite,Database,Android,code,Java,Mobile,GUI&amp;text=Android%20Saving%20Data%20in%20SQLite%20Database&amp;url=junjunguo.com/articles/android-sqlite-database/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+  <a href="https://twitter.com/intent/tweet?hashtags=SQLite,Database,Android,code,Java,Mobile,GUI&amp;text=Android%20Saving%20Data%20in%20SQLite%20Database&amp;url=https://www.junjunguo.com/articles/android-sqlite-database/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
 </span>
 <span class="social-share-facebook">
-  <a href="https://www.facebook.com/sharer/sharer.php?u=junjunguo.com/articles/android-sqlite-database/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.junjunguo.com/articles/android-sqlite-database/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
 </span>
 <span class="social-share-googleplus">
-  <a href="https://plus.google.com/share?url=junjunguo.com/articles/android-sqlite-database/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+  <a href="https://plus.google.com/share?url=https://www.junjunguo.com/articles/android-sqlite-database/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
 </span>
 <!-- /.social-share -->
         
       </footer>
       <div class="entry-content">
-        <p>This tutorial describes how to use SQLite database in Android applications. The example code creates a <a href="https://junjunguo.github.io/articles/android-list_view/">ListView</a> in the main Activity to show the data entries, and also creates another window activity for write new data entries. </p>
+        <p>This tutorial describes how to use SQLite database in Android applications. The example code creates a <a href="https://junjunguo.github.io/articles/android-list_view/">ListView</a> in the main Activity to show the data entries, and also creates another window activity for write new data entries.</p>
 
 <h1 class="no_toc" id="contents">Contents</h1>
 
 <ul id="markdown-toc">
-  <li><a href="#sqlite-and-android-database">SQLite and Android database</a>    <ul>
-      <li><a href="#saving-data-in-databases">Saving Data in Databases</a></li>
-      <li><a href="#sqlite">SQLite</a></li>
-      <li><a href="#sqlite-in-android">SQLite in Android</a></li>
+  <li><a href="#sqlite-and-android-database" id="markdown-toc-sqlite-and-android-database">SQLite and Android database</a>    <ul>
+      <li><a href="#saving-data-in-databases" id="markdown-toc-saving-data-in-databases">Saving Data in Databases</a></li>
+      <li><a href="#sqlite" id="markdown-toc-sqlite">SQLite</a></li>
+      <li><a href="#sqlite-in-android" id="markdown-toc-sqlite-in-android">SQLite in Android</a></li>
     </ul>
   </li>
-  <li><a href="#saving-data-in-sqlite-database">Saving Data in SQLite Database</a>    <ul>
-      <li><a href="#about-the-project">About the project</a></li>
-      <li><a href="#create-a-class-to-hold-our-table-names">Create a class to hold our table names</a></li>
-      <li><a href="#use-sqliteopenhelper">Use SQLiteOpenHelper</a></li>
-      <li><a href="#create-data-access-object">Create Data Access Object</a></li>
-      <li><a href="#create-a-textreport-class">Create a TextReport class</a></li>
-      <li><a href="#implement-listview-to-show-data-entries">Implement ListView to show data entries</a></li>
-      <li><a href="#implement-write-text-window">Implement write text window</a></li>
-      <li><a href="#actionbar-menu">ActionBar menu</a></li>
+  <li><a href="#saving-data-in-sqlite-database" id="markdown-toc-saving-data-in-sqlite-database">Saving Data in SQLite Database</a>    <ul>
+      <li><a href="#about-the-project" id="markdown-toc-about-the-project">About the project</a></li>
+      <li><a href="#create-a-class-to-hold-our-table-names" id="markdown-toc-create-a-class-to-hold-our-table-names">Create a class to hold our table names</a></li>
+      <li><a href="#use-sqliteopenhelper" id="markdown-toc-use-sqliteopenhelper">Use SQLiteOpenHelper</a></li>
+      <li><a href="#create-data-access-object" id="markdown-toc-create-data-access-object">Create Data Access Object</a></li>
+      <li><a href="#create-a-textreport-class" id="markdown-toc-create-a-textreport-class">Create a TextReport class</a></li>
+      <li><a href="#implement-listview-to-show-data-entries" id="markdown-toc-implement-listview-to-show-data-entries">Implement ListView to show data entries</a></li>
+      <li><a href="#implement-write-text-window" id="markdown-toc-implement-write-text-window">Implement write text window</a></li>
+      <li><a href="#actionbar-menu" id="markdown-toc-actionbar-menu">ActionBar menu</a></li>
     </ul>
   </li>
 </ul>
@@ -171,7 +171,7 @@
 <p>When the application will generate a large amount of data, especially when the data is structured or repeated, use a database is ideal to organize and handle the generated data.</p>
 
 <h2 id="sqlite">SQLite</h2>
-<p>SQLite is an Open Source database, <a href="http://www.sqlite.org/">SQLite</a> is a most widely deployed SQL database engine in the world. It is small in size and requires a small size of memory to run. </p>
+<p>SQLite is an Open Source database, <a href="http://www.sqlite.org/">SQLite</a> is a most widely deployed SQL database engine in the world. It is small in size and requires a small size of memory to run.</p>
 
 <h2 id="sqlite-in-android">SQLite in Android</h2>
 <p>Android organize all applications in blocks(each application is putted in a box, applications are not supposed to communicate or access to other boxes, unless we setted it to do so), which means applications do not have access to each other by default. Any databases being created will be accessible by name to any class in the application, but not outside the application. Android provides full support for SQLite databases (include all sdk versions). So we have no reason to not use SQLite.</p>
@@ -179,7 +179,7 @@
 <h1 id="saving-data-in-sqlite-database">Saving Data in SQLite Database</h1>
 
 <h2 id="about-the-project">About the project</h2>
-<p>The following demonstration will show how to implement SQLite for Android applications by some example code. </p>
+<p>The following demonstration will show how to implement SQLite for Android applications by some example code.</p>
 
 <ul>
   <li>We will first extends SQLiteOpenHelper, which will help us to managing database creation.</li>
@@ -187,14 +187,14 @@
   <li>We will also create a class for holding all our table names and column names, which will make us easier to organize, maintain tables and columns, specially when we have a lot of tables.</li>
   <li>We will create a data type class to hold data entry as an object.</li>
   <li>write text will be setted to its own window.</li>
-  <li>In the end we will implement a ListView to show all data entries. </li>
+  <li>In the end we will implement a ListView to show all data entries.</li>
 </ul>
 
 <blockquote>
   <p>the example code is built with Android Studio; Minimum Sdk Version: 11; Target Sdk Version 21.</p>
 </blockquote>
 
-<p>Here is how the project looks like when it is done: </p>
+<p>Here is how the project looks like when it is done:</p>
 
 <p><img src="https://raw.githubusercontent.com/junjunguo/android/master/SQLiteDB/send.png" alt="screenshot" />
 <img src="https://raw.githubusercontent.com/junjunguo/android/master/SQLiteDB/view.png" alt="screenshot" /></p>
@@ -203,7 +203,7 @@
 <p>create a class for holding all our table names and column names, which will make us easier to organize, 
 maintain tables and columns, specially when we have a lot of tables. We organize each table as a inner class.</p>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DBtables</span> <span class="o">{</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DBtables</span> <span class="o">{</span>
     <span class="c1">// To prevent someone from accidentally instantiating the contract class, give it an empty constructor.</span>
     <span class="kd">public</span> <span class="nf">DBtables</span><span class="o">()</span> <span class="o">{}</span>
 
@@ -226,7 +226,7 @@ maintain tables and columns, specially when we have a lot of tables. We organize
 <h2 id="use-sqliteopenhelper">Use SQLiteOpenHelper</h2>
 <p>Use SQLiteOpenHelper to help us create database:</p>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DBhelper</span> <span class="kd">extends</span> <span class="n">SQLiteOpenHelper</span> <span class="o">{</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DBhelper</span> <span class="kd">extends</span> <span class="n">SQLiteOpenHelper</span> <span class="o">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">DB_NAME</span> <span class="o">=</span> <span class="s">&quot;mydatabase.db&quot;</span><span class="o">;</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">DB_VERSION</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
 
@@ -265,12 +265,12 @@ maintain tables and columns, specially when we have a lot of tables. We organize
 
 <p>We implement a Data Access Object (DAO) to manage the query.</p>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DAOtextReport</span> <span class="o">{</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DAOtextReport</span> <span class="o">{</span>
     <span class="kd">private</span> <span class="n">SQLiteDatabase</span> <span class="n">database</span><span class="o">;</span>
     <span class="kd">private</span> <span class="n">DBhelper</span> <span class="n">dbHelper</span><span class="o">;</span>
 
     <span class="kd">public</span> <span class="nf">DAOtextReport</span><span class="o">(</span><span class="n">Context</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">dbHelper</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">DBhelper</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+        <span class="n">dbHelper</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DBhelper</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
         <span class="c1">// Gets the data repository in write mode</span>
         <span class="n">database</span> <span class="o">=</span> <span class="n">dbHelper</span><span class="o">.</span><span class="na">getWritableDatabase</span><span class="o">();</span>
     <span class="o">}</span>
@@ -290,7 +290,7 @@ maintain tables and columns, specially when we have a lot of tables. We organize
 <span class="cm">     */</span>
     <span class="kd">public</span> <span class="kt">long</span> <span class="nf">addReport</span><span class="o">(</span><span class="n">TextReport</span> <span class="n">textReport</span><span class="o">)</span> <span class="o">{</span>
         <span class="c1">// Create a new map of values, where column names are the keys</span>
-        <span class="n">ContentValues</span> <span class="n">cv</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">ContentValues</span><span class="o">();</span>
+        <span class="n">ContentValues</span> <span class="n">cv</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ContentValues</span><span class="o">();</span>
         <span class="n">cv</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">DBtables</span><span class="o">.</span><span class="na">TextReport</span><span class="o">.</span><span class="na">COLUMN_NUSER_ID</span><span class="o">,</span> <span class="n">textReport</span><span class="o">.</span><span class="na">getUserid</span><span class="o">());</span>
         <span class="n">cv</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">DBtables</span><span class="o">.</span><span class="na">TextReport</span><span class="o">.</span><span class="na">COLUMN_REPORT</span><span class="o">,</span> <span class="n">textReport</span><span class="o">.</span><span class="na">getReport</span><span class="o">());</span>
         <span class="n">cv</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">DBtables</span><span class="o">.</span><span class="na">TextReport</span><span class="o">.</span><span class="na">COLUMN_ISREPOETED</span><span class="o">,</span> <span class="n">textReport</span><span class="o">.</span><span class="na">isIsreported</span><span class="o">());</span>
@@ -309,7 +309,7 @@ maintain tables and columns, specially when we have a lot of tables. We organize
 <span class="cm">     * @return the number of rows affected</span>
 <span class="cm">     */</span>
     <span class="kd">public</span> <span class="kt">long</span> <span class="nf">updateIsReported</span><span class="o">(</span><span class="n">TextReport</span> <span class="n">textReport</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">ContentValues</span> <span class="n">cv</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">ContentValues</span><span class="o">();</span>
+        <span class="n">ContentValues</span> <span class="n">cv</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ContentValues</span><span class="o">();</span>
         <span class="n">cv</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">DBtables</span><span class="o">.</span><span class="na">TextReport</span><span class="o">.</span><span class="na">COLUMN_ISREPOETED</span><span class="o">,</span> <span class="n">textReport</span><span class="o">.</span><span class="na">isIsreported</span><span class="o">());</span>
 
         <span class="n">String</span> <span class="n">where</span> <span class="o">=</span> <span class="n">DBtables</span><span class="o">.</span><span class="na">TextReport</span><span class="o">.</span><span class="na">COLUMN_NUSER_ID</span> <span class="o">+</span> <span class="s">&quot;=&quot;</span> <span class="o">+</span> <span class="n">textReport</span><span class="o">.</span><span class="na">getUserid</span><span class="o">()</span> <span class="o">+</span> <span class="s">&quot;AND&quot;</span> <span class="o">+</span>
@@ -359,7 +359,7 @@ maintain tables and columns, specially when we have a lot of tables. We organize
 <span class="cm">     * @return a TextReport</span>
 <span class="cm">     */</span>
     <span class="kd">private</span> <span class="n">TextReport</span> <span class="nf">cursorToTextReport</span><span class="o">(</span><span class="n">Cursor</span> <span class="n">cursor</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">TextReport</span> <span class="n">tr</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">TextReport</span><span class="o">();</span>
+        <span class="n">TextReport</span> <span class="n">tr</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TextReport</span><span class="o">();</span>
 
         <span class="n">tr</span><span class="o">.</span><span class="na">setUserid</span><span class="o">(</span><span class="n">cursor</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="n">cursor</span><span class="o">.</span><span class="na">getColumnIndex</span><span class="o">(</span><span class="n">DBtables</span><span class="o">.</span><span class="na">TextReport</span><span class="o">.</span><span class="na">COLUMN_NUSER_ID</span><span class="o">)));</span>
         <span class="n">tr</span><span class="o">.</span><span class="na">setReport</span><span class="o">(</span><span class="n">cursor</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="n">cursor</span><span class="o">.</span><span class="na">getColumnIndex</span><span class="o">(</span><span class="n">DBtables</span><span class="o">.</span><span class="na">TextReport</span><span class="o">.</span><span class="na">COLUMN_REPORT</span><span class="o">)));</span>
@@ -377,20 +377,20 @@ maintain tables and columns, specially when we have a lot of tables. We organize
     <p>SQLite have very few data types, like it does not have boolean type, we use <code>cursor.getInt(cursor.getColumnIndex(DBtables.TextReport.COLUMN_ISREPOETED)) &gt; 0</code> to set 
 value back to boolean.</p>
   </li>
-  <li>We need a Calendar data type but SQLite do not support any Date, </li>
+  <li>We need a Calendar data type but SQLite do not support any Date,</li>
   <li>one option is use data format to convert our Datetime to String and save it to SQLite, 
 when we retrieve it we convert the string to Date Time or Calendar data type again.</li>
   <li>
     <p>The other option is use a number instead of string, we use <code>System.currentTimeMillis()</code> to return a long data type, and save it on database, when we retrieve the date we convert it to Date Time or Calendar data type.</p>
   </li>
   <li>Both options are easy to implement, and both works well. But here we choose to save it as a number, 
-as it is easy to compare when it is a number, numbers are easy to handle, and in our example it needs few less steps than use a string. </li>
+as it is easy to compare when it is a number, numbers are easy to handle, and in our example it needs few less steps than use a string.</li>
 </ul>
 
 <h2 id="create-a-textreport-class">Create a TextReport class</h2>
 <p>This class is the model and it contains all the data we need to save, retrieve from database and show them in our ListView.</p>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TextReport</span> <span class="o">{</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TextReport</span> <span class="o">{</span>
     <span class="kd">private</span> <span class="n">String</span> <span class="n">userid</span><span class="o">,</span> <span class="n">report</span><span class="o">;</span>
     <span class="kd">private</span> <span class="kt">boolean</span> <span class="n">isreported</span><span class="o">;</span>
     <span class="kd">private</span> <span class="n">Calendar</span> <span class="n">datetime</span><span class="o">;</span>
@@ -521,13 +521,13 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
                 <span class="s">&quot;, longitude=&quot;</span> <span class="o">+</span> <span class="n">longitude</span><span class="o">;</span>
     <span class="o">}</span>
 
-    <span class="kd">public</span> <span class="n">SimpleDateFormat</span> <span class="n">df</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">SimpleDateFormat</span><span class="o">(</span><span class="s">&quot;EEEE, MMMM d, yyyy &#39;at&#39; h:mm a&quot;</span><span class="o">);</span>
+    <span class="kd">public</span> <span class="n">SimpleDateFormat</span> <span class="n">df</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SimpleDateFormat</span><span class="o">(</span><span class="s">&quot;EEEE, MMMM d, yyyy &#39;at&#39; h:mm a&quot;</span><span class="o">);</span>
 <span class="o">}</span></code></pre></figure>
 
 <h2 id="implement-listview-to-show-data-entries">Implement ListView to show data entries</h2>
 <p>This class implements a ListView, and show all data entries from database in ListView. A Toast to show clicked item, and a popup actionbar menu to choose write message window is also implemented.</p>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">ActionBarActivity</span> <span class="o">{</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">ActionBarActivity</span> <span class="o">{</span>
     <span class="kd">private</span> <span class="n">DAOtextReport</span> <span class="n">daOtextReport</span><span class="o">;</span>
 
     <span class="nd">@Override</span>
@@ -551,7 +551,7 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
 <span class="cm">     * @return String [] list</span>
 <span class="cm">     */</span>
     <span class="kd">public</span> <span class="n">String</span><span class="o">[]</span> <span class="nf">getList</span><span class="o">()</span> <span class="o">{</span>
-        <span class="n">daOtextReport</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">DAOtextReport</span><span class="o">(</span><span class="n">getApplicationContext</span><span class="o">());</span>
+        <span class="n">daOtextReport</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DAOtextReport</span><span class="o">(</span><span class="n">getApplicationContext</span><span class="o">());</span>
         <span class="n">List</span><span class="o">&lt;</span><span class="n">TextReport</span><span class="o">&gt;</span> <span class="n">alist</span> <span class="o">=</span> <span class="n">daOtextReport</span><span class="o">.</span><span class="na">getAllTextReports</span><span class="o">();</span>
         <span class="n">String</span><span class="o">[]</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">[</span><span class="n">alist</span><span class="o">.</span><span class="na">size</span><span class="o">()];</span>
         <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">alist</span><span class="o">.</span><span class="na">size</span><span class="o">();</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
@@ -590,7 +590,7 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
         <span class="c1">// as you specify a parent activity in AndroidManifest.xml.</span>
         <span class="k">switch</span> <span class="o">(</span><span class="n">item</span><span class="o">.</span><span class="na">getItemId</span><span class="o">())</span> <span class="o">{</span>
             <span class="k">case</span> <span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">menu_write</span><span class="o">:</span>
-                <span class="n">startActivity</span><span class="o">(</span><span class="k">new</span> <span class="nf">Intent</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">ReportActivity</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
+                <span class="n">startActivity</span><span class="o">(</span><span class="k">new</span> <span class="n">Intent</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">ReportActivity</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
                 <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
             <span class="k">default</span><span class="o">:</span>
                 <span class="k">return</span> <span class="kd">super</span><span class="o">.</span><span class="na">onOptionsItemSelected</span><span class="o">(</span><span class="n">item</span><span class="o">);</span>
@@ -600,7 +600,7 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
 
 <p>And here is layout for main activity:</p>
 
-<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;RelativeLayout</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="nt">&lt;RelativeLayout</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
                 <span class="na">xmlns:tools=</span><span class="s">&quot;http://schemas.android.com/tools&quot;</span>
                 <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
                 <span class="na">android:layout_height=</span><span class="s">&quot;match_parent&quot;</span>
@@ -620,7 +620,7 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
 <h2 id="implement-write-text-window">Implement write text window</h2>
 <p>A simple EditText is used to write text, and a send button to save text to database.</p>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ReportActivity</span> <span class="kd">extends</span> <span class="n">ActionBarActivity</span> <span class="o">{</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ReportActivity</span> <span class="kd">extends</span> <span class="n">ActionBarActivity</span> <span class="o">{</span>
     <span class="kd">private</span> <span class="n">EditText</span> <span class="n">textReport</span><span class="o">;</span>
     <span class="kd">private</span> <span class="n">DAOtextReport</span> <span class="n">daOtextReport</span><span class="o">;</span>
 
@@ -630,7 +630,7 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
         <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_report</span><span class="o">);</span>
 
         <span class="n">textReport</span> <span class="o">=</span> <span class="o">(</span><span class="n">EditText</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">report_edit_text</span><span class="o">);</span>
-        <span class="n">daOtextReport</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">DAOtextReport</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+        <span class="n">daOtextReport</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DAOtextReport</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
     <span class="o">}</span>
 
     <span class="cm">/**</span>
@@ -640,7 +640,7 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
 <span class="cm">     */</span>
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">textReportOnClicked</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
         <span class="n">String</span> <span class="n">report</span> <span class="o">=</span> <span class="n">textReport</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">();</span>
-        <span class="kt">long</span> <span class="n">result</span> <span class="o">=</span> <span class="n">daOtextReport</span><span class="o">.</span><span class="na">addReport</span><span class="o">(</span><span class="k">new</span> <span class="nf">TextReport</span><span class="o">(</span><span class="s">&quot;junjunguo.com&quot;</span><span class="o">,</span> <span class="n">report</span><span class="o">,</span> <span class="mf">63.4187362</span><span class="o">,</span> <span class="mf">10.4387621</span><span class="o">));</span>
+        <span class="kt">long</span> <span class="n">result</span> <span class="o">=</span> <span class="n">daOtextReport</span><span class="o">.</span><span class="na">addReport</span><span class="o">(</span><span class="k">new</span> <span class="n">TextReport</span><span class="o">(</span><span class="s">&quot;junjunguo.com&quot;</span><span class="o">,</span> <span class="n">report</span><span class="o">,</span> <span class="mf">63.4187362</span><span class="o">,</span> <span class="mf">10.4387621</span><span class="o">));</span>
 
         <span class="k">if</span> <span class="o">(</span><span class="n">result</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
             <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="n">getApplicationContext</span><span class="o">(),</span> <span class="s">&quot;succsefully add report to row &quot;</span> <span class="o">+</span> <span class="n">result</span><span class="o">,</span> <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">)</span>
@@ -666,7 +666,7 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
         <span class="k">switch</span> <span class="o">(</span><span class="n">item</span><span class="o">.</span><span class="na">getItemId</span><span class="o">())</span> <span class="o">{</span>
             <span class="k">case</span> <span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">menu_view</span><span class="o">:</span>
                 <span class="n">daOtextReport</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
-                <span class="n">startActivity</span><span class="o">(</span><span class="k">new</span> <span class="nf">Intent</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">MainActivity</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
+                <span class="n">startActivity</span><span class="o">(</span><span class="k">new</span> <span class="n">Intent</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">MainActivity</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
                 <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
             <span class="k">default</span><span class="o">:</span>
                 <span class="k">return</span> <span class="kd">super</span><span class="o">.</span><span class="na">onOptionsItemSelected</span><span class="o">(</span><span class="n">item</span><span class="o">);</span>
@@ -676,7 +676,7 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
 
 <p>And layout for <code>ReportActivity</code> insert following:</p>
 
-<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;EditText</span>
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="nt">&lt;EditText</span>
     <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
     <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
     <span class="na">android:id=</span><span class="s">&quot;@+id/report_edit_text&quot;</span>
@@ -701,7 +701,7 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
 
 <p>Add a menu item to the ListView activity menu so we can switch to write window</p>
 
-<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;item</span>
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="nt">&lt;item</span>
     <span class="na">android:id=</span><span class="s">&quot;@+id/menu_write&quot;</span>
     <span class="na">android:title=</span><span class="s">&quot;@string/write_report&quot;</span>
     <span class="na">android:orderInCategory=</span><span class="s">&quot;100&quot;</span>
@@ -709,7 +709,7 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
 
 <p>and add menu item to write activity menu so we can switch back</p>
 
-<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;item</span>
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="nt">&lt;item</span>
     <span class="na">android:id=</span><span class="s">&quot;@+id/menu_view&quot;</span>
     <span class="na">android:title=</span><span class="s">&quot;@string/view_report&quot;</span>
     <span class="na">android:orderInCategory=</span><span class="s">&quot;100&quot;</span>
@@ -750,10 +750,10 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       
-        <a href="junjunguo.com/blog/android-list-view-b/" class="btn" title="Android Implement a ListView">Previous</a>
+        <a href="https://www.junjunguo.com/blog/android-list-view-b/" class="btn" title="Android Implement a ListView">Previous</a>
       
       
-        <a href="junjunguo.com/blog/android-sqlite-database-b/" class="btn" title="Android Saving Data in SQLite Database">Next</a>
+        <a href="https://www.junjunguo.com/blog/android-sqlite-database-b/" class="btn" title="Android Saving Data in SQLite Database">Next</a>
       
     </nav><!-- /.pagination -->
   </article>
@@ -781,18 +781,18 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
     <a href="http://github.com/junjunguo" title="GuoJunjun on Github"
                                  target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
     
-    <a href="junjunguo.com/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+    <a href="https://www.junjunguo.com/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
 </div><!-- /.social-icons -->
   </footer>
 </div><!-- /.footer-wrapper -->
 
 <script type="text/javascript">
-  var BASE_URL = 'junjunguo.com';
+  var BASE_URL = 'https://www.junjunguo.com';
 </script>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="junjunguo.com/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="junjunguo.com/assets/js/scripts.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://www.junjunguo.com/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="https://www.junjunguo.com/assets/js/scripts.min.js"></script>
 
 
 <!-- Asynchronous Google Analytics snippet -->

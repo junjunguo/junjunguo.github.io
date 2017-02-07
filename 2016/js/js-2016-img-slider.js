@@ -27,7 +27,7 @@ function getJSONobject() {
         pimgList = shufflePList(JSON.parse(readerp.responseText).photos);
 
         var image     = new Image();
-        image.src     = "http://static.panoramio.com/photos/large/" + pimgList[0].id + ".jpg";
+        image.src     = "https://static.panoramio.com/photos/large/" + pimgList[0].id + ".jpg";
         // image.src     = "../../2015/images/bg/" + pimgList[0].id + ".jpg";
         image.onload  = function () {
             //console.info("Image loaded !");
@@ -58,7 +58,7 @@ function loadPimgs() {
                 '<div class="item">';
         }
         slideHtml +=
-            '   <img src="http://static.panoramio.com/photos/large/' + pimgList[j].id +
+            '   <img src="https://static.panoramio.com/photos/large/' + pimgList[j].id +
             '.jpg" alt="photo: ' + pimgList[j].title + '">' +
             '            <div class="carousel-caption">';
 
