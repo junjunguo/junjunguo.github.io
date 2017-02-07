@@ -32,7 +32,8 @@
             var copy = [], n = list.length, index;
             while (n) {
                 index = Math.floor(Math.random() * (n--));
-                copy.push({'image': 'http://static.panoramio.com/photos/large/' + list[index] +
+//                copy.push({'image': 'http://static.panoramio.com/photos/large/' + list[index] +
+                copy.push({'image': './2015/images/bg/' + list[index] +
                         '.jpg', 'title': 'Image Credit: GuoJunjun', 'thumb': '', 'url': ''});
                 list.splice(index, 1);
             }

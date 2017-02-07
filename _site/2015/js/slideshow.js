@@ -23,11 +23,12 @@ console.log("Your location: " + geoplugin_countryName());
 function shuffleList(list) { // shuffle nrlist and return a list with objects ready for slides
     var copy = [], n = list.length, index;
     var bgimgaddress;
-    if (geoplugin_countryName() == "China") {
+    // if (geoplugin_countryName() == "China") {
         bgimgaddress = './2015/images/bg/';
-    } else {
-        bgimgaddress = 'http://static.panoramio.com/photos/large/';
-    }
+    // } else {
+        // bgimgaddress = 'http://static.panoramio.com/photos/large/';
+        // bgimgaddress = 'http://static.panoramio.com/photos/large/';
+    // }
     while (n) {
         index = Math.floor(Math.random() * (n--));
 //        var overlay = 'url(".2015/css/images/overlay-black.svg"),'
