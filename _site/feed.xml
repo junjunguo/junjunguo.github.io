@@ -2,26 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">GuoJunjun's Tech Blog</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="https://www.junjunguo.com/feed.xml" />
-<link rel="alternate" type="text/html" href="https://www.junjunguo.com" />
-<updated>2017-02-07T22:26:45+01:00</updated>
-<id>https://www.junjunguo.com/</id>
+<link rel="self" type="application/atom+xml" href="/feed.xml" />
+<link rel="alternate" type="text/html" href="" />
+<updated>2017-02-07T22:41:07+01:00</updated>
+<id>/</id>
 <author>
   <name>GuoJunjun</name>
-  <uri>https://www.junjunguo.com/</uri>
+  <uri>/</uri>
   <email>guojunjun@gmail.com</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[Android Resumable Download]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/blog/android-resumable-download/" />
-  <id>https://www.junjunguo.com/blog/android-resumable-download</id>
+  <link rel="alternate" type="text/html" href="/blog/android-resumable-download/" />
+  <id>/blog/android-resumable-download</id>
   <published>2015-09-18T00:00:00+02:00</published>
   <updated>2015-09-18T00:00:00+02:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -490,20 +490,20 @@ An interface to pass Message data&lt;/p&gt;
 
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/ResumeDownload&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/blog/android-resumable-download/&quot;&gt;Android Resumable Download&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on September 18, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/blog/android-resumable-download/&quot;&gt;Android Resumable Download&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on September 18, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Android Color status bar]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/blog/android-color-status-bar/" />
-  <id>https://www.junjunguo.com/blog/android-color-status-bar</id>
+  <link rel="alternate" type="text/html" href="/blog/android-color-status-bar/" />
+  <id>/blog/android-color-status-bar</id>
   <published>2015-06-10T00:00:00+02:00</published>
   <updated>2015-06-10T00:00:00+02:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -567,20 +567,20 @@ An interface to pass Message data&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/SystemBarColor&quot;&gt;Example code&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/blog/android-color-status-bar/&quot;&gt;Android Color status bar&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on June 10, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/blog/android-color-status-bar/&quot;&gt;Android Color status bar&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on June 10, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Bootstrap Register with Bootstrap Modals]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/blog/bootstrap-modal-register-b/" />
-  <id>https://www.junjunguo.com/blog/bootstrap-modal-register-b</id>
+  <link rel="alternate" type="text/html" href="/blog/bootstrap-modal-register-b/" />
+  <id>/blog/bootstrap-modal-register-b</id>
   <published>2015-04-05T00:00:00+02:00</published>
   <updated>2015-04-05T00:00:00+02:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -1208,20 +1208,20 @@ dynamically according to input.&lt;/li&gt;
 &lt;/ul&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/blog/bootstrap-modal-register-b/&quot;&gt;Bootstrap Register with Bootstrap Modals&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on April 05, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/blog/bootstrap-modal-register-b/&quot;&gt;Bootstrap Register with Bootstrap Modals&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on April 05, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Bootstrap Register with Bootstrap Modals]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/articles/bootstrap-modal-register/" />
-  <id>https://www.junjunguo.com/articles/bootstrap-modal-register</id>
+  <link rel="alternate" type="text/html" href="/articles/bootstrap-modal-register/" />
+  <id>/articles/bootstrap-modal-register</id>
   <published>2015-04-05T00:00:00+02:00</published>
   <updated>2015-04-05T00:00:00+02:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -1849,20 +1849,20 @@ dynamically according to input.&lt;/li&gt;
 &lt;/ul&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/articles/bootstrap-modal-register/&quot;&gt;Bootstrap Register with Bootstrap Modals&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on April 05, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/articles/bootstrap-modal-register/&quot;&gt;Bootstrap Register with Bootstrap Modals&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on April 05, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Bootstrap Login]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/blog/bootstrap-modal-login-b/" />
-  <id>https://www.junjunguo.com/blog/bootstrap-modal-login-b</id>
+  <link rel="alternate" type="text/html" href="/blog/bootstrap-modal-login-b/" />
+  <id>/blog/bootstrap-modal-login-b</id>
   <published>2015-04-04T00:00:00+02:00</published>
   <updated>2015-04-04T00:00:00+02:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -2129,20 +2129,20 @@ dynamically according to input.&lt;/li&gt;
 &lt;/ul&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/blog/bootstrap-modal-login-b/&quot;&gt;Bootstrap Login&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on April 04, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/blog/bootstrap-modal-login-b/&quot;&gt;Bootstrap Login&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on April 04, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Bootstrap Login]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/articles/bootstrap-modal-login/" />
-  <id>https://www.junjunguo.com/articles/bootstrap-modal-login</id>
+  <link rel="alternate" type="text/html" href="/articles/bootstrap-modal-login/" />
+  <id>/articles/bootstrap-modal-login</id>
   <published>2015-04-04T00:00:00+02:00</published>
   <updated>2015-04-04T00:00:00+02:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -2409,20 +2409,20 @@ dynamically according to input.&lt;/li&gt;
 &lt;/ul&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/articles/bootstrap-modal-login/&quot;&gt;Bootstrap Login&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on April 04, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/articles/bootstrap-modal-login/&quot;&gt;Bootstrap Login&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on April 04, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Android ListView Image save data in SQLite Database]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/blog/android-sqlite-image-view-b/" />
-  <id>https://www.junjunguo.com/blog/android-sqlite-image-view-b</id>
+  <link rel="alternate" type="text/html" href="/blog/android-sqlite-image-view-b/" />
+  <id>/blog/android-sqlite-image-view-b</id>
   <published>2015-03-23T00:00:00+01:00</published>
   <updated>2015-03-23T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -3522,20 +3522,20 @@ mandatory to have a camera to run the application.&lt;/p&gt;
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/SqliteImage&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/blog/android-sqlite-image-view-b/&quot;&gt;Android ListView Image save data in SQLite Database&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 23, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/blog/android-sqlite-image-view-b/&quot;&gt;Android ListView Image save data in SQLite Database&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 23, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Android ListView Image save data in SQLite Database]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/articles/android-sqlite-image-view/" />
-  <id>https://www.junjunguo.com/articles/android-sqlite-image-view</id>
+  <link rel="alternate" type="text/html" href="/articles/android-sqlite-image-view/" />
+  <id>/articles/android-sqlite-image-view</id>
   <published>2015-03-23T00:00:00+01:00</published>
   <updated>2015-03-23T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -4635,20 +4635,20 @@ mandatory to have a camera to run the application.&lt;/p&gt;
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/SqliteImage&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/articles/android-sqlite-image-view/&quot;&gt;Android ListView Image save data in SQLite Database&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 23, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/articles/android-sqlite-image-view/&quot;&gt;Android ListView Image save data in SQLite Database&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 23, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Android take photo and save to gallery, choose photo from gallery and show in ListView]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/blog/android-take-photo-show-in-list-view-b/" />
-  <id>https://www.junjunguo.com/blog/android-take-photo-show-in-list-view-b</id>
+  <link rel="alternate" type="text/html" href="/blog/android-take-photo-show-in-list-view-b/" />
+  <id>/blog/android-take-photo-show-in-list-view-b</id>
   <published>2015-03-22T00:00:00+01:00</published>
   <updated>2015-03-22T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -5166,20 +5166,20 @@ mandatory to have a camera to run the application.&lt;/p&gt;
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/ImageAdaptertoListView&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/blog/android-take-photo-show-in-list-view-b/&quot;&gt;Android take photo and save to gallery, choose photo from gallery and show in ListView&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 22, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/blog/android-take-photo-show-in-list-view-b/&quot;&gt;Android take photo and save to gallery, choose photo from gallery and show in ListView&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 22, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Android take photo and save to gallery, choose photo from gallery and show in ListView]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/articles/android-take-photo-show-in-list-view/" />
-  <id>https://www.junjunguo.com/articles/android-take-photo-show-in-list-view</id>
+  <link rel="alternate" type="text/html" href="/articles/android-take-photo-show-in-list-view/" />
+  <id>/articles/android-take-photo-show-in-list-view</id>
   <published>2015-03-22T00:00:00+01:00</published>
   <updated>2015-03-22T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -5697,20 +5697,20 @@ mandatory to have a camera to run the application.&lt;/p&gt;
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/ImageAdaptertoListView&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/articles/android-take-photo-show-in-list-view/&quot;&gt;Android take photo and save to gallery, choose photo from gallery and show in ListView&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 22, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/articles/android-take-photo-show-in-list-view/&quot;&gt;Android take photo and save to gallery, choose photo from gallery and show in ListView&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 22, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Android Alert Dialog]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/blog/android-alertdialog-b/" />
-  <id>https://www.junjunguo.com/blog/android-alertdialog-b</id>
+  <link rel="alternate" type="text/html" href="/blog/android-alertdialog-b/" />
+  <id>/blog/android-alertdialog-b</id>
   <published>2015-03-21T00:00:00+01:00</published>
   <updated>2015-03-21T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -5909,20 +5909,20 @@ mandatory to have a camera to run the application.&lt;/p&gt;
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/AlertDialog&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/blog/android-alertdialog-b/&quot;&gt;Android Alert Dialog&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 21, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/blog/android-alertdialog-b/&quot;&gt;Android Alert Dialog&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 21, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Android Alert Dialog]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/articles/android-alertdialog/" />
-  <id>https://www.junjunguo.com/articles/android-alertdialog</id>
+  <link rel="alternate" type="text/html" href="/articles/android-alertdialog/" />
+  <id>/articles/android-alertdialog</id>
   <published>2015-03-21T00:00:00+01:00</published>
   <updated>2015-03-21T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -6121,20 +6121,20 @@ mandatory to have a camera to run the application.&lt;/p&gt;
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/AlertDialog&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/articles/android-alertdialog/&quot;&gt;Android Alert Dialog&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 21, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/articles/android-alertdialog/&quot;&gt;Android Alert Dialog&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 21, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Android TableLayout]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/blog/android-table-layout-b/" />
-  <id>https://www.junjunguo.com/blog/android-table-layout-b</id>
+  <link rel="alternate" type="text/html" href="/blog/android-table-layout-b/" />
+  <id>/blog/android-table-layout-b</id>
   <published>2015-03-18T00:00:00+01:00</published>
   <updated>2015-03-18T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -6281,20 +6281,20 @@ second there is only one element and it takes 3 portion, the whole row space.&lt
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/MyTableView&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/blog/android-table-layout-b/&quot;&gt;Android TableLayout&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 18, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/blog/android-table-layout-b/&quot;&gt;Android TableLayout&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 18, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Android TableLayout]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/articles/android-table-layout/" />
-  <id>https://www.junjunguo.com/articles/android-table-layout</id>
+  <link rel="alternate" type="text/html" href="/articles/android-table-layout/" />
+  <id>/articles/android-table-layout</id>
   <published>2015-03-18T00:00:00+01:00</published>
   <updated>2015-03-18T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -6441,20 +6441,20 @@ second there is only one element and it takes 3 portion, the whole row space.&lt
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/MyTableView&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/articles/android-table-layout/&quot;&gt;Android TableLayout&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 18, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/articles/android-table-layout/&quot;&gt;Android TableLayout&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 18, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Android use AsyncTask or Executor to repeat tasks in background]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/blog/android-async-task-and-executor-b/" />
-  <id>https://www.junjunguo.com/blog/android-async-task-and-executor-b</id>
+  <link rel="alternate" type="text/html" href="/blog/android-async-task-and-executor-b/" />
+  <id>/blog/android-async-task-and-executor-b</id>
   <published>2015-03-10T00:00:00+01:00</published>
   <updated>2015-03-10T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -6870,20 +6870,20 @@ An asyncTask have to be subclassed to be in used.&lt;/p&gt;
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/RepeatAsyncTask&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/blog/android-async-task-and-executor-b/&quot;&gt;Android use AsyncTask or Executor to repeat tasks in background&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 10, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/blog/android-async-task-and-executor-b/&quot;&gt;Android use AsyncTask or Executor to repeat tasks in background&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 10, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Android use AsyncTask or Executor to repeat tasks in background]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/articles/android-async-task-and-executor/" />
-  <id>https://www.junjunguo.com/articles/android-async-task-and-executor</id>
+  <link rel="alternate" type="text/html" href="/articles/android-async-task-and-executor/" />
+  <id>/articles/android-async-task-and-executor</id>
   <published>2015-03-10T00:00:00+01:00</published>
   <updated>2015-03-10T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -7299,20 +7299,20 @@ An asyncTask have to be subclassed to be in used.&lt;/p&gt;
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/RepeatAsyncTask&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/articles/android-async-task-and-executor/&quot;&gt;Android use AsyncTask or Executor to repeat tasks in background&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 10, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/articles/android-async-task-and-executor/&quot;&gt;Android use AsyncTask or Executor to repeat tasks in background&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 10, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Android Send Message to Other Activity]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/blog/android-send-message-to-other-activity-b/" />
-  <id>https://www.junjunguo.com/blog/android-send-message-to-other-activity-b</id>
+  <link rel="alternate" type="text/html" href="/blog/android-send-message-to-other-activity-b/" />
+  <id>/blog/android-send-message-to-other-activity-b</id>
   <published>2015-03-09T00:00:00+01:00</published>
   <updated>2015-03-09T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -7439,20 +7439,20 @@ send from other activity. The example code will show how to implement it.&lt;/p&
 
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/SendMessagetoOtherActivity&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/blog/android-send-message-to-other-activity-b/&quot;&gt;Android Send Message to Other Activity&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 09, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/blog/android-send-message-to-other-activity-b/&quot;&gt;Android Send Message to Other Activity&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 09, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Android Send Message to Other Activity]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/articles/android-send-message-to-other-activity/" />
-  <id>https://www.junjunguo.com/articles/android-send-message-to-other-activity</id>
+  <link rel="alternate" type="text/html" href="/articles/android-send-message-to-other-activity/" />
+  <id>/articles/android-send-message-to-other-activity</id>
   <published>2015-03-09T00:00:00+01:00</published>
   <updated>2015-03-09T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -7579,20 +7579,20 @@ send from other activity. The example code will show how to implement it.&lt;/p&
 
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/2015/SendMessagetoOtherActivity&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/articles/android-send-message-to-other-activity/&quot;&gt;Android Send Message to Other Activity&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 09, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/articles/android-send-message-to-other-activity/&quot;&gt;Android Send Message to Other Activity&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 09, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Android Saving Data in SQLite Database]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/blog/android-sqlite-database-b/" />
-  <id>https://www.junjunguo.com/blog/android-sqlite-database-b</id>
+  <link rel="alternate" type="text/html" href="/blog/android-sqlite-database-b/" />
+  <id>/blog/android-sqlite-database-b</id>
   <published>2015-03-08T00:00:00+01:00</published>
   <updated>2015-03-08T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -8174,20 +8174,20 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
 
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/SQLiteDB&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/blog/android-sqlite-database-b/&quot;&gt;Android Saving Data in SQLite Database&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 08, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/blog/android-sqlite-database-b/&quot;&gt;Android Saving Data in SQLite Database&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 08, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Android Saving Data in SQLite Database]]></title>
-  <link rel="alternate" type="text/html" href="https://www.junjunguo.com/articles/android-sqlite-database/" />
-  <id>https://www.junjunguo.com/articles/android-sqlite-database</id>
+  <link rel="alternate" type="text/html" href="/articles/android-sqlite-database/" />
+  <id>/articles/android-sqlite-database</id>
   <published>2015-03-08T00:00:00+01:00</published>
   <updated>2015-03-08T00:00:00+01:00</updated>
   <author>
     <name>GuoJunjun</name>
-    <uri>https://www.junjunguo.com</uri>
+    <uri></uri>
     <email>guojunjun@gmail.com</email>
   </author>
   <content type="html">
@@ -8769,7 +8769,7 @@ as it is easy to compare when it is a number, numbers are easy to handle, and in
 
 &lt;p&gt;Source code &lt;a href=&quot;https://github.com/junjunguo/android/tree/master/SQLiteDB&quot;&gt;on Github&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://www.junjunguo.com/articles/android-sqlite-database/&quot;&gt;Android Saving Data in SQLite Database&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;https://www.junjunguo.com&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 08, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/articles/android-sqlite-database/&quot;&gt;Android Saving Data in SQLite Database&lt;/a&gt; was originally published by GuoJunjun at &lt;a href=&quot;&quot;&gt;GuoJunjun's Tech Blog&lt;/a&gt; on March 08, 2015.&lt;/p&gt;
   </content>
 </entry>
 

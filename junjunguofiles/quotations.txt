@@ -140,6 +140,10 @@ Norsk Ordspråk	#	En blir ikke skikkelig klok før en har vært tre ganger gal.
 Norsk Ordspråk	#	En dåre kan spørre mer enn ti vise menn kan svare.
 Norsk Ordspråk	#	Jo mer man vet, dess mer vet man at man ikke vet.
 Oscar Wilde #	Be yourself; everyone else is already taken.
+Ralph Waldo Emerson #   To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.
+Ralph Waldo Emerson #   Always do what you are afraid to do.
+Ralph Waldo Emerson #   All life is an experiment. The more experiments you make the better.
+Ralph Waldo Emerson #   Do not go where the path may lead, go instead where there is no path and leave a trail.
 Robert Frost    #   The best way out is always through. <br> 找到出口的最好方式就是一路走到底.
 Robin Williams  #   No matter what people tell you, words and ideas can change the world.
 Rich Cook	#	Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the universe trying to produce bigger and better idiots. So far, the universe is winning.

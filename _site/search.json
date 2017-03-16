@@ -3,7 +3,7 @@
   
     {
       "title"			: "Android Resumable Download",
-      "link"			: "https://www.junjunguo.com/blog/android-resumable-download/",
+      "link"			: "/blog/android-resumable-download/",
       "excerpt"		: "How to implement pause/resume for http file download with Java"
     }
   
@@ -11,7 +11,7 @@
   
     ,{
       "title"			: "Android Color status bar",
-      "link"			: "https://www.junjunguo.com/blog/android-color-status-bar/",
+      "link"			: "/blog/android-color-status-bar/",
       "excerpt"		: "How to change status bar color to match app for API 19+"
     }
   
@@ -19,7 +19,7 @@
   
     ,{
       "title"			: "Bootstrap Register with Bootstrap Modals",
-      "link"			: "https://www.junjunguo.com/blog/bootstrap-modal-register-b/",
+      "link"			: "/blog/bootstrap-modal-register-b/",
       "excerpt"		: "Bootstrap popup windows for Register and custom validation"
     }
   
@@ -27,7 +27,7 @@
   
     ,{
       "title"			: "Bootstrap Register with Bootstrap Modals",
-      "link"			: "https://www.junjunguo.com/articles/bootstrap-modal-register/",
+      "link"			: "/articles/bootstrap-modal-register/",
       "excerpt"		: "Bootstrap popup windows for Register and custom validation"
     }
   
@@ -35,7 +35,7 @@
   
     ,{
       "title"			: "Bootstrap Login",
-      "link"			: "https://www.junjunguo.com/blog/bootstrap-modal-login-b/",
+      "link"			: "/blog/bootstrap-modal-login-b/",
       "excerpt"		: "Bootstrap popup window Login and custom validation"
     }
   
@@ -43,7 +43,7 @@
   
     ,{
       "title"			: "Bootstrap Login",
-      "link"			: "https://www.junjunguo.com/articles/bootstrap-modal-login/",
+      "link"			: "/articles/bootstrap-modal-login/",
       "excerpt"		: "Bootstrap popup window Login and custom validation"
     }
   
@@ -51,7 +51,7 @@
   
     ,{
       "title"			: "Android ListView Image save data in SQLite Database",
-      "link"			: "https://www.junjunguo.com/blog/android-sqlite-image-view-b/",
+      "link"			: "/blog/android-sqlite-image-view-b/",
       "excerpt"		: "Choose Image from Gallery or Camera, display in a ListView and save information in SQLite"
     }
   
@@ -59,7 +59,7 @@
   
     ,{
       "title"			: "Android ListView Image save data in SQLite Database",
-      "link"			: "https://www.junjunguo.com/articles/android-sqlite-image-view/",
+      "link"			: "/articles/android-sqlite-image-view/",
       "excerpt"		: "Choose Image from Gallery or Camera, display in a ListView and save information in SQLite"
     }
   
@@ -67,7 +67,7 @@
   
     ,{
       "title"			: "Android take photo and save to gallery, choose photo from gallery and show in ListView",
-      "link"			: "https://www.junjunguo.com/blog/android-take-photo-show-in-list-view-b/",
+      "link"			: "/blog/android-take-photo-show-in-list-view-b/",
       "excerpt"		: "take photo or choose from gallery and use adapter to fill data from ArrayList to ListView"
     }
   
@@ -75,7 +75,7 @@
   
     ,{
       "title"			: "Android take photo and save to gallery, choose photo from gallery and show in ListView",
-      "link"			: "https://www.junjunguo.com/articles/android-take-photo-show-in-list-view/",
+      "link"			: "/articles/android-take-photo-show-in-list-view/",
       "excerpt"		: "take photo or choose from gallery and use adapter to fill data from ArrayList to ListView"
     }
   
@@ -83,7 +83,7 @@
   
     ,{
       "title"			: "Android Alert Dialog",
-      "link"			: "https://www.junjunguo.com/blog/android-alertdialog-b/",
+      "link"			: "/blog/android-alertdialog-b/",
       "excerpt"		: "Android display dialog box / popup window"
     }
   
@@ -91,7 +91,7 @@
   
     ,{
       "title"			: "Android Alert Dialog",
-      "link"			: "https://www.junjunguo.com/articles/android-alertdialog/",
+      "link"			: "/articles/android-alertdialog/",
       "excerpt"		: "Android display dialog box / popup window"
     }
   
@@ -99,7 +99,7 @@
   
     ,{
       "title"			: "Android TableLayout",
-      "link"			: "https://www.junjunguo.com/blog/android-table-layout-b/",
+      "link"			: "/blog/android-table-layout-b/",
       "excerpt"		: "Android TableLayout example and colors xml"
     }
   
@@ -107,7 +107,7 @@
   
     ,{
       "title"			: "Android TableLayout",
-      "link"			: "https://www.junjunguo.com/articles/android-table-layout/",
+      "link"			: "/articles/android-table-layout/",
       "excerpt"		: "Android TableLayout example and colors xml"
     }
   
@@ -115,7 +115,7 @@
   
     ,{
       "title"			: "Android use AsyncTask or Executor to repeat tasks in background",
-      "link"			: "https://www.junjunguo.com/blog/android-async-task-and-executor-b/",
+      "link"			: "/blog/android-async-task-and-executor-b/",
       "excerpt"		: "How to repeatedly do tasks with AsyncTask or Executor"
     }
   
@@ -123,7 +123,7 @@
   
     ,{
       "title"			: "Android use AsyncTask or Executor to repeat tasks in background",
-      "link"			: "https://www.junjunguo.com/articles/android-async-task-and-executor/",
+      "link"			: "/articles/android-async-task-and-executor/",
       "excerpt"		: "How to repeatedly do tasks with AsyncTask or Executor"
     }
   
@@ -131,7 +131,7 @@
   
     ,{
       "title"			: "Android Send Message to Other Activity",
-      "link"			: "https://www.junjunguo.com/blog/android-send-message-to-other-activity-b/",
+      "link"			: "/blog/android-send-message-to-other-activity-b/",
       "excerpt"		: "Send Message from one Activity to another"
     }
   
@@ -139,7 +139,7 @@
   
     ,{
       "title"			: "Android Send Message to Other Activity",
-      "link"			: "https://www.junjunguo.com/articles/android-send-message-to-other-activity/",
+      "link"			: "/articles/android-send-message-to-other-activity/",
       "excerpt"		: "Send Message from one Activity to another"
     }
   
@@ -147,7 +147,7 @@
   
     ,{
       "title"			: "Android Saving Data in SQLite Database",
-      "link"			: "https://www.junjunguo.com/blog/android-sqlite-database-b/",
+      "link"			: "/blog/android-sqlite-database-b/",
       "excerpt"		: "How to implement SQLite for Android applications"
     }
   
@@ -155,7 +155,7 @@
   
     ,{
       "title"			: "Android Saving Data in SQLite Database",
-      "link"			: "https://www.junjunguo.com/articles/android-sqlite-database/",
+      "link"			: "/articles/android-sqlite-database/",
       "excerpt"		: "How to implement SQLite for Android applications"
     }
   
@@ -163,7 +163,7 @@
   
     ,{
       "title"			: "Android Implement a ListView",
-      "link"			: "https://www.junjunguo.com/blog/android-list-view-b/",
+      "link"			: "/blog/android-list-view-b/",
       "excerpt"		: "An Example of Implementing a ListView"
     }
   
@@ -171,7 +171,7 @@
   
     ,{
       "title"			: "Android Implement a ListView",
-      "link"			: "https://www.junjunguo.com/articles/android-list-view/",
+      "link"			: "/articles/android-list-view/",
       "excerpt"		: "An Example of Implementing a ListView"
     }
   
@@ -179,7 +179,7 @@
   
     ,{
       "title"			: "Android dynamically change actionbar item",
-      "link"			: "https://www.junjunguo.com/blog/android-dynamically-change-actionbar-item-b/",
+      "link"			: "/blog/android-dynamically-change-actionbar-item-b/",
       "excerpt"		: "Change text dynamically for android actionbar item text"
     }
   
@@ -187,7 +187,7 @@
   
     ,{
       "title"			: "Android dynamically change actionbar item",
-      "link"			: "https://www.junjunguo.com/articles/android-dynamically-change-actionbar-item/",
+      "link"			: "/articles/android-dynamically-change-actionbar-item/",
       "excerpt"		: "Change text dynamically for android actionbar item text"
     }
   
@@ -195,7 +195,7 @@
   
     ,{
       "title"			: "Functional and nonfunctional requirement",
-      "link"			: "https://www.junjunguo.com/blog/functional-non-functional-requirement/",
+      "link"			: "/blog/functional-non-functional-requirement/",
       "excerpt"		: "Different between functional and nonfunctional requirement"
     }
   
@@ -203,7 +203,7 @@
   
     ,{
       "title"			: "JavaFX use CSS to define color",
-      "link"			: "https://www.junjunguo.com/blog/javafx-use-css-to-define-color-b/",
+      "link"			: "/blog/javafx-use-css-to-define-color-b/",
       "excerpt"		: "Example code for using CSS to create JavaFX color theme"
     }
   
@@ -211,7 +211,7 @@
   
     ,{
       "title"			: "JavaFX use CSS to define color",
-      "link"			: "https://www.junjunguo.com/articles/javafx-use-css-to-define-color/",
+      "link"			: "/articles/javafx-use-css-to-define-color/",
       "excerpt"		: "Example code for using CSS to create JavaFX color theme"
     }
   
@@ -219,7 +219,7 @@
   
     ,{
       "title"			: "How to implement a simple OpenStreetMap on Android",
-      "link"			: "https://www.junjunguo.com/blog/implement-openstreetmap-on-android-b/",
+      "link"			: "/blog/implement-openstreetmap-on-android-b/",
       "excerpt"		: "Example code for implementing a simple OSM on Android."
     }
   
@@ -227,7 +227,7 @@
   
     ,{
       "title"			: "How to implement a simple OpenStreetMap on Android",
-      "link"			: "https://www.junjunguo.com/articles/implement-openstreetmap-on-android-1/",
+      "link"			: "/articles/implement-openstreetmap-on-android-1/",
       "excerpt"		: "Example code for implementing a simple OSM on Android."
     }
   
@@ -235,7 +235,7 @@
   
     ,{
       "title"			: "Android Menu",
-      "link"			: "https://www.junjunguo.com/blog/android-activitybar-menu-b/",
+      "link"			: "/blog/android-activitybar-menu-b/",
       "excerpt"		: "Example code for implementing Android action overflow menu"
     }
   
@@ -243,7 +243,7 @@
   
     ,{
       "title"			: "Android Menu",
-      "link"			: "https://www.junjunguo.com/articles/android-activitybar-menu/",
+      "link"			: "/articles/android-activitybar-menu/",
       "excerpt"		: "Example code for implementing Android action overflow menu"
     }
   
@@ -259,7 +259,7 @@
   
     ,{
       "title"			: "About the Jekyll Theme",
-      "link"			: "https://www.junjunguo.com/about/",
+      "link"			: "/about/",
       "excerpt"		: "So Simple is a responsive Jekyll theme for your words and images."
     }
   
@@ -271,7 +271,7 @@
   
     ,{
       "title"			: "Theme Setup",
-      "link"			: "https://www.junjunguo.com/theme-setup/",
+      "link"			: "/theme-setup/",
       "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
     }
   
