@@ -14,7 +14,9 @@
     "url": "https://github.com/junjunguo/junjunguo.github.io",
     "directory": "pages/how-to-learn"
   },
-  "dependencies": {},
+  "dependencies": {
+    "reveal.js": "^4.1.0"
+  },
   "devDependencies": {
     "assets-webpack-plugin": "^7.0.0",
     "copy-webpack-plugin": "^7.0.0",

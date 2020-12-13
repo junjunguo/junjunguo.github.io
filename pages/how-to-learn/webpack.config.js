@@ -45,6 +45,14 @@ module.exports = {
     ],
   },
   plugins: [
+    // new CopyPlugin({
+    //   patterns: [
+    //     {
+    //       from: path.join(__dirname, './node_modules/reveal.js/demo.html'),
+    //       to: path.join(__dirname, './generated'),
+    //     },
+    //   ],
+    // }),
     new MiniCssExtractPlugin({
       //   filename: 'styles.min.css',
       filename: '[name].[contenthash].css',
@@ -53,14 +61,6 @@ module.exports = {
       template: path.join(__dirname, './src/index.html'),
     }),
 
-    // new CopyPlugin({
-    //   patterns: [
-    //     {
-    //       from: path.join(__dirname, './src/index.html'),
-    //       to: path.join(__dirname, './'),
-    //     },
-    //   ],
-    // }),
   ],
   optimization: {
     minimize: true,
@@ -69,5 +69,28 @@ module.exports = {
       new HtmlMinimizerPlugin(),
       new CssMinimizerPlugin(),
     ],
+    splitChunks: {
+      chunks: 'async',
+      minSize: 20000,
+      minRemainingSize: 0,
+      maxSize: 0,
+      minChunks: 1,
+      maxAsyncRequests: 30,
+      maxInitialRequests: 30,
+      automaticNameDelimiter: '.',
+      enforceSizeThreshold: 50000,
+      cacheGroups: {
+        defaultVendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10,
+          reuseExistingChunk: true,
+        },
+        default: {
+          minChunks: 2,
+          priority: -20,
+          reuseExistingChunk: true
+        }
+      }
+    }
   },
 };
