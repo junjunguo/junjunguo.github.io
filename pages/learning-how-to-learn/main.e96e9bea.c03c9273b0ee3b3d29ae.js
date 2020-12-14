@@ -1,4 +1,4 @@
-(self["webpackChunkhow_to_learn"] = self["webpackChunkhow_to_learn"] || []).push([[189],{
+(self["webpackChunklearning_how_to_learn"] = self["webpackChunklearning_how_to_learn"] || []).push([[189],{
 
 /***/ 298:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
@@ -32,7 +32,7 @@ firstPage.innerHTML = `
   <span class="c-cyan">McMaster University</span> and
   <span class="c-green">University of California San Diego</span>
 </p>
-` 
+`
 
 
 ;// CONCATENATED MODULE: ./src/index.js

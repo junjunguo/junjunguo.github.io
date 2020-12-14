@@ -69,7 +69,7 @@
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// Promise = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			732: 0
+/******/ 			72: 0
 /******/ 		};
 /******/ 		
 /******/ 		var deferredModules = [
@@ -118,7 +118,7 @@
 /******/ 			return checkDeferredModules();
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkhow_to_learn"] = self["webpackChunkhow_to_learn"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunklearning_how_to_learn"] = self["webpackChunklearning_how_to_learn"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 		

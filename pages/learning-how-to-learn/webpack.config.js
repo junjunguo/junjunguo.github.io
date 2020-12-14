@@ -17,8 +17,8 @@ module.exports = {
       {
         include: [
           path.resolve(__dirname, 'src/**/*.js'),
-          path.resolve(__dirname, './*.html'),
-          path.resolve(__dirname, './*.css'),
+          // path.resolve(__dirname, './*.html'),
+          // path.resolve(__dirname, './*.css'),
         ],
         test: /\.html$/i,
         use: [

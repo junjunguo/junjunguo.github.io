@@ -11,6 +11,6 @@ firstPage.innerHTML = `
   <span class="c-cyan">McMaster University</span> and
   <span class="c-green">University of California San Diego</span>
 </p>
-` 
+`
 
 export { firstPage };

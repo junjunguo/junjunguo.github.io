@@ -1,4 +1,4 @@
-(self["webpackChunkhow_to_learn"] = self["webpackChunkhow_to_learn"] || []).push([[958],{
+(self["webpackChunklearning_how_to_learn"] = self["webpackChunklearning_how_to_learn"] || []).push([[958],{
 
 /***/ 755:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
