@@ -4,10 +4,10 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack serve",
-    "build": "webpack",
-    "build:prod": "webpack --config webpack.prod.js",
-    "md": "node ./scripts/md2html.js"
+    "generate": "node ./scripts/md2sections.js",
+    "dev": "npm run generate && webpack serve",
+    "build": "npm run generate && webpack",
+    "build:prod": "npm run generate && webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",

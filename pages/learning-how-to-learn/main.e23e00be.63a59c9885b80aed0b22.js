@@ -1,6 +1,6 @@
-(self["webpackChunklearning_how_to_learn"] = self["webpackChunklearning_how_to_learn"] || []).push([[189],{
+(self["webpackChunklearning_how_to_learn"] = self["webpackChunklearning_how_to_learn"] || []).push([[184],{
 
-/***/ 298:
+/***/ 242:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18,23 +18,321 @@ var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof window?windo
 
 // EXTERNAL MODULE: ./node_modules/reveal.js/plugin/highlight/highlight.esm.js
 var highlight_esm = __webpack_require__(755);
-;// CONCATENATED MODULE: ./src/htmlContents.js
-const firstPage = document.createElement('section');
-
-firstPage.innerHTML = `
-<h1>How to Become a More Effective Learner</h1>
-<p>
-  Inspired by
-  <strong class="c-yellow"> Learning How to Learn</strong>, a
-  <span class="c-violet">Coursera</span>
-  course taught by <span class="c-red">Dr. Barbara Oakley</span> and
-  <span class="c-orange">Dr. Terrence Sejnowski</span>, Offered By
-  <span class="c-cyan">McMaster University</span> and
-  <span class="c-green">University of California San Diego</span>
-</p>
+;// CONCATENATED MODULE: ./src/firstSection.js
+const firstSection = `
+<section>
+  <h1>How to Become a More Effective Learner</h1>
+  <p>
+    Inspired by
+    <strong class="c-yellow"> Learning How to Learn</strong>, a
+    <span class="c-violet">Coursera</span>
+    course taught by <span class="c-red">Dr. Barbara Oakley</span> and
+    <span class="c-orange">Dr. Terrence Sejnowski</span>, Offered By
+    <span class="c-cyan">McMaster University</span> and
+    <span class="c-green">University of California San Diego</span>
+  </p>
+</section>
 `
+;// CONCATENATED MODULE: ./generated/sections.js
+const sections = `<section>                
+                    <section>
+                        <h2>
+                            focused mode and diffuse mode
+                        </h2><p>the two types of networks that the brain switches wetween</p>
 
+                    </section>
+                    <section>
+                        <h3>
+                            focused mode
+                        </h3><ul>
+<li>highly attentive states</li>
+<li>our neural pathways link areas of brain related to what we thinking about</li>
+<li>relates to intense concentration on specific problem or concept</li>
+<li>use focused mode to learn concepts, basic, foundmental knowledge</li>
+</ul>
 
+                    </section>
+                    <section>
+                        <h3>
+                            diffuse mode
+                        </h3><ul>
+<li>is a more relaxed resting state</li>
+<li>where our neural pathways randomly link areas of our brain</li>
+<li>often involves a big-picture</li>
+<li>after hard focused work, relax do things that allow diffuse mode to take over</li>
+<li>diffuse mode often generate new ideas, being creative, understand things at the concept level</li>
+</ul>
+
+                    </section>
+                    <section>
+                        <h4>
+                            benefit from both focused and diffuse modes, to learn effective and being creative.
+                        </h4>
+                    </section>
+                </section>
+                <section>                
+                    <section>
+                        <h2>
+                            working and Long-term memory
+                        </h2>
+                    </section>
+                    <section>
+                        <h3>
+                            working memory
+                        </h3><ul>
+<li>immediately and consciously processing in our mind</li>
+<li>it is believed that working memory holds only about 4 chunks of information</li>
+<li>is like a computer Random Access Memory, relatively small in capacity and short term to store information</li>
+</ul>
+
+                    </section>
+                    <section>
+                        <h3>
+                            long term memory
+                        </h3><ul>
+<li>is like a storage or a computer harddisk, relatively big capacity and can store information longer time</li>
+<li>important for bigger goal learning, because we need to store fundamental knowledge to go further</li>
+<li>it takes time to move information from working memory to long term memory</li>
+<li>spaced repetition (spacing repetition out over a number of days) is a good way to move working memory to long term memory</li>
+<li>but long term memory needs to be revisited occasionally to keep the memories accessible</li>
+</ul>
+
+                    </section>
+                    <section>
+                        <h3>
+                            create a lively visual metaphor, analogy, or story
+                        </h3><ul>
+<li>to help remember and understand concepts.</li>
+<li>to see something in your mind&#39;s eye.</li>
+<li>it is helpful not only in art and literature, but also allowing the scientific and engineering world to make progress.</li>
+<li>avoid being blocked by thinking about a problem in the wrong way.</li>
+</ul>
+
+                    </section>
+                </section>
+                <section>                
+                    <section>
+                        <h2>
+                            sleep
+                        </h2><p>Studies shown that sleep is a vital part of memory and learning</p>
+
+                    </section>
+                    <section>
+                        <h3>
+                            During sleep, our brain:
+                        </h3><ul>
+<li>erase trivial memories </li>
+<li>strengthen areas of importantce</li>
+<li>rehearses some tougher parts we trying to learn</li>
+<li>going over and over neural patterns to deppen and strengthen them</li>
+</ul>
+
+                    </section>
+                    <section>
+                        <h4>
+                            Strength our ability to:
+                        </h4><ul>
+<li>figure out difficult problems</li>
+<li>find meaning and understanding in what we are learning</li>
+</ul>
+
+                    </section>
+                    <section>
+                        <h3>
+                            Learing, try to understand or solve problem right before a nap or sleep
+                        </h3><ul>
+<li>increase the chance of dreaming about it</li>
+<li>enhace our ability to understand it</li>
+</ul>
+
+                    </section>
+                    <section>
+                        <h4>
+                            make a next day plan before sleep
+                        </h4>
+                    </section>
+                </section>
+                <section>                
+                    <section>
+                        <h2>
+                            Chunk
+                        </h2>
+                    </section>
+                    <section>
+                        <h4>
+                            Chunks are pieces of information that are bound together through meaning
+                        </h4>
+                    </section>
+                    <section>
+                        <h4>
+                            When we chunk an idea or concept, we do not need to remember all underlying details.
+                        </h4><p>It&#39;s like riding a bike, we only need the main idea biking, all the underlying complex biking activites take place with that simple chunk of thought.</p>
+
+                    </section>
+                    <section>
+                        <h4>
+                            One of the first steps toward gaining expertise in math and science is to create conceptual chunks.
+                        </h4>
+                    </section>
+                    <section>
+                        <h3>
+                            Chunking (how to form chunks)
+                        </h3>
+                    </section>
+                    <section>
+                        <h4>
+                            Focus our attention on the information we want to chunk.
+                        </h4>
+                    </section>
+                    <section>
+                        <h4>
+                            Understand the basic idea we trying to chunk
+                        </h4><ul>
+<li>understanding helps hold the underlying memory traces together</li>
+<li>a chunk without understand, is a useless chunk that won&#39;t fit in with other material we are learning</li>
+</ul>
+
+                    </section>
+                    <section>
+                        <h4>
+                            Gain context, seeing how and when to use the chunk
+                        </h4><ul>
+<li>Going beyond the initial problem, seeing more broadly.</li>
+<li>Repeat and practice with both related and unrelated problems.</li>
+<li>Knowing when to use and when not use the chunk.</li>
+<li>Fit the chunk into the bigger picture.</li>
+</ul>
+
+                    </section>
+                    <section>
+                        <h4>
+                            It&#39;s like a tool, if we understand it, know how and when to use (not use), have big picture of the tool, we can benefit most of that it.
+                        </h4>
+                    </section>
+                </section>
+                <section>                
+                    <section>
+                        <h2>
+                            Avoid illusions of competence
+                        </h2>
+                    </section>
+                    <section>
+                        <h4>
+                            When we repeatedly read notes or textbook
+                        </h4><ul>
+<li>when we draw lines under important centences, or mark them with colors, </li>
+<li>but with relatively few engage in self-testing or retrieval practice.</li>
+</ul>
+
+                    </section>
+                    <section>
+                        <h4>
+                            When we have the book (or Google) open right in front of us
+                        </h4><ul>
+<li>it provides the illusion that the material is also in our brain, <strong>but it&#39;s not</strong>.</li>
+</ul>
+
+                    </section>
+                </section>
+                <section>                
+                    <section>
+                        <h2>
+                            The importance of recall
+                        </h2>
+                    </section>
+                    <section>
+                        <h4>
+                            Using recall, mental retrieval of the key ideas, rather than passive rereading, will make study time more focused and effective.
+                        </h4>
+                    </section>
+                    <section>
+                        <h4>
+                            Do not wait too long to practice recall, we do not want to start from scratch every time.
+                        </h4>
+                    </section>
+                </section>
+                <section>                
+                    <section>
+                        <h2>
+                            consistent
+                        </h2><p>The great wall of China was not build in one day.</p>
+
+                    </section>
+                    <section>
+                        <h4>
+                            Divide
+                        </h4><p>our learning or goal to small doses, and do a little every day.</p>
+<ul>
+<li>Give focused and diffuse modes the time to understand what we are learning.</li>
+<li>As we repeat we active our long term memory.</li>
+</ul>
+
+                    </section>
+                    <section>
+                        <h4>
+                            Learning is like gaining muscles
+                        </h4><p>it wouldn&#39;t happen overnight, we train, eat, sleep, and muscles grow bigger over time.</p>
+
+                    </section>
+                    <section>
+                        <h4>
+                            Fit our level
+                        </h4><p>same as workout, lift too heavy may physically hurt us, right technique, lift weight that we can handle.</p>
+
+                    </section>
+                    <section>
+                        <h4>
+                            It&#39;s important to have positive feedback to gain motivation to continue.
+                        </h4>
+                    </section>
+                    <section>
+                        <h4>
+                            Deliberate practice
+                        </h4><p>on the toughest aspects of the material. </p>
+<ul>
+<li>Can help lift average brains into the realm of those with natural gifts.</li>
+<li>Similar to lift heavier weights, which lead our muscles to grow bigger and quicker.</li>
+<li>We can also practice certain mental patterns that deepen and enlarge in our mind.</li>
+</ul>
+
+                    </section>
+                    <section>
+                        <h4>
+                            By deliberate practice we can also gain better results.
+                        </h4>
+                    </section>
+                </section>
+                <section>                
+                    <section>
+                        <h2>
+                            Physical exercise
+                        </h2><ul>
+<li>We once fault thought that all of the neurons in the brain won&#39;t grow as adults.</li>
+<li>But we now know that in a few places, new neurons are born every day.</li>
+<li>One of these places is very important for learning new things.</li>
+</ul>
+
+                    </section>
+                    <section>
+                        <h4>
+                            New neurons help us learn new things
+                        </h4><p><em>but they will die if we do not use them</em>. </p>
+<ul>
+<li>New experiences will rescue them.</li>
+</ul>
+
+                    </section>
+                    <section>
+                        <h4>
+                            Physical exercises
+                        </h4><p>also <strong>help the nervous to survive</strong>.</p>
+<ul>
+<li>Exercise is by far better than any drugs on the markets.</li>
+<li>Exercise benefits all of our other organisms.</li>
+<li>It&#39;s a good way of interleaving our learning or problem solving,</li>
+<li>give our brain time to practice diffuse thinking.</li>
+</ul>
+</section></section>`;
 ;// CONCATENATED MODULE: ./src/index.js
 
 
@@ -42,21 +340,22 @@ firstPage.innerHTML = `
 
 
 
+
 const containerEl = document.querySelector("#slider-container");
-containerEl.appendChild(firstPage);
-
-
+console.log(sections);
+containerEl.innerHTML = `${firstSection} ${sections}`;
+console.log(containerEl);
 
 const deck = new reveal_esm({
-   plugins: [ highlight_esm/* default */.Z ]
+    plugins: [highlight_esm/* default */.Z]
 })
 deck.initialize(
     {  // Parallax background image
         parallaxBackgroundImage: '', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
-      
+
         // Parallax background size
         parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px" - currently only pixels are supported (don't use % or auto)
-      
+
         // Number of pixels to move the parallax background per slide
         // - Calculated automatically unless specified
         // - Set to 0 to disable movement along an axis
