@@ -37,6 +37,15 @@ const renderer = {
                     </h${level}>
                     `
         }
+    },
+    text(text) {
+        const regex = /\p{Emoji_Modifier_Base}\p{Emoji_Modifier}?|\p{Emoji_Presentation}|\p{Emoji}\uFE0F/gu;
+        if(text.match(regex)){
+            return `<p class="moji animated pulse">${text}</p>`
+        }else {
+            return `<p>${text}</p>`
+        }
+        
     }
 }
 

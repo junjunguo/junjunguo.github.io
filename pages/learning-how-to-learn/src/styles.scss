@@ -20,6 +20,14 @@
   li {
     line-height: 1.6;
   }
+
+  p {
+    margin: 0;
+  }
+
+  .moji {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -87,4 +95,30 @@
       list-style: square;
     }
   }
+}
+
+.animated {
+  animation-duration: 2s;
+  transition-duration: 2s;
+  transition-delay: 6s;
+  animation-iteration-count: 666;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-timing-function: ease-in-out;
 }

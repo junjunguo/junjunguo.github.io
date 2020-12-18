@@ -29,6 +29,10 @@ deck.initialize(
         height: "100%",
         margin: 0,
         minScale: 1,
-        maxScale: 1
+        maxScale: 1,
+//        autoSlide: 2000,
+        controlsTutorial: true,
+        progress: true,
+        autoAnimate: true,
     }
 );
