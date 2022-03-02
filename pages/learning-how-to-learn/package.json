@@ -17,7 +17,7 @@
     "directory": "pages/learning-how-to-learn"
   },
   "dependencies": {
-    "reveal.js": "^4.1.0"
+    "reveal.js": "^4.3.0"
   },
   "devDependencies": {
     "assets-webpack-plugin": "^7.0.0",
